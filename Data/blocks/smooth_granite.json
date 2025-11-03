@@ -4,7 +4,8 @@
 		"description": {
 			"identifier": "utilitycraft:smooth_granite",
 			"menu_category": {
-				"category": "construction"
+				"category": "construction",
+                "group": "minecraft:itemGroup.name.stoneBrick"
 			}
 		},
 		"components": {

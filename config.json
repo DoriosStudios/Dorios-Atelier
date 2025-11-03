@@ -5,15 +5,16 @@
 	"authors": [
 		"Dorios Studios"
 	],
-	"targetVersion": "1.21.0",
-	"description": "Version 1.0 \n§6Dorios Studios",
+	"targetVersion": "1.21.120",
+	"description": "1.0 §6Dorios Studios§8",
 	"experimentalGameplay": {
-		"holidayCreatorFeatures": false,
 		"upcomingCreatorFeatures": false,
+		"experimentalCreatorCameraFeatures": false,
 		"enableGameTestFramework": false,
+		"renderDragonFeatures": false,
 		"educationEdition": false
 	},
-	"bdsProject": true,
+	"bdsProject": false,
 	"packs": {
 		"behaviorPack": "./Data",
 		"resourcePack": "./Assets"
