@@ -1,0 +1,98 @@
+{
+    "format_version": "1.21.60",
+    "minecraft:crafting_items_catalog": {
+        "categories": [
+            {
+                "category_name": "construction",
+                "groups": [
+                    {
+                        "group_identifier": {
+                            "icon": "utilitycraft:andesite_tiles",
+                            "name": "dorios:itemGroup.name.stoneBricks"
+                        },
+                        "items": [
+                            "utilitycraft:andesite_bricks",
+                            "utilitycraft:andesite_tiles",
+                            "utilitycraft:chiseled_andesite",
+                            "utilitycraft:chiseled_andesite_bricks",
+                            "utilitycraft:cracked_andesite_bricks",
+                            "utilitycraft:cracked_andesite_tiles",
+                            "utilitycraft:smooth_andesite",
+
+                            "utilitycraft:basalt_bricks",
+                            "utilitycraft:basalt_tiles",
+                            "utilitycraft:carved_basalt",
+                            "utilitycraft:chiseled_basalt",
+                            "utilitycraft:cracked_basalt_bricks",
+                            "utilitycraft:cracked_basalt_tiles",
+
+                            "utilitycraft:blackstone_tiles",
+                            "utilitycraft:chiseled_blackstone",
+                            "utilitycraft:cracked_blackstone_tiles",
+                            "utilitycraft:smooth_blackstone",
+
+                            "utilitycraft:calcite_bricks",
+                            "utilitycraft:calcite_tiles",
+                            "utilitycraft:chiseled_calcite",
+                            "utilitycraft:chiseled_calcite_bricks",
+                            "utilitycraft:cracked_calcite_bricks",
+                            "utilitycraft:cracked_calcite_tiles",
+                            "utilitycraft:polished_calcite",
+                            "utilitycraft:smooth_calcite",
+
+                            "utilitycraft:diorite_bricks",
+                            "utilitycraft:diorite_tiles",
+                            "utilitycraft:chiseled_diorite",
+                            "utilitycraft:chiseled_diorite_bricks",
+                            "utilitycraft:cracked_diorite_bricks",
+                            "utilitycraft:cracked_diorite_tiles",
+                            "utilitycraft:smooth_diorite",
+
+                            "utilitycraft:dripstone_bricks",
+                            "utilitycraft:dripstone_tiles",
+                            "utilitycraft:chiseled_dripstone",
+                            "utilitycraft:chiseled_dripstone_bricks",
+                            "utilitycraft:cracked_dripstone_bricks",
+                            "utilitycraft:cracked_dripstone_tiles",
+                            "utilitycraft:polished_dripstone",
+                            "utilitycraft:smooth_dripstone",
+
+                            "utilitycraft:granite_bricks",
+                            "utilitycraft:granite_tiles",
+                            "utilitycraft:chiseled_granite",
+                            "utilitycraft:chiseled_granite_bricks",
+                            "utilitycraft:cracked_granite_bricks",
+                            "utilitycraft:cracked_granite_tiles",
+                            "utilitycraft:smooth_granite",
+
+                            "utilitycraft:cracked_tuff_bricks",
+                            "utilitycraft:cracked_tuff_tiles",
+                            "utilitycraft:smooth_tuff",
+                            "utilitycraft:tuff_tiles"
+                        ]
+                    }
+                ]
+            },
+            {
+                "category_name": "equipment",
+                "groups": [
+                    {
+                        "group_identifier": {
+                            "icon": "utilitycraft:stone_chisel",
+                            "name": "dorios:itemGroup.name.chisels"
+                        },
+                        "items": [
+                            "utilitycraft:copper_chisel",
+                            "utilitycraft:diamond_chisel",
+                            "utilitycraft:golden_chisel",
+                            "utilitycraft:iron_chisel",
+                            "utilitycraft:netherite_chisel",
+                            "utilitycraft:stone_chisel",
+                            "utilitycraft:wooden_chisel"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

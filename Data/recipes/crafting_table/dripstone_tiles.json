@@ -1,0 +1,26 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "utilitycraft:craft_dripstone_tiles"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "ingredients": [
+            {
+                "item": "utilitycraft:dripstone_bricks",
+                "count": 4
+            }
+        ],
+        "result": {
+            "item": "utilitycraft:dripstone_tiles",
+            "count": 4
+        },
+        "unlock": [
+            {
+                "item": "utilitycraft:dripstone_bricks"
+            }
+        ]
+    }
+}

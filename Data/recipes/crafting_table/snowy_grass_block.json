@@ -1,0 +1,33 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "utilitycraft:craft_snowy_grass_block"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:snowball",
+                "count": 1
+            },
+            {
+                "item": "minecraft:grass_block",
+                "count": 1
+            }
+        ],
+        "result": {
+            "item": "utilitycraft:snowy_grass_block",
+            "count": 1
+        },
+        "unlock": [
+            {
+                "item": "minecraft:snowball"
+            },
+            {
+                "item": "minecraft:grass_block"
+            }
+        ]
+    }
+}

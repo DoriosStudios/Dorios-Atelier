@@ -1,7 +1,30 @@
 {
-	"resource_pack_name": "UtilityCraft",
-	"texture_name": "atlas.items",
-	"texture_data": {
-        "utilitycraft_chisel":{"textures":""}
+    "resource_pack_name": "Dorios' Atelier",
+    "texture_name": "atlas.items",
+    "texture_data": {
+        "utilitycraft_netherite_chisel": {
+            "textures": "textures/items/netherite_chisel"
+        },
+        "utilitycraft_diamond_chisel": {
+            "textures": "textures/items/diamond_chisel"
+        },
+        "utilitycraft_iron_chisel": {
+            "textures": "textures/items/iron_chisel"
+        },
+        "utilitycraft_copper_chisel": {
+            "textures": "textures/items/copper_chisel"
+        },
+        "utilitycraft_stone_chisel": {
+            "textures": "textures/items/stone_chisel"
+        },
+        "utilitycraft_golden_chisel": {
+            "textures": "textures/items/golden_chisel"
+        },
+        "utilitycraft_wooden_chisel": {
+            "textures": "textures/items/wooden_chisel"
+        },
+        "utilitycraft_steel_chisel":{
+            "textures": "textures/items/steel_chisel"
+        }
     }
 }

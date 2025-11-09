@@ -14,7 +14,7 @@
     "utilitycraft_chiseled_andesite_bricks": { "textures": "textures/blocks/chiseled_andesite_bricks" },
     "utilitycraft_chiseled_andesite": { "textures": "textures/blocks/chiseled_andesite" },
     "utilitycraft_chiseled_basalt": { "textures": "textures/blocks/chiseled_basalt" },
-    "utilitycraft_chiseled_basalt_alt": { "textures": "textures/blocks/chiseled_basalt_alt" },
+    "utilitycraft_carved_basalt": { "textures": "textures/blocks/carved_basalt" },
     "utilitycraft_chiseled_blackstone": { "textures": "textures/blocks/chiseled_blackstone" },
     "utilitycraft_chiseled_calcite_bricks": { "textures": "textures/blocks/chiseled_calcite_bricks" },
     "utilitycraft_chiseled_calcite": { "textures": "textures/blocks/chiseled_calcite" },
@@ -54,6 +54,7 @@
     "utilitycraft_smooth_dripstone": { "textures": "textures/blocks/smooth_dripstone" },
     "utilitycraft_smooth_granite": { "textures": "textures/blocks/smooth_granite" },
     "utilitycraft_smooth_tuff": { "textures": "textures/blocks/smooth_tuff" },
-    "utilitycraft_tuff_tiles": { "textures": "textures/blocks/tuff_tiles" }
+    "utilitycraft_tuff_tiles": { "textures": "textures/blocks/tuff_tiles" },
+    "utilitycraft_snowy_grass_block": { "textures": "textures/blocks/grass_block/snowy_grass_block"}
   }
 }

@@ -11,8 +11,8 @@
 		],
 		"min_engine_version": [
 			1,
-			21,
-			0
+			20,
+			80
 		]
 	},
 	"modules": [
@@ -43,6 +43,14 @@
 		"script_eval"
 	],
 	"dependencies": [
+		{
+			"uuid": "b5d1f818-45f2-4c50-8e0b-c3d87588687f",
+			"version": [
+				1,
+				0,
+				0
+			]
+		},
 		{
 			"module_name": "@minecraft/server",
 			"version": "2.2.0"

@@ -1,0 +1,20 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "utilitycraft:stone_glove",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:icon": "utilitycraft_stone_glove",
+      "utilitycraft:glove": 
+      { "max_distance": 8 }
+      ,
+      "minecraft:allow_off_hand": true
+    }
+  }
+}
