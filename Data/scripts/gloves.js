@@ -7,7 +7,7 @@ const GLOVE_OFFHAND_IDS = new Set([
 	'utilitycraft:copper_glove',
 	'utilitycraft:golden_glove',
 	'utilitycraft:diamond_glove',
-	'utilitycraft:netherite_glove',
+	'utilitycraft:netherite_glove'
 ])
 
 const FACE_OFFSETS = {
