@@ -1,0 +1,16 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:recipe_smelting": {
+        "description": {
+            "identifier": "utilitycraft:smelt_cracked_andesite_tiles"
+        },
+        "tags": [
+            "furnace",
+            "blast_furnace"
+        ],
+        "input": "utilitycraft:andesite_tiles",
+        "output": "utilitycraft:cracked_andesite_tiles",
+        "cookingtime": 200,
+        "experience": 0.1
+    }
+}

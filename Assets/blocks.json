@@ -51,5 +51,11 @@
     "utilitycraft:smooth_granite": { "sound": "stone" },
     "utilitycraft:smooth_tuff": { "sound": "tuff" },
     "utilitycraft:tuff_tiles": { "sound": "tuff" },
+    "utilitycraft:polished_obsidian": { "sound": "stone" },
+    "utilitycraft:obsidian_bricks": { "sound": "stone" },
+    "utilitycraft:obsidian_tiles": { "sound": "stone" },
+    "utilitycraft:chiseled_obsidian": { "sound": "stone" },
+    "utilitycraft:obsidian_pillar": { "sound": "stone" },
+    "utilitycraft:glowing_obsidian": { "sound": "stone" },
     "utilitycraft:snowy_grass_block": { "sound": "snow" }
 }

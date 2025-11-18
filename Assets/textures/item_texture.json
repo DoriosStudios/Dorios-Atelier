@@ -25,6 +25,27 @@
         },
         "utilitycraft_steel_chisel":{
             "textures": "textures/items/steel_chisel"
+        },
+        "utilitycraft_wooden_glove": {
+            "textures": "textures/items/wood_gloves_item"
+        },
+        "utilitycraft_stone_glove": {
+            "textures": "textures/items/stone_gloves_item"
+        },
+        "utilitycraft_iron_glove": {
+            "textures": "textures/items/iron_gloves_item"
+        },
+        "utilitycraft_copper_glove": {
+            "textures": "textures/items/copper_gloves_item"
+        },
+        "utilitycraft_golden_glove": {
+            "textures": "textures/items/golden_gloves_item"
+        },
+        "utilitycraft_diamond_glove": {
+            "textures": "textures/items/diamond_gloves_item"
+        },
+        "utilitycraft_netherite_glove": {
+            "textures": "textures/items/netherite_gloves_item"
         }
     }
 }

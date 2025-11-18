@@ -68,7 +68,14 @@
                             "utilitycraft:cracked_tuff_bricks",
                             "utilitycraft:cracked_tuff_tiles",
                             "utilitycraft:smooth_tuff",
-                            "utilitycraft:tuff_tiles"
+                            "utilitycraft:tuff_tiles",
+
+                            "utilitycraft:polished_obsidian",
+                            "utilitycraft:obsidian_bricks",
+                            "utilitycraft:obsidian_tiles",
+                            "utilitycraft:chiseled_obsidian",
+                            "utilitycraft:obsidian_pillar",
+                            "utilitycraft:glowing_obsidian"
                         ]
                     }
                 ]

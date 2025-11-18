@@ -1,0 +1,16 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:recipe_smelting": {
+        "description": {
+            "identifier": "utilitycraft:smelt_cracked_diorite_bricks"
+        },
+        "tags": [
+            "furnace",
+            "blast_furnace"
+        ],
+        "input": "utilitycraft:diorite_bricks",
+        "output": "utilitycraft:cracked_diorite_bricks",
+        "cookingtime": 200,
+        "experience": 0.1
+    }
+}

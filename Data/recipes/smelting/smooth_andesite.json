@@ -1,0 +1,16 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:recipe_smelting": {
+        "description": {
+            "identifier": "utilitycraft:smelt_smooth_andesite"
+        },
+        "tags": [
+            "furnace",
+            "blast_furnace"
+        ],
+        "input": "minecraft:andesite",
+        "output": "utilitycraft:smooth_andesite",
+        "cookingtime": 200,
+        "experience": 0.1
+    }
+}

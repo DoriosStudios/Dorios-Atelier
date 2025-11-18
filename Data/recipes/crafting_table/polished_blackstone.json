@@ -1,0 +1,24 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "utilitycraft:craft_polished_blackstone"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "ingredients": [
+            { "item": "minecraft:blackstone" },
+            { "item": "minecraft:blackstone" },
+            { "item": "minecraft:blackstone" },
+            { "item": "minecraft:blackstone" }
+        ],
+        "result": {
+            "item": "minecraft:polished_blackstone",
+            "count": 4
+        },
+        "unlock": [
+            { "item": "minecraft:blackstone" }
+        ]
+    }
+}

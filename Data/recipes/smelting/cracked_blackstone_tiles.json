@@ -1,0 +1,16 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:recipe_smelting": {
+        "description": {
+            "identifier": "utilitycraft:smelt_cracked_blackstone_tiles"
+        },
+        "tags": [
+            "furnace",
+            "blast_furnace"
+        ],
+        "input": "utilitycraft:blackstone_tiles",
+        "output": "utilitycraft:cracked_blackstone_tiles",
+        "cookingtime": 200,
+        "experience": 0.1
+    }
+}

@@ -25,9 +25,9 @@ const MIN_RANGE = 5
 const GLOVE_MAX_DISTANCE = new Map([
 	['utilitycraft:wooden_glove', 8],
 	['utilitycraft:stone_glove', 10],
-	['utilitycraft:iron_glove', 12],
-	['utilitycraft:copper_glove', 14],
-	['utilitycraft:golden_glove', 16],
+	['utilitycraft:copper_glove', 12],
+	['utilitycraft:iron_glove', 16],
+	['utilitycraft:golden_glove', 20],
 	['utilitycraft:diamond_glove', 24],
 	['utilitycraft:netherite_glove', 32],
 ])
