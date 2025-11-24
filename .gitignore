@@ -209,4 +209,10 @@ __marimo__/
 # Extra folders (such as Upcoming)
 .Upcoming/
 /Upcoming
-/.bridge
+
+# Bridge workspace metadata
+.bridge/
+.bridge/*
+.bridge/cache/
+.bridge/projects/
+bridge/
