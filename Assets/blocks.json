@@ -57,5 +57,17 @@
     "utilitycraft:chiseled_obsidian": { "sound": "stone" },
     "utilitycraft:obsidian_pillar": { "sound": "stone" },
     "utilitycraft:glowing_obsidian": { "sound": "stone" },
-    "utilitycraft:snowy_grass_block": { "sound": "snow" }
+    "utilitycraft:snowy_grass_block": { "sound": "snow" },
+    "utilitycraft:sanded_acacia_wood": { "sound": "wood" },
+    "utilitycraft:sanded_bamboo_wood": { "sound": "wood" },
+    "utilitycraft:sanded_birch_wood": { "sound": "wood" },
+    "utilitycraft:sanded_cherry_wood": { "sound": "wood" },
+    "utilitycraft:sanded_crimson_wood": { "sound": "wood" },
+    "utilitycraft:sanded_dark_oak_wood": { "sound": "wood" },
+    "utilitycraft:sanded_jungle_wood": { "sound": "wood" },
+    "utilitycraft:sanded_mangrove_wood": { "sound": "wood" },
+    "utilitycraft:sanded_oak_wood": { "sound": "wood" },
+    "utilitycraft:sanded_pale_oak_wood": { "sound": "wood" },
+    "utilitycraft:sanded_spruce_wood": { "sound": "wood" },
+    "utilitycraft:sanded_warped_wood": { "sound": "wood" }
 }
