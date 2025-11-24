@@ -77,6 +77,26 @@
                             "utilitycraft:obsidian_pillar",
                             "utilitycraft:glowing_obsidian"
                         ]
+                    },
+                    {
+                        "group_identifier": {
+                            "icon": "utilitycraft:sanded_oak_wood",
+                            "name": "dorios:itemGroup.name.sandedWood"
+                        },
+                        "items": [
+                            "utilitycraft:sanded_acacia_wood",
+                            "utilitycraft:sanded_bamboo_wood",
+                            "utilitycraft:sanded_birch_wood",
+                            "utilitycraft:sanded_cherry_wood",
+                            "utilitycraft:sanded_crimson_wood",
+                            "utilitycraft:sanded_dark_oak_wood",
+                            "utilitycraft:sanded_jungle_wood",
+                            "utilitycraft:sanded_mangrove_wood",
+                            "utilitycraft:sanded_oak_wood",
+                            "utilitycraft:sanded_pale_oak_wood",
+                            "utilitycraft:sanded_spruce_wood",
+                            "utilitycraft:sanded_warped_wood"
+                        ]
                     }
                 ]
             },
@@ -85,17 +105,32 @@
                 "groups": [
                     {
                         "group_identifier": {
-                            "icon": "utilitycraft:stone_chisel",
+                            "icon": "utilitycraft:diamond_chisel",
                             "name": "dorios:itemGroup.name.chisels"
                         },
                         "items": [
-                            "utilitycraft:copper_chisel",
+                            "utilitycraft:netherite_chisel",
                             "utilitycraft:diamond_chisel",
                             "utilitycraft:golden_chisel",
                             "utilitycraft:iron_chisel",
-                            "utilitycraft:netherite_chisel",
+                            "utilitycraft:copper_chisel",
                             "utilitycraft:stone_chisel",
                             "utilitycraft:wooden_chisel"
+                        ]
+                    },
+                    {
+                        "group_identifier": {
+                            "icon": "utilitycraft:diamond_glove",
+                            "name": "dorios:itemGroup.name.gloves"
+                        },
+                        "items": [
+                            "utilitycraft:netherite_glove",
+                            "utilitycraft:diamond_glove",
+                            "utilitycraft:golden_glove",
+                            "utilitycraft:iron_glove",
+                            "utilitycraft:copper_glove",
+                            "utilitycraft:stone_glove",
+                            "utilitycraft:wooden_glove"
                         ]
                     }
                 ]

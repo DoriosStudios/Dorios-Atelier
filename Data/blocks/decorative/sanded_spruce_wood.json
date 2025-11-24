@@ -4,11 +4,14 @@
         "description": {
             "identifier": "utilitycraft:sanded_spruce_wood",
             "menu_category": {
-                "category": "construction"
+                "category": "construction",
+                "group": "dorios:itemGroup.name.sandedWood"
             }
         },
         "components": {
             "minecraft:geometry": "geometry.utilitycraft_block",
+            "minecraft:light_dampening": 15,
+            "minecraft:light_emission": 0,
             "minecraft:material_instances": {
                 "*": {
                     "texture": "utilitycraft_sanded_spruce_wood",
