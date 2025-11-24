@@ -215,4 +215,4 @@ __marimo__/
 .bridge/*
 .bridge/cache/
 .bridge/projects/
-bridge/
+bridge/.bridge/
