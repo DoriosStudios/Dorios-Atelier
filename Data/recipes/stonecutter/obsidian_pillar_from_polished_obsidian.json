@@ -1,0 +1,18 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:recipe_stonecutter": {
+        "description": {
+            "identifier": "utilitycraft:sc_obsidian_pillar_from_polished_obsidian"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredient": {
+            "item": "utilitycraft:polished_obsidian"
+        },
+        "result": {
+            "item": "utilitycraft:obsidian_pillar",
+            "count": 1
+        }
+    }
+}
