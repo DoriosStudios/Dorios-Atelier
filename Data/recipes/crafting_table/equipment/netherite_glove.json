@@ -2,14 +2,14 @@
     "format_version": "1.20.80",
     "minecraft:recipe_smithing_transform": {
         "description": {
-            "identifier": "utilitycraft:smith_netherite_chisel"
+            "identifier": "utilitycraft:smith_netherite_glove"
         },
         "tags": [
             "smithing_table"
         ],
         "template": "minecraft:netherite_upgrade_smithing_template",
-        "base": "utilitycraft:diamond_chisel",
+        "base": "utilitycraft:diamond_glove",
         "addition": "minecraft:netherite_ingot",
-        "result": "utilitycraft:netherite_chisel"
+        "result": "utilitycraft:netherite_glove"
     }
 }
