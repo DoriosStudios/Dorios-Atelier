@@ -1,15 +1,27 @@
 {
     "format_version": "1.20.80",
-    "minecraft:recipe_smithing_transform": {
+    "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "utilitycraft:smith_netherite_glove"
+            "identifier": "utilitycraft:craft_netherite_glove"
         },
         "tags": [
-            "smithing_table"
+            "crafting_table"
         ],
-        "template": "minecraft:netherite_upgrade_smithing_template",
-        "base": "utilitycraft:diamond_glove",
-        "addition": "minecraft:netherite_ingot",
-        "result": "utilitycraft:netherite_glove"
+        "ingredients": [
+            {
+                "item": "utilitycraft:diamond_glove"
+            },
+            {
+                "item": "minecraft:netherite_ingot"
+            }
+        ],
+        "result": {
+            "item": "utilitycraft:netherite_glove"
+        },
+        "unlock": [
+            {
+                "item": "utilitycraft:diamond_glove"
+            }
+        ]
     }
 }
