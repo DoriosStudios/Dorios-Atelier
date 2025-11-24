@@ -3,6 +3,11 @@ import { system, world } from "@minecraft/server";
 import { MATERIAL_CYCLES, BLOCK_ALIAS } from "./variants.js";
 
 const CHISEL_COMPONENT_ID = "utilitycraft:chisel";
+const CHISEL_BREAK_SOUND = "random.break";
+const CHISEL_ID_SUFFIX = "_chisel";
+
+const NAME_TOKEN_CACHE = new Map();
+const NAME_TO_IDS = new Map();
 
 /* --- helpers de string --- */
 function stripNamespace(id) {
@@ -13,13 +18,25 @@ function tokensOf(name) {
   return name.split("_").filter(Boolean);
 }
 
+function cachedTokens(name) {
+  if (!NAME_TOKEN_CACHE.has(name)) {
+    NAME_TOKEN_CACHE.set(name, tokensOf(name));
+  }
+  return NAME_TOKEN_CACHE.get(name);
+}
+
+function rememberName(name, id) {
+  if (!NAME_TO_IDS.has(name)) NAME_TO_IDS.set(name, new Set());
+  NAME_TO_IDS.get(name).add(id);
+}
+
 /* --- preprocessa ciclos (a partir de MATERIAL_CYCLES importado) --- */
 const CYCLES = [];
 for (const states of MATERIAL_CYCLES) {
   const tokenCount = new Map();
   const stateInfos = states.map((fullId) => {
     const name = stripNamespace(fullId);
-    const toks = tokensOf(name);
+    const toks = cachedTokens(name);
     toks.forEach((t) => tokenCount.set(t, (tokenCount.get(t) || 0) + 1));
     return { id: fullId, name, toks, variant: null };
   });
@@ -46,6 +63,7 @@ for (const states of MATERIAL_CYCLES) {
   stateInfos.forEach((si, i) => {
     idxByName.set(si.name, i);
     idxByVariant.set(si.variant, i);
+    rememberName(si.name, si.id);
   });
 
   CYCLES.push({ material, states: stateInfos, idxByName, idxByVariant });
@@ -136,15 +154,31 @@ function buildCandidatesForState(stateInfo, originalNamespace) {
 
   push(declaredId);
 
-  for (const keyId of BLOCK_LOOKUP.keys()) {
-    if (stripNamespace(keyId) === stripped) push(keyId);
-  }
+  const sameName = NAME_TO_IDS.get(stripped);
+  sameName?.forEach((id) => push(id));
 
   push(`${originalNamespace}:${stripped}`);
   push(`minecraft:${stripped}`);
   push(`utilitycraft:${stripped}`);
 
   return candidatesForState;
+}
+
+function getSelectedSlotIndex(player) {
+  if (typeof player.selectedSlot === "number") return player.selectedSlot;
+  if (typeof player.selectedSlotIndex === "number") return player.selectedSlotIndex;
+  return undefined;
+}
+
+function findSlotWithType(container, typeId) {
+  const size = typeof container.size === "number" ? container.size : 36;
+  for (let i = 0; i < size; i++) {
+    const candidate = container.getItem(i);
+    if (candidate && (!typeId || candidate.typeId === typeId)) {
+      return { slot: i, stack: candidate };
+    }
+  }
+  return { slot: undefined, stack: undefined };
 }
 
 /* tentativa segura de obter o próximo bloco disponível, pulando variantes inexistentes */
@@ -190,38 +224,35 @@ function tryApplyNextVariant(block) {
 function damageHeldChisel(player, eventItemStack) {
   system.run(() => {
     try {
-      const inventoryComp = player.getComponent("minecraft:inventory");
-      if (!inventoryComp) return;
-      const container = inventoryComp.container;
+      const container = player.getComponent("minecraft:inventory")?.container;
       if (!container) return;
 
-      let slot = (player.selectedSlotIndex !== undefined && player.selectedSlotIndex !== null)
-        ? player.selectedSlotIndex
-        : undefined;
+      let slot = getSelectedSlotIndex(player);
+      let stack = slot !== undefined ? container.getItem(slot) : undefined;
 
-      let stack = (slot !== undefined) ? container.getItem(slot) : undefined;
-
-      if (!stack && eventItemStack) {
-        const maxSlots = (typeof container.size === "number") ? container.size : 36;
-        for (let i = 0; i < maxSlots; i++) {
-          const s = container.getItem(i);
-          if (!s) continue;
-          if (s.typeId === eventItemStack.typeId) { stack = s; slot = i; break; }
-        }
+      const needsMatch = !stack || (eventItemStack && stack.typeId !== eventItemStack.typeId);
+      if (needsMatch) {
+        const match = findSlotWithType(container, eventItemStack?.typeId);
+        slot = match.slot;
+        stack = match.stack;
       }
 
-      if (!stack || slot === undefined || slot === null) return;
+      if (!stack || slot === undefined) return;
 
       const durability = stack.getComponent?.("minecraft:durability");
       if (!durability) return;
 
-      const broke = durability.damage(1);
+      const current = typeof durability.damage === "number" ? durability.damage : 0;
+      const max = typeof durability.maxDurability === "number" ? durability.maxDurability : undefined;
+      const next = Math.min(current + 1, max ?? current + 1);
+      durability.damage = next;
+      const broke = typeof max === "number" && max > 0 && next >= max;
       if (broke) {
-        container.setItem(slot, undefined);
-        return;
+        try {
+          player.playSound?.(CHISEL_BREAK_SOUND);
+        } catch (_) {}
       }
-
-      container.setItem(slot, stack);
+      container.setItem(slot, broke ? undefined : stack);
     } catch (_) {
       // silencioso por design (removido debug)
     }
@@ -252,4 +283,12 @@ system.beforeEvents.startup.subscribe((initEvent) => {
       } catch (_) {}
     },
   });
+});
+
+world?.beforeEvents?.itemComponentBeforeDurabilityDamage?.subscribe?.((event) => {
+  const stack = event?.itemStack;
+  if (!stack?.typeId || !stack.typeId.startsWith("utilitycraft:") || !stack.typeId.endsWith(CHISEL_ID_SUFFIX)) {
+    return;
+  }
+  event.cancel = true;
 });

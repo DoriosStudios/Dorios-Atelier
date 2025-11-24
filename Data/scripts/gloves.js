@@ -21,7 +21,6 @@ const FACE_OFFSETS = {
 
 const MIN_RANGE = 5
 
-// Distâncias por luva (mapa local)
 const GLOVE_MAX_DISTANCE = new Map([
 	['utilitycraft:wooden_glove', 8],
 	['utilitycraft:stone_glove', 10],
@@ -29,34 +28,75 @@ const GLOVE_MAX_DISTANCE = new Map([
 	['utilitycraft:iron_glove', 16],
 	['utilitycraft:golden_glove', 20],
 	['utilitycraft:diamond_glove', 24],
-	['utilitycraft:netherite_glove', 32],
+	['utilitycraft:netherite_glove', 32]
 ])
 
-world.afterEvents.itemUse.subscribe(event => {
-	const { source, itemStack } = event
-	if (!source || source.typeId !== 'minecraft:player') return
-	if (!itemStack) return
+const GLOVE_PLACE_SOUND = 'item.armor.equip_leather'
 
-	const player = source
+const getEquipment = (player, slot) => {
+	const equippable = player.getComponent?.('minecraft:equippable')
+	if (equippable?.getEquipment) {
+		return equippable.getEquipment(slot)
+	}
+	if (typeof player.getEquipment === 'function') {
+		return player.getEquipment(slot)
+	}
+	return undefined
+}
+
+const getSelectedSlot = player =>
+	typeof player.selectedSlot === 'number'
+		? player.selectedSlot
+		: (typeof player.selectedSlotIndex === 'number' ? player.selectedSlotIndex : undefined)
+
+const consumeItem = (player, typeId) => {
+	const container = player.getComponent?.('minecraft:inventory')?.container
+	if (!container) return false
+
+	const trySlot = index => {
+		if (index === undefined) return false
+		const stack = container.getItem(index)
+		if (!stack || stack.typeId !== typeId) return false
+		stack.amount -= 1
+		if (stack.amount > 0) {
+			container.setItem(index, stack)
+		} else {
+			container.setItem(index, undefined)
+		}
+		return true
+	}
+
+	const selected = getSelectedSlot(player)
+	if (trySlot(selected)) return true
+
+	for (let i = 0; i < container.size; i += 1) {
+		if (i === selected) continue
+		if (trySlot(i)) return true
+	}
+
+	return false
+}
+
+const distanceBetween = (a, b) =>
+	DoriosAPI?.math?.distanceBetween
+		? DoriosAPI.math.distanceBetween(a, b)
+		: Math.hypot(a.x - b.x, a.y - b.y, a.z - b.z)
+
+world.afterEvents.itemUse.subscribe(event => {
+	const { source: player, itemStack } = event
+	if (!player || player.typeId !== 'minecraft:player' || !itemStack) return
+
 	const offhand = player.getEquipment?.('Offhand') ?? player.getComponent?.('equippable')?.getEquipment('Offhand')
 	if (!offhand || !GLOVE_OFFHAND_IDS.has(offhand.typeId)) return
 
-	// Usando mapa local para definir maxDistance
-	let maxDistance = GLOVE_MAX_DISTANCE.get(offhand.typeId) ?? 8
-
+	const maxDistance = GLOVE_MAX_DISTANCE.get(offhand.typeId) ?? 8
 	const hit = player.getBlockFromViewDirection({ maxDistance })
 	if (!hit?.block) return
 
 	const offset = FACE_OFFSETS[hit.face]
 	if (!offset) return
 
-	const distance = DoriosAPI?.math?.distanceBetween
-		? DoriosAPI.math.distanceBetween(player.location, hit.block.location)
-		: Math.hypot(
-			player.location.x - hit.block.location.x,
-			player.location.y - hit.block.location.y,
-			player.location.z - hit.block.location.z
-		)
+	const distance = distanceBetween(player.location, hit.block.location)
 	if (distance < MIN_RANGE || distance > maxDistance) return
 
 	let permutation
@@ -72,12 +112,8 @@ world.afterEvents.itemUse.subscribe(event => {
 		z: hit.block.location.z + offset.z
 	}
 
-	const dimension = hit.block.dimension
-	const targetBlock = dimension.getBlock(targetPos)
-	if (!targetBlock) return
-
-	// Abort if target already matches the desired block type
-	if (targetBlock.typeId === itemStack.typeId) return
+	const targetBlock = hit.block.dimension.getBlock(targetPos)
+	if (!targetBlock || targetBlock.typeId === itemStack.typeId) return
 
 	try {
 		targetBlock.setPermutation(permutation)
@@ -85,26 +121,22 @@ world.afterEvents.itemUse.subscribe(event => {
 		return
 	}
 
+	try {
+		const location = {
+			x: targetPos.x + 0.5,
+			y: targetPos.y + 0.5,
+			z: targetPos.z + 0.5
+		}
+		targetBlock.dimension?.playSound?.(GLOVE_PLACE_SOUND, location, { volume: 0.7, pitch: 1 })
+	} catch {
+		try {
+			player.playSound?.(GLOVE_PLACE_SOUND)
+		} catch {}
+	}
+
 	const gameMode = player.getGameMode?.()
 	const isCreative = player.isInCreative?.() ?? (typeof gameMode === 'string' && gameMode.toLowerCase() === 'creative')
 	if (isCreative) return
 
-	const inventoryComp = player.getComponent?.('minecraft:inventory')
-	const container = inventoryComp?.container
-	if (!container) return
-
-	const slot = player.selectedSlotIndex ?? 0
-	const current = container.getItem(slot)
-
-	if (current?.typeId === itemStack.typeId) {
-		if (current.amount > 1) {
-			current.amount -= 1
-			container.setItem(slot, current)
-		} else {
-			container.setItem(slot, undefined)
-		}
-		return
-	}
-
-	player.removeItem?.(itemStack.typeId, 1)
+	consumeItem(player, itemStack.typeId)
 })

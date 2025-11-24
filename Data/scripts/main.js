@@ -1,4 +1,5 @@
+import './doriosAPI/main.js'
+// import './durability.js'
 import './gloves.js'
 import './chisel.js'
 import './variants.js'
-import './doriosAPI/main.js'
