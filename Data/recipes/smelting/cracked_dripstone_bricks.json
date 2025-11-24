@@ -1,6 +1,6 @@
 {
-    "format_version": "1.21.100",
-    "minecraft:recipe_smelting": {
+    "format_version": "1.20.80",
+    "minecraft:recipe_furnace": {
         "description": {
             "identifier": "utilitycraft:smelt_cracked_dripstone_bricks"
         },

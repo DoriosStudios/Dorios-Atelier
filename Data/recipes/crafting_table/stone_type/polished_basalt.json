@@ -8,17 +8,19 @@
             "crafting_table"
         ],
         "ingredients": [
-            { "item": "minecraft:basalt" },
-            { "item": "minecraft:basalt" },
-            { "item": "minecraft:basalt" },
-            { "item": "minecraft:basalt" }
+            {
+                "item": "minecraft:basalt",
+                "count": 4
+            }
         ],
         "result": {
             "item": "minecraft:polished_basalt",
             "count": 4
         },
         "unlock": [
-            { "item": "minecraft:basalt" }
+            {
+                "item": "minecraft:basalt"
+            }
         ]
     }
 }

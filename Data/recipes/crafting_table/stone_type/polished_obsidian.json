@@ -8,10 +8,10 @@
             "crafting_table"
         ],
         "ingredients": [
-            { "item": "minecraft:obsidian" },
-            { "item": "minecraft:obsidian" },
-            { "item": "minecraft:obsidian" },
-            { "item": "minecraft:obsidian" }
+            { 
+                "item": "minecraft:obsidian",
+                "count": 4 
+            }
         ],
         "result": {
             "item": "utilitycraft:polished_obsidian",

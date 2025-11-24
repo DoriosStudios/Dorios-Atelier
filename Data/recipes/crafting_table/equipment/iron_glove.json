@@ -1,0 +1,28 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "utilitycraft:craft_iron_glove"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "ingredients": [
+            {
+                "item": "utilitycraft:copper_glove"
+            },
+            {
+                "item": "minecraft:iron_ingot",
+                "count": 2
+            }
+        ],
+        "result": {
+            "item": "utilitycraft:iron_glove"
+        },
+        "unlock": [
+            {
+                "item": "utilitycraft:copper_glove"
+            }
+        ]
+    }
+}
