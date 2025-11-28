@@ -14,7 +14,12 @@
       "utilitycraft:glove": {
         "max_distance": 12
       },
-      "minecraft:allow_off_hand": true
+      "minecraft:allow_off_hand": true,
+      "minecraft:tags": {
+        "tags": [
+          "utilitycraft:is_glove"
+        ]
+      }
     }
   }
 }

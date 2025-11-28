@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.utilitycraft.gloves.invisible": {
+			"loop": true,
+			"bones": {
+				"rightItem": {
+					"scale": 0
+				},
+				"leftItem": {
+					"scale": 0
+				}
+			}
+		}
+	}
+}

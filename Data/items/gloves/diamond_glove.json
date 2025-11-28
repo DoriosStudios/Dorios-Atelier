@@ -15,7 +15,12 @@
         "max_distance": 24 
       },
       "minecraft:allow_off_hand": true,
-      "tag:minecraft:transformable_items": {}
+      "tag:minecraft:transformable_items": {},
+      "minecraft:tags": {
+        "tags": [
+          "utilitycraft:is_glove"
+        ]
+      }
     }
   }
 }

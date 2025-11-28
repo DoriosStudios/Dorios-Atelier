@@ -3,7 +3,9 @@
     "minecraft:attachable": {
         "description": {
             "identifier": "utilitycraft:copper_glove",
-            "render_controllers": ["controller.render.utilitycraft_glove"],
+            "render_controllers": [
+                "controller.render.utilitycraft_glove"
+            ],
             "materials": {
                 "default": "entity_alphatest",
                 "enchanted": "entity_alphatest_glint"
@@ -16,7 +18,15 @@
                 "default": "geometry.utilitycraft.gloves",
                 "first_person": "geometry.utilitycraft.gloves_first_person"
             },
+            "animations": {
+                "invisible": "animation.utilitycraft.gloves.invisible"
+            },
             "scripts": {
+                "animate": [
+                    {
+                        "invisible": "c.is_first_person && q.is_item_equipped('main_hand')"
+                    }
+                ],
                 "pre_animation": [
                     "variable.is_first_person = query.is_first_person;"
                 ]
@@ -24,3 +34,4 @@
         }
     }
 }
+// && !q.equipped_item_any_tag('slot.weapon.mainhand', 'utilitycraft:is_glove')
