@@ -16,7 +16,15 @@
                 "default": "geometry.utilitycraft.gloves",
                 "first_person": "geometry.utilitycraft.gloves_first_person"
             },
+            "animations": {
+                "invisible": "animation.utilitycraft.gloves.invisible"
+            },
             "scripts": {
+                "animate": [
+                    {
+                        "invisible": "c.is_first_person && q.is_item_equipped('main_hand') && !q.equipped_item_any_tag('slot.weapon.mainhand', 'utilitycraft:is_glove')"
+                    }
+                ],
                 "pre_animation": [
                     "variable.is_first_person = query.is_first_person;"
                 ]

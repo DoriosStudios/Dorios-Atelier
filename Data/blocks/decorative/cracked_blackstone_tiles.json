@@ -14,7 +14,8 @@
             "minecraft:material_instances": {
                 "*": {
                     "texture": "utilitycraft_cracked_blackstone_tiles",
-                    "render_method": "opaque"
+                    "render_method": "opaque",
+                    "ambiente_occlusion": true
                 }
             },
             "minecraft:destructible_by_mining": {

@@ -1,0 +1,35 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "utilitycraft:craft_netherite_chisel_v2"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "  P",
+            " S ",
+            "D  "
+        ],
+        "key": {
+            "P": {
+                "item": "minecraft:netherite_ingot"
+            },
+            "S": {
+                "item": "minecraft:stick"
+            },
+            "D": {
+                "item": "minecraft:black_dye"
+            }
+        },
+        "result": {
+            "item": "utilitycraft:netherite_chisel"
+        },
+        "unlock": [
+            {
+                "item": "minecraft:netherite_ingot"
+            }
+        ]
+    }
+}

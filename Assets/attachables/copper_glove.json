@@ -24,7 +24,7 @@
             "scripts": {
                 "animate": [
                     {
-                        "invisible": "c.is_first_person && q.is_item_equipped('main_hand')"
+                        "invisible": "c.is_first_person && q.is_item_equipped('main_hand') && !q.equipped_item_any_tag('slot.weapon.mainhand', 'utilitycraft:is_glove')"
                     }
                 ],
                 "pre_animation": [
@@ -34,4 +34,4 @@
         }
     }
 }
-// && !q.equipped_item_any_tag('slot.weapon.mainhand', 'utilitycraft:is_glove')
+// 

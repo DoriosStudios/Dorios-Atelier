@@ -57,11 +57,11 @@ const consumeItem = (player, typeId) => {
 		if (index === undefined) return false
 		const stack = container.getItem(index)
 		if (!stack || stack.typeId !== typeId) return false
-		stack.amount -= 1
-		if (stack.amount > 0) {
-			container.setItem(index, stack)
+		if (stack.amount <= 1) {
+			container.setItem(index)
 		} else {
-			container.setItem(index, undefined)
+			stack.amount -= 1
+			container.setItem(index, stack)
 		}
 		return true
 	}

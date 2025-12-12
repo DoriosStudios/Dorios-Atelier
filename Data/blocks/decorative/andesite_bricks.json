@@ -9,12 +9,13 @@
         },
         "components": {
             "minecraft:geometry": "geometry.utilitycraft_block",
-            "minecraft:light_dampening": 15,
+            "minecraft:light_dampening": 0,
             "minecraft:light_emission": 0,
             "minecraft:material_instances": {
                 "*": {
                     "texture": "utilitycraft_andesite_bricks",
-                    "material": "opaque"
+                    "material": "opaque",
+                    "ambient_occlusion": true
                 }
             },
             "minecraft:destructible_by_mining": {

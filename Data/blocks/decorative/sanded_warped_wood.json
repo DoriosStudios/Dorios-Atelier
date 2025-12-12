@@ -15,7 +15,8 @@
             "minecraft:material_instances": {
                 "*": {
                     "texture": "utilitycraft_sanded_warped_wood",
-                    "render_method": "opaque"
+                    "render_method": "opaque",
+                    "ambiente_occlusion": true
                 }
             },
             "minecraft:destructible_by_mining": {

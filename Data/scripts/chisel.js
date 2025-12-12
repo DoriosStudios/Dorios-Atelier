@@ -103,6 +103,13 @@ function findEntryForBlockId(blockId) {
     const cycle = CYCLES[ci];
     if (!parsedTokens.includes(cycle.material)) continue;
 
+    // Evita encaixar blocos que só compartilham o token de material (ex: "acacia_planks" caindo no ciclo de troncos).
+    const tokensWithoutMaterial = parsedTokens.filter((t) => t !== cycle.material);
+    const hasNonMaterialOverlap = tokensWithoutMaterial.some((t) =>
+      cycle.states.some((st) => st.toks.includes(t))
+    );
+    if (!hasNonMaterialOverlap) continue;
+
     const toksCopy = parsedTokens.slice();
     toksCopy.splice(toksCopy.indexOf(cycle.material), 1);
     const parsedVariant = toksCopy.length ? toksCopy.join("_") : "base";
@@ -124,6 +131,7 @@ function findEntryForBlockId(blockId) {
     const cycle = CYCLES[ci];
     let shared = false;
     for (const t of parsedTokens) {
+      if (t === cycle.material) continue; // não casar só pelo material
       for (const st of cycle.states) {
         if (st.toks.includes(t)) {
           shared = true;

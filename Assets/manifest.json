@@ -2,12 +2,12 @@
 	"format_version": 2,
 	"header": {
 		"name": "Dorios' Atelier",
-		"description": "1.0.0 §6Dorios Studios§8",
+		"description": "1.0.1 §6Dorios Studios§8",
 		"uuid": "b5d1f818-45f2-4c50-8e0b-c3d87588687f",
 		"version": [
 			1,
 			0,
-			0
+			1
 		],
 		"min_engine_version": [
 			1,
@@ -23,7 +23,7 @@
 			"version": [
 				1,
 				0,
-				0
+				1
 			]
 		}
 	],
@@ -33,7 +33,7 @@
 			"version": [
 				1,
 				0,
-				0
+				1
 			]
 		}
 	]
