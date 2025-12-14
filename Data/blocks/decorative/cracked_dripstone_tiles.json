@@ -8,14 +8,15 @@
             }
         },
         "components": {
-            "minecraft:geometry": "geometry.utilitycraft_block",
+            "minecraft:geometry": "minecraft:geometry.full_block",
             "minecraft:light_dampening": 15,
             "minecraft:light_emission": 0,
             "minecraft:material_instances": {
                 "*": {
                     "texture": "utilitycraft_cracked_dripstone_tiles",
                     "render_method": "opaque",
-                    "ambiente_occlusion": true
+                    "ambient_occlusion": true,
+                    "face_dimming": true
                 }
             },
             "minecraft:destructible_by_mining": {

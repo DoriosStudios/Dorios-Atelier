@@ -15,15 +15,12 @@ const BASE_CYCLES = [
     "utilitycraft:basalt_bricks",
     "utilitycraft:basalt_tiles",
     "utilitycraft:chiseled_basalt",
-    "utilitycraft:carved_basalt",
-    "utilitycraft:chiseled_basalt_bricks",
-    "utilitycraft:chiseled_basalt_tiles"
+    "utilitycraft:carved_basalt"
   ],
   [
     // Blackstone
     "minecraft:polished_blackstone",
     "minecraft:polished_blackstone_bricks",
-    "utilitycraft:blackstone_bricks",
     "utilitycraft:blackstone_tiles",
     "utilitycraft:chiseled_blackstone"
   ],
@@ -169,6 +166,5 @@ export const BLOCK_ALIAS = new Map([
   ["minecraft:tuff_bricks", "utilitycraft:tuff_bricks"],
   ["minecraft:tuff_tiles", "utilitycraft:tuff_tiles"],
   ["minecraft:chiseled_tuff", "utilitycraft:chiseled_tuff"],
-  ["minecraft:polished_blackstone_bricks", "utilitycraft:blackstone_bricks"],
   ["minecraft:chiseled_polished_blackstone", "utilitycraft:chiseled_blackstone"]
 ]);

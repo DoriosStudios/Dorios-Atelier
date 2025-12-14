@@ -9,18 +9,19 @@
             }
         },
         "components": {
-            "minecraft:geometry": "geometry.utilitycraft_block",
+            "minecraft:geometry": "minecraft:geometry.full_block",
             "minecraft:light_dampening": 15,
             "minecraft:light_emission": 0,
             "minecraft:material_instances": {
                 "*": {
                     "texture": "utilitycraft_sanded_pale_oak_wood",
                     "render_method": "opaque",
-                    "ambiente_occlusion": true
+                    "ambient_occlusion": true,
+                    "face_dimming": true
                 }
             },
             "minecraft:destructible_by_mining": {
-                "seconds_to_destroy": 1.0
+                "seconds_to_destroy": 1
             },
             "tag:minecraft:is_axe_item_destructible": {},
             "tag:wood": {}
