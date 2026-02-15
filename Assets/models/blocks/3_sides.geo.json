@@ -6,7 +6,7 @@
 				"identifier": "geometry.utilitycraft_3_sides",
 				"texture_width": 48,
 				"texture_height": 16,
-				"visible_bounds_width": 3,
+				"visible_bounds_width": 2,
 				"visible_bounds_height": 2.5,
 				"visible_bounds_offset": [0, 0.75, 0]
 			},

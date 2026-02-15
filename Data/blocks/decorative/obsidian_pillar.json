@@ -9,14 +9,10 @@
         },
         "components": {
             "minecraft:geometry": "geometry.utilitycraft_pillar",
-            "minecraft:light_dampening": 15,
-            "minecraft:light_emission": 0,
             "minecraft:material_instances": {
                 "*": {
                     "texture": "utilitycraft_obsidian_pillar",
-                    "ambient_occlusion": true,
-                    "face_dimming": true,
-                    "render_method": "opaque"
+                    "render_method": "alpha_test"
                 }
             },
             "minecraft:destructible_by_mining": {

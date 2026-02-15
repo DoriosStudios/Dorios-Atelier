@@ -12,8 +12,7 @@
             "minecraft:material_instances": {
                 "*": {
                     "texture": "utilitycraft_chiseled_granite_bricks",
-                    "render_method": "opaque",
-                    "ambiente_occlusion": true
+                    "render_method": "opaque"
                 }
             },
             "minecraft:destructible_by_mining": {
