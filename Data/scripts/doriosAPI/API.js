@@ -556,7 +556,7 @@ globalThis.DoriosAPI = {
                     transferred = item.maxAmount;
                 } else if (typeof added === "number" && added > 0) {
                     if (item.amount - added <= 0) {
-                        sourceInv.setItem(slot,);
+                        sourceInv.setItem(slot, undefined);
                     } else {
                         item.amount -= added
                         sourceInv.setItem(slot, item);
