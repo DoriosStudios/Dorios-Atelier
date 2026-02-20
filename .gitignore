@@ -219,4 +219,7 @@ bridge/
 
 # Local tooling
 .vscode/
+!.vscode/
+.vscode/*
+!.vscode/tasks.json
 builds/_unpacked/
