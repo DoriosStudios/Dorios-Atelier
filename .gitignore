@@ -223,3 +223,7 @@ bridge/
 .vscode/*
 !.vscode/tasks.json
 builds/_unpacked/
+
+builds/
+.builds
+builds/*
