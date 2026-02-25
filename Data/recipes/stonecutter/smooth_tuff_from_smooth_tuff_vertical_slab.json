@@ -1,0 +1,28 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "utilitycraft:sc_smooth_tuff_from_smooth_tuff_vertical_slab"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "utilitycraft:smooth_tuff_vertical_slab"
+            },
+            {
+                "item": "utilitycraft:smooth_tuff_vertical_slab"
+            }
+        ],
+        "result": {
+            "item": "utilitycraft:smooth_tuff",
+            "count": 1
+        },
+        "unlock": [
+            {
+                "item": "utilitycraft:smooth_tuff_vertical_slab"
+            }
+        ]
+    }
+}

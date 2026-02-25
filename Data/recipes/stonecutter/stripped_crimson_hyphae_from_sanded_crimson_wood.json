@@ -1,0 +1,12 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "utilitycraft:sc_stripped_crimson_hyphae_from_sanded_crimson_wood"
+        },
+        "tags": ["stonecutter"],
+        "ingredients": [{ "item": "utilitycraft:sanded_crimson_wood" }],
+        "result": { "item": "minecraft:stripped_crimson_hyphae", "count": 1 },
+        "unlock": [{ "item": "utilitycraft:sanded_crimson_wood" }]
+    }
+}

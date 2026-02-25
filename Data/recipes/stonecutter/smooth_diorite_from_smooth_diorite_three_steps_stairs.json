@@ -1,0 +1,25 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "utilitycraft:sc_smooth_diorite_from_smooth_diorite_three_steps_stairs"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "utilitycraft:smooth_diorite_three_steps_stairs"
+            }
+        ],
+        "result": {
+            "item": "utilitycraft:smooth_diorite",
+            "count": 1
+        },
+        "unlock": [
+            {
+                "item": "utilitycraft:smooth_diorite_three_steps_stairs"
+            }
+        ]
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "utilitycraft:sc_andesite_bricks_from_andesite_bricks_vertical_slab"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "utilitycraft:andesite_bricks_vertical_slab"
+            },
+            {
+                "item": "utilitycraft:andesite_bricks_vertical_slab"
+            }
+        ],
+        "result": {
+            "item": "utilitycraft:andesite_bricks",
+            "count": 1
+        },
+        "unlock": [
+            {
+                "item": "utilitycraft:andesite_bricks_vertical_slab"
+            }
+        ]
+    }
+}

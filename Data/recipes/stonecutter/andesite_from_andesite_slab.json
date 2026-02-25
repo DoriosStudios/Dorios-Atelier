@@ -1,0 +1,28 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "utilitycraft:sc_andesite_from_andesite_slab"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "utilitycraft:andesite_slab"
+            },
+            {
+                "item": "utilitycraft:andesite_slab"
+            }
+        ],
+        "result": {
+            "item": "utilitycraft:andesite",
+            "count": 1
+        },
+        "unlock": [
+            {
+                "item": "utilitycraft:andesite_slab"
+            }
+        ]
+    }
+}

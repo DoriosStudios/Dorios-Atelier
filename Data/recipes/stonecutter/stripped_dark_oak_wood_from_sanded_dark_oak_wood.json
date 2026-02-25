@@ -1,0 +1,12 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "utilitycraft:sc_stripped_dark_oak_wood_from_sanded_dark_oak_wood"
+        },
+        "tags": ["stonecutter"],
+        "ingredients": [{ "item": "utilitycraft:sanded_dark_oak_wood" }],
+        "result": { "item": "minecraft:stripped_dark_oak_wood", "count": 1 },
+        "unlock": [{ "item": "utilitycraft:sanded_dark_oak_wood" }]
+    }
+}

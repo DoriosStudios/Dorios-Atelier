@@ -1,0 +1,25 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "utilitycraft:sc_polished_andesite_from_polished_andesite_stairs"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "utilitycraft:polished_andesite_stairs"
+            }
+        ],
+        "result": {
+            "item": "utilitycraft:polished_andesite",
+            "count": 1
+        },
+        "unlock": [
+            {
+                "item": "utilitycraft:polished_andesite_stairs"
+            }
+        ]
+    }
+}

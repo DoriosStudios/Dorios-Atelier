@@ -1,0 +1,12 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "utilitycraft:sc_stripped_acacia_wood_from_sanded_acacia_wood"
+        },
+        "tags": ["stonecutter"],
+        "ingredients": [{ "item": "utilitycraft:sanded_acacia_wood" }],
+        "result": { "item": "minecraft:stripped_acacia_wood", "count": 1 },
+        "unlock": [{ "item": "utilitycraft:sanded_acacia_wood" }]
+    }
+}

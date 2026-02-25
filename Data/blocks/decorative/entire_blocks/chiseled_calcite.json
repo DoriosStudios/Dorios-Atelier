@@ -1,0 +1,20 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:block": {
+        "description": {
+            "identifier": "utilitycraft:chiseled_calcite",
+            "menu_category": {
+                "category": "construction"
+            }
+        },
+        "components": {
+            "minecraft:geometry": "minecraft:geometry.full_block",
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 1.6
+            },
+            "tag:minecraft:is_pickaxe_item_destructible": {},
+            "tag:minecraft:stone_tier_destructible": {},
+            "tag:stone": {}
+        }
+    }
+}

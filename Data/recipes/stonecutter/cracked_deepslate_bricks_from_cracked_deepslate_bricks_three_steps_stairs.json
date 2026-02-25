@@ -1,0 +1,25 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "utilitycraft:sc_cracked_deepslate_bricks_from_cracked_deepslate_bricks_three_steps_stairs"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "utilitycraft:cracked_deepslate_bricks_three_steps_stairs"
+            }
+        ],
+        "result": {
+            "item": "utilitycraft:cracked_deepslate_bricks",
+            "count": 1
+        },
+        "unlock": [
+            {
+                "item": "utilitycraft:cracked_deepslate_bricks_three_steps_stairs"
+            }
+        ]
+    }
+}

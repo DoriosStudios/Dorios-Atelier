@@ -1,0 +1,25 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "utilitycraft:sc_packed_mud_slab_from_packed_mud"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "utilitycraft:packed_mud"
+            }
+        ],
+        "result": {
+            "item": "utilitycraft:packed_mud_slab",
+            "count": 2
+        },
+        "unlock": [
+            {
+                "item": "utilitycraft:packed_mud"
+            }
+        ]
+    }
+}

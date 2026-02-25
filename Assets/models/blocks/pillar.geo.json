@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.utilitycraft_pillar",
+				"identifier": "geometry.dorios_atelier.pillar",
 				"texture_width": 32,
 				"texture_height": 16,
 				"visible_bounds_width": 3,

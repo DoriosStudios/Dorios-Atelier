@@ -1,0 +1,25 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "utilitycraft:sc_polished_obsidian_from_polished_obsidian_stairs"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "utilitycraft:polished_obsidian_stairs"
+            }
+        ],
+        "result": {
+            "item": "utilitycraft:polished_obsidian",
+            "count": 1
+        },
+        "unlock": [
+            {
+                "item": "utilitycraft:polished_obsidian_stairs"
+            }
+        ]
+    }
+}

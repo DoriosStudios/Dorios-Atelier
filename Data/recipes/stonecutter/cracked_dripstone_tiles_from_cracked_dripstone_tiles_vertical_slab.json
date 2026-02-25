@@ -1,0 +1,28 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "utilitycraft:sc_cracked_dripstone_tiles_from_cracked_dripstone_tiles_vertical_slab"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "utilitycraft:cracked_dripstone_tiles_vertical_slab"
+            },
+            {
+                "item": "utilitycraft:cracked_dripstone_tiles_vertical_slab"
+            }
+        ],
+        "result": {
+            "item": "utilitycraft:cracked_dripstone_tiles",
+            "count": 1
+        },
+        "unlock": [
+            {
+                "item": "utilitycraft:cracked_dripstone_tiles_vertical_slab"
+            }
+        ]
+    }
+}

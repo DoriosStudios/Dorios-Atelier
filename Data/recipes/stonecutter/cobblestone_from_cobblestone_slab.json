@@ -1,0 +1,28 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "utilitycraft:sc_cobblestone_from_cobblestone_slab"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "utilitycraft:cobblestone_slab"
+            },
+            {
+                "item": "utilitycraft:cobblestone_slab"
+            }
+        ],
+        "result": {
+            "item": "utilitycraft:cobblestone",
+            "count": 1
+        },
+        "unlock": [
+            {
+                "item": "utilitycraft:cobblestone_slab"
+            }
+        ]
+    }
+}

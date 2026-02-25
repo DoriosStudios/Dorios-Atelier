@@ -1,0 +1,28 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "utilitycraft:sc_diorite_from_diorite_vertical_slab"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "utilitycraft:diorite_vertical_slab"
+            },
+            {
+                "item": "utilitycraft:diorite_vertical_slab"
+            }
+        ],
+        "result": {
+            "item": "utilitycraft:diorite",
+            "count": 1
+        },
+        "unlock": [
+            {
+                "item": "utilitycraft:diorite_vertical_slab"
+            }
+        ]
+    }
+}

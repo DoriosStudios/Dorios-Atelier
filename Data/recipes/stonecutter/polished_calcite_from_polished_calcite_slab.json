@@ -1,0 +1,28 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "utilitycraft:sc_polished_calcite_from_polished_calcite_slab"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "utilitycraft:polished_calcite_slab"
+            },
+            {
+                "item": "utilitycraft:polished_calcite_slab"
+            }
+        ],
+        "result": {
+            "item": "utilitycraft:polished_calcite",
+            "count": 1
+        },
+        "unlock": [
+            {
+                "item": "utilitycraft:polished_calcite_slab"
+            }
+        ]
+    }
+}

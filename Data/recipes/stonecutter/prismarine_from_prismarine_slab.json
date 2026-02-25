@@ -1,0 +1,28 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "utilitycraft:sc_prismarine_from_prismarine_slab"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "utilitycraft:prismarine_slab"
+            },
+            {
+                "item": "utilitycraft:prismarine_slab"
+            }
+        ],
+        "result": {
+            "item": "utilitycraft:prismarine",
+            "count": 1
+        },
+        "unlock": [
+            {
+                "item": "utilitycraft:prismarine_slab"
+            }
+        ]
+    }
+}

@@ -9,8 +9,6 @@
             "blast_furnace"
         ],
         "input": "utilitycraft:andesite_bricks",
-        "output": "utilitycraft:cracked_andesite_bricks",
-        "cookingtime": 200,
-        "experience": 0.1
+        "output": "utilitycraft:cracked_andesite_bricks"
     }
 }

@@ -1,0 +1,28 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "utilitycraft:sc_andesite_tiles_from_andesite_tiles_slab"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "utilitycraft:andesite_tiles_slab"
+            },
+            {
+                "item": "utilitycraft:andesite_tiles_slab"
+            }
+        ],
+        "result": {
+            "item": "utilitycraft:andesite_tiles",
+            "count": 1
+        },
+        "unlock": [
+            {
+                "item": "utilitycraft:andesite_tiles_slab"
+            }
+        ]
+    }
+}

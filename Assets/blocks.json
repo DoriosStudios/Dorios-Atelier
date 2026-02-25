@@ -1,73 +1,1739 @@
 {
     "format_version": "1.21.40",
-    "utilitycraft:andesite_bricks": { "sound": "stone", "textures": "utilitycraft_andesite_bricks" },
-    "utilitycraft:andesite_tiles": { "sound": "stone", "textures": "utilitycraft_andesite_tiles" },
-    "utilitycraft:basalt_bricks": { "sound": "basalt", "textures": "utilitycraft_basalt_bricks" },
-    "utilitycraft:basalt_tiles": { "sound": "basalt", "textures": "utilitycraft_basalt_tiles" },
-    "utilitycraft:blackstone_tiles": { "sound": "stone", "textures": "utilitycraft_blackstone_tiles" },
-    "utilitycraft:calcite_bricks": { "sound": "calcite", "textures": "utilitycraft_calcite_bricks" },
-    "utilitycraft:calcite_tiles": { "sound": "calcite", "textures": "utilitycraft_calcite_tiles" },
-    "utilitycraft:carved_basalt": { "sound": "basalt", "textures": "utilitycraft_carved_basalt" },
-    "utilitycraft:chiseled_andesite_bricks": { "sound": "stone", "textures": "utilitycraft_chiseled_andesite_bricks" },
-    "utilitycraft:chiseled_andesite": { "sound": "stone", "textures": "utilitycraft_chiseled_andesite" },
-    "utilitycraft:chiseled_basalt": { "sound": "basalt", "textures": "utilitycraft_chiseled_basalt" },
-    "utilitycraft:chiseled_blackstone": { "sound": "stone", "textures": "utilitycraft_chiseled_blackstone" },
-    "utilitycraft:chiseled_calcite_bricks": { "sound": "calcite", "textures": "utilitycraft_chiseled_calcite_bricks" },
-    "utilitycraft:chiseled_calcite": { "sound": "calcite", "textures": "utilitycraft_chiseled_calcite" },
-    "utilitycraft:chiseled_diorite_bricks": { "sound": "stone", "textures": "utilitycraft_chiseled_diorite_bricks" },
-    "utilitycraft:chiseled_diorite": { "sound": "stone", "textures": "utilitycraft_chiseled_diorite" },
-    "utilitycraft:chiseled_dripstone_bricks": { "sound": "dripstone_block", "textures": "utilitycraft_chiseled_dripstone_bricks" },
-    "utilitycraft:chiseled_dripstone": { "sound": "dripstone_block", "textures": "utilitycraft_chiseled_dripstone" },
-    "utilitycraft:chiseled_granite_bricks": { "sound": "stone", "textures": "utilitycraft_chiseled_granite_bricks" },
-    "utilitycraft:chiseled_granite": { "sound": "stone", "textures": "utilitycraft_chiseled_granite" },
-    "utilitycraft:cracked_andesite_bricks": { "sound": "stone", "textures": "utilitycraft_cracked_andesite_bricks" },
-    "utilitycraft:cracked_andesite_tiles": { "sound": "stone", "textures": "utilitycraft_cracked_andesite_tiles" },
-    "utilitycraft:cracked_basalt_bricks": { "sound": "basalt", "textures": "utilitycraft_cracked_basalt_bricks" },
-    "utilitycraft:cracked_basalt_tiles": { "sound": "basalt", "textures": "utilitycraft_cracked_basalt_tiles" },
-    "utilitycraft:cracked_blackstone_tiles": { "sound": "stone", "textures": "utilitycraft_cracked_blackstone_tiles" },
-    "utilitycraft:cracked_calcite_bricks": { "sound": "calcite", "textures": "utilitycraft_cracked_calcite_bricks" },
-    "utilitycraft:cracked_calcite_tiles": { "sound": "calcite", "textures": "utilitycraft_cracked_calcite_tiles" },
-    "utilitycraft:cracked_diorite_bricks": { "sound": "stone", "textures": "utilitycraft_cracked_diorite_bricks" },
-    "utilitycraft:cracked_diorite_tiles": { "sound": "stone", "textures": "utilitycraft_cracked_diorite_tiles" },
-    "utilitycraft:cracked_dripstone_bricks": { "sound": "dripstone_block", "textures": "utilitycraft_cracked_dripstone_bricks" },
-    "utilitycraft:cracked_dripstone_tiles": { "sound": "dripstone_block", "textures": "utilitycraft_cracked_dripstone_tiles" },
-    "utilitycraft:cracked_granite_bricks": { "sound": "stone", "textures": "utilitycraft_cracked_granite_bricks" },
-    "utilitycraft:cracked_granite_tiles": { "sound": "stone", "textures": "utilitycraft_cracked_granite_tiles" },
-    "utilitycraft:cracked_tuff_bricks": { "sound": "tuff_bricks", "textures": "utilitycraft_cracked_tuff_bricks" },
-    "utilitycraft:cracked_tuff_tiles": { "sound": "tuff_bricks", "textures": "utilitycraft_cracked_tuff_tiles" },
-    "utilitycraft:diorite_bricks": { "sound": "stone", "textures": "utilitycraft_diorite_bricks" },
-    "utilitycraft:diorite_tiles": { "sound": "stone", "textures": "utilitycraft_diorite_tiles" },
-    "utilitycraft:dripstone_bricks": { "sound": "dripstone_block", "textures": "utilitycraft_dripstone_bricks" },
-    "utilitycraft:dripstone_tiles": { "sound": "dripstone_block", "textures": "utilitycraft_dripstone_tiles" },
-    "utilitycraft:granite_bricks": { "sound": "stone", "textures": "utilitycraft_granite_bricks" },
-    "utilitycraft:granite_tiles": { "sound": "stone", "textures": "utilitycraft_granite_tiles" },
-    "utilitycraft:polished_calcite": { "sound": "calcite", "textures": "utilitycraft_polished_calcite" },
-    "utilitycraft:polished_dripstone": { "sound": "dripstone_block", "textures": "utilitycraft_polished_dripstone" },
-    "utilitycraft:smooth_andesite": { "sound": "stone", "textures": "utilitycraft_smooth_andesite" },
-    "utilitycraft:smooth_blackstone": { "sound": "stone", "textures": "utilitycraft_smooth_blackstone" },
-    "utilitycraft:smooth_calcite": { "sound": "calcite", "textures": "utilitycraft_smooth_calcite" },
-    "utilitycraft:smooth_diorite": { "sound": "stone", "textures": "utilitycraft_smooth_diorite" },
-    "utilitycraft:smooth_dripstone": { "sound": "dripstone_block", "textures": "utilitycraft_smooth_dripstone" },
-    "utilitycraft:smooth_granite": { "sound": "stone", "textures": "utilitycraft_smooth_granite" },
-    "utilitycraft:smooth_tuff": { "sound": "tuff", "textures": "utilitycraft_smooth_tuff" },
-    "utilitycraft:tuff_tiles": { "sound": "tuff", "textures": "utilitycraft_tuff_tiles" },
-    "utilitycraft:polished_obsidian": { "sound": "stone", "textures": "utilitycraft_polished_obsidian" },
-    "utilitycraft:obsidian_bricks": { "sound": "stone", "textures": "utilitycraft_obsidian_bricks" },
-    "utilitycraft:obsidian_tiles": { "sound": "stone", "textures": "utilitycraft_obsidian_tiles" },
-    "utilitycraft:chiseled_obsidian": { "sound": "stone", "textures": "utilitycraft_chiseled_obsidian" },
-    "utilitycraft:obsidian_pillar": { "sound": "stone", "textures": "utilitycraft_obsidian_pillar" },
-    "utilitycraft:glowing_obsidian": { "sound": "stone", "textures": "utilitycraft_glowing_obsidian" },
-    "utilitycraft:snowy_grass_block": { "sound": "snow", "textures": "utilitycraft_snowy_grass_block" },
-    "utilitycraft:sanded_acacia_wood": { "sound": "wood", "textures": "utilitycraft_sanded_acacia_wood" },
-    "utilitycraft:sanded_bamboo_wood": { "sound": "wood", "textures": "utilitycraft_sanded_bamboo_wood" },
-    "utilitycraft:sanded_birch_wood": { "sound": "wood", "textures": "utilitycraft_sanded_birch_wood" },
-    "utilitycraft:sanded_cherry_wood": { "sound": "wood", "textures": "utilitycraft_sanded_cherry_wood" },
-    "utilitycraft:sanded_crimson_wood": { "sound": "wood", "textures": "utilitycraft_sanded_crimson_wood" },
-    "utilitycraft:sanded_dark_oak_wood": { "sound": "wood", "textures": "utilitycraft_sanded_dark_oak_wood" },
-    "utilitycraft:sanded_jungle_wood": { "sound": "wood", "textures": "utilitycraft_sanded_jungle_wood" },
-    "utilitycraft:sanded_mangrove_wood": { "sound": "wood", "textures": "utilitycraft_sanded_mangrove_wood" },
-    "utilitycraft:sanded_oak_wood": { "sound": "wood", "textures": "utilitycraft_sanded_oak_wood" },
-    "utilitycraft:sanded_pale_oak_wood": { "sound": "wood", "textures": "utilitycraft_sanded_pale_oak_wood" },
-    "utilitycraft:sanded_spruce_wood": { "sound": "wood", "textures": "utilitycraft_sanded_spruce_wood" },
-    "utilitycraft:sanded_warped_wood": { "sound": "wood", "textures": "utilitycraft_sanded_warped_wood" }
+    "utilitycraft:andesite_bricks": {
+        "sound": "stone",
+        "textures": "utilitycraft_andesite_bricks"
+    },
+    "utilitycraft:andesite_tiles": {
+        "sound": "stone",
+        "textures": "utilitycraft_andesite_tiles"
+    },
+    "utilitycraft:andesite_tiles_slab": {
+        "sound": "stone",
+        "textures": "utilitycraft_andesite_tiles"
+    },
+    "utilitycraft:andesite_tiles_vertical_slab": {
+        "sound": "stone",
+        "textures": "utilitycraft_andesite_tiles"
+    },
+    "utilitycraft:andesite_tiles_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "utilitycraft_andesite_tiles"
+    },
+    "utilitycraft:andesite_tiles_stairs": {
+        "sound": "stone",
+        "textures": "utilitycraft_andesite_tiles"
+    },
+    "utilitycraft:basalt_bricks": {
+        "sound": "basalt",
+        "textures": "utilitycraft_basalt_bricks"
+    },
+    "utilitycraft:basalt_tiles": {
+        "sound": "basalt",
+        "textures": "utilitycraft_basalt_tiles"
+    },
+    "utilitycraft:basalt_tiles_slab": {
+        "sound": "basalt",
+        "textures": "utilitycraft_basalt_tiles"
+    },
+    "utilitycraft:basalt_tiles_vertical_slab": {
+        "sound": "basalt",
+        "textures": "utilitycraft_basalt_tiles"
+    },
+    "utilitycraft:basalt_tiles_three_steps_stairs": {
+        "sound": "basalt",
+        "textures": "utilitycraft_basalt_tiles"
+    },
+    "utilitycraft:blackstone_tiles": {
+        "sound": "stone",
+        "textures": "utilitycraft_blackstone_tiles"
+    },
+    "utilitycraft:calcite_bricks": {
+        "sound": "calcite",
+        "textures": "utilitycraft_calcite_bricks"
+    },
+    "utilitycraft:calcite_tiles": {
+        "sound": "calcite",
+        "textures": "utilitycraft_calcite_tiles"
+    },
+    "utilitycraft:carved_basalt": {
+        "sound": "basalt",
+        "textures": {
+            "up": "utilitycraft_carved_basalt_top",
+            "side": "utilitycraft_carved_basalt_side",
+            "down": "utilitycraft_carved_basalt_top"
+        }
+    },
+    "utilitycraft:chiseled_andesite_bricks": {
+        "sound": "stone",
+        "textures": {
+            "up": "utilitycraft_chiseled_andesite_bricks_top",
+            "side": "utilitycraft_chiseled_andesite_bricks_side",
+            "down": "utilitycraft_chiseled_andesite_bricks_top"
+        }
+    },
+    "utilitycraft:chiseled_andesite": {
+        "sound": "stone",
+        "textures": {
+            "up": "utilitycraft_chiseled_andesite_top",
+            "side": "utilitycraft_chiseled_andesite_side",
+            "down": "utilitycraft_chiseled_andesite_top"
+        }
+    },
+    "utilitycraft:chiseled_basalt": {
+        "sound": "basalt",
+        "textures": {
+            "up": "utilitycraft_chiseled_basalt_top",
+            "side": "utilitycraft_chiseled_basalt_side",
+            "down": "utilitycraft_chiseled_basalt_top"
+        }
+    },
+    "utilitycraft:chiseled_blackstone": {
+        "sound": "stone",
+        "textures": {
+            "up": "utilitycraft_chiseled_blackstone_top",
+            "side": "utilitycraft_chiseled_blackstone_side",
+            "down": "utilitycraft_chiseled_blackstone_top"
+        }
+    },
+    "utilitycraft:chiseled_calcite_bricks": {
+        "sound": "calcite",
+        "textures": {
+            "up": "utilitycraft_chiseled_calcite_bricks_top",
+            "side": "utilitycraft_chiseled_calcite_bricks_side",
+            "down": "utilitycraft_chiseled_calcite_bricks_top"
+        }
+    },
+    "utilitycraft:chiseled_calcite": {
+        "sound": "calcite",
+        "textures": {
+            "up": "utilitycraft_chiseled_calcite_top",
+            "side": "utilitycraft_chiseled_calcite_side",
+            "down": "utilitycraft_chiseled_calcite_top"
+        }
+    },
+    "utilitycraft:chiseled_diorite_bricks": {
+        "sound": "stone",
+        "textures": {
+            "up": "utilitycraft_chiseled_diorite_bricks_top",
+            "side": "utilitycraft_chiseled_diorite_bricks_side",
+            "down": "utilitycraft_chiseled_diorite_bricks_top"
+        }
+    },
+    "utilitycraft:chiseled_diorite": {
+        "sound": "stone",
+        "textures": {
+            "up": "utilitycraft_chiseled_diorite_top",
+            "side": "utilitycraft_chiseled_diorite_side",
+            "down": "utilitycraft_chiseled_diorite_top"
+        }
+    },
+    "utilitycraft:chiseled_dripstone_bricks": {
+        "sound": "dripstone_block",
+        "textures": {
+            "up": "utilitycraft_chiseled_dripstone_bricks_top",
+            "side": "utilitycraft_chiseled_dripstone_bricks_side",
+            "down": "utilitycraft_chiseled_dripstone_bricks_top"
+        }
+    },
+    "utilitycraft:chiseled_dripstone": {
+        "sound": "dripstone_block",
+        "textures": {
+            "up": "utilitycraft_chiseled_dripstone_top",
+            "side": "utilitycraft_chiseled_dripstone_side",
+            "down": "utilitycraft_chiseled_dripstone_top"
+        }
+    },
+    "utilitycraft:chiseled_granite_bricks": {
+        "sound": "stone",
+        "textures": {
+            "up": "utilitycraft_chiseled_granite_bricks_top",
+            "side": "utilitycraft_chiseled_granite_bricks_side",
+            "down": "utilitycraft_chiseled_granite_bricks_top"
+        }
+    },
+    "utilitycraft:chiseled_granite": {
+        "sound": "stone",
+        "textures": {
+            "up": "utilitycraft_chiseled_granite_top",
+            "side": "utilitycraft_chiseled_granite_side",
+            "down": "utilitycraft_chiseled_granite_top"
+        }
+    },
+    "utilitycraft:cracked_andesite_bricks": {
+        "sound": "stone",
+        "textures": "utilitycraft_cracked_andesite_bricks"
+    },
+    "utilitycraft:cracked_andesite_tiles": {
+        "sound": "stone",
+        "textures": "utilitycraft_cracked_andesite_tiles"
+    },
+    "utilitycraft:cracked_basalt_bricks": {
+        "sound": "basalt",
+        "textures": "utilitycraft_cracked_basalt_bricks"
+    },
+    "utilitycraft:cracked_basalt_tiles": {
+        "sound": "basalt",
+        "textures": "utilitycraft_cracked_basalt_tiles"
+    },
+    "utilitycraft:cracked_blackstone_tiles": {
+        "sound": "stone",
+        "textures": "utilitycraft_cracked_blackstone_tiles"
+    },
+    "utilitycraft:cracked_calcite_bricks": {
+        "sound": "calcite",
+        "textures": "utilitycraft_cracked_calcite_bricks"
+    },
+    "utilitycraft:cracked_calcite_tiles": {
+        "sound": "calcite",
+        "textures": "utilitycraft_cracked_calcite_tiles"
+    },
+    "utilitycraft:cracked_diorite_bricks": {
+        "sound": "stone",
+        "textures": "utilitycraft_cracked_diorite_bricks"
+    },
+    "utilitycraft:cracked_diorite_tiles": {
+        "sound": "stone",
+        "textures": "utilitycraft_cracked_diorite_tiles"
+    },
+    "utilitycraft:cracked_dripstone_bricks": {
+        "sound": "dripstone_block",
+        "textures": "utilitycraft_cracked_dripstone_bricks"
+    },
+    "utilitycraft:cracked_dripstone_tiles": {
+        "sound": "dripstone_block",
+        "textures": "utilitycraft_cracked_dripstone_tiles"
+    },
+    "utilitycraft:cracked_granite_bricks": {
+        "sound": "stone",
+        "textures": "utilitycraft_cracked_granite_bricks"
+    },
+    "utilitycraft:cracked_granite_tiles": {
+        "sound": "stone",
+        "textures": "utilitycraft_cracked_granite_tiles"
+    },
+    "utilitycraft:cracked_tuff_bricks": {
+        "sound": "tuff_bricks",
+        "textures": "utilitycraft_cracked_tuff_bricks"
+    },
+    "utilitycraft:cracked_tuff_tiles": {
+        "sound": "tuff_bricks",
+        "textures": "utilitycraft_cracked_tuff_tiles"
+    },
+    "utilitycraft:diorite_bricks": {
+        "sound": "stone",
+        "textures": "utilitycraft_diorite_bricks"
+    },
+    "utilitycraft:diorite_tiles": {
+        "sound": "stone",
+        "textures": "utilitycraft_diorite_tiles"
+    },
+    "utilitycraft:dripstone_bricks": {
+        "sound": "dripstone_block",
+        "textures": "utilitycraft_dripstone_bricks"
+    },
+    "utilitycraft:dripstone_tiles": {
+        "sound": "dripstone_block",
+        "textures": "utilitycraft_dripstone_tiles"
+    },
+    "utilitycraft:granite_bricks": {
+        "sound": "stone",
+        "textures": "utilitycraft_granite_bricks"
+    },
+    "utilitycraft:granite_tiles": {
+        "sound": "stone",
+        "textures": "utilitycraft_granite_tiles"
+    },
+    "utilitycraft:polished_calcite": {
+        "sound": "calcite",
+        "textures": "utilitycraft_polished_calcite"
+    },
+    "utilitycraft:polished_dripstone": {
+        "sound": "dripstone_block",
+        "textures": "utilitycraft_polished_dripstone"
+    },
+    "utilitycraft:smooth_andesite": {
+        "sound": "stone",
+        "textures": "utilitycraft_smooth_andesite"
+    },
+    "utilitycraft:smooth_blackstone": {
+        "sound": "stone",
+        "textures": "utilitycraft_smooth_blackstone"
+    },
+    "utilitycraft:smooth_calcite": {
+        "sound": "calcite",
+        "textures": "utilitycraft_smooth_calcite"
+    },
+    "utilitycraft:smooth_diorite": {
+        "sound": "stone",
+        "textures": "utilitycraft_smooth_diorite"
+    },
+    "utilitycraft:smooth_dripstone": {
+        "sound": "dripstone_block",
+        "textures": "utilitycraft_smooth_dripstone"
+    },
+    "utilitycraft:smooth_granite": {
+        "sound": "stone",
+        "textures": "utilitycraft_smooth_granite"
+    },
+    "utilitycraft:smooth_tuff": {
+        "sound": "tuff",
+        "textures": "utilitycraft_smooth_tuff"
+    },
+    "utilitycraft:tuff_tiles": {
+        "sound": "tuff",
+        "textures": "utilitycraft_tuff_tiles"
+    },
+    "utilitycraft:polished_obsidian": {
+        "sound": "stone",
+        "textures": "utilitycraft_polished_obsidian"
+    },
+    "utilitycraft:obsidian_bricks": {
+        "sound": "stone",
+        "textures": "utilitycraft_obsidian_bricks"
+    },
+    "utilitycraft:obsidian_tiles": {
+        "sound": "stone",
+        "textures": "utilitycraft_obsidian_tiles"
+    },
+    "utilitycraft:chiseled_obsidian": {
+        "sound": "stone",
+        "textures": {
+            "up": "utilitycraft_chiseled_obsidian_top",
+            "side": "utilitycraft_chiseled_obsidian_side",
+            "down": "utilitycraft_chiseled_obsidian_top"
+        }
+    },
+    "utilitycraft:obsidian_pillar": {
+        "sound": "stone",
+        "textures": {
+            "up": "utilitycraft_obsidian_pillar_top",
+            "side": "utilitycraft_obsidian_pillar_side",
+            "down": "utilitycraft_obsidian_pillar_top"
+        }
+    },
+    "utilitycraft:glowing_obsidian": {
+        "sound": "stone",
+        "textures": "utilitycraft_glowing_obsidian"
+    },
+    "utilitycraft:snowy_grass_block": {
+        "sound": "snow",
+        "textures": "utilitycraft_snowy_grass_block"
+    },
+    "utilitycraft:sanded_acacia_wood": {
+        "sound": "wood",
+        "textures": "utilitycraft_sanded_acacia_wood"
+    },
+    "utilitycraft:sanded_bamboo_wood": {
+        "sound": "wood",
+        "textures": "utilitycraft_sanded_bamboo_wood"
+    },
+    "utilitycraft:sanded_birch_wood": {
+        "sound": "wood",
+        "textures": "utilitycraft_sanded_birch_wood"
+    },
+    "utilitycraft:sanded_cherry_wood": {
+        "sound": "wood",
+        "textures": "utilitycraft_sanded_cherry_wood"
+    },
+    "utilitycraft:sanded_crimson_wood": {
+        "sound": "wood",
+        "textures": "utilitycraft_sanded_crimson_wood"
+    },
+    "utilitycraft:sanded_dark_oak_wood": {
+        "sound": "wood",
+        "textures": "utilitycraft_sanded_dark_oak_wood"
+    },
+    "utilitycraft:sanded_jungle_wood": {
+        "sound": "wood",
+        "textures": "utilitycraft_sanded_jungle_wood"
+    },
+    "utilitycraft:sanded_mangrove_wood": {
+        "sound": "wood",
+        "textures": "utilitycraft_sanded_mangrove_wood"
+    },
+    "utilitycraft:sanded_oak_wood": {
+        "sound": "wood",
+        "textures": "utilitycraft_sanded_oak_wood"
+    },
+    "utilitycraft:sanded_pale_oak_wood": {
+        "sound": "wood",
+        "textures": "utilitycraft_sanded_pale_oak_wood"
+    },
+    "utilitycraft:sanded_spruce_wood": {
+        "sound": "wood",
+        "textures": "utilitycraft_sanded_spruce_wood"
+    },
+    "utilitycraft:sanded_warped_wood": {
+        "sound": "wood",
+        "textures": "utilitycraft_sanded_warped_wood"
+    },
+    "utilitycraft:andesite_bricks_slab": {
+        "sound": "stone",
+        "textures": "utilitycraft_andesite_bricks"
+    },
+    "utilitycraft:andesite_bricks_stairs": {
+        "sound": "stone",
+        "textures": "utilitycraft_andesite_bricks"
+    },
+    "utilitycraft:basalt_bricks_slab": {
+        "sound": "basalt",
+        "textures": "utilitycraft_basalt_bricks"
+    },
+    "utilitycraft:basalt_bricks_stairs": {
+        "sound": "basalt",
+        "textures": "utilitycraft_basalt_bricks"
+    },
+    "utilitycraft:calcite_bricks_slab": {
+        "sound": "calcite",
+        "textures": "utilitycraft_calcite_bricks"
+    },
+    "utilitycraft:calcite_bricks_stairs": {
+        "sound": "calcite",
+        "textures": "utilitycraft_calcite_bricks"
+    },
+    "utilitycraft:cracked_andesite_bricks_slab": {
+        "sound": "stone",
+        "textures": "utilitycraft_cracked_andesite_bricks"
+    },
+    "utilitycraft:cracked_andesite_bricks_stairs": {
+        "sound": "stone",
+        "textures": "utilitycraft_cracked_andesite_bricks"
+    },
+    "utilitycraft:cracked_andesite_tiles_slab": {
+        "sound": "stone",
+        "textures": "utilitycraft_cracked_andesite_tiles"
+    },
+    "utilitycraft:cracked_andesite_tiles_stairs": {
+        "sound": "stone",
+        "textures": "utilitycraft_cracked_andesite_tiles"
+    },
+    "utilitycraft:cracked_basalt_bricks_slab": {
+        "sound": "basalt",
+        "textures": "utilitycraft_cracked_basalt_bricks"
+    },
+    "utilitycraft:cracked_basalt_bricks_stairs": {
+        "sound": "basalt",
+        "textures": "utilitycraft_cracked_basalt_bricks"
+    },
+    "utilitycraft:cracked_basalt_tiles_slab": {
+        "sound": "basalt",
+        "textures": "utilitycraft_cracked_basalt_tiles"
+    },
+    "utilitycraft:cracked_basalt_tiles_stairs": {
+        "sound": "basalt",
+        "textures": "utilitycraft_cracked_basalt_tiles"
+    },
+    "utilitycraft:cracked_blackstone_tiles_slab": {
+        "sound": "stone",
+        "textures": "utilitycraft_cracked_blackstone_tiles"
+    },
+    "utilitycraft:cracked_blackstone_tiles_stairs": {
+        "sound": "stone",
+        "textures": "utilitycraft_cracked_blackstone_tiles"
+    },
+    "utilitycraft:cracked_calcite_bricks_slab": {
+        "sound": "calcite",
+        "textures": "utilitycraft_cracked_calcite_bricks"
+    },
+    "utilitycraft:cracked_calcite_bricks_stairs": {
+        "sound": "calcite",
+        "textures": "utilitycraft_cracked_calcite_bricks"
+    },
+    "utilitycraft:cracked_calcite_tiles_slab": {
+        "sound": "calcite",
+        "textures": "utilitycraft_cracked_calcite_tiles"
+    },
+    "utilitycraft:cracked_calcite_tiles_stairs": {
+        "sound": "calcite",
+        "textures": "utilitycraft_cracked_calcite_tiles"
+    },
+    "utilitycraft:cracked_diorite_bricks_slab": {
+        "sound": "stone",
+        "textures": "utilitycraft_cracked_diorite_bricks"
+    },
+    "utilitycraft:cracked_diorite_bricks_stairs": {
+        "sound": "stone",
+        "textures": "utilitycraft_cracked_diorite_bricks"
+    },
+    "utilitycraft:cracked_diorite_tiles_slab": {
+        "sound": "stone",
+        "textures": "utilitycraft_cracked_diorite_tiles"
+    },
+    "utilitycraft:cracked_diorite_tiles_stairs": {
+        "sound": "stone",
+        "textures": "utilitycraft_cracked_diorite_tiles"
+    },
+    "utilitycraft:cracked_dripstone_bricks_slab": {
+        "sound": "dripstone_block",
+        "textures": "utilitycraft_cracked_dripstone_bricks"
+    },
+    "utilitycraft:cracked_dripstone_bricks_stairs": {
+        "sound": "dripstone_block",
+        "textures": "utilitycraft_cracked_dripstone_bricks"
+    },
+    "utilitycraft:cracked_dripstone_tiles_slab": {
+        "sound": "dripstone_block",
+        "textures": "utilitycraft_cracked_dripstone_tiles"
+    },
+    "utilitycraft:cracked_dripstone_tiles_stairs": {
+        "sound": "dripstone_block",
+        "textures": "utilitycraft_cracked_dripstone_tiles"
+    },
+    "utilitycraft:cracked_granite_bricks_slab": {
+        "sound": "stone",
+        "textures": "utilitycraft_cracked_granite_bricks"
+    },
+    "utilitycraft:cracked_granite_bricks_stairs": {
+        "sound": "stone",
+        "textures": "utilitycraft_cracked_granite_bricks"
+    },
+    "utilitycraft:cracked_granite_tiles_slab": {
+        "sound": "stone",
+        "textures": "utilitycraft_cracked_granite_tiles"
+    },
+    "utilitycraft:cracked_granite_tiles_stairs": {
+        "sound": "stone",
+        "textures": "utilitycraft_cracked_granite_tiles"
+    },
+    "utilitycraft:cracked_tuff_bricks_slab": {
+        "sound": "tuff_bricks",
+        "textures": "utilitycraft_cracked_tuff_bricks"
+    },
+    "utilitycraft:cracked_tuff_bricks_stairs": {
+        "sound": "tuff_bricks",
+        "textures": "utilitycraft_cracked_tuff_bricks"
+    },
+    "utilitycraft:cracked_tuff_tiles_slab": {
+        "sound": "tuff_bricks",
+        "textures": "utilitycraft_cracked_tuff_tiles"
+    },
+    "utilitycraft:cracked_tuff_tiles_stairs": {
+        "sound": "tuff_bricks",
+        "textures": "utilitycraft_cracked_tuff_tiles"
+    },
+    "utilitycraft:diorite_bricks_slab": {
+        "sound": "stone",
+        "textures": "utilitycraft_diorite_bricks"
+    },
+    "utilitycraft:diorite_bricks_stairs": {
+        "sound": "stone",
+        "textures": "utilitycraft_diorite_bricks"
+    },
+    "utilitycraft:dripstone_bricks_slab": {
+        "sound": "dripstone_block",
+        "textures": "utilitycraft_dripstone_bricks"
+    },
+    "utilitycraft:dripstone_bricks_stairs": {
+        "sound": "dripstone_block",
+        "textures": "utilitycraft_dripstone_bricks"
+    },
+    "utilitycraft:glowing_obsidian_slab": {
+        "sound": "stone",
+        "textures": "utilitycraft_glowing_obsidian"
+    },
+    "utilitycraft:glowing_obsidian_stairs": {
+        "sound": "stone",
+        "textures": "utilitycraft_glowing_obsidian"
+    },
+    "utilitycraft:granite_bricks_slab": {
+        "sound": "stone",
+        "textures": "utilitycraft_granite_bricks"
+    },
+    "utilitycraft:granite_bricks_stairs": {
+        "sound": "stone",
+        "textures": "utilitycraft_granite_bricks"
+    },
+    "utilitycraft:obsidian_bricks_slab": {
+        "sound": "stone",
+        "textures": "utilitycraft_obsidian_bricks"
+    },
+    "utilitycraft:obsidian_bricks_stairs": {
+        "sound": "stone",
+        "textures": "utilitycraft_obsidian_bricks"
+    },
+    "utilitycraft:polished_calcite_slab": {
+        "sound": "calcite",
+        "textures": "utilitycraft_polished_calcite"
+    },
+    "utilitycraft:polished_calcite_stairs": {
+        "sound": "calcite",
+        "textures": "utilitycraft_polished_calcite"
+    },
+    "utilitycraft:polished_dripstone_slab": {
+        "sound": "dripstone_block",
+        "textures": "utilitycraft_polished_dripstone"
+    },
+    "utilitycraft:polished_dripstone_stairs": {
+        "sound": "dripstone_block",
+        "textures": "utilitycraft_polished_dripstone"
+    },
+    "utilitycraft:polished_obsidian_slab": {
+        "sound": "stone",
+        "textures": "utilitycraft_polished_obsidian"
+    },
+    "utilitycraft:polished_obsidian_stairs": {
+        "sound": "stone",
+        "textures": "utilitycraft_polished_obsidian"
+    },
+    "utilitycraft:smooth_andesite_slab": {
+        "sound": "stone",
+        "textures": "utilitycraft_smooth_andesite"
+    },
+    "utilitycraft:smooth_andesite_stairs": {
+        "sound": "stone",
+        "textures": "utilitycraft_smooth_andesite"
+    },
+    "utilitycraft:smooth_blackstone_slab": {
+        "sound": "stone",
+        "textures": "utilitycraft_smooth_blackstone"
+    },
+    "utilitycraft:smooth_blackstone_stairs": {
+        "sound": "stone",
+        "textures": "utilitycraft_smooth_blackstone"
+    },
+    "utilitycraft:smooth_calcite_slab": {
+        "sound": "calcite",
+        "textures": "utilitycraft_smooth_calcite"
+    },
+    "utilitycraft:smooth_calcite_stairs": {
+        "sound": "calcite",
+        "textures": "utilitycraft_smooth_calcite"
+    },
+    "utilitycraft:smooth_diorite_slab": {
+        "sound": "stone",
+        "textures": "utilitycraft_smooth_diorite"
+    },
+    "utilitycraft:smooth_diorite_stairs": {
+        "sound": "stone",
+        "textures": "utilitycraft_smooth_diorite"
+    },
+    "utilitycraft:smooth_dripstone_slab": {
+        "sound": "dripstone_block",
+        "textures": "utilitycraft_smooth_dripstone"
+    },
+    "utilitycraft:smooth_dripstone_stairs": {
+        "sound": "dripstone_block",
+        "textures": "utilitycraft_smooth_dripstone"
+    },
+    "utilitycraft:smooth_granite_slab": {
+        "sound": "stone",
+        "textures": "utilitycraft_smooth_granite"
+    },
+    "utilitycraft:smooth_granite_stairs": {
+        "sound": "stone",
+        "textures": "utilitycraft_smooth_granite"
+    },
+    "utilitycraft:smooth_tuff_slab": {
+        "sound": "tuff",
+        "textures": "utilitycraft_smooth_tuff"
+    },
+    "utilitycraft:smooth_tuff_stairs": {
+        "sound": "tuff",
+        "textures": "utilitycraft_smooth_tuff"
+    },
+    "utilitycraft:andesite_bricks_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "utilitycraft_andesite_bricks"
+    },
+    "utilitycraft:andesite_bricks_vertical_slab": {
+        "sound": "stone",
+        "textures": "utilitycraft_andesite_bricks"
+    },
+    "utilitycraft:basalt_bricks_three_steps_stairs": {
+        "sound": "basalt",
+        "textures": "utilitycraft_basalt_bricks"
+    },
+    "utilitycraft:basalt_bricks_vertical_slab": {
+        "sound": "basalt",
+        "textures": "utilitycraft_basalt_bricks"
+    },
+    "utilitycraft:calcite_bricks_three_steps_stairs": {
+        "sound": "calcite",
+        "textures": "utilitycraft_calcite_bricks"
+    },
+    "utilitycraft:calcite_bricks_vertical_slab": {
+        "sound": "calcite",
+        "textures": "utilitycraft_calcite_bricks"
+    },
+    "utilitycraft:cracked_andesite_bricks_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "utilitycraft_cracked_andesite_bricks"
+    },
+    "utilitycraft:cracked_andesite_bricks_vertical_slab": {
+        "sound": "stone",
+        "textures": "utilitycraft_cracked_andesite_bricks"
+    },
+    "utilitycraft:cracked_andesite_tiles_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "utilitycraft_cracked_andesite_tiles"
+    },
+    "utilitycraft:cracked_andesite_tiles_vertical_slab": {
+        "sound": "stone",
+        "textures": "utilitycraft_cracked_andesite_tiles"
+    },
+    "utilitycraft:cracked_basalt_bricks_three_steps_stairs": {
+        "sound": "basalt",
+        "textures": "utilitycraft_cracked_basalt_bricks"
+    },
+    "utilitycraft:cracked_basalt_bricks_vertical_slab": {
+        "sound": "basalt",
+        "textures": "utilitycraft_cracked_basalt_bricks"
+    },
+    "utilitycraft:cracked_basalt_tiles_three_steps_stairs": {
+        "sound": "basalt",
+        "textures": "utilitycraft_cracked_basalt_tiles"
+    },
+    "utilitycraft:cracked_basalt_tiles_vertical_slab": {
+        "sound": "basalt",
+        "textures": "utilitycraft_cracked_basalt_tiles"
+    },
+    "utilitycraft:cracked_blackstone_tiles_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "utilitycraft_cracked_blackstone_tiles"
+    },
+    "utilitycraft:cracked_blackstone_tiles_vertical_slab": {
+        "sound": "stone",
+        "textures": "utilitycraft_cracked_blackstone_tiles"
+    },
+    "utilitycraft:cracked_calcite_bricks_three_steps_stairs": {
+        "sound": "calcite",
+        "textures": "utilitycraft_cracked_calcite_bricks"
+    },
+    "utilitycraft:cracked_calcite_bricks_vertical_slab": {
+        "sound": "calcite",
+        "textures": "utilitycraft_cracked_calcite_bricks"
+    },
+    "utilitycraft:cracked_calcite_tiles_three_steps_stairs": {
+        "sound": "calcite",
+        "textures": "utilitycraft_cracked_calcite_tiles"
+    },
+    "utilitycraft:cracked_calcite_tiles_vertical_slab": {
+        "sound": "calcite",
+        "textures": "utilitycraft_cracked_calcite_tiles"
+    },
+    "utilitycraft:cracked_diorite_bricks_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "utilitycraft_cracked_diorite_bricks"
+    },
+    "utilitycraft:cracked_diorite_bricks_vertical_slab": {
+        "sound": "stone",
+        "textures": "utilitycraft_cracked_diorite_bricks"
+    },
+    "utilitycraft:cracked_diorite_tiles_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "utilitycraft_cracked_diorite_tiles"
+    },
+    "utilitycraft:cracked_diorite_tiles_vertical_slab": {
+        "sound": "stone",
+        "textures": "utilitycraft_cracked_diorite_tiles"
+    },
+    "utilitycraft:cracked_dripstone_bricks_three_steps_stairs": {
+        "sound": "dripstone_block",
+        "textures": "utilitycraft_cracked_dripstone_bricks"
+    },
+    "utilitycraft:cracked_dripstone_bricks_vertical_slab": {
+        "sound": "dripstone_block",
+        "textures": "utilitycraft_cracked_dripstone_bricks"
+    },
+    "utilitycraft:cracked_dripstone_tiles_three_steps_stairs": {
+        "sound": "dripstone_block",
+        "textures": "utilitycraft_cracked_dripstone_tiles"
+    },
+    "utilitycraft:cracked_dripstone_tiles_vertical_slab": {
+        "sound": "dripstone_block",
+        "textures": "utilitycraft_cracked_dripstone_tiles"
+    },
+    "utilitycraft:cracked_granite_bricks_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "utilitycraft_cracked_granite_bricks"
+    },
+    "utilitycraft:cracked_granite_bricks_vertical_slab": {
+        "sound": "stone",
+        "textures": "utilitycraft_cracked_granite_bricks"
+    },
+    "utilitycraft:cracked_granite_tiles_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "utilitycraft_cracked_granite_tiles"
+    },
+    "utilitycraft:cracked_granite_tiles_vertical_slab": {
+        "sound": "stone",
+        "textures": "utilitycraft_cracked_granite_tiles"
+    },
+    "utilitycraft:cracked_tuff_bricks_three_steps_stairs": {
+        "sound": "tuff_bricks",
+        "textures": "utilitycraft_cracked_tuff_bricks"
+    },
+    "utilitycraft:cracked_tuff_bricks_vertical_slab": {
+        "sound": "tuff_bricks",
+        "textures": "utilitycraft_cracked_tuff_bricks"
+    },
+    "utilitycraft:cracked_tuff_tiles_three_steps_stairs": {
+        "sound": "tuff_bricks",
+        "textures": "utilitycraft_cracked_tuff_tiles"
+    },
+    "utilitycraft:cracked_tuff_tiles_vertical_slab": {
+        "sound": "tuff_bricks",
+        "textures": "utilitycraft_cracked_tuff_tiles"
+    },
+    "utilitycraft:diorite_bricks_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "utilitycraft_diorite_bricks"
+    },
+    "utilitycraft:diorite_bricks_vertical_slab": {
+        "sound": "stone",
+        "textures": "utilitycraft_diorite_bricks"
+    },
+    "utilitycraft:dripstone_bricks_three_steps_stairs": {
+        "sound": "dripstone_block",
+        "textures": "utilitycraft_dripstone_bricks"
+    },
+    "utilitycraft:dripstone_bricks_vertical_slab": {
+        "sound": "dripstone_block",
+        "textures": "utilitycraft_dripstone_bricks"
+    },
+    "utilitycraft:glowing_obsidian_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "utilitycraft_glowing_obsidian"
+    },
+    "utilitycraft:glowing_obsidian_vertical_slab": {
+        "sound": "stone",
+        "textures": "utilitycraft_glowing_obsidian"
+    },
+    "utilitycraft:granite_bricks_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "utilitycraft_granite_bricks"
+    },
+    "utilitycraft:granite_bricks_vertical_slab": {
+        "sound": "stone",
+        "textures": "utilitycraft_granite_bricks"
+    },
+    "utilitycraft:obsidian_bricks_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "utilitycraft_obsidian_bricks"
+    },
+    "utilitycraft:obsidian_bricks_vertical_slab": {
+        "sound": "stone",
+        "textures": "utilitycraft_obsidian_bricks"
+    },
+    "utilitycraft:polished_calcite_three_steps_stairs": {
+        "sound": "calcite",
+        "textures": "utilitycraft_polished_calcite"
+    },
+    "utilitycraft:polished_calcite_vertical_slab": {
+        "sound": "calcite",
+        "textures": "utilitycraft_polished_calcite"
+    },
+    "utilitycraft:polished_dripstone_three_steps_stairs": {
+        "sound": "dripstone_block",
+        "textures": "utilitycraft_polished_dripstone"
+    },
+    "utilitycraft:polished_dripstone_vertical_slab": {
+        "sound": "dripstone_block",
+        "textures": "utilitycraft_polished_dripstone"
+    },
+    "utilitycraft:polished_obsidian_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "utilitycraft_polished_obsidian"
+    },
+    "utilitycraft:polished_obsidian_vertical_slab": {
+        "sound": "stone",
+        "textures": "utilitycraft_polished_obsidian"
+    },
+    "utilitycraft:smooth_andesite_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "utilitycraft_smooth_andesite"
+    },
+    "utilitycraft:smooth_andesite_vertical_slab": {
+        "sound": "stone",
+        "textures": "utilitycraft_smooth_andesite"
+    },
+    "utilitycraft:smooth_blackstone_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "utilitycraft_smooth_blackstone"
+    },
+    "utilitycraft:smooth_blackstone_vertical_slab": {
+        "sound": "stone",
+        "textures": "utilitycraft_smooth_blackstone"
+    },
+    "utilitycraft:smooth_calcite_three_steps_stairs": {
+        "sound": "calcite",
+        "textures": "utilitycraft_smooth_calcite"
+    },
+    "utilitycraft:smooth_calcite_vertical_slab": {
+        "sound": "calcite",
+        "textures": "utilitycraft_smooth_calcite"
+    },
+    "utilitycraft:smooth_diorite_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "utilitycraft_smooth_diorite"
+    },
+    "utilitycraft:smooth_diorite_vertical_slab": {
+        "sound": "stone",
+        "textures": "utilitycraft_smooth_diorite"
+    },
+    "utilitycraft:smooth_dripstone_three_steps_stairs": {
+        "sound": "dripstone_block",
+        "textures": "utilitycraft_smooth_dripstone"
+    },
+    "utilitycraft:smooth_dripstone_vertical_slab": {
+        "sound": "dripstone_block",
+        "textures": "utilitycraft_smooth_dripstone"
+    },
+    "utilitycraft:smooth_granite_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "utilitycraft_smooth_granite"
+    },
+    "utilitycraft:smooth_granite_vertical_slab": {
+        "sound": "stone",
+        "textures": "utilitycraft_smooth_granite"
+    },
+    "utilitycraft:smooth_tuff_three_steps_stairs": {
+        "sound": "tuff",
+        "textures": "utilitycraft_smooth_tuff"
+    },
+    "utilitycraft:smooth_tuff_vertical_slab": {
+        "sound": "tuff",
+        "textures": "utilitycraft_smooth_tuff"
+    },
+    "utilitycraft:andesite": {
+        "sound": "stone",
+        "textures": "andesite"
+    },
+    "utilitycraft:calcite": {
+        "sound": "calcite",
+        "textures": "calcite"
+    },
+    "utilitycraft:chiseled_deepslate": {
+        "sound": "deepslate_bricks",
+        "textures": "chiseled_deepslate"
+    },
+    "utilitycraft:chiseled_nether_bricks": {
+        "sound": "nether_brick",
+        "textures": "chiseled_nether_bricks"
+    },
+    "utilitycraft:chiseled_polished_blackstone": {
+        "sound": "stone",
+        "textures": "chiseled_polished_blackstone"
+    },
+    "utilitycraft:chiseled_stone_bricks": {
+        "sound": "stone",
+        "textures": "chiseled_stone_bricks"
+    },
+    "utilitycraft:cobbled_deepslate": {
+        "sound": "deepslate",
+        "textures": "cobbled_deepslate"
+    },
+    "utilitycraft:cobblestone": {
+        "sound": "stone",
+        "textures": "cobblestone"
+    },
+    "utilitycraft:cracked_deepslate_bricks": {
+        "sound": "deepslate_bricks",
+        "textures": "cracked_deepslate_bricks"
+    },
+    "utilitycraft:cracked_deepslate_tiles": {
+        "sound": "deepslate_bricks",
+        "textures": "cracked_deepslate_tiles"
+    },
+    "utilitycraft:cracked_nether_bricks": {
+        "sound": "nether_brick",
+        "textures": "cracked_nether_bricks"
+    },
+    "utilitycraft:cracked_polished_blackstone_bricks": {
+        "sound": "stone",
+        "textures": "cracked_polished_blackstone_bricks"
+    },
+    "utilitycraft:cracked_stone_bricks": {
+        "sound": "stone",
+        "textures": "cracked_stone_bricks"
+    },
+    "utilitycraft:dark_prismarine": {
+        "sound": "stone",
+        "textures": "dark_prismarine"
+    },
+    "utilitycraft:deepslate_bricks": {
+        "sound": "deepslate_bricks",
+        "textures": "deepslate_bricks"
+    },
+    "utilitycraft:deepslate_tiles": {
+        "sound": "deepslate_bricks",
+        "textures": "deepslate_tiles"
+    },
+    "utilitycraft:diorite": {
+        "sound": "stone",
+        "textures": "diorite"
+    },
+    "utilitycraft:gilded_blackstone": {
+        "sound": "stone",
+        "textures": "gilded_blackstone"
+    },
+    "utilitycraft:granite": {
+        "sound": "stone",
+        "textures": "granite"
+    },
+    "utilitycraft:mossy_cobblestone": {
+        "sound": "stone",
+        "textures": "cobblestone_mossy"
+    },
+    "utilitycraft:mossy_stone_bricks": {
+        "sound": "stone",
+        "textures": "mossy_stone_bricks"
+    },
+    "utilitycraft:mud_bricks": {
+        "sound": "mud_bricks",
+        "textures": "mud_bricks"
+    },
+    "utilitycraft:netherrack": {
+        "sound": "netherrack",
+        "textures": "netherrack"
+    },
+    "utilitycraft:packed_mud": {
+        "sound": "packed_mud",
+        "textures": "packed_mud"
+    },
+    "utilitycraft:polished_andesite": {
+        "sound": "stone",
+        "textures": "polished_andesite"
+    },
+    "utilitycraft:polished_blackstone": {
+        "sound": "stone",
+        "textures": "polished_blackstone"
+    },
+    "utilitycraft:polished_blackstone_bricks": {
+        "sound": "stone",
+        "textures": "polished_blackstone_bricks"
+    },
+    "utilitycraft:polished_deepslate": {
+        "sound": "deepslate",
+        "textures": "polished_deepslate"
+    },
+    "utilitycraft:polished_diorite": {
+        "sound": "stone",
+        "textures": "polished_diorite"
+    },
+    "utilitycraft:polished_granite": {
+        "sound": "stone",
+        "textures": "polished_granite"
+    },
+    "utilitycraft:polished_tuff": {
+        "sound": "polished_tuff",
+        "textures": "polished_tuff"
+    },
+    "utilitycraft:prismarine": {
+        "sound": "stone",
+        "textures": "flattened_prismarine"
+    },
+    "utilitycraft:prismarine_bricks": {
+        "sound": "stone",
+        "textures": "prismarine_bricks"
+    },
+    "utilitycraft:purpur_block": {
+        "sound": "stone",
+        "textures": "flattened_purpur_block"
+    },
+    "utilitycraft:quartz_bricks": {
+        "sound": "stone",
+        "textures": "quartz_bricks"
+    },
+    "utilitycraft:smooth_basalt": {
+        "sound": "basalt",
+        "textures": "smooth_basalt"
+    },
+    "utilitycraft:smooth_quartz": {
+        "sound": "stone",
+        "textures": "smooth_quartz"
+    },
+    "utilitycraft:smooth_stone": {
+        "sound": "stone",
+        "textures": "smooth_stone"
+    },
+    "utilitycraft:stone": {
+        "sound": "stone",
+        "textures": "flattened_stone"
+    },
+    "utilitycraft:stone_bricks": {
+        "sound": "stone",
+        "textures": "stone_bricks"
+    },
+    "utilitycraft:tuff": {
+        "sound": "tuff",
+        "textures": "tuff"
+    },
+    "utilitycraft:tuff_bricks": {
+        "sound": "tuff_bricks",
+        "textures": "tuff_bricks"
+    },
+    "utilitycraft:andesite_slab": {
+        "sound": "stone",
+        "textures": "andesite"
+    },
+    "utilitycraft:andesite_stairs": {
+        "sound": "stone",
+        "textures": "andesite"
+    },
+    "utilitycraft:andesite_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "andesite"
+    },
+    "utilitycraft:andesite_vertical_slab": {
+        "sound": "stone",
+        "textures": "andesite"
+    },
+    "utilitycraft:calcite_slab": {
+        "sound": "calcite",
+        "textures": "calcite"
+    },
+    "utilitycraft:calcite_stairs": {
+        "sound": "calcite",
+        "textures": "calcite"
+    },
+    "utilitycraft:calcite_three_steps_stairs": {
+        "sound": "calcite",
+        "textures": "calcite"
+    },
+    "utilitycraft:calcite_vertical_slab": {
+        "sound": "calcite",
+        "textures": "calcite"
+    },
+    "utilitycraft:chiseled_deepslate_slab": {
+        "sound": "deepslate_bricks",
+        "textures": "chiseled_deepslate"
+    },
+    "utilitycraft:chiseled_deepslate_stairs": {
+        "sound": "deepslate_bricks",
+        "textures": "chiseled_deepslate"
+    },
+    "utilitycraft:chiseled_deepslate_three_steps_stairs": {
+        "sound": "deepslate_bricks",
+        "textures": "chiseled_deepslate"
+    },
+    "utilitycraft:chiseled_deepslate_vertical_slab": {
+        "sound": "deepslate_bricks",
+        "textures": "chiseled_deepslate"
+    },
+    "utilitycraft:chiseled_nether_bricks_slab": {
+        "sound": "nether_brick",
+        "textures": "chiseled_nether_bricks"
+    },
+    "utilitycraft:chiseled_nether_bricks_stairs": {
+        "sound": "nether_brick",
+        "textures": "chiseled_nether_bricks"
+    },
+    "utilitycraft:chiseled_nether_bricks_three_steps_stairs": {
+        "sound": "nether_brick",
+        "textures": "chiseled_nether_bricks"
+    },
+    "utilitycraft:chiseled_nether_bricks_vertical_slab": {
+        "sound": "nether_brick",
+        "textures": "chiseled_nether_bricks"
+    },
+    "utilitycraft:chiseled_polished_blackstone_slab": {
+        "sound": "stone",
+        "textures": "chiseled_polished_blackstone"
+    },
+    "utilitycraft:chiseled_polished_blackstone_stairs": {
+        "sound": "stone",
+        "textures": "chiseled_polished_blackstone"
+    },
+    "utilitycraft:chiseled_polished_blackstone_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "chiseled_polished_blackstone"
+    },
+    "utilitycraft:chiseled_polished_blackstone_vertical_slab": {
+        "sound": "stone",
+        "textures": "chiseled_polished_blackstone"
+    },
+    "utilitycraft:chiseled_stone_bricks_slab": {
+        "sound": "stone",
+        "textures": "chiseled_stone_bricks"
+    },
+    "utilitycraft:chiseled_stone_bricks_stairs": {
+        "sound": "stone",
+        "textures": "chiseled_stone_bricks"
+    },
+    "utilitycraft:chiseled_stone_bricks_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "chiseled_stone_bricks"
+    },
+    "utilitycraft:chiseled_stone_bricks_vertical_slab": {
+        "sound": "stone",
+        "textures": "chiseled_stone_bricks"
+    },
+    "utilitycraft:cobbled_deepslate_slab": {
+        "sound": "deepslate",
+        "textures": "cobbled_deepslate"
+    },
+    "utilitycraft:cobbled_deepslate_stairs": {
+        "sound": "deepslate",
+        "textures": "cobbled_deepslate"
+    },
+    "utilitycraft:cobbled_deepslate_three_steps_stairs": {
+        "sound": "deepslate",
+        "textures": "cobbled_deepslate"
+    },
+    "utilitycraft:cobbled_deepslate_vertical_slab": {
+        "sound": "deepslate",
+        "textures": "cobbled_deepslate"
+    },
+    "utilitycraft:cobblestone_slab": {
+        "sound": "stone",
+        "textures": "cobblestone"
+    },
+    "utilitycraft:cobblestone_stairs": {
+        "sound": "stone",
+        "textures": "cobblestone"
+    },
+    "utilitycraft:cobblestone_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "cobblestone"
+    },
+    "utilitycraft:cobblestone_vertical_slab": {
+        "sound": "stone",
+        "textures": "cobblestone"
+    },
+    "utilitycraft:cracked_deepslate_bricks_slab": {
+        "sound": "deepslate_bricks",
+        "textures": "cracked_deepslate_bricks"
+    },
+    "utilitycraft:cracked_deepslate_bricks_stairs": {
+        "sound": "deepslate_bricks",
+        "textures": "cracked_deepslate_bricks"
+    },
+    "utilitycraft:cracked_deepslate_bricks_three_steps_stairs": {
+        "sound": "deepslate_bricks",
+        "textures": "cracked_deepslate_bricks"
+    },
+    "utilitycraft:cracked_deepslate_bricks_vertical_slab": {
+        "sound": "deepslate_bricks",
+        "textures": "cracked_deepslate_bricks"
+    },
+    "utilitycraft:cracked_deepslate_tiles_slab": {
+        "sound": "deepslate_bricks",
+        "textures": "cracked_deepslate_tiles"
+    },
+    "utilitycraft:cracked_deepslate_tiles_stairs": {
+        "sound": "deepslate_bricks",
+        "textures": "cracked_deepslate_tiles"
+    },
+    "utilitycraft:cracked_deepslate_tiles_three_steps_stairs": {
+        "sound": "deepslate_bricks",
+        "textures": "cracked_deepslate_tiles"
+    },
+    "utilitycraft:cracked_deepslate_tiles_vertical_slab": {
+        "sound": "deepslate_bricks",
+        "textures": "cracked_deepslate_tiles"
+    },
+    "utilitycraft:cracked_nether_bricks_slab": {
+        "sound": "nether_brick",
+        "textures": "cracked_nether_bricks"
+    },
+    "utilitycraft:cracked_nether_bricks_stairs": {
+        "sound": "nether_brick",
+        "textures": "cracked_nether_bricks"
+    },
+    "utilitycraft:cracked_nether_bricks_three_steps_stairs": {
+        "sound": "nether_brick",
+        "textures": "cracked_nether_bricks"
+    },
+    "utilitycraft:cracked_nether_bricks_vertical_slab": {
+        "sound": "nether_brick",
+        "textures": "cracked_nether_bricks"
+    },
+    "utilitycraft:cracked_polished_blackstone_bricks_slab": {
+        "sound": "stone",
+        "textures": "cracked_polished_blackstone_bricks"
+    },
+    "utilitycraft:cracked_polished_blackstone_bricks_stairs": {
+        "sound": "stone",
+        "textures": "cracked_polished_blackstone_bricks"
+    },
+    "utilitycraft:cracked_polished_blackstone_bricks_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "cracked_polished_blackstone_bricks"
+    },
+    "utilitycraft:cracked_polished_blackstone_bricks_vertical_slab": {
+        "sound": "stone",
+        "textures": "cracked_polished_blackstone_bricks"
+    },
+    "utilitycraft:cracked_stone_bricks_slab": {
+        "sound": "stone",
+        "textures": "cracked_stone_bricks"
+    },
+    "utilitycraft:cracked_stone_bricks_stairs": {
+        "sound": "stone",
+        "textures": "cracked_stone_bricks"
+    },
+    "utilitycraft:cracked_stone_bricks_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "cracked_stone_bricks"
+    },
+    "utilitycraft:cracked_stone_bricks_vertical_slab": {
+        "sound": "stone",
+        "textures": "cracked_stone_bricks"
+    },
+    "utilitycraft:dark_prismarine_slab": {
+        "sound": "stone",
+        "textures": "dark_prismarine"
+    },
+    "utilitycraft:dark_prismarine_stairs": {
+        "sound": "stone",
+        "textures": "dark_prismarine"
+    },
+    "utilitycraft:dark_prismarine_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "dark_prismarine"
+    },
+    "utilitycraft:dark_prismarine_vertical_slab": {
+        "sound": "stone",
+        "textures": "dark_prismarine"
+    },
+    "utilitycraft:deepslate_bricks_slab": {
+        "sound": "deepslate_bricks",
+        "textures": "deepslate_bricks"
+    },
+    "utilitycraft:deepslate_bricks_stairs": {
+        "sound": "deepslate_bricks",
+        "textures": "deepslate_bricks"
+    },
+    "utilitycraft:deepslate_bricks_three_steps_stairs": {
+        "sound": "deepslate_bricks",
+        "textures": "deepslate_bricks"
+    },
+    "utilitycraft:deepslate_bricks_vertical_slab": {
+        "sound": "deepslate_bricks",
+        "textures": "deepslate_bricks"
+    },
+    "utilitycraft:deepslate_tiles_slab": {
+        "sound": "deepslate_bricks",
+        "textures": "deepslate_tiles"
+    },
+    "utilitycraft:deepslate_tiles_stairs": {
+        "sound": "deepslate_bricks",
+        "textures": "deepslate_tiles"
+    },
+    "utilitycraft:deepslate_tiles_three_steps_stairs": {
+        "sound": "deepslate_bricks",
+        "textures": "deepslate_tiles"
+    },
+    "utilitycraft:deepslate_tiles_vertical_slab": {
+        "sound": "deepslate_bricks",
+        "textures": "deepslate_tiles"
+    },
+    "utilitycraft:diorite_slab": {
+        "sound": "stone",
+        "textures": "diorite"
+    },
+    "utilitycraft:diorite_stairs": {
+        "sound": "stone",
+        "textures": "diorite"
+    },
+    "utilitycraft:diorite_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "diorite"
+    },
+    "utilitycraft:diorite_vertical_slab": {
+        "sound": "stone",
+        "textures": "diorite"
+    },
+    "utilitycraft:gilded_blackstone_slab": {
+        "sound": "stone",
+        "textures": "gilded_blackstone"
+    },
+    "utilitycraft:gilded_blackstone_stairs": {
+        "sound": "stone",
+        "textures": "gilded_blackstone"
+    },
+    "utilitycraft:gilded_blackstone_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "gilded_blackstone"
+    },
+    "utilitycraft:gilded_blackstone_vertical_slab": {
+        "sound": "stone",
+        "textures": "gilded_blackstone"
+    },
+    "utilitycraft:granite_slab": {
+        "sound": "stone",
+        "textures": "granite"
+    },
+    "utilitycraft:granite_stairs": {
+        "sound": "stone",
+        "textures": "granite"
+    },
+    "utilitycraft:granite_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "granite"
+    },
+    "utilitycraft:granite_vertical_slab": {
+        "sound": "stone",
+        "textures": "granite"
+    },
+    "utilitycraft:mossy_cobblestone_slab": {
+        "sound": "stone",
+        "textures": "cobblestone_mossy"
+    },
+    "utilitycraft:mossy_cobblestone_stairs": {
+        "sound": "stone",
+        "textures": "cobblestone_mossy"
+    },
+    "utilitycraft:mossy_cobblestone_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "cobblestone_mossy"
+    },
+    "utilitycraft:mossy_cobblestone_vertical_slab": {
+        "sound": "stone",
+        "textures": "cobblestone_mossy"
+    },
+    "utilitycraft:mossy_stone_bricks_slab": {
+        "sound": "stone",
+        "textures": "mossy_stone_bricks"
+    },
+    "utilitycraft:mossy_stone_bricks_stairs": {
+        "sound": "stone",
+        "textures": "mossy_stone_bricks"
+    },
+    "utilitycraft:mossy_stone_bricks_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "mossy_stone_bricks"
+    },
+    "utilitycraft:mossy_stone_bricks_vertical_slab": {
+        "sound": "stone",
+        "textures": "mossy_stone_bricks"
+    },
+    "utilitycraft:mud_bricks_slab": {
+        "sound": "mud_bricks",
+        "textures": "mud_bricks"
+    },
+    "utilitycraft:mud_bricks_stairs": {
+        "sound": "mud_bricks",
+        "textures": "mud_bricks"
+    },
+    "utilitycraft:mud_bricks_three_steps_stairs": {
+        "sound": "mud_bricks",
+        "textures": "mud_bricks"
+    },
+    "utilitycraft:mud_bricks_vertical_slab": {
+        "sound": "mud_bricks",
+        "textures": "mud_bricks"
+    },
+    "utilitycraft:netherrack_slab": {
+        "sound": "netherrack",
+        "textures": "netherrack"
+    },
+    "utilitycraft:netherrack_stairs": {
+        "sound": "netherrack",
+        "textures": "netherrack"
+    },
+    "utilitycraft:netherrack_three_steps_stairs": {
+        "sound": "netherrack",
+        "textures": "netherrack"
+    },
+    "utilitycraft:netherrack_vertical_slab": {
+        "sound": "netherrack",
+        "textures": "netherrack"
+    },
+    "utilitycraft:packed_mud_slab": {
+        "sound": "packed_mud",
+        "textures": "packed_mud"
+    },
+    "utilitycraft:packed_mud_stairs": {
+        "sound": "packed_mud",
+        "textures": "packed_mud"
+    },
+    "utilitycraft:packed_mud_three_steps_stairs": {
+        "sound": "packed_mud",
+        "textures": "packed_mud"
+    },
+    "utilitycraft:packed_mud_vertical_slab": {
+        "sound": "packed_mud",
+        "textures": "packed_mud"
+    },
+    "utilitycraft:polished_andesite_slab": {
+        "sound": "stone",
+        "textures": "polished_andesite"
+    },
+    "utilitycraft:polished_andesite_stairs": {
+        "sound": "stone",
+        "textures": "polished_andesite"
+    },
+    "utilitycraft:polished_andesite_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "polished_andesite"
+    },
+    "utilitycraft:polished_andesite_vertical_slab": {
+        "sound": "stone",
+        "textures": "polished_andesite"
+    },
+    "utilitycraft:polished_blackstone_slab": {
+        "sound": "stone",
+        "textures": "polished_blackstone"
+    },
+    "utilitycraft:polished_blackstone_stairs": {
+        "sound": "stone",
+        "textures": "polished_blackstone"
+    },
+    "utilitycraft:polished_blackstone_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "polished_blackstone"
+    },
+    "utilitycraft:polished_blackstone_vertical_slab": {
+        "sound": "stone",
+        "textures": "polished_blackstone"
+    },
+    "utilitycraft:polished_blackstone_bricks_slab": {
+        "sound": "stone",
+        "textures": "polished_blackstone_bricks"
+    },
+    "utilitycraft:polished_blackstone_bricks_stairs": {
+        "sound": "stone",
+        "textures": "polished_blackstone_bricks"
+    },
+    "utilitycraft:polished_blackstone_bricks_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "polished_blackstone_bricks"
+    },
+    "utilitycraft:polished_blackstone_bricks_vertical_slab": {
+        "sound": "stone",
+        "textures": "polished_blackstone_bricks"
+    },
+    "utilitycraft:polished_deepslate_slab": {
+        "sound": "deepslate",
+        "textures": "polished_deepslate"
+    },
+    "utilitycraft:polished_deepslate_stairs": {
+        "sound": "deepslate",
+        "textures": "polished_deepslate"
+    },
+    "utilitycraft:polished_deepslate_three_steps_stairs": {
+        "sound": "deepslate",
+        "textures": "polished_deepslate"
+    },
+    "utilitycraft:polished_deepslate_vertical_slab": {
+        "sound": "deepslate",
+        "textures": "polished_deepslate"
+    },
+    "utilitycraft:polished_diorite_slab": {
+        "sound": "stone",
+        "textures": "polished_diorite"
+    },
+    "utilitycraft:polished_diorite_stairs": {
+        "sound": "stone",
+        "textures": "polished_diorite"
+    },
+    "utilitycraft:polished_diorite_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "polished_diorite"
+    },
+    "utilitycraft:polished_diorite_vertical_slab": {
+        "sound": "stone",
+        "textures": "polished_diorite"
+    },
+    "utilitycraft:polished_granite_slab": {
+        "sound": "stone",
+        "textures": "polished_granite"
+    },
+    "utilitycraft:polished_granite_stairs": {
+        "sound": "stone",
+        "textures": "polished_granite"
+    },
+    "utilitycraft:polished_granite_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "polished_granite"
+    },
+    "utilitycraft:polished_granite_vertical_slab": {
+        "sound": "stone",
+        "textures": "polished_granite"
+    },
+    "utilitycraft:polished_tuff_slab": {
+        "sound": "polished_tuff",
+        "textures": "polished_tuff"
+    },
+    "utilitycraft:polished_tuff_stairs": {
+        "sound": "polished_tuff",
+        "textures": "polished_tuff"
+    },
+    "utilitycraft:polished_tuff_three_steps_stairs": {
+        "sound": "polished_tuff",
+        "textures": "polished_tuff"
+    },
+    "utilitycraft:polished_tuff_vertical_slab": {
+        "sound": "polished_tuff",
+        "textures": "polished_tuff"
+    },
+    "utilitycraft:prismarine_slab": {
+        "sound": "stone",
+        "textures": "flattened_prismarine"
+    },
+    "utilitycraft:prismarine_stairs": {
+        "sound": "stone",
+        "textures": "flattened_prismarine"
+    },
+    "utilitycraft:prismarine_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "flattened_prismarine"
+    },
+    "utilitycraft:prismarine_vertical_slab": {
+        "sound": "stone",
+        "textures": "flattened_prismarine"
+    },
+    "utilitycraft:prismarine_bricks_slab": {
+        "sound": "stone",
+        "textures": "prismarine_bricks"
+    },
+    "utilitycraft:prismarine_bricks_stairs": {
+        "sound": "stone",
+        "textures": "prismarine_bricks"
+    },
+    "utilitycraft:prismarine_bricks_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "prismarine_bricks"
+    },
+    "utilitycraft:prismarine_bricks_vertical_slab": {
+        "sound": "stone",
+        "textures": "prismarine_bricks"
+    },
+    "utilitycraft:purpur_block_slab": {
+        "sound": "stone",
+        "textures": "flattened_purpur_block"
+    },
+    "utilitycraft:purpur_block_stairs": {
+        "sound": "stone",
+        "textures": "flattened_purpur_block"
+    },
+    "utilitycraft:purpur_block_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "flattened_purpur_block"
+    },
+    "utilitycraft:purpur_block_vertical_slab": {
+        "sound": "stone",
+        "textures": "flattened_purpur_block"
+    },
+    "utilitycraft:quartz_bricks_slab": {
+        "sound": "stone",
+        "textures": "quartz_bricks"
+    },
+    "utilitycraft:quartz_bricks_stairs": {
+        "sound": "stone",
+        "textures": "quartz_bricks"
+    },
+    "utilitycraft:quartz_bricks_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "quartz_bricks"
+    },
+    "utilitycraft:quartz_bricks_vertical_slab": {
+        "sound": "stone",
+        "textures": "quartz_bricks"
+    },
+    "utilitycraft:smooth_basalt_slab": {
+        "sound": "basalt",
+        "textures": "smooth_basalt"
+    },
+    "utilitycraft:smooth_basalt_stairs": {
+        "sound": "basalt",
+        "textures": "smooth_basalt"
+    },
+    "utilitycraft:smooth_basalt_three_steps_stairs": {
+        "sound": "basalt",
+        "textures": "smooth_basalt"
+    },
+    "utilitycraft:smooth_basalt_vertical_slab": {
+        "sound": "basalt",
+        "textures": "smooth_basalt"
+    },
+    "utilitycraft:smooth_quartz_slab": {
+        "sound": "stone",
+        "textures": "smooth_quartz"
+    },
+    "utilitycraft:smooth_quartz_stairs": {
+        "sound": "stone",
+        "textures": "smooth_quartz"
+    },
+    "utilitycraft:smooth_quartz_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "smooth_quartz"
+    },
+    "utilitycraft:smooth_quartz_vertical_slab": {
+        "sound": "stone",
+        "textures": "smooth_quartz"
+    },
+    "utilitycraft:smooth_stone_slab": {
+        "sound": "stone",
+        "textures": "smooth_stone"
+    },
+    "utilitycraft:smooth_stone_stairs": {
+        "sound": "stone",
+        "textures": "smooth_stone"
+    },
+    "utilitycraft:smooth_stone_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "smooth_stone"
+    },
+    "utilitycraft:smooth_stone_vertical_slab": {
+        "sound": "stone",
+        "textures": "smooth_stone"
+    },
+    "utilitycraft:stone_slab": {
+        "sound": "stone",
+        "textures": "flattened_stone"
+    },
+    "utilitycraft:stone_stairs": {
+        "sound": "stone",
+        "textures": "flattened_stone"
+    },
+    "utilitycraft:stone_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "flattened_stone"
+    },
+    "utilitycraft:stone_vertical_slab": {
+        "sound": "stone",
+        "textures": "flattened_stone"
+    },
+    "utilitycraft:stone_bricks_slab": {
+        "sound": "stone",
+        "textures": "stone_bricks"
+    },
+    "utilitycraft:stone_bricks_stairs": {
+        "sound": "stone",
+        "textures": "stone_bricks"
+    },
+    "utilitycraft:stone_bricks_three_steps_stairs": {
+        "sound": "stone",
+        "textures": "stone_bricks"
+    },
+    "utilitycraft:stone_bricks_vertical_slab": {
+        "sound": "stone",
+        "textures": "stone_bricks"
+    },
+    "utilitycraft:tuff_slab": {
+        "sound": "tuff",
+        "textures": "tuff"
+    },
+    "utilitycraft:tuff_stairs": {
+        "sound": "tuff",
+        "textures": "tuff"
+    },
+    "utilitycraft:tuff_three_steps_stairs": {
+        "sound": "tuff",
+        "textures": "tuff"
+    },
+    "utilitycraft:tuff_vertical_slab": {
+        "sound": "tuff",
+        "textures": "tuff"
+    },
+    "utilitycraft:tuff_bricks_slab": {
+        "sound": "tuff_bricks",
+        "textures": "tuff_bricks"
+    },
+    "utilitycraft:tuff_bricks_stairs": {
+        "sound": "tuff_bricks",
+        "textures": "tuff_bricks"
+    },
+    "utilitycraft:tuff_bricks_three_steps_stairs": {
+        "sound": "tuff_bricks",
+        "textures": "tuff_bricks"
+    },
+    "utilitycraft:tuff_bricks_vertical_slab": {
+        "sound": "tuff_bricks",
+        "textures": "tuff_bricks"
+    }
 }

@@ -1,0 +1,12 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "utilitycraft:sc_stripped_warped_hyphae_from_sanded_warped_wood"
+        },
+        "tags": ["stonecutter"],
+        "ingredients": [{ "item": "utilitycraft:sanded_warped_wood" }],
+        "result": { "item": "minecraft:stripped_warped_hyphae", "count": 1 },
+        "unlock": [{ "item": "utilitycraft:sanded_warped_wood" }]
+    }
+}

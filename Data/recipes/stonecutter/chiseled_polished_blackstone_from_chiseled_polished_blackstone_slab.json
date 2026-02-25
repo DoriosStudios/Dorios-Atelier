@@ -1,0 +1,28 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "utilitycraft:sc_chiseled_polished_blackstone_from_chiseled_polished_blackstone_slab"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "utilitycraft:chiseled_polished_blackstone_slab"
+            },
+            {
+                "item": "utilitycraft:chiseled_polished_blackstone_slab"
+            }
+        ],
+        "result": {
+            "item": "utilitycraft:chiseled_polished_blackstone",
+            "count": 1
+        },
+        "unlock": [
+            {
+                "item": "utilitycraft:chiseled_polished_blackstone_slab"
+            }
+        ]
+    }
+}

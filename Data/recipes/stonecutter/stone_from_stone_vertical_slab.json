@@ -1,0 +1,28 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "utilitycraft:sc_stone_from_stone_vertical_slab"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "utilitycraft:stone_vertical_slab"
+            },
+            {
+                "item": "utilitycraft:stone_vertical_slab"
+            }
+        ],
+        "result": {
+            "item": "utilitycraft:stone",
+            "count": 1
+        },
+        "unlock": [
+            {
+                "item": "utilitycraft:stone_vertical_slab"
+            }
+        ]
+    }
+}
