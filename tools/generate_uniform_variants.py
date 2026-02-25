@@ -76,6 +76,13 @@ STAIRS_GROUP_NAME = "minecraft:itemGroup.name.stairs"
 VERTICAL_SLABS_GROUP_NAME = "dorios:itemGroup.name.verticalSlabs"
 THREE_STEP_STAIRS_GROUP_NAME = "dorios:itemGroup.name.threeStepStairs"
 
+LANG_NAME_MAX_CHARS = 32
+LANG_FILES: dict[str, Path] = {
+    "en_US": ROOT / "Assets/texts/en_US.lang",
+    "pt_BR": ROOT / "Assets/texts/pt_BR.lang",
+    "es_MX": ROOT / "Assets/texts/es_MX.lang",
+}
+
 VARIANT_SUFFIXES = (
     "three_steps_stairs",
     "vertical_slab",
@@ -400,6 +407,145 @@ def split_variant_item_name(item_name: str) -> tuple[str, str] | None:
         if item_name.endswith(marker):
             return item_name[: -len(marker)], suffix
     return None
+
+
+def wrap_label_lines(label: str, max_chars: int = LANG_NAME_MAX_CHARS) -> str:
+    words = [word for word in label.split() if word]
+    if not words:
+        return label
+
+    lines: list[str] = []
+    current_line = ""
+
+    for word in words:
+        if not current_line:
+            current_line = word
+            continue
+
+        candidate = f"{current_line} {word}"
+        if len(candidate) <= max_chars:
+            current_line = candidate
+        else:
+            lines.append(current_line)
+            current_line = word
+
+    if current_line:
+        lines.append(current_line)
+
+    return "\\n".join(lines)
+
+
+def humanize_identifier(identifier: str) -> str:
+    words = identifier.split("_")
+    return " ".join(word.capitalize() for word in words)
+
+
+def format_variant_label(base_label: str, variant_suffix: str, language: str) -> str:
+    if language == "pt_BR":
+        templates = {
+            "slab": "Laje de {base}",
+            "stairs": "Escada de {base}",
+            "vertical_slab": "Laje Vertical de {base}",
+            "three_steps_stairs": "Escada de Três Degraus de {base}",
+        }
+    elif language == "es_MX":
+        templates = {
+            "slab": "Losa de {base}",
+            "stairs": "Escalera de {base}",
+            "vertical_slab": "Losa Vertical de {base}",
+            "three_steps_stairs": "Escalera de Tres Peldaños de {base}",
+        }
+    else:
+        templates = {
+            "slab": "{base} Slab",
+            "stairs": "{base} Stairs",
+            "vertical_slab": "{base} Vertical Slab",
+            "three_steps_stairs": "{base} Three-Step Stairs",
+        }
+
+    template = templates.get(variant_suffix, "{base}")
+    return template.format(base=base_label)
+
+
+def collect_decorative_block_identifiers() -> list[str]:
+    directories = (
+        ENTIRE_BLOCKS_DIR,
+        SLABS_DIR,
+        STAIRS_DIR,
+        UNIQUE_STAIRS_DIR,
+        ROOT / "Data/blocks/decorative/vertical_slabs",
+    )
+
+    identifiers: set[str] = set()
+    for directory in directories:
+        for path in sorted(directory.glob("*.json")):
+            payload = read_json(path)
+            identifier = payload.get("minecraft:block", {}).get("description", {}).get("identifier")
+            if isinstance(identifier, str) and identifier.startswith("utilitycraft:"):
+                identifiers.add(identifier)
+
+    return sorted(identifiers)
+
+
+def update_block_localization_names(dry_run: bool) -> tuple[int, int]:
+    tile_line_pattern = re.compile(r"^(tile\.utilitycraft:([a-z0-9_]+)\.name)=(.*)$")
+    block_identifiers = collect_decorative_block_identifiers()
+
+    updated_existing_entries = 0
+    created_missing_entries = 0
+
+    for language, lang_path in LANG_FILES.items():
+        if not lang_path.exists():
+            continue
+
+        original_lines = lang_path.read_text(encoding="utf-8").splitlines()
+        updated_lines: list[str] = []
+        existing_names: dict[str, str] = {}
+
+        for line in original_lines:
+            match = tile_line_pattern.match(line)
+            if not match:
+                updated_lines.append(line)
+                continue
+
+            full_key = match.group(1)
+            block_name = match.group(2)
+            value = match.group(3).strip()
+
+            normalized_value = value.replace("\\n", " ").strip()
+            wrapped_value = wrap_label_lines(normalized_value)
+
+            if wrapped_value != value:
+                updated_existing_entries += 1
+
+            existing_names[block_name] = normalized_value
+            updated_lines.append(f"{full_key}={wrapped_value}")
+
+        for identifier in block_identifiers:
+            block_name = identifier.split(":", 1)[1]
+            if block_name in existing_names:
+                continue
+
+            parsed_variant = split_variant_item_name(block_name)
+            if parsed_variant is None:
+                generated_name = humanize_identifier(block_name)
+            else:
+                base_name, variant_suffix = parsed_variant
+                base_label = existing_names.get(base_name, humanize_identifier(base_name))
+                generated_name = format_variant_label(base_label, variant_suffix, language)
+
+            wrapped_name = wrap_label_lines(generated_name)
+            updated_lines.append(f"tile.utilitycraft:{block_name}.name={wrapped_name}")
+            existing_names[block_name] = generated_name
+            created_missing_entries += 1
+
+        updated_content = "\n".join(updated_lines) + "\n"
+        original_content = "\n".join(original_lines) + "\n"
+
+        if not dry_run and updated_content != original_content:
+            lang_path.write_text(updated_content, encoding="utf-8")
+
+    return updated_existing_entries, created_missing_entries
 
 
 def make_reverse_stonecutter_recipe(base_item_id: str, variant_item_id: str, variant_suffix: str) -> dict[str, Any]:
@@ -747,6 +893,7 @@ def run_generation(targets: list[TargetBlock], dry_run: bool) -> dict[str, int]:
         catalog_three_step_stairs_items,
     ) = update_crafting_catalog(dry_run)
     tracked_stairs_ids = update_stairs_script(dry_run)
+    updated_localization_entries, created_localization_entries = update_block_localization_names(dry_run)
 
     return {
         "created_slab_blocks": created_slab_blocks,
@@ -771,6 +918,8 @@ def run_generation(targets: list[TargetBlock], dry_run: bool) -> dict[str, int]:
         "catalog_vertical_slab_items": catalog_vertical_slab_items,
         "catalog_three_step_stairs_items": catalog_three_step_stairs_items,
         "tracked_stairs_ids": tracked_stairs_ids,
+        "updated_localization_entries": updated_localization_entries,
+        "created_localization_entries": created_localization_entries,
     }
 
 
