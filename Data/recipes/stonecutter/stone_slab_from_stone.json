@@ -9,7 +9,7 @@
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:stone"
+                "item": "minecraft:stone"
             }
         ],
         "result": {
@@ -18,7 +18,7 @@
         },
         "unlock": [
             {
-                "item": "utilitycraft:stone"
+                "item": "minecraft:stone"
             }
         ]
     }

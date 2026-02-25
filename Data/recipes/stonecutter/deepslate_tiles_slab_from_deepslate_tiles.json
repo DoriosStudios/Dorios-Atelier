@@ -9,7 +9,7 @@
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:deepslate_tiles"
+                "item": "minecraft:deepslate_tiles"
             }
         ],
         "result": {
@@ -18,7 +18,7 @@
         },
         "unlock": [
             {
-                "item": "utilitycraft:deepslate_tiles"
+                "item": "minecraft:deepslate_tiles"
             }
         ]
     }

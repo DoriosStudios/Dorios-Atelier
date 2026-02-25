@@ -9,7 +9,7 @@
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:purpur_block"
+                "item": "minecraft:purpur_block"
             }
         ],
         "result": {
@@ -18,7 +18,7 @@
         },
         "unlock": [
             {
-                "item": "utilitycraft:purpur_block"
+                "item": "minecraft:purpur_block"
             }
         ]
     }

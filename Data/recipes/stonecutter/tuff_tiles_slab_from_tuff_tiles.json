@@ -4,9 +4,22 @@
         "description": {
             "identifier": "utilitycraft:sc_tuff_tiles_slab_from_tuff_tiles"
         },
-        "tags": ["stonecutter"],
-        "ingredients": [{ "item": "utilitycraft:tuff_tiles" }],
-        "result": { "item": "utilitycraft:tuff_tiles_slab", "count": 2 },
-        "unlock": [{ "item": "utilitycraft:tuff_tiles" }]
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "utilitycraft:tuff_tiles"
+            }
+        ],
+        "result": {
+            "item": "utilitycraft:tuff_tiles_slab",
+            "count": 2
+        },
+        "unlock": [
+            {
+                "item": "utilitycraft:tuff_tiles"
+            }
+        ]
     }
 }

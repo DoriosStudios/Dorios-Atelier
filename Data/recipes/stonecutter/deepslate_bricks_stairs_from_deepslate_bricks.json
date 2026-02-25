@@ -9,7 +9,7 @@
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:deepslate_bricks"
+                "item": "minecraft:deepslate_bricks"
             }
         ],
         "result": {
@@ -18,7 +18,7 @@
         },
         "unlock": [
             {
-                "item": "utilitycraft:deepslate_bricks"
+                "item": "minecraft:deepslate_bricks"
             }
         ]
     }

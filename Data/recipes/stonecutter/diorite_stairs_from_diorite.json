@@ -9,7 +9,7 @@
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:diorite"
+                "item": "minecraft:diorite"
             }
         ],
         "result": {
@@ -18,7 +18,7 @@
         },
         "unlock": [
             {
-                "item": "utilitycraft:diorite"
+                "item": "minecraft:diorite"
             }
         ]
     }

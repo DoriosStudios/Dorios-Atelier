@@ -9,7 +9,7 @@
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:polished_granite"
+                "item": "minecraft:polished_granite"
             }
         ],
         "result": {
@@ -18,7 +18,7 @@
         },
         "unlock": [
             {
-                "item": "utilitycraft:polished_granite"
+                "item": "minecraft:polished_granite"
             }
         ]
     }

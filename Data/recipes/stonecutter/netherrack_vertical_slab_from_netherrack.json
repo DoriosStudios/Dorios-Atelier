@@ -9,7 +9,7 @@
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:netherrack"
+                "item": "minecraft:netherrack"
             }
         ],
         "result": {
@@ -18,7 +18,7 @@
         },
         "unlock": [
             {
-                "item": "utilitycraft:netherrack"
+                "item": "minecraft:netherrack"
             }
         ]
     }

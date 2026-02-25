@@ -9,7 +9,7 @@
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:granite"
+                "item": "minecraft:granite"
             }
         ],
         "result": {
@@ -18,7 +18,7 @@
         },
         "unlock": [
             {
-                "item": "utilitycraft:granite"
+                "item": "minecraft:granite"
             }
         ]
     }

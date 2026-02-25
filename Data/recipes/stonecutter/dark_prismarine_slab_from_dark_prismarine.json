@@ -9,7 +9,7 @@
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:dark_prismarine"
+                "item": "minecraft:dark_prismarine"
             }
         ],
         "result": {
@@ -18,7 +18,7 @@
         },
         "unlock": [
             {
-                "item": "utilitycraft:dark_prismarine"
+                "item": "minecraft:dark_prismarine"
             }
         ]
     }

@@ -9,7 +9,7 @@
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:gilded_blackstone"
+                "item": "minecraft:gilded_blackstone"
             }
         ],
         "result": {
@@ -18,7 +18,7 @@
         },
         "unlock": [
             {
-                "item": "utilitycraft:gilded_blackstone"
+                "item": "minecraft:gilded_blackstone"
             }
         ]
     }

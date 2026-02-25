@@ -9,7 +9,7 @@
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:polished_andesite"
+                "item": "minecraft:polished_andesite"
             }
         ],
         "result": {
@@ -18,7 +18,7 @@
         },
         "unlock": [
             {
-                "item": "utilitycraft:polished_andesite"
+                "item": "minecraft:polished_andesite"
             }
         ]
     }

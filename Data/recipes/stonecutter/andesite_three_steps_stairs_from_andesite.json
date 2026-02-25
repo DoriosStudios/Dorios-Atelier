@@ -9,7 +9,7 @@
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:andesite"
+                "item": "minecraft:andesite"
             }
         ],
         "result": {
@@ -18,7 +18,7 @@
         },
         "unlock": [
             {
-                "item": "utilitycraft:andesite"
+                "item": "minecraft:andesite"
             }
         ]
     }

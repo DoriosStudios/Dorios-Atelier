@@ -69,7 +69,7 @@
 - `minecraft:polished_tuff`: Tufo Polido
 - `minecraft:tuff_bricks`: Tijolos de Tufo
 - `minecraft:chiseled_tuff_bricks`: Tijolos de Tufo Talhados
-- `minecraft:tuff_tiles`: Azulejos de Tufo
+- `utilitycraft:tuff_tiles`: Azulejos de Tufo
 - `minecraft:chiseled_tuff`: Tufo Talhado
 
 ### 7. Lama e Tijolos

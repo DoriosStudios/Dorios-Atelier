@@ -9,7 +9,7 @@
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:cobbled_deepslate"
+                "item": "minecraft:cobbled_deepslate"
             }
         ],
         "result": {
@@ -18,7 +18,7 @@
         },
         "unlock": [
             {
-                "item": "utilitycraft:cobbled_deepslate"
+                "item": "minecraft:cobbled_deepslate"
             }
         ]
     }

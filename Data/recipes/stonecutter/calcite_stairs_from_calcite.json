@@ -9,7 +9,7 @@
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:calcite"
+                "item": "minecraft:calcite"
             }
         ],
         "result": {
@@ -18,7 +18,7 @@
         },
         "unlock": [
             {
-                "item": "utilitycraft:calcite"
+                "item": "minecraft:calcite"
             }
         ]
     }

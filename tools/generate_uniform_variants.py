@@ -66,7 +66,7 @@ SLAB_TEMPLATE_PATH = SLABS_DIR / "andesite_tiles_slab.json"
 STAIRS_TEMPLATE_PATH = STAIRS_DIR / "andesite_tiles_stairs.json"
 THREE_STEP_STAIRS_TEMPLATE_PATH = UNIQUE_STAIRS_DIR / "andesite_tiles_three_steps_stairs.json"
 VERTICAL_SLAB_TEMPLATE_PATH = ROOT / "Data/blocks/decorative/vertical_slabs/andesite_tiles_vertical_slab.json"
-ENTIRE_BLOCK_TEMPLATE_PATH = ENTIRE_BLOCKS_DIR / "andesite_bricks.json"
+ENTIRE_BLOCK_TEMPLATE_NAME = "andesite_bricks.json"
 SLAB_CULLING_TEMPLATE_PATH = CULLING_DIR / "andesite_tiles_slab.json"
 STAIRS_CULLING_TEMPLATE_PATH = CULLING_DIR / "andesite_tiles_stairs.json"
 THREE_STEP_STAIRS_CULLING_TEMPLATE_PATH = CULLING_DIR / "andesite_tiles_three_steps_stairs.json"
@@ -75,6 +75,7 @@ SLAB_GROUP_NAME = "minecraft:itemGroup.name.slab"
 STAIRS_GROUP_NAME = "minecraft:itemGroup.name.stairs"
 VERTICAL_SLABS_GROUP_NAME = "dorios:itemGroup.name.verticalSlabs"
 THREE_STEP_STAIRS_GROUP_NAME = "dorios:itemGroup.name.threeStepStairs"
+STONEWORK_GROUP_NAME = "dorios:itemGroup.name.stoneBricks"
 
 LANG_NAME_MAX_CHARS = 32
 LANG_FILES: dict[str, Path] = {
@@ -89,6 +90,114 @@ VARIANT_SUFFIXES = (
     "stairs",
     "slab",
 )
+
+MATERIAL_TOKEN_PRIORITY = (
+    "blackstone",
+    "deepslate",
+    "prismarine",
+    "cobblestone",
+    "netherrack",
+    "dripstone",
+    "obsidian",
+    "andesite",
+    "granite",
+    "diorite",
+    "calcite",
+    "basalt",
+    "quartz",
+    "purpur",
+    "stone",
+    "tuff",
+    "mud",
+    "nether",
+)
+
+ENTIRE_BLOCK_CATEGORY_PRIORITY: tuple[tuple[str, str], ...] = (
+    ("bricks", "Bricks"),
+    ("tiles", "Tiles"),
+    ("pillar", "Pillars"),
+    ("wood", "Woods"),
+)
+
+ENGLISH_NAME_TOKENS = (
+    "Chiseled",
+    "Cracked",
+    "Polished",
+    "Smooth",
+    "Bricks",
+    "Tiles",
+    "Stairs",
+    "Slab",
+    "Pillar",
+    "Deepslate",
+    "Blackstone",
+)
+
+PT_WORD_MAP = {
+    "andesite": "Andesito",
+    "basalt": "Basalto",
+    "blackstone": "Pedra-Negra",
+    "calcite": "Calcita",
+    "cobblestone": "Pedregulho",
+    "deepslate": "Ardósia Abissal",
+    "diorite": "Diorito",
+    "dripstone": "Espeleotema",
+    "granite": "Granito",
+    "mud": "Lama",
+    "netherrack": "Netherrack",
+    "nether": "Nether",
+    "obsidian": "Obsidiana",
+    "packed": "Compactada",
+    "polished": "Polido",
+    "prismarine": "Prismarinho",
+    "purpur": "Purpur",
+    "quartz": "Quartzo",
+    "red": "Vermelho",
+    "sandstone": "Arenito",
+    "smooth": "Liso",
+    "stone": "Pedra",
+    "tuff": "Tufo",
+}
+
+ES_WORD_MAP = {
+    "andesite": "Andesita",
+    "basalt": "Basalto",
+    "blackstone": "Piedra Negra",
+    "calcite": "Calcita",
+    "cobblestone": "Adoquín",
+    "deepslate": "Pizarra Profunda",
+    "diorite": "Diorita",
+    "dripstone": "Espeleotema",
+    "granite": "Granito",
+    "mud": "Lodo",
+    "netherrack": "Netherrack",
+    "nether": "Nether",
+    "obsidian": "Obsidiana",
+    "packed": "Compactado",
+    "polished": "Pulido",
+    "prismarine": "Prismarina",
+    "purpur": "Purpur",
+    "quartz": "Cuarzo",
+    "red": "Rojo",
+    "sandstone": "Arenisca",
+    "smooth": "Liso",
+    "stone": "Piedra",
+    "tuff": "Tufo",
+}
+
+PT_BASE_OVERRIDES = {
+    "cobbled_deepslate": "Pedregulho de Ardósia Abissal",
+    "dark_prismarine": "Prismarinho Escuro",
+    "gilded_blackstone": "Pedra-Negra Dourada",
+    "packed_mud": "Lama Compactada",
+}
+
+ES_BASE_OVERRIDES = {
+    "cobbled_deepslate": "Adoquín de Pizarra Profunda",
+    "dark_prismarine": "Prismarina Oscura",
+    "gilded_blackstone": "Piedra Negra Dorada",
+    "packed_mud": "Lodo Compactado",
+}
 
 
 @dataclass
@@ -151,6 +260,391 @@ def extract_vanilla_ids_from_markdown(markdown_text: str) -> list[str]:
     return sorted(set(matches))
 
 
+def load_vanilla_base_names(vanilla_list_path: Path) -> set[str]:
+    if not vanilla_list_path.exists():
+        raise FileNotFoundError(f"Vanilla block list not found: {vanilla_list_path}")
+    markdown_text = vanilla_list_path.read_text(encoding="utf-8")
+    return {identifier.split(":", 1)[1] for identifier in extract_vanilla_ids_from_markdown(markdown_text)}
+
+
+def load_vanilla_pt_name_map(vanilla_list_path: Path) -> dict[str, str]:
+    if not vanilla_list_path.exists():
+        return {}
+
+    text = vanilla_list_path.read_text(encoding="utf-8")
+    mappings: dict[str, str] = {}
+    for match in re.finditer(r"-\s*`minecraft:([a-z0-9_]+)`:\s*(.+)", text):
+        mappings[match.group(1)] = match.group(2).strip()
+    return mappings
+
+
+def collect_variant_base_names() -> set[str]:
+    suffixes = tuple(f"_{suffix}" for suffix in VARIANT_SUFFIXES)
+    variant_directories = (SLABS_DIR, STAIRS_DIR, UNIQUE_STAIRS_DIR, ROOT / "Data/blocks/decorative/vertical_slabs")
+
+    names: set[str] = set()
+    for directory in variant_directories:
+        for path in sorted(directory.glob("*.json")):
+            stem = path.stem
+            for suffix in suffixes:
+                if stem.endswith(suffix):
+                    names.add(stem[: -len(suffix)])
+                    break
+    return names
+
+
+def resolve_texture_key_for_base(base_name: str, assets_data: dict[str, Any]) -> str | None:
+    candidates = (
+        f"utilitycraft:{base_name}",
+        f"utilitycraft:{base_name}_slab",
+        f"utilitycraft:{base_name}_stairs",
+        f"utilitycraft:{base_name}_three_steps_stairs",
+        f"utilitycraft:{base_name}_vertical_slab",
+    )
+
+    for candidate in candidates:
+        entry = assets_data.get(candidate)
+        if not isinstance(entry, dict):
+            continue
+        texture_key = entry.get("textures")
+        if isinstance(texture_key, str):
+            return texture_key
+    return None
+
+
+def texture_key_has_local_file(texture_key: str, terrain_texture_data: dict[str, Any]) -> bool:
+    entry = terrain_texture_data.get(texture_key)
+    if not isinstance(entry, dict):
+        return False
+
+    textures = entry.get("textures")
+    if isinstance(textures, str):
+        path = textures
+    elif isinstance(textures, list) and textures and isinstance(textures[0], str):
+        path = textures[0]
+    else:
+        return False
+
+    return (ROOT / "Assets" / f"{path}.png").exists() or (ROOT / "Assets" / f"{path}.tga").exists()
+
+
+def detect_vanilla_bases_with_local_textures(vanilla_base_names: set[str]) -> set[str]:
+    assets_data = read_json(ASSETS_BLOCKS_PATH)
+    terrain_texture_data = read_json(ROOT / "Assets/textures/terrain_texture.json").get("texture_data", {})
+    variant_bases = collect_variant_base_names()
+
+    kept: set[str] = set()
+    for base_name in sorted(vanilla_base_names):
+        if base_name not in variant_bases:
+            continue
+        texture_key = resolve_texture_key_for_base(base_name, assets_data)
+        if texture_key and texture_key_has_local_file(texture_key, terrain_texture_data):
+            kept.add(base_name)
+    return kept
+
+
+def contains_english_tokens(label: str) -> bool:
+    return any(token in label for token in ENGLISH_NAME_TOKENS)
+
+
+def translate_material_words(words: list[str], language: str) -> str:
+    word_map = PT_WORD_MAP if language == "pt_BR" else ES_WORD_MAP if language == "es_MX" else {}
+    translated = [word_map.get(word, word.capitalize()) for word in words]
+    return " ".join(translated).strip()
+
+
+def localize_base_name(base_name: str, language: str, vanilla_pt_name_map: dict[str, str]) -> str:
+    if language == "en_US":
+        return humanize_identifier(base_name)
+
+    if language == "pt_BR" and base_name in vanilla_pt_name_map:
+        return vanilla_pt_name_map[base_name]
+
+    if language == "pt_BR" and base_name in PT_BASE_OVERRIDES:
+        return PT_BASE_OVERRIDES[base_name]
+
+    if language == "es_MX" and base_name in ES_BASE_OVERRIDES:
+        return ES_BASE_OVERRIDES[base_name]
+
+    words = base_name.split("_")
+    is_plural = False
+
+    block_form = None
+    if words and words[-1] in {"bricks", "tiles", "pillar"}:
+        block_form = words.pop()
+        is_plural = block_form in {"bricks", "tiles"}
+
+    modifiers: list[str] = []
+    while words and words[0] in {"chiseled", "cracked", "polished", "smooth", "mossy"}:
+        modifiers.append(words.pop(0))
+
+    material_text = translate_material_words(words, language)
+
+    if language == "pt_BR":
+        if block_form == "bricks":
+            label = f"Tijolos de {material_text}" if material_text else "Tijolos"
+        elif block_form == "tiles":
+            label = f"Ladrilhos de {material_text}" if material_text else "Ladrilhos"
+        elif block_form == "pillar":
+            label = f"Pilar de {material_text}" if material_text else "Pilar"
+        else:
+            label = material_text
+
+        modifier_map = {
+            "chiseled": "Talhados" if is_plural else "Talhado",
+            "cracked": "Rachados" if is_plural else "Rachado",
+            "polished": "Polidos" if is_plural else "Polido",
+            "smooth": "Lisos" if is_plural else "Liso",
+            "mossy": "Musgosos" if is_plural else "Musgoso",
+        }
+    else:
+        if block_form == "bricks":
+            label = f"Ladrillos de {material_text}" if material_text else "Ladrillos"
+        elif block_form == "tiles":
+            label = f"Losetas de {material_text}" if material_text else "Losetas"
+        elif block_form == "pillar":
+            label = f"Pilar de {material_text}" if material_text else "Pilar"
+        else:
+            label = material_text
+
+        modifier_map = {
+            "chiseled": "Cincelados" if is_plural else "Cincelado",
+            "cracked": "Agrietados" if is_plural else "Agrietado",
+            "polished": "Pulidos" if is_plural else "Pulido",
+            "smooth": "Lisos" if is_plural else "Liso",
+            "mossy": "Musgosos" if is_plural else "Musgoso",
+        }
+
+    for modifier in modifiers:
+        suffix = modifier_map.get(modifier)
+        if suffix:
+            label = f"{label} {suffix}".strip()
+
+    return label
+
+
+def localize_block_name_from_identifier(
+    block_name: str,
+    language: str,
+    existing_names: dict[str, str],
+    vanilla_pt_name_map: dict[str, str],
+) -> str:
+    parsed_variant = split_variant_item_name(block_name)
+    if parsed_variant is None:
+        return localize_base_name(block_name, language, vanilla_pt_name_map)
+
+    base_name, variant_suffix = parsed_variant
+    base_label = existing_names.get(base_name)
+    if base_label is None or (language in {"pt_BR", "es_MX"} and contains_english_tokens(base_label)):
+        base_label = localize_base_name(base_name, language, vanilla_pt_name_map)
+
+    return format_variant_label(base_label, variant_suffix, language)
+
+
+def iter_entire_block_files() -> list[Path]:
+    return sorted(ENTIRE_BLOCKS_DIR.rglob("*.json"))
+
+
+def determine_entire_block_category(base_name: str) -> str:
+    for marker, category in ENTIRE_BLOCK_CATEGORY_PRIORITY:
+        if marker in base_name:
+            return category
+    if base_name.startswith("chiseled_"):
+        return "Chiseled"
+    if base_name.startswith("cracked_"):
+        return "Cracked"
+    if base_name.startswith("polished_"):
+        return "Polished"
+    if base_name.startswith("smooth_"):
+        return "Smooth"
+    return "Base"
+
+
+def build_entire_block_target_path(base_name: str) -> Path:
+    category = determine_entire_block_category(base_name)
+    return ENTIRE_BLOCKS_DIR / category / f"{base_name}.json"
+
+
+def resolve_entire_block_template_path() -> Path:
+    for candidate in iter_entire_block_files():
+        if candidate.name == ENTIRE_BLOCK_TEMPLATE_NAME:
+            return candidate
+    raise FileNotFoundError(f"Template block not found recursively: {ENTIRE_BLOCK_TEMPLATE_NAME}")
+
+
+def remove_vanilla_entire_blocks(vanilla_base_names: set[str], dry_run: bool) -> int:
+    removed = 0
+    for block_path in iter_entire_block_files():
+        payload = read_json(block_path)
+        identifier = payload.get("minecraft:block", {}).get("description", {}).get("identifier")
+        if not isinstance(identifier, str) or not identifier.startswith("utilitycraft:"):
+            continue
+
+        base_name = identifier.split(":", 1)[1]
+        if base_name not in vanilla_base_names:
+            continue
+
+        if not dry_run:
+            block_path.unlink()
+        removed += 1
+    return removed
+
+
+def ensure_vanilla_entire_blocks_exist(base_names: set[str], dry_run: bool) -> int:
+    if not base_names:
+        return 0
+
+    template = read_json(resolve_entire_block_template_path())
+    assets_data = read_json(ASSETS_BLOCKS_PATH)
+    existing_names = {path.stem for path in iter_entire_block_files()}
+
+    created = 0
+    for base_name in sorted(base_names):
+        if base_name in existing_names:
+            continue
+
+        texture_key = resolve_texture_key_for_base(base_name, assets_data)
+        if texture_key is None:
+            continue
+
+        payload = build_entire_block_from_template(
+            template=template,
+            identifier=f"utilitycraft:{base_name}",
+            texture=texture_key,
+        )
+        target_path = build_entire_block_target_path(base_name)
+        if not dry_run:
+            write_json(target_path, payload)
+        existing_names.add(base_name)
+        created += 1
+
+    return created
+
+
+def organize_entire_blocks_by_category(dry_run: bool) -> int:
+    moved = 0
+    for block_path in iter_entire_block_files():
+        target_path = build_entire_block_target_path(block_path.stem)
+        if block_path == target_path:
+            continue
+
+        if not dry_run:
+            target_path.parent.mkdir(parents=True, exist_ok=True)
+            if target_path.exists() and target_path != block_path:
+                target_path.unlink()
+            block_path.replace(target_path)
+        moved += 1
+
+    if not dry_run:
+        for directory in sorted([path for path in ENTIRE_BLOCKS_DIR.rglob("*") if path.is_dir()], reverse=True):
+            if directory == ENTIRE_BLOCKS_DIR:
+                continue
+            try:
+                directory.rmdir()
+            except OSError:
+                pass
+
+    return moved
+
+
+def rewrite_stonecutter_recipes_to_vanilla_bases(
+    migrate_to_vanilla_base_names: set[str],
+    keep_utilitycraft_base_names: set[str],
+    dry_run: bool,
+) -> tuple[int, int]:
+    rewritten_forward = 0
+    rewritten_reverse = 0
+
+    for recipe_path in sorted(STONECUTTER_DIR.glob("*.json")):
+        payload = read_json(recipe_path)
+        recipe = payload.get("minecraft:recipe_shapeless", {})
+
+        if "stonecutter" not in recipe.get("tags", []):
+            continue
+
+        ingredients = recipe.get("ingredients", [])
+        result = recipe.get("result", {})
+        result_item = result.get("item") if isinstance(result, dict) else None
+        first_ingredient = ingredients[0] if isinstance(ingredients, list) and ingredients and isinstance(ingredients[0], dict) else {}
+        ingredient_item = first_ingredient.get("item")
+
+        if not isinstance(result_item, str) or not isinstance(ingredient_item, str):
+            continue
+
+        changed = False
+
+        parsed_result_variant = None
+        if result_item.startswith("utilitycraft:"):
+            parsed_result_variant = split_variant_item_name(result_item.split(":", 1)[1])
+
+        if parsed_result_variant is not None:
+            base_name, _variant_suffix = parsed_result_variant
+            if base_name in migrate_to_vanilla_base_names:
+                vanilla_base_item = f"minecraft:{base_name}"
+                if recipe.get("ingredients") != [{"item": vanilla_base_item}]:
+                    recipe["ingredients"] = [{"item": vanilla_base_item}]
+                    changed = True
+                    rewritten_forward += 1
+                if recipe.get("unlock") != [{"item": vanilla_base_item}]:
+                    recipe["unlock"] = [{"item": vanilla_base_item}]
+                    changed = True
+            elif base_name in keep_utilitycraft_base_names:
+                custom_base_item = f"utilitycraft:{base_name}"
+                if recipe.get("ingredients") != [{"item": custom_base_item}]:
+                    recipe["ingredients"] = [{"item": custom_base_item}]
+                    changed = True
+                    rewritten_forward += 1
+                if recipe.get("unlock") != [{"item": custom_base_item}]:
+                    recipe["unlock"] = [{"item": custom_base_item}]
+                    changed = True
+
+        if ingredient_item.startswith("utilitycraft:"):
+            parsed_ingredient_variant = split_variant_item_name(ingredient_item.split(":", 1)[1])
+            if parsed_ingredient_variant is not None:
+                base_name, _variant_suffix = parsed_ingredient_variant
+                if base_name in migrate_to_vanilla_base_names:
+                    vanilla_base_item = f"minecraft:{base_name}"
+                    if recipe.get("result", {}).get("item") != vanilla_base_item:
+                        recipe.setdefault("result", {})["item"] = vanilla_base_item
+                        changed = True
+                        rewritten_reverse += 1
+                elif base_name in keep_utilitycraft_base_names:
+                    custom_base_item = f"utilitycraft:{base_name}"
+                    if recipe.get("result", {}).get("item") != custom_base_item:
+                        recipe.setdefault("result", {})["item"] = custom_base_item
+                        changed = True
+                        rewritten_reverse += 1
+
+        if changed and not dry_run:
+            write_json(recipe_path, payload)
+
+    return rewritten_forward, rewritten_reverse
+
+
+def apply_vanilla_base_policy(vanilla_list_path: Path, dry_run: bool) -> dict[str, int]:
+    vanilla_base_names = load_vanilla_base_names(vanilla_list_path)
+    keep_utilitycraft_bases = detect_vanilla_bases_with_local_textures(vanilla_base_names)
+    migrate_to_vanilla_bases = vanilla_base_names - keep_utilitycraft_bases
+
+    removed_vanilla_entire_blocks = remove_vanilla_entire_blocks(migrate_to_vanilla_bases, dry_run)
+    restored_local_vanilla_entire_blocks = ensure_vanilla_entire_blocks_exist(keep_utilitycraft_bases, dry_run)
+    moved_entire_blocks = organize_entire_blocks_by_category(dry_run)
+    rewritten_forward_recipes, rewritten_reverse_recipes = rewrite_stonecutter_recipes_to_vanilla_bases(
+        migrate_to_vanilla_bases,
+        keep_utilitycraft_bases,
+        dry_run,
+    )
+
+    return {
+        "removed_vanilla_entire_blocks": removed_vanilla_entire_blocks,
+        "restored_local_vanilla_entire_blocks": restored_local_vanilla_entire_blocks,
+        "kept_utilitycraft_vanilla_bases": len(keep_utilitycraft_bases),
+        "moved_entire_blocks_to_categories": moved_entire_blocks,
+        "rewritten_forward_stonecutter_recipes": rewritten_forward_recipes,
+        "rewritten_reverse_stonecutter_recipes": rewritten_reverse_recipes,
+    }
+
+
 def build_entire_block_from_template(
     template: dict[str, Any],
     identifier: str,
@@ -180,8 +674,9 @@ def import_vanilla_compatible_blocks(
 
     vanilla_blocks = read_json(vanilla_blocks_json_path)
     vanilla_ids = extract_vanilla_ids_from_markdown(vanilla_list_path.read_text(encoding="utf-8"))
-    entire_template = read_json(ENTIRE_BLOCK_TEMPLATE_PATH)
+    entire_template = read_json(resolve_entire_block_template_path())
     assets_data = read_json(ASSETS_BLOCKS_PATH)
+    existing_entire_names = {path.stem for path in iter_entire_block_files()}
 
     imported_entire_blocks = 0
     imported_assets_entries = 0
@@ -192,7 +687,7 @@ def import_vanilla_compatible_blocks(
     for vanilla_id in vanilla_ids:
         vanilla_name = vanilla_id.split(":", 1)[1]
         custom_id = f"utilitycraft:{vanilla_name}"
-        custom_path = ENTIRE_BLOCKS_DIR / f"{vanilla_name}.json"
+        custom_path = build_entire_block_target_path(vanilla_name)
 
         vanilla_entry = vanilla_blocks.get(vanilla_name)
         if not isinstance(vanilla_entry, dict):
@@ -204,13 +699,14 @@ def import_vanilla_compatible_blocks(
             skipped_non_uniform_texture += 1
             continue
 
-        if custom_path.exists() or custom_id in FORCE_EXCLUDE_IDS:
+        if vanilla_name in existing_entire_names or custom_id in FORCE_EXCLUDE_IDS:
             skipped_already_existing += 1
         else:
             payload = build_entire_block_from_template(entire_template, custom_id, texture)
             if not dry_run:
                 write_json(custom_path, payload)
             imported_entire_blocks += 1
+            existing_entire_names.add(vanilla_name)
 
         if custom_id not in assets_data:
             assets_data[custom_id] = {
@@ -236,7 +732,7 @@ def find_targets(include_non_stone: bool) -> list[TargetBlock]:
     blocks_assets = read_json(ASSETS_BLOCKS_PATH)
     targets: list[TargetBlock] = []
 
-    for source_path in sorted(ENTIRE_BLOCKS_DIR.glob("*.json")):
+    for source_path in iter_entire_block_files():
         source = read_json(source_path)
         source_block = source.get("minecraft:block", {})
         source_description = source_block.get("description", {})
@@ -478,7 +974,11 @@ def collect_decorative_block_identifiers() -> list[str]:
 
     identifiers: set[str] = set()
     for directory in directories:
-        for path in sorted(directory.glob("*.json")):
+        if directory == ENTIRE_BLOCKS_DIR:
+            json_paths = iter_entire_block_files()
+        else:
+            json_paths = sorted(directory.glob("*.json"))
+        for path in json_paths:
             payload = read_json(path)
             identifier = payload.get("minecraft:block", {}).get("description", {}).get("identifier")
             if isinstance(identifier, str) and identifier.startswith("utilitycraft:"):
@@ -490,6 +990,7 @@ def collect_decorative_block_identifiers() -> list[str]:
 def update_block_localization_names(dry_run: bool) -> tuple[int, int]:
     tile_line_pattern = re.compile(r"^(tile\.utilitycraft:([a-z0-9_]+)\.name)=(.*)$")
     block_identifiers = collect_decorative_block_identifiers()
+    vanilla_pt_name_map = load_vanilla_pt_name_map(ROOT / "tools/vanilla_blocks_list.md")
 
     updated_existing_entries = 0
     created_missing_entries = 0
@@ -513,6 +1014,13 @@ def update_block_localization_names(dry_run: bool) -> tuple[int, int]:
             value = match.group(3).strip()
 
             normalized_value = value.replace("\\n", " ").strip()
+            if language in {"pt_BR", "es_MX"} and contains_english_tokens(normalized_value):
+                normalized_value = localize_block_name_from_identifier(
+                    block_name=block_name,
+                    language=language,
+                    existing_names=existing_names,
+                    vanilla_pt_name_map=vanilla_pt_name_map,
+                )
             wrapped_value = wrap_label_lines(normalized_value)
 
             if wrapped_value != value:
@@ -526,13 +1034,12 @@ def update_block_localization_names(dry_run: bool) -> tuple[int, int]:
             if block_name in existing_names:
                 continue
 
-            parsed_variant = split_variant_item_name(block_name)
-            if parsed_variant is None:
-                generated_name = humanize_identifier(block_name)
-            else:
-                base_name, variant_suffix = parsed_variant
-                base_label = existing_names.get(base_name, humanize_identifier(base_name))
-                generated_name = format_variant_label(base_label, variant_suffix, language)
+            generated_name = localize_block_name_from_identifier(
+                block_name=block_name,
+                language=language,
+                existing_names=existing_names,
+                vanilla_pt_name_map=vanilla_pt_name_map,
+            )
 
             wrapped_name = wrap_label_lines(generated_name)
             updated_lines.append(f"tile.utilitycraft:{block_name}.name={wrapped_name}")
@@ -595,7 +1102,7 @@ def create_reverse_variant_recipes(dry_run: bool) -> tuple[int, int]:
         if not isinstance(ingredient_item, str):
             continue
 
-        if not result_item.startswith("utilitycraft:") or not ingredient_item.startswith("utilitycraft:"):
+        if not result_item.startswith("utilitycraft:"):
             continue
 
         result_name = result_item.split(":", 1)[1]
@@ -605,7 +1112,10 @@ def create_reverse_variant_recipes(dry_run: bool) -> tuple[int, int]:
             continue
 
         base_name, variant_suffix = parsed_variant
-        base_item_id = f"utilitycraft:{base_name}"
+        if ingredient_item == f"minecraft:{base_name}":
+            base_item_id = f"minecraft:{base_name}"
+        else:
+            base_item_id = f"utilitycraft:{base_name}"
         variant_item_id = result_item
 
         reverse_file_name = f"{base_name}_from_{result_name}.json"
@@ -670,7 +1180,14 @@ def sync_or_create_group_items(
     icon: str,
     items: list[str],
 ) -> int:
-    desired_items = sorted(set(items))
+    seen: set[str] = set()
+    desired_items: list[str] = []
+    for item in items:
+        if item in seen:
+            continue
+        seen.add(item)
+        desired_items.append(item)
+
     for group in groups:
         current_name = group.get("group_identifier", {}).get("name")
         if current_name == group_name:
@@ -692,6 +1209,54 @@ def sync_or_create_group_items(
     return 1
 
 
+def infer_material_token(base_name: str) -> str:
+    words = base_name.split("_")
+    for token in MATERIAL_TOKEN_PRIORITY:
+        if token in words:
+            return token
+    return words[0] if words else base_name
+
+
+def extract_base_name(identifier: str) -> str:
+    name = identifier.split(":", 1)[1] if ":" in identifier else identifier
+    parsed = split_variant_item_name(name)
+    if parsed is None:
+        return name
+    return parsed[0]
+
+
+def build_material_order(stonework_items: list[str]) -> list[str]:
+    ordered_tokens: list[str] = []
+    seen: set[str] = set()
+
+    for identifier in stonework_items:
+        base_name = extract_base_name(identifier)
+        token = infer_material_token(base_name)
+        if token in seen:
+            continue
+        seen.add(token)
+        ordered_tokens.append(token)
+
+    for token in MATERIAL_TOKEN_PRIORITY:
+        if token in seen:
+            continue
+        seen.add(token)
+        ordered_tokens.append(token)
+
+    return ordered_tokens
+
+
+def sort_variant_items_by_material(items: list[str], material_order: list[str]) -> list[str]:
+    order_index = {token: index for index, token in enumerate(material_order)}
+
+    def key(identifier: str) -> tuple[int, str, str]:
+        base_name = extract_base_name(identifier)
+        token = infer_material_token(base_name)
+        return (order_index.get(token, len(order_index) + 1), base_name, identifier)
+
+    return sorted(set(items), key=key)
+
+
 def collect_identifiers_from_dir(directory: Path) -> list[str]:
     identifiers: list[str] = []
     for path in sorted(directory.glob("*.json")):
@@ -707,6 +1272,16 @@ def update_crafting_catalog(dry_run: bool) -> tuple[int, int, int, int]:
     categories = data["minecraft:crafting_items_catalog"]["categories"]
     construction = next(category for category in categories if category["category_name"] == "construction")
     groups = construction["groups"]
+    stonework_group = next(
+        (
+            group
+            for group in groups
+            if group.get("group_identifier", {}).get("name") == STONEWORK_GROUP_NAME
+        ),
+        None,
+    )
+    stonework_items = stonework_group.get("items", []) if isinstance(stonework_group, dict) else []
+    material_order = build_material_order(stonework_items)
 
     filtered_groups: list[dict[str, Any]] = []
     removed_slab_groups = 0
@@ -726,19 +1301,21 @@ def update_crafting_catalog(dry_run: bool) -> tuple[int, int, int, int]:
 
     vertical_slab_ids = collect_identifiers_from_dir(ROOT / "Data/blocks/decorative/vertical_slabs")
     three_step_stairs_ids = collect_identifiers_from_dir(UNIQUE_STAIRS_DIR)
+    ordered_vertical_slab_ids = sort_variant_items_by_material(vertical_slab_ids, material_order)
+    ordered_three_step_stairs_ids = sort_variant_items_by_material(three_step_stairs_ids, material_order)
 
     catalog_updates = 0
     catalog_updates += sync_or_create_group_items(
         construction["groups"],
         VERTICAL_SLABS_GROUP_NAME,
         "utilitycraft:andesite_tiles_vertical_slab",
-        vertical_slab_ids,
+        ordered_vertical_slab_ids,
     )
     catalog_updates += sync_or_create_group_items(
         construction["groups"],
         THREE_STEP_STAIRS_GROUP_NAME,
         "utilitycraft:andesite_tiles_three_steps_stairs",
-        three_step_stairs_ids,
+        ordered_three_step_stairs_ids,
     )
 
     if not dry_run and (removed_slab_groups or removed_stairs_groups or catalog_updates):
@@ -925,6 +1502,15 @@ def run_generation(targets: list[TargetBlock], dry_run: bool) -> dict[str, int]:
 
 def main() -> None:
     args = parse_args()
+
+    if not args.import_vanilla_compatible:
+        policy_stats = apply_vanilla_base_policy(
+            vanilla_list_path=args.vanilla_list,
+            dry_run=args.dry_run,
+        )
+        print("Vanilla base policy summary:")
+        for key, value in policy_stats.items():
+            print(f"- {key}: {value}")
 
     if args.import_vanilla_compatible:
         if args.vanilla_blocks_json is None:

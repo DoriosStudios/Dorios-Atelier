@@ -9,7 +9,7 @@
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:prismarine_bricks"
+                "item": "minecraft:prismarine_bricks"
             }
         ],
         "result": {
@@ -18,7 +18,7 @@
         },
         "unlock": [
             {
-                "item": "utilitycraft:prismarine_bricks"
+                "item": "minecraft:prismarine_bricks"
             }
         ]
     }

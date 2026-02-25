@@ -9,7 +9,7 @@
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:packed_mud"
+                "item": "minecraft:packed_mud"
             }
         ],
         "result": {
@@ -18,7 +18,7 @@
         },
         "unlock": [
             {
-                "item": "utilitycraft:packed_mud"
+                "item": "minecraft:packed_mud"
             }
         ]
     }

@@ -9,7 +9,7 @@
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:cracked_deepslate_tiles"
+                "item": "minecraft:cracked_deepslate_tiles"
             }
         ],
         "result": {
@@ -18,7 +18,7 @@
         },
         "unlock": [
             {
-                "item": "utilitycraft:cracked_deepslate_tiles"
+                "item": "minecraft:cracked_deepslate_tiles"
             }
         ]
     }

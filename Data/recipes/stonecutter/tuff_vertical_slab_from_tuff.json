@@ -9,7 +9,7 @@
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:tuff"
+                "item": "minecraft:tuff"
             }
         ],
         "result": {
@@ -18,7 +18,7 @@
         },
         "unlock": [
             {
-                "item": "utilitycraft:tuff"
+                "item": "minecraft:tuff"
             }
         ]
     }

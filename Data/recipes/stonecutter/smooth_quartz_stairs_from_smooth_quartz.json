@@ -9,7 +9,7 @@
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:smooth_quartz"
+                "item": "minecraft:smooth_quartz"
             }
         ],
         "result": {
@@ -18,7 +18,7 @@
         },
         "unlock": [
             {
-                "item": "utilitycraft:smooth_quartz"
+                "item": "minecraft:smooth_quartz"
             }
         ]
     }

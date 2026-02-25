@@ -9,7 +9,7 @@
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:mossy_stone_bricks"
+                "item": "minecraft:mossy_stone_bricks"
             }
         ],
         "result": {
@@ -18,7 +18,7 @@
         },
         "unlock": [
             {
-                "item": "utilitycraft:mossy_stone_bricks"
+                "item": "minecraft:mossy_stone_bricks"
             }
         ]
     }

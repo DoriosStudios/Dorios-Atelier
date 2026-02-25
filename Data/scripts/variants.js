@@ -164,7 +164,7 @@ export const BLOCK_ALIAS = new Map([
   ["minecraft:dripstone_block", "utilitycraft:polished_dripstone"],
   ["minecraft:tuff", "minecraft:polished_tuff"],
   ["minecraft:tuff_bricks", "utilitycraft:tuff_bricks"],
-  ["minecraft:tuff_tiles", "utilitycraft:tuff_tiles"],
+  ["utilitycraft:tuff_tiles", "utilitycraft:tuff_tiles"],
   ["minecraft:chiseled_tuff", "utilitycraft:chiseled_tuff"],
   ["minecraft:chiseled_polished_blackstone", "utilitycraft:chiseled_blackstone"]
 ]);

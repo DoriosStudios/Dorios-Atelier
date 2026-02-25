@@ -9,7 +9,7 @@
         ],
         "ingredients": [
             {
-                "item": "utilitycraft:polished_blackstone_bricks"
+                "item": "minecraft:polished_blackstone_bricks"
             }
         ],
         "result": {
@@ -18,7 +18,7 @@
         },
         "unlock": [
             {
-                "item": "utilitycraft:polished_blackstone_bricks"
+                "item": "minecraft:polished_blackstone_bricks"
             }
         ]
     }
