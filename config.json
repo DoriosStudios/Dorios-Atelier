@@ -6,7 +6,7 @@
 		"Dorios Studios"
 	],
 	"targetVersion": "1.21.111",
-	"description": "1.0.1 §6Dorios Studios§8",
+	"description": "1.1.0 §6Dorios Studios§8",
 	"experimentalGameplay": {
 		"upcomingCreatorFeatures": false,
 		"experimentalCreatorCameraFeatures": false,
@@ -16,8 +16,8 @@
 	},
 	"bdsProject": false,
 	"packs": {
-		"behaviorPack": "./Data",
-		"resourcePack": "./Assets"
+		"behaviorPack": "./BP",
+		"resourcePack": "./RP"
 	},
 	"worlds": [
 		"./worlds/*"

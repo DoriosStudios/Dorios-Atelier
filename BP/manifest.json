@@ -1,0 +1,66 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Dorios' Atelier",
+		"description": "1.1.0 §6Dorios Studios§8",
+		"uuid": "d2d3f818-45f2-4c50-8e0b-c3d87588687e",
+		"version": [
+			1,
+			1,
+			1
+		],
+		"min_engine_version": [
+			1,
+			20,
+			80
+		]
+	},
+	"metadata": {
+		"product_type": "addon"
+	},
+	"modules": [
+		{
+			"type": "data",
+			"description": "Main module of the behavior pack.",
+			"uuid": "a1d5c0a1-8312-42ed-9c3a-79314f0b00c7",
+			"version": [
+				1,
+				1,
+				0
+			]
+		},
+		{
+			"type": "script",
+			"language": "javascript",
+			"entry": "scripts/main.js",
+			"description": "Dorios' Atelier main script file.",
+			"uuid": "8b52c6bf-4b25-4a3f-8a8b-3af4e3f3428c",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"capabilities": [
+		"script_eval"
+	],
+	"dependencies": [
+		{
+			"uuid": "b5d1f818-45f2-4c50-8e0b-c3d87588687f",
+			"version": [
+				1,
+				1,
+				1
+			]
+		},
+		{
+			"module_name": "@minecraft/server",
+			"version": "2.2.0"
+		},
+		{
+			"module_name": "@minecraft/server-ui",
+			"version": "2.0.0"
+		}
+	]
+}
