@@ -111,7 +111,7 @@
                 "seconds_to_destroy": 40
             },
             "minecraft:destructible_by_explosion": false,
-            "minecraft:light_dampening": 15,
+            "minecraft:light_dampening": 0,
             "minecraft:light_emission": 0,
             "tag:minecraft:is_pickaxe_item_destructible": {},
             "tag:minecraft:diamond_tier_destructible": {},

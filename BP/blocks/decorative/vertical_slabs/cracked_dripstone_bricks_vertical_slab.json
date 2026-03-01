@@ -53,7 +53,7 @@
             "minecraft:destructible_by_mining": {
                 "seconds_to_destroy": 1.4
             },
-            "minecraft:light_dampening": 15,
+            "minecraft:light_dampening": 0,
             "minecraft:light_emission": 0,
             "tag:minecraft:is_pickaxe_item_destructible": {},
             "tag:minecraft:stone_tier_destructible": {},
