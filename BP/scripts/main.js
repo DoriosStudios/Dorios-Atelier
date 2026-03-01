@@ -4,3 +4,5 @@ import './gloves.js'
 import './chisel.js'
 import './stairs.js'
 import './variants.js'
+import './insight_registry_injector.generated.js'
+
