@@ -156,7 +156,7 @@ jobs:
             *)    webhook_url="${webhook_url}?with_components=true" ;;
           esac
 
-          curl -sS \
+          curl -sS --fail-with-body \
             --form-string "payload_json=$payload" \
             -F "files[0]=@.github/workflows/release.png;type=image/png" \
             "$webhook_url"
