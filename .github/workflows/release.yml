@@ -1,0 +1,28 @@
+# .github/workflows/discord-release.yml
+name: Discord Release Notifier
+on:
+  release:
+    types: [published, prereleased]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify Discord
+        if: always() # use 'if' below to split prerelease/release if needed
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_RELEASE }}
+        run: |
+          # decide title and color based on prerelease flag
+          if [ "${{ github.event.release.prerelease }}" = "true" ]; then
+            title="📣 Pre-release: ${{ github.event.release.tag_name }}"
+            color=16753920
+          else
+            title="🚀 Release: ${{ github.event.release.tag_name }}"
+            color=3066993
+          fi
+          body="$(echo "${{ github.event.release.body }}" | sed ':a;N;$!ba;s/\n/\\n/g')"
+          payload=$(jq -n --arg t "$title" --arg b "$body" --argjson c $color '{
+            embeds: [{ title: $t, description: $b, color: $c }]
+          }')
+          curl -s -H "Content-Type: application/json" -d "$payload" "$DISCORD_WEBHOOK"
