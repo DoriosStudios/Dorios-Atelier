@@ -8,21 +8,90 @@ jobs:
   notify:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Notify Discord
         if: always() # use 'if' below to split prerelease/release if needed
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_RELEASE }}
+          RELEASE_NAME: ${{ github.event.release.name }}
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+          RELEASE_BODY: ${{ github.event.release.body }}
+          RELEASE_URL: ${{ github.event.release.html_url }}
+          RELEASE_PRERELEASE: ${{ github.event.release.prerelease }}
+          RELEASE_PUBLISHED_AT: ${{ github.event.release.published_at }}
         run: |
-          # decide title and color based on prerelease flag
-          if [ "${{ github.event.release.prerelease }}" = "true" ]; then
-            title="📣 Pre-release: ${{ github.event.release.tag_name }}"
+          set -euo pipefail
+
+          # Decide title and color based on prerelease flag
+          if [ "$RELEASE_PRERELEASE" = "true" ]; then
             color=16753920
+            release_kind="Prerelease"
           else
-            title="🚀 Release: ${{ github.event.release.tag_name }}"
             color=3066993
+            release_kind="Release"
           fi
-          body="$(echo "${{ github.event.release.body }}" | sed ':a;N;$!ba;s/\n/\\n/g')"
-          payload=$(jq -n --arg t "$title" --arg b "$body" --argjson c $color '{
-            embeds: [{ title: $t, description: $b, color: $c }]
-          }')
-          curl -s -H "Content-Type: application/json" -d "$payload" "$DISCORD_WEBHOOK"
+
+          title="$RELEASE_NAME"
+          if [ -z "$title" ]; then
+            title="$RELEASE_TAG"
+          fi
+
+          # Simulated subtitle + capped description
+          subtitle="**Version:** \`$RELEASE_TAG\`"
+          max_chars=500
+
+          raw_body="$RELEASE_BODY"
+          if [ -z "$raw_body" ]; then
+            raw_body="No release notes were provided."
+          fi
+
+          # Normalize spacing/newlines so the cap is predictable
+          clean_body="$(printf '%s' "$raw_body" | sed 's/\r//g' | sed '/^[[:space:]]*$/d' | tr '\n' ' ' | sed 's/[[:space:]]\+/ /g' | sed 's/^ //;s/ $//')"
+
+          available=$((max_chars - ${#subtitle} - 2))
+          if [ "$available" -lt 0 ]; then
+            available=0
+          fi
+
+          if [ ${#clean_body} -gt "$available" ]; then
+            if [ "$available" -gt 1 ]; then
+              body_trimmed="${clean_body:0:$((available - 1))}…"
+            else
+              body_trimmed=""
+            fi
+          else
+            body_trimmed="$clean_body"
+          fi
+
+          description="$subtitle"
+          if [ -n "$body_trimmed" ]; then
+            description="$subtitle\n\n$body_trimmed"
+          fi
+
+          payload=$(jq -n \
+            --arg t "$title" \
+            --arg d "$description" \
+            --arg u "$RELEASE_URL" \
+            --arg ts "$RELEASE_PUBLISHED_AT" \
+            --arg ft "$release_kind • Dorios' Atelier" \
+            --arg thumb "attachment://release.png" \
+            --argjson c "$color" \
+            '{
+              embeds: [{
+                title: $t,
+                description: $d,
+                url: (if ($u | length) > 0 then $u else null end),
+                color: $c,
+                thumbnail: { url: $thumb },
+                footer: { text: $ft },
+                timestamp: (if ($ts | length) > 0 then $ts else null end)
+              }],
+              allowed_mentions: { parse: [] }
+            } | (.embeds[0] |= with_entries(select(.value != null)))')
+
+          curl -sS \
+            -F "payload_json=$payload" \
+            -F "files[0]=@.github/workflows/release.png;type=image/png" \
+            "$DISCORD_WEBHOOK"
