@@ -1,5 +1,5 @@
 {
-    "format_version": "1.21.100",
+    "format_version": "1.20.80",
     "minecraft:block": {
         "description": {
             "identifier": "utilitycraft:snowy_grass_block",
@@ -8,16 +8,12 @@
             }
         },
         "components": {
-            "minecraft:geometry": "geometry.utilitycraft_3_sides",
-            "minecraft:material_instances": {
-                "*": {
-                    "texture": "utilitycraft_snowy_grass_block",
-                    "render_method": "opaque"
-                }
-            },
+            "minecraft:geometry": "minecraft:geometry.full_block",
             "minecraft:destructible_by_mining": {
                 "seconds_to_destroy": 0.8
             },
+            "minecraft:light_dampening": 15,
+            "minecraft:light_emission": 0,
             "tag:minecraft:is_shovel_item_destructible": {},
             "tag:grass": {}
         }

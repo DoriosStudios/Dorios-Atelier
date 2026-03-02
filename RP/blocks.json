@@ -318,7 +318,11 @@
     },
     "utilitycraft:snowy_grass_block": {
         "sound": "snow",
-        "textures": "utilitycraft_snowy_grass_block"
+        "textures": {
+            "side": "grass_block_snow",
+            "up": "snow",
+            "down": "dirt"
+        }
     },
     "utilitycraft:sanded_acacia_wood": {
         "sound": "wood",

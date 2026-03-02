@@ -1,5 +1,7 @@
-// variants.js
-// Apenas constantes exportadas: MATERIAL_CYCLES e BLOCK_ALIAS
+/**
+ * Variants - variants.js
+ * Contains the material cycle definitions for the chisel and stairs, as well as the block alias map for Insight.
+ */
 const BASE_CYCLES = [
   [
     // Andesite
@@ -21,6 +23,7 @@ const BASE_CYCLES = [
     // Blackstone
     "minecraft:polished_blackstone",
     "minecraft:polished_blackstone_bricks",
+    "minecraft:chiseled_blackstone",
     "utilitycraft:blackstone_tiles",
     "utilitycraft:chiseled_blackstone"
   ],
@@ -34,7 +37,7 @@ const BASE_CYCLES = [
   ],
   [
     // Deepslate
-    "polished_deepslate",
+    "minecraft:polished_deepslate",
     "minecraft:deepslate_bricks",
     "minecraft:deepslate_tiles",
     "minecraft:chiseled_deepslate"
@@ -60,10 +63,12 @@ const BASE_CYCLES = [
     "minecraft:polished_granite",
     "utilitycraft:granite_bricks",
     "utilitycraft:granite_tiles",
-    "utilitycraft:chiseled_granite"
+    "utilitycraft:chiseled_granite",
+    "utilitycraft:chiseled_granite_bricks"
   ],
   [
     // Stone
+    "minecraft:stone",
     "minecraft:stone_bricks",
     "minecraft:chiseled_stone_bricks"
   ],
@@ -76,9 +81,19 @@ const BASE_CYCLES = [
     "minecraft:chiseled_tuff_bricks"
   ],
   [
+    // Dirt
+    "minecraft:dirt",
+    "minecraft:coarse_dirt",
+    "minecraft:dirt_with_roots",
+  ],
+  [
     // Grass
-    "dirt",
-    "utilitycraft:snowy_grass_block"
+    "minecraft:grass_block",
+    "utilitycraft:snowy_grass_block",
+    "minecraft:grass_path",
+    "minecraft:farmland",
+    "minecraft:podzol",
+    "minecraft:mycelium"
   ]
 ];
 
@@ -168,3 +183,8 @@ export const BLOCK_ALIAS = new Map([
   ["minecraft:chiseled_tuff", "utilitycraft:chiseled_tuff"],
   ["minecraft:chiseled_polished_blackstone", "utilitycraft:chiseled_blackstone"]
 ]);
+
+globalThis.InsightAtelierVariants = Object.freeze({
+  MATERIAL_CYCLES,
+  BLOCK_ALIAS
+});

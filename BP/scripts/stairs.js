@@ -227,9 +227,19 @@ const isStair = block => block && STAIR_IDS.has(block.typeId);
 
 const getState = (block, stateName) => block?.permutation?.getState(stateName);
 
-const getFacing = block => {
+const isCurvedOutShape = shape => shape === "curved_out_left" || shape === "curved_out_right";
+
+const getRawFacing = block => {
     const facing = getState(block, FACING_STATE);
     return DIR_OFFSETS[facing] ? facing : undefined;
+};
+
+const getFacing = block => {
+    const rawFacing = getRawFacing(block);
+    if (!rawFacing) return undefined;
+
+    const shape = getState(block, STAIR_SHAPE_STATE);
+    return isCurvedOutShape(shape) ? OPPOSITE[rawFacing] : rawFacing;
 };
 
 const sameHalf = (block, neighbor) => getState(block, HALF_STATE) === getState(neighbor, HALF_STATE);
@@ -270,10 +280,23 @@ const updateStair = block => {
 
     const shape = resolveShape(block);
     const currentShape = getState(block, STAIR_SHAPE_STATE);
-    if (currentShape === shape) return;
+
+    const rawFacing = getRawFacing(block);
+    const logicalFacing = getFacing(block);
+    const targetFacing = logicalFacing
+        ? (isCurvedOutShape(shape) ? OPPOSITE[logicalFacing] : logicalFacing)
+        : undefined;
+
+    const shapeUnchanged = currentShape === shape;
+    const facingUnchanged = !targetFacing || rawFacing === targetFacing;
+    if (shapeUnchanged && facingUnchanged) return;
 
     try {
-        block.setPermutation(block.permutation.withState(STAIR_SHAPE_STATE, shape));
+        let permutation = block.permutation.withState(STAIR_SHAPE_STATE, shape);
+        if (targetFacing && rawFacing !== targetFacing) {
+            permutation = permutation.withState(FACING_STATE, targetFacing);
+        }
+        block.setPermutation(permutation);
     } catch {
         return;
     }
