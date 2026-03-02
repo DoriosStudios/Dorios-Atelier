@@ -107,7 +107,7 @@ jobs:
             fi
           fi
 
-          payload=$(jq -n \
+          payload=$(jq -cn \
             --arg t "$title" \
             --arg d1 "$description_part_1" \
             --arg d2 "$description_part_2" \
@@ -157,6 +157,6 @@ jobs:
           esac
 
           curl -sS \
-            -F "payload_json=$payload" \
+            --form-string "payload_json=$payload" \
             -F "files[0]=@.github/workflows/release.png;type=image/png" \
             "$webhook_url"
