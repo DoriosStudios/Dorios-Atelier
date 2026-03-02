@@ -42,58 +42,98 @@ jobs:
             title="$RELEASE_TAG"
           fi
 
-          # Simulated subtitle + capped description
+          # Simulated subtitle + release notes
           subtitle="**Version:** \`$RELEASE_TAG\`"
-          max_chars=500
 
           raw_body="$RELEASE_BODY"
           if [ -z "$raw_body" ]; then
             raw_body="No release notes were provided."
           fi
 
-          # Normalize spacing/newlines so the cap is predictable
-          clean_body="$(printf '%s' "$raw_body" | sed 's/\r//g' | sed '/^[[:space:]]*$/d' | tr '\n' ' ' | sed 's/[[:space:]]\+/ /g' | sed 's/^ //;s/ $//')"
+          # Keep line breaks (Discord renders real newlines, not literal "\n")
+          clean_body="$(printf '%s' "$raw_body" | sed 's/\r//g')"
+          full_text="$(printf '%s\n\n%s' "$subtitle" "$clean_body")"
 
-          available=$((max_chars - ${#subtitle} - 2))
-          if [ "$available" -lt 0 ]; then
-            available=0
+          # Respect official embed limits:
+          # - description: 4096
+          # - total textual content across embeds: 6000
+          max_total_chars=6000
+          max_description_chars=4096
+
+          if [ ${#title} -gt 256 ]; then
+            title="${title:0:255}…"
           fi
 
-          if [ ${#clean_body} -gt "$available" ]; then
-            if [ "$available" -gt 1 ]; then
-              body_trimmed="${clean_body:0:$((available - 1))}…"
-            else
-              body_trimmed=""
+          footer_text="$release_kind • Dorios' Atelier"
+          if [ ${#footer_text} -gt 2048 ]; then
+            footer_text="${footer_text:0:2047}…"
+          fi
+
+          available_for_notes=$((max_total_chars - ${#title} - ${#footer_text}))
+          if [ "$available_for_notes" -lt 0 ]; then
+            available_for_notes=0
+          fi
+
+          first_chunk_limit=$max_description_chars
+          if [ "$first_chunk_limit" -gt "$available_for_notes" ]; then
+            first_chunk_limit=$available_for_notes
+          fi
+
+          description_part_1="${full_text:0:$first_chunk_limit}"
+          consumed_chars=${#description_part_1}
+          remaining_budget=$((available_for_notes - consumed_chars))
+
+          remaining_text=""
+          if [ ${#full_text} -gt "$consumed_chars" ]; then
+            remaining_text="${full_text:$consumed_chars}"
+          fi
+
+          second_chunk_limit=$max_description_chars
+          if [ "$second_chunk_limit" -gt "$remaining_budget" ]; then
+            second_chunk_limit=$remaining_budget
+          fi
+
+          description_part_2=""
+          if [ "$second_chunk_limit" -gt 0 ] && [ -n "$remaining_text" ]; then
+            description_part_2="${remaining_text:0:$second_chunk_limit}"
+          fi
+
+          sent_chars=$(( ${#description_part_1} + ${#description_part_2} ))
+          if [ ${#full_text} -gt "$sent_chars" ] && [ "$sent_chars" -gt 0 ]; then
+            if [ -n "$description_part_2" ] && [ ${#description_part_2} -gt 0 ]; then
+              description_part_2="${description_part_2:0:$(( ${#description_part_2} - 1 ))}…"
+            elif [ -n "$description_part_1" ] && [ ${#description_part_1} -gt 0 ]; then
+              description_part_1="${description_part_1:0:$(( ${#description_part_1} - 1 ))}…"
             fi
-          else
-            body_trimmed="$clean_body"
-          fi
-
-          description="$subtitle"
-          if [ -n "$body_trimmed" ]; then
-            description="$subtitle\n\n$body_trimmed"
           fi
 
           payload=$(jq -n \
             --arg t "$title" \
-            --arg d "$description" \
+            --arg d1 "$description_part_1" \
+            --arg d2 "$description_part_2" \
             --arg u "$RELEASE_URL" \
             --arg ts "$RELEASE_PUBLISHED_AT" \
-            --arg ft "$release_kind • Dorios' Atelier" \
+            --arg ft "$footer_text" \
             --arg thumb "attachment://release.png" \
             --argjson c "$color" \
             '{
-              embeds: [{
-                title: $t,
-                description: $d,
-                url: (if ($u | length) > 0 then $u else null end),
-                color: $c,
-                thumbnail: { url: $thumb },
-                footer: { text: $ft },
-                timestamp: (if ($ts | length) > 0 then $ts else null end)
-              }],
+              embeds: (
+                [{
+                  title: $t,
+                  description: $d1,
+                  url: (if ($u | length) > 0 then $u else null end),
+                  color: $c,
+                  thumbnail: { url: $thumb },
+                  footer: { text: $ft },
+                  timestamp: (if ($ts | length) > 0 then $ts else null end)
+                }] +
+                (if ($d2 | length) > 0 then [{
+                  description: $d2,
+                  color: $c
+                }] else [] end)
+              ),
               allowed_mentions: { parse: [] }
-            } | (.embeds[0] |= with_entries(select(.value != null)))')
+            } | (.embeds |= map(with_entries(select(.value != null))))')
 
           curl -sS \
             -F "payload_json=$payload" \
