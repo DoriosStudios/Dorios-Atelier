@@ -43,7 +43,8 @@ jobs:
           fi
 
           # Simulated subtitle + release notes
-          subtitle="**Version:** \`$RELEASE_TAG\`"
+          subtitle="# $RELEASE_NAME"
+          version_line="Version: $RELEASE_TAG"
 
           raw_body="$RELEASE_BODY"
           if [ -z "$raw_body" ]; then
@@ -52,7 +53,7 @@ jobs:
 
           # Keep line breaks (Discord renders real newlines, not literal "\n")
           clean_body="$(printf '%s' "$raw_body" | sed 's/\r//g')"
-          full_text="$(printf '%s\n\n%s' "$subtitle" "$clean_body")"
+          full_text="$(printf '%s\n%s\n\n%s' "$subtitle" "$version_line" "$clean_body")"
 
           # Respect official embed limits:
           # - description: 4096
@@ -114,7 +115,6 @@ jobs:
             --arg u "$RELEASE_URL" \
             --arg ts "$RELEASE_PUBLISHED_AT" \
             --arg ft "$footer_text" \
-            --arg thumb "attachment://release.png" \
             --argjson c "$color" \
             '{
               embeds: (
@@ -123,7 +123,6 @@ jobs:
                   description: $d1,
                   url: (if ($u | length) > 0 then $u else null end),
                   color: $c,
-                  thumbnail: { url: $thumb },
                   footer: { text: $ft },
                   timestamp: (if ($ts | length) > 0 then $ts else null end)
                 }] +
@@ -158,5 +157,4 @@ jobs:
 
           curl -sS --fail-with-body \
             --form-string "payload_json=$payload" \
-            -F "files[0]=@.github/workflows/release.png;type=image/png" \
             "$webhook_url"
