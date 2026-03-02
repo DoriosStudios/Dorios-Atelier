@@ -2,17 +2,21 @@
 name: Discord Release Notifier
 on:
   release:
-    types: [published, prereleased]
+    types: [prereleased]
+
+concurrency:
+  group: discord-release-${{ github.event.release.id }}
+  cancel-in-progress: true
 
 jobs:
   notify:
+    if: ${{ github.run_attempt == 1 }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Notify Discord
-        if: always() # use 'if' below to split prerelease/release if needed
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_RELEASE }}
           RELEASE_NAME: ${{ github.event.release.name }}
