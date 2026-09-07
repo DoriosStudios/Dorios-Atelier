@@ -23,7 +23,7 @@
     "test": "node --test tools/tests/*.test.mjs"
   },
   "dependencies": {
-    "@minecraft/server": "^2.5.0",
+    "@minecraft/server": "^2.9.0",
     "@octokit/rest": "^22.0.1",
     "minecraft": "^0.0.2"
   },

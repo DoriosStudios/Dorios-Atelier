@@ -1,4 +1,4 @@
-import { system, world } from '@minecraft/server'
+import { EntitySwingSource, HeldItemOption, world } from '@minecraft/server'
 
 const TOOL_NAMESPACES = ['dorios_atelier', 'utilitycraft']
 const TOOL_KIND_BY_SUFFIX = new Map([
@@ -10,16 +10,11 @@ const TOOL_KIND_BY_SUFFIX = new Map([
 const LOCK_PREFIX = '§8DA_LOCK:'
 const LOCK_LABEL_PREFIX = 'Lock: '
 const LOCK_DYNAMIC_PROPERTY_PREFIX = 'dorios_atelier:lock:'
-const DOUBLE_SNEAK_WINDOW_TICKS = 10
 const VIEW_DISTANCE = 8
 
-const SNEAK_STATE = new Map()
 const LOCK_RESOLVERS = new Map()
-let tickCounter = 0
 
 const unique = values => Array.from(new Set(values.filter(Boolean)))
-
-const getPlayerKey = player => player?.id ?? player?.nameTag ?? 'unknown-player'
 
 const getSelectedSlotIndex = player => {
 	if (typeof player?.selectedSlot === 'number') return player.selectedSlot
@@ -72,6 +67,14 @@ const getViewedBlock = player => {
 	}
 }
 
+const isLookingAtEntity = player => {
+	try {
+		return Boolean(player?.getEntitiesFromViewDirection?.({ maxDistance: VIEW_DISTANCE })?.length)
+	} catch {
+		return false
+	}
+}
+
 const normalizeLock = lock => {
 	if (!lock || typeof lock !== 'object') return undefined
 	return {
@@ -86,21 +89,10 @@ const normalizeLock = lock => {
 const dynamicPropertyIdForKind = kind => `${LOCK_DYNAMIC_PROPERTY_PREFIX}${kind}`
 
 const isSameLockTarget = (a, b) => {
-	if (!a || !b) return false
-	if (a.kind !== b.kind) return false
-
-	if (a.variant && b.variant) {
-		return a.variant === b.variant
-	}
-
-	if (a.state && b.state && !a.variant && !b.variant) {
-		return a.state === b.state
-	}
-
-	if (a.targetId && b.targetId) {
-		return a.targetId === b.targetId
-	}
-
+	if (!a || !b || a.kind !== b.kind) return false
+	if (a.variant && b.variant) return a.variant === b.variant
+	if (a.state && b.state && !a.variant && !b.variant) return a.state === b.state
+	if (a.targetId && b.targetId) return a.targetId === b.targetId
 	return false
 }
 
@@ -190,10 +182,7 @@ const writeLockToLore = (itemStack, kind, lock) => {
 	}
 }
 
-const setHeldToolLock = (player, kind, lock) => {
-	const context = getHeldItemContext(player)
-	if (!context) return false
-
+const setToolLock = (context, kind, lock) => {
 	const heldKind = parseToolKind(context.stack.typeId)
 	if (heldKind !== kind) return false
 
@@ -202,7 +191,15 @@ const setHeldToolLock = (player, kind, lock) => {
 	return true
 }
 
-const toggleLockFromSneak = player => {
+const showMemoryFeedback = (player, message) => {
+	try {
+		player?.onScreenDisplay?.setActionBar?.(message)
+	} catch {
+		// Best effort feedback only.
+	}
+}
+
+const recordViewedBlock = player => {
 	const context = getHeldItemContext(player)
 	if (!context) return
 
@@ -210,12 +207,7 @@ const toggleLockFromSneak = player => {
 	if (!kind) return
 
 	const viewedBlock = getViewedBlock(player)
-	const currentLock = readToolLockFromItem(context.stack, kind)
-
-	if (!viewedBlock) {
-		setHeldToolLock(player, kind, undefined)
-		return
-	}
+	if (!viewedBlock) return
 
 	const resolver = LOCK_RESOLVERS.get(kind)
 	const nextLock = normalizeLock(
@@ -229,53 +221,51 @@ const toggleLockFromSneak = player => {
 	)
 
 	if (!nextLock) return
+	if (isSameLockTarget(readToolLockFromItem(context.stack, kind), nextLock)) return
 
-	if (currentLock && isSameLockTarget(currentLock, nextLock)) {
-		setHeldToolLock(player, kind, undefined)
-		return
-	}
-
-	const saved = setHeldToolLock(player, kind, nextLock)
+	const saved = setToolLock(context, kind, nextLock)
 	if (!saved) return
 
 	const variant = nextLock.label ?? nextLock.variant ?? nextLock.state ?? 'custom'
-	try {
-		player?.onScreenDisplay?.setActionBar?.(`§6Locked §f${variant} §6variant!`)
-	} catch {
-		// Best effort feedback only.
+	showMemoryFeedback(player, `§6Locked §f${variant} §6variant!`)
+}
+
+const clearHeldToolMemory = player => {
+	const context = getHeldItemContext(player)
+	if (!context) return
+
+	const kind = parseToolKind(context.stack.typeId)
+	if (!kind || !readToolLockFromItem(context.stack, kind)) return
+	if (!setToolLock(context, kind, undefined)) return
+
+	showMemoryFeedback(player, '§6Tool memory cleared!')
+}
+
+const handleToolSwing = event => {
+	const { heldItemStack, player, swingSource } = event ?? {}
+	if (!player?.isSneaking || !parseToolKind(heldItemStack?.typeId)) return
+
+	if (swingSource === EntitySwingSource.Mine) {
+		recordViewedBlock(player)
+		return
+	}
+
+	// An attack aimed at an entity is not an air swing and must not clear memory.
+	if (swingSource === EntitySwingSource.Attack && !isLookingAtEntity(player)) {
+		clearHeldToolMemory(player)
 	}
 }
 
-const updateSneakMemory = player => {
-	const key = getPlayerKey(player)
-	const current = Boolean(player?.isSneaking)
-	const previous = SNEAK_STATE.get(key) ?? { wasSneaking: false, lastSneakTick: -9999 }
-
-	const risingEdge = current && !previous.wasSneaking
-	if (risingEdge) {
-		if (tickCounter - previous.lastSneakTick <= DOUBLE_SNEAK_WINDOW_TICKS) {
-			toggleLockFromSneak(player)
-		}
-		previous.lastSneakTick = tickCounter
-	}
-
-	previous.wasSneaking = current
-	SNEAK_STATE.set(key, previous)
-}
-
-const initializeSneakWatcher = () => {
+const initializeSwingWatcher = () => {
 	if (globalThis.__doriosToolLockWatcherInitialized) return
 	globalThis.__doriosToolLockWatcherInitialized = true
 
-	system.runInterval(() => {
-		tickCounter += 1
-		for (const player of world.getAllPlayers()) {
-			updateSneakMemory(player)
-		}
-	}, 1)
+	world.afterEvents.playerSwingStart.subscribe(handleToolSwing, {
+		heldItemOption: HeldItemOption.AnyItem
+	})
 }
 
-initializeSneakWatcher()
+initializeSwingWatcher()
 
 export const getToolKindFromTypeId = parseToolKind
 export const getLockStateFromBlockTypeId = stateFromBlockTypeId
