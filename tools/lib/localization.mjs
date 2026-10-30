@@ -1,3 +1,5 @@
+import concreteColors from "../../content/concrete-colors.json" with { type: "json" };
+
 export const LOCALES = Object.freeze([
   "en_US",
   "pt_BR",
@@ -168,6 +170,14 @@ const ITEM_COLORS = Object.freeze({
 });
 
 export function itemName(identifier, locale) {
+  if (identifier.endsWith("_dye")) {
+    const colorId = identifier.slice(0, -"_dye".length);
+    const color = concreteColors.colors.find((entry) => entry.id === colorId);
+    if (!color) throw new Error(`Unknown dye color: ${colorId}`);
+    if (locale === "en_US") return `${color.en} Dye`;
+    if (locale === "pt_BR" || locale === "pt_PT") return `Corante ${color.pt}`;
+    return `Tinte ${color.es}`;
+  }
   const match = identifier.match(/^(wooden|stone|copper|iron|golden|diamond|netherite)_(chisel|glove|glass_cutter|furniture_hammer)$/);
   if (!match) throw new Error(`No ${locale} item translation rule for ${identifier}.`);
   const [, tier, toolId] = match;
@@ -358,6 +368,16 @@ function spanishBlockLanguage(regional) {
 
 function semanticBlock(identifier, locale) {
   const language = BLOCK_LANGUAGES[locale];
+  if (identifier.endsWith("_concrete")) {
+    const colorId = identifier.slice(0, -"_concrete".length);
+    const color = concreteColors.colors.find((entry) => entry.id === colorId);
+    if (!color) throw new Error(`Unknown concrete color: ${colorId}`);
+    const text = locale === "en_US" ? `${color.en} Concrete`
+      : locale === "pt_BR" ? `Concreto ${color.pt}`
+        : locale === "pt_PT" ? `Betão ${color.pt}`
+          : locale === "es_ES" ? `Hormigón ${color.es}` : `Concreto ${color.es}`;
+    return { text, gender: "m", plural: false };
+  }
   if (language.specials[identifier]) return { text: language.specials[identifier], gender: "m", plural: false };
 
   const wood = identifier.match(/^sanded_(acacia|bamboo|birch|cherry|crimson|dark_oak|jungle|mangrove|oak|pale_oak|spruce|warped)_wood$/);
@@ -391,9 +411,9 @@ export function blockName(identifier, locale) {
 }
 
 export const GROUP_TRANSLATIONS = Object.freeze({
-  en_US: { chisels: "Chisels", customGlass: "Custom Glass", customVariants: "Custom Variants", furnitureHammers: "Furniture Hammers", glassCutters: "Glass Cutters", gloves: "Gloves", sandedWood: "Sanded Wood", stoneBricks: "Stonework", verticalSlabs: "Vertical Slabs", walls: "Walls" },
-  pt_BR: { chisels: "Cinzeis", customGlass: "Vidros Personalizados", customVariants: "Variantes Personalizadas", furnitureHammers: "Martelos de Móveis", glassCutters: "Cortadores de Vidro", gloves: "Luvas de Construção", sandedWood: "Madeiras Lixadas", stoneBricks: "Trabalhos em Pedra", verticalSlabs: "Lajes Verticais", walls: "Muros" },
-  pt_PT: { chisels: "Cinzéis", customGlass: "Vidros Personalizados", customVariants: "Variantes Personalizadas", furnitureHammers: "Martelos de Mobiliário", glassCutters: "Corta-vidros", gloves: "Luvas de Construção", sandedWood: "Madeiras Lixadas", stoneBricks: "Cantaria", verticalSlabs: "Lajes Verticais", walls: "Muros" },
-  es_ES: { chisels: "Cinceles", customGlass: "Cristales Personalizados", customVariants: "Variantes Personalizadas", furnitureHammers: "Martillos de Mobiliario", glassCutters: "Cortadores de Cristal", gloves: "Guantes de Construcción", sandedWood: "Maderas Lijadas", stoneBricks: "Cantería", verticalSlabs: "Losas Verticales", walls: "Muros" },
-  es_MX: { chisels: "Cinceles", customGlass: "Vidrios Personalizados", customVariants: "Variantes Personalizadas", furnitureHammers: "Martillos para Muebles", glassCutters: "Cortadores de Vidrio", gloves: "Guantes de Construcción", sandedWood: "Maderas Lijadas", stoneBricks: "Trabajo en Piedra", verticalSlabs: "Losas Verticales", walls: "Muros" },
+  en_US: { dyes: "Dyes", concreteExtra: "Concrete (Extra)", chisels: "Chisels", customGlass: "Custom Glass", customVariants: "Custom Variants", furnitureHammers: "Furniture Hammers", glassCutters: "Glass Cutters", gloves: "Gloves", sandedWood: "Sanded Wood", stoneBricks: "Stonework", verticalSlabs: "Vertical Slabs", walls: "Walls" },
+  pt_BR: { dyes: "Corantes", concreteExtra: "Concreto (Extra)", chisels: "Cinzeis", customGlass: "Vidros Personalizados", customVariants: "Variantes Personalizadas", furnitureHammers: "Martelos de Móveis", glassCutters: "Cortadores de Vidro", gloves: "Luvas de Construção", sandedWood: "Madeiras Lixadas", stoneBricks: "Trabalhos em Pedra", verticalSlabs: "Lajes Verticais", walls: "Muros" },
+  pt_PT: { dyes: "Corantes", concreteExtra: "Betão (Extra)", chisels: "Cinzéis", customGlass: "Vidros Personalizados", customVariants: "Variantes Personalizadas", furnitureHammers: "Martelos de Mobiliário", glassCutters: "Corta-vidros", gloves: "Luvas de Construção", sandedWood: "Madeiras Lixadas", stoneBricks: "Cantaria", verticalSlabs: "Lajes Verticais", walls: "Muros" },
+  es_ES: { dyes: "Tintes", concreteExtra: "Hormigón (Extra)", chisels: "Cinceles", customGlass: "Cristales Personalizados", customVariants: "Variantes Personalizadas", furnitureHammers: "Martillos de Mobiliario", glassCutters: "Cortadores de Cristal", gloves: "Guantes de Construcción", sandedWood: "Maderas Lijadas", stoneBricks: "Cantería", verticalSlabs: "Losas Verticales", walls: "Muros" },
+  es_MX: { dyes: "Tintes", concreteExtra: "Concreto (Extra)", chisels: "Cinceles", customGlass: "Vidrios Personalizados", customVariants: "Variantes Personalizadas", furnitureHammers: "Martillos para Muebles", glassCutters: "Cortadores de Vidrio", gloves: "Guantes de Construcción", sandedWood: "Maderas Lijadas", stoneBricks: "Trabajo en Piedra", verticalSlabs: "Losas Verticales", walls: "Muros" },
 });

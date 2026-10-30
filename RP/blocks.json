@@ -1643,5 +1643,445 @@
   "dorios_atelier:tuff_tiles_vertical_slab": {
     "sound": "tuff",
     "textures": "utilitycraft_tuff_tiles"
+  },
+  "dorios_atelier:copper_concrete": {
+    "sound": "stone",
+    "textures": "dorios_atelier_copper_concrete"
+  },
+  "dorios_atelier:copper_concrete_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_copper_concrete"
+  },
+  "dorios_atelier:copper_concrete_stairs": {
+    "sound": "stone",
+    "textures": "dorios_atelier_copper_concrete"
+  },
+  "dorios_atelier:copper_concrete_vertical_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_copper_concrete"
+  },
+  "dorios_atelier:copper_concrete_wall": {
+    "sound": "stone",
+    "textures": "dorios_atelier_copper_concrete"
+  },
+  "dorios_atelier:amber_concrete": {
+    "sound": "stone",
+    "textures": "dorios_atelier_amber_concrete"
+  },
+  "dorios_atelier:amber_concrete_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_amber_concrete"
+  },
+  "dorios_atelier:amber_concrete_stairs": {
+    "sound": "stone",
+    "textures": "dorios_atelier_amber_concrete"
+  },
+  "dorios_atelier:amber_concrete_vertical_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_amber_concrete"
+  },
+  "dorios_atelier:amber_concrete_wall": {
+    "sound": "stone",
+    "textures": "dorios_atelier_amber_concrete"
+  },
+  "dorios_atelier:sand_concrete": {
+    "sound": "stone",
+    "textures": "dorios_atelier_sand_concrete"
+  },
+  "dorios_atelier:sand_concrete_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_sand_concrete"
+  },
+  "dorios_atelier:sand_concrete_stairs": {
+    "sound": "stone",
+    "textures": "dorios_atelier_sand_concrete"
+  },
+  "dorios_atelier:sand_concrete_vertical_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_sand_concrete"
+  },
+  "dorios_atelier:sand_concrete_wall": {
+    "sound": "stone",
+    "textures": "dorios_atelier_sand_concrete"
+  },
+  "dorios_atelier:burgundy_concrete": {
+    "sound": "stone",
+    "textures": "dorios_atelier_burgundy_concrete"
+  },
+  "dorios_atelier:burgundy_concrete_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_burgundy_concrete"
+  },
+  "dorios_atelier:burgundy_concrete_stairs": {
+    "sound": "stone",
+    "textures": "dorios_atelier_burgundy_concrete"
+  },
+  "dorios_atelier:burgundy_concrete_vertical_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_burgundy_concrete"
+  },
+  "dorios_atelier:burgundy_concrete_wall": {
+    "sound": "stone",
+    "textures": "dorios_atelier_burgundy_concrete"
+  },
+  "dorios_atelier:lavender_concrete": {
+    "sound": "stone",
+    "textures": "dorios_atelier_lavender_concrete"
+  },
+  "dorios_atelier:lavender_concrete_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_lavender_concrete"
+  },
+  "dorios_atelier:lavender_concrete_stairs": {
+    "sound": "stone",
+    "textures": "dorios_atelier_lavender_concrete"
+  },
+  "dorios_atelier:lavender_concrete_vertical_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_lavender_concrete"
+  },
+  "dorios_atelier:lavender_concrete_wall": {
+    "sound": "stone",
+    "textures": "dorios_atelier_lavender_concrete"
+  },
+  "dorios_atelier:dusty_purple_concrete": {
+    "sound": "stone",
+    "textures": "dorios_atelier_dusty_purple_concrete"
+  },
+  "dorios_atelier:dusty_purple_concrete_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_dusty_purple_concrete"
+  },
+  "dorios_atelier:dusty_purple_concrete_stairs": {
+    "sound": "stone",
+    "textures": "dorios_atelier_dusty_purple_concrete"
+  },
+  "dorios_atelier:dusty_purple_concrete_vertical_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_dusty_purple_concrete"
+  },
+  "dorios_atelier:dusty_purple_concrete_wall": {
+    "sound": "stone",
+    "textures": "dorios_atelier_dusty_purple_concrete"
+  },
+  "dorios_atelier:olive_concrete": {
+    "sound": "stone",
+    "textures": "dorios_atelier_olive_concrete"
+  },
+  "dorios_atelier:olive_concrete_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_olive_concrete"
+  },
+  "dorios_atelier:olive_concrete_stairs": {
+    "sound": "stone",
+    "textures": "dorios_atelier_olive_concrete"
+  },
+  "dorios_atelier:olive_concrete_vertical_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_olive_concrete"
+  },
+  "dorios_atelier:olive_concrete_wall": {
+    "sound": "stone",
+    "textures": "dorios_atelier_olive_concrete"
+  },
+  "dorios_atelier:forest_concrete": {
+    "sound": "stone",
+    "textures": "dorios_atelier_forest_concrete"
+  },
+  "dorios_atelier:forest_concrete_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_forest_concrete"
+  },
+  "dorios_atelier:forest_concrete_stairs": {
+    "sound": "stone",
+    "textures": "dorios_atelier_forest_concrete"
+  },
+  "dorios_atelier:forest_concrete_vertical_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_forest_concrete"
+  },
+  "dorios_atelier:forest_concrete_wall": {
+    "sound": "stone",
+    "textures": "dorios_atelier_forest_concrete"
+  },
+  "dorios_atelier:mint_concrete": {
+    "sound": "stone",
+    "textures": "dorios_atelier_mint_concrete"
+  },
+  "dorios_atelier:mint_concrete_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_mint_concrete"
+  },
+  "dorios_atelier:mint_concrete_stairs": {
+    "sound": "stone",
+    "textures": "dorios_atelier_mint_concrete"
+  },
+  "dorios_atelier:mint_concrete_vertical_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_mint_concrete"
+  },
+  "dorios_atelier:mint_concrete_wall": {
+    "sound": "stone",
+    "textures": "dorios_atelier_mint_concrete"
+  },
+  "dorios_atelier:indigo_concrete": {
+    "sound": "stone",
+    "textures": "dorios_atelier_indigo_concrete"
+  },
+  "dorios_atelier:indigo_concrete_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_indigo_concrete"
+  },
+  "dorios_atelier:indigo_concrete_stairs": {
+    "sound": "stone",
+    "textures": "dorios_atelier_indigo_concrete"
+  },
+  "dorios_atelier:indigo_concrete_vertical_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_indigo_concrete"
+  },
+  "dorios_atelier:indigo_concrete_wall": {
+    "sound": "stone",
+    "textures": "dorios_atelier_indigo_concrete"
+  },
+  "dorios_atelier:slate_concrete": {
+    "sound": "stone",
+    "textures": "dorios_atelier_slate_concrete"
+  },
+  "dorios_atelier:slate_concrete_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_slate_concrete"
+  },
+  "dorios_atelier:slate_concrete_stairs": {
+    "sound": "stone",
+    "textures": "dorios_atelier_slate_concrete"
+  },
+  "dorios_atelier:slate_concrete_vertical_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_slate_concrete"
+  },
+  "dorios_atelier:slate_concrete_wall": {
+    "sound": "stone",
+    "textures": "dorios_atelier_slate_concrete"
+  },
+  "dorios_atelier:navy_concrete": {
+    "sound": "stone",
+    "textures": "dorios_atelier_navy_concrete"
+  },
+  "dorios_atelier:navy_concrete_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_navy_concrete"
+  },
+  "dorios_atelier:navy_concrete_stairs": {
+    "sound": "stone",
+    "textures": "dorios_atelier_navy_concrete"
+  },
+  "dorios_atelier:navy_concrete_vertical_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_navy_concrete"
+  },
+  "dorios_atelier:navy_concrete_wall": {
+    "sound": "stone",
+    "textures": "dorios_atelier_navy_concrete"
+  },
+  "dorios_atelier:teal_concrete": {
+    "sound": "stone",
+    "textures": "dorios_atelier_teal_concrete"
+  },
+  "dorios_atelier:teal_concrete_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_teal_concrete"
+  },
+  "dorios_atelier:teal_concrete_stairs": {
+    "sound": "stone",
+    "textures": "dorios_atelier_teal_concrete"
+  },
+  "dorios_atelier:teal_concrete_vertical_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_teal_concrete"
+  },
+  "dorios_atelier:teal_concrete_wall": {
+    "sound": "stone",
+    "textures": "dorios_atelier_teal_concrete"
+  },
+  "dorios_atelier:aqua_concrete": {
+    "sound": "stone",
+    "textures": "dorios_atelier_aqua_concrete"
+  },
+  "dorios_atelier:aqua_concrete_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_aqua_concrete"
+  },
+  "dorios_atelier:aqua_concrete_stairs": {
+    "sound": "stone",
+    "textures": "dorios_atelier_aqua_concrete"
+  },
+  "dorios_atelier:aqua_concrete_vertical_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_aqua_concrete"
+  },
+  "dorios_atelier:aqua_concrete_wall": {
+    "sound": "stone",
+    "textures": "dorios_atelier_aqua_concrete"
+  },
+  "dorios_atelier:scarlet_concrete": {
+    "sound": "stone",
+    "textures": "dorios_atelier_scarlet_concrete"
+  },
+  "dorios_atelier:scarlet_concrete_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_scarlet_concrete"
+  },
+  "dorios_atelier:scarlet_concrete_stairs": {
+    "sound": "stone",
+    "textures": "dorios_atelier_scarlet_concrete"
+  },
+  "dorios_atelier:scarlet_concrete_vertical_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_scarlet_concrete"
+  },
+  "dorios_atelier:scarlet_concrete_wall": {
+    "sound": "stone",
+    "textures": "dorios_atelier_scarlet_concrete"
+  },
+  "dorios_atelier:coral_concrete": {
+    "sound": "stone",
+    "textures": "dorios_atelier_coral_concrete"
+  },
+  "dorios_atelier:coral_concrete_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_coral_concrete"
+  },
+  "dorios_atelier:coral_concrete_stairs": {
+    "sound": "stone",
+    "textures": "dorios_atelier_coral_concrete"
+  },
+  "dorios_atelier:coral_concrete_vertical_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_coral_concrete"
+  },
+  "dorios_atelier:coral_concrete_wall": {
+    "sound": "stone",
+    "textures": "dorios_atelier_coral_concrete"
+  },
+  "dorios_atelier:peach_concrete": {
+    "sound": "stone",
+    "textures": "dorios_atelier_peach_concrete"
+  },
+  "dorios_atelier:peach_concrete_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_peach_concrete"
+  },
+  "dorios_atelier:peach_concrete_stairs": {
+    "sound": "stone",
+    "textures": "dorios_atelier_peach_concrete"
+  },
+  "dorios_atelier:peach_concrete_vertical_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_peach_concrete"
+  },
+  "dorios_atelier:peach_concrete_wall": {
+    "sound": "stone",
+    "textures": "dorios_atelier_peach_concrete"
+  },
+  "dorios_atelier:ivory_concrete": {
+    "sound": "stone",
+    "textures": "dorios_atelier_ivory_concrete"
+  },
+  "dorios_atelier:ivory_concrete_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_ivory_concrete"
+  },
+  "dorios_atelier:ivory_concrete_stairs": {
+    "sound": "stone",
+    "textures": "dorios_atelier_ivory_concrete"
+  },
+  "dorios_atelier:ivory_concrete_vertical_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_ivory_concrete"
+  },
+  "dorios_atelier:ivory_concrete_wall": {
+    "sound": "stone",
+    "textures": "dorios_atelier_ivory_concrete"
+  },
+  "dorios_atelier:chartreuse_concrete": {
+    "sound": "stone",
+    "textures": "dorios_atelier_chartreuse_concrete"
+  },
+  "dorios_atelier:chartreuse_concrete_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_chartreuse_concrete"
+  },
+  "dorios_atelier:chartreuse_concrete_stairs": {
+    "sound": "stone",
+    "textures": "dorios_atelier_chartreuse_concrete"
+  },
+  "dorios_atelier:chartreuse_concrete_vertical_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_chartreuse_concrete"
+  },
+  "dorios_atelier:chartreuse_concrete_wall": {
+    "sound": "stone",
+    "textures": "dorios_atelier_chartreuse_concrete"
+  },
+  "dorios_atelier:emerald_concrete": {
+    "sound": "stone",
+    "textures": "dorios_atelier_emerald_concrete"
+  },
+  "dorios_atelier:emerald_concrete_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_emerald_concrete"
+  },
+  "dorios_atelier:emerald_concrete_stairs": {
+    "sound": "stone",
+    "textures": "dorios_atelier_emerald_concrete"
+  },
+  "dorios_atelier:emerald_concrete_vertical_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_emerald_concrete"
+  },
+  "dorios_atelier:emerald_concrete_wall": {
+    "sound": "stone",
+    "textures": "dorios_atelier_emerald_concrete"
+  },
+  "dorios_atelier:rose_concrete": {
+    "sound": "stone",
+    "textures": "dorios_atelier_rose_concrete"
+  },
+  "dorios_atelier:rose_concrete_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_rose_concrete"
+  },
+  "dorios_atelier:rose_concrete_stairs": {
+    "sound": "stone",
+    "textures": "dorios_atelier_rose_concrete"
+  },
+  "dorios_atelier:rose_concrete_vertical_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_rose_concrete"
+  },
+  "dorios_atelier:rose_concrete_wall": {
+    "sound": "stone",
+    "textures": "dorios_atelier_rose_concrete"
+  },
+  "dorios_atelier:wine_concrete": {
+    "sound": "stone",
+    "textures": "dorios_atelier_wine_concrete"
+  },
+  "dorios_atelier:wine_concrete_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_wine_concrete"
+  },
+  "dorios_atelier:wine_concrete_stairs": {
+    "sound": "stone",
+    "textures": "dorios_atelier_wine_concrete"
+  },
+  "dorios_atelier:wine_concrete_vertical_slab": {
+    "sound": "stone",
+    "textures": "dorios_atelier_wine_concrete"
+  },
+  "dorios_atelier:wine_concrete_wall": {
+    "sound": "stone",
+    "textures": "dorios_atelier_wine_concrete"
   }
 }

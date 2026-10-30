@@ -1,0 +1,31 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "dorios_atelier:craft_peach_dye"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:orange_dye"
+      },
+      {
+        "item": "minecraft:white_dye"
+      }
+    ],
+    "result": {
+      "item": "dorios_atelier:peach_dye",
+      "count": 2
+    },
+    "unlock": [
+      {
+        "item": "minecraft:orange_dye"
+      },
+      {
+        "item": "minecraft:white_dye"
+      }
+    ]
+  }
+}

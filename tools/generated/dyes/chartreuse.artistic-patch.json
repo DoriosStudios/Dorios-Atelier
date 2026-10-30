@@ -1,0 +1,1581 @@
+{
+  "permission_region": [
+    0,
+    0,
+    16,
+    16
+  ],
+  "action": {
+    "op": "artistic_patch",
+    "defect": "palette_hierarchy",
+    "rationale": "The inspected heap had near-black contour seams and separated highlights that read as cracked stone. Repaint only the pigment with connected lit grains, a colored contour and a short shaded underside, following the inspected vanilla dye references. Keep the creator plate as the exact lower layer.",
+    "expected_effect": "A loose vanilla-style powder heap with connected light/mid clusters and readable color at 16x16; creator Amber and wooden_base remain unchanged.",
+    "revised_intent": {
+      "identity": "Chartreuse dye: crumbled chartreuse pigment",
+      "usage": "crafting pigment for the matching concrete family",
+      "material": "loose colored pigment with irregular mineral grains; the creator's wooden plate is composed separately underneath",
+      "orientation": "authored inventory view; exact native pixel clusters",
+      "lighting": "upper-left lit ridges; darker recesses and lower-right edges",
+      "structure": [
+        "crumbled chartreuse pigment",
+        "unique authored silhouette",
+        "restrained plane highlights"
+      ],
+      "style": [
+        "Minecraft-scale icon",
+        "no antialiasing",
+        "no resizing",
+        "no shared recolored silhouette"
+      ]
+    },
+    "patch": {
+      "size": [
+        16,
+        16
+      ],
+      "palette": {
+        "a": [
+          93,
+          104,
+          30
+        ],
+        "b": [
+          119,
+          135,
+          41
+        ],
+        "c": [
+          157,
+          172,
+          59
+        ],
+        "d": [
+          199,
+          216,
+          92
+        ],
+        "e": [
+          223,
+          235,
+          119
+        ],
+        "f": [
+          236,
+          244,
+          149
+        ],
+        "g": [
+          48,
+          36,
+          31
+        ],
+        "h": [
+          125,
+          87,
+          53
+        ],
+        "i": [
+          197,
+          151,
+          91
+        ],
+        "j": [
+          184,
+          222,
+          234
+        ],
+        "wood_0": [
+          56,
+          30,
+          27
+        ],
+        "wood_1": [
+          110,
+          74,
+          59
+        ],
+        "wood_2": [
+          138,
+          110,
+          87
+        ],
+        "wood_3": [
+          87,
+          43,
+          35
+        ],
+        "wood_4": [
+          153,
+          135,
+          93
+        ],
+        "wood_5": [
+          176,
+          166,
+          123
+        ],
+        "clear": [
+          0,
+          0,
+          0
+        ]
+      },
+      "layers": [
+        {
+          "commands": [
+            {
+              "op": "rectangle",
+              "points": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  15,
+                  15
+                ]
+              ],
+              "color": "clear",
+              "alpha": 0
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  2,
+                  9
+                ]
+              ],
+              "color": "wood_0",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  1,
+                  10
+                ]
+              ],
+              "color": "wood_0",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  2,
+                  10
+                ]
+              ],
+              "color": "wood_1",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  13,
+                  10
+                ]
+              ],
+              "color": "wood_1",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  14,
+                  10
+                ]
+              ],
+              "color": "wood_0",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  0,
+                  11
+                ]
+              ],
+              "color": "wood_0",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  1,
+                  11
+                ]
+              ],
+              "color": "wood_2",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  2,
+                  11
+                ]
+              ],
+              "color": "wood_1",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  3,
+                  11
+                ]
+              ],
+              "color": "wood_3",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  4,
+                  11
+                ]
+              ],
+              "color": "wood_3",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  12,
+                  11
+                ]
+              ],
+              "color": "wood_3",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  13,
+                  11
+                ]
+              ],
+              "color": "wood_1",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  14,
+                  11
+                ]
+              ],
+              "color": "wood_2",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  15,
+                  11
+                ]
+              ],
+              "color": "wood_0",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  0,
+                  12
+                ]
+              ],
+              "color": "wood_0",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  1,
+                  12
+                ]
+              ],
+              "color": "wood_0",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  2,
+                  12
+                ]
+              ],
+              "color": "wood_4",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  3,
+                  12
+                ]
+              ],
+              "color": "wood_5",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  4,
+                  12
+                ]
+              ],
+              "color": "wood_4",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  5,
+                  12
+                ]
+              ],
+              "color": "wood_1",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  8,
+                  12
+                ]
+              ],
+              "color": "wood_3",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  9,
+                  12
+                ]
+              ],
+              "color": "wood_3",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  10,
+                  12
+                ]
+              ],
+              "color": "wood_3",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  11,
+                  12
+                ]
+              ],
+              "color": "wood_1",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  12,
+                  12
+                ]
+              ],
+              "color": "wood_2",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  13,
+                  12
+                ]
+              ],
+              "color": "wood_2",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  14,
+                  12
+                ]
+              ],
+              "color": "wood_0",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  15,
+                  12
+                ]
+              ],
+              "color": "wood_0",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  2,
+                  13
+                ]
+              ],
+              "color": "wood_0",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  3,
+                  13
+                ]
+              ],
+              "color": "wood_0",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  4,
+                  13
+                ]
+              ],
+              "color": "wood_5",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  5,
+                  13
+                ]
+              ],
+              "color": "wood_5",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  6,
+                  13
+                ]
+              ],
+              "color": "wood_2",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  7,
+                  13
+                ]
+              ],
+              "color": "wood_1",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  8,
+                  13
+                ]
+              ],
+              "color": "wood_1",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  9,
+                  13
+                ]
+              ],
+              "color": "wood_1",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  10,
+                  13
+                ]
+              ],
+              "color": "wood_2",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  11,
+                  13
+                ]
+              ],
+              "color": "wood_2",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  12,
+                  13
+                ]
+              ],
+              "color": "wood_0",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  13,
+                  13
+                ]
+              ],
+              "color": "wood_0",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  4,
+                  14
+                ]
+              ],
+              "color": "wood_0",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  5,
+                  14
+                ]
+              ],
+              "color": "wood_0",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  6,
+                  14
+                ]
+              ],
+              "color": "wood_5",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  7,
+                  14
+                ]
+              ],
+              "color": "wood_5",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  8,
+                  14
+                ]
+              ],
+              "color": "wood_4",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  9,
+                  14
+                ]
+              ],
+              "color": "wood_4",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  10,
+                  14
+                ]
+              ],
+              "color": "wood_0",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  11,
+                  14
+                ]
+              ],
+              "color": "wood_0",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  6,
+                  15
+                ]
+              ],
+              "color": "wood_0",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  7,
+                  15
+                ]
+              ],
+              "color": "wood_0",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  8,
+                  15
+                ]
+              ],
+              "color": "wood_0",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  9,
+                  15
+                ]
+              ],
+              "color": "wood_0",
+              "alpha": 255
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  6,
+                  2
+                ]
+              ],
+              "color": "b"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  7,
+                  2
+                ]
+              ],
+              "color": "b"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  8,
+                  2
+                ]
+              ],
+              "color": "b"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  5,
+                  3
+                ]
+              ],
+              "color": "b"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  6,
+                  3
+                ]
+              ],
+              "color": "e"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  7,
+                  3
+                ]
+              ],
+              "color": "e"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  8,
+                  3
+                ]
+              ],
+              "color": "d"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  9,
+                  3
+                ]
+              ],
+              "color": "b"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  5,
+                  4
+                ]
+              ],
+              "color": "b"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  6,
+                  4
+                ]
+              ],
+              "color": "e"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  7,
+                  4
+                ]
+              ],
+              "color": "f"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  8,
+                  4
+                ]
+              ],
+              "color": "e"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  9,
+                  4
+                ]
+              ],
+              "color": "d"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  10,
+                  4
+                ]
+              ],
+              "color": "c"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  4,
+                  5
+                ]
+              ],
+              "color": "b"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  5,
+                  5
+                ]
+              ],
+              "color": "d"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  6,
+                  5
+                ]
+              ],
+              "color": "e"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  7,
+                  5
+                ]
+              ],
+              "color": "e"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  8,
+                  5
+                ]
+              ],
+              "color": "d"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  9,
+                  5
+                ]
+              ],
+              "color": "d"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  10,
+                  5
+                ]
+              ],
+              "color": "b"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  11,
+                  5
+                ]
+              ],
+              "color": "b"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  3,
+                  6
+                ]
+              ],
+              "color": "b"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  4,
+                  6
+                ]
+              ],
+              "color": "e"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  5,
+                  6
+                ]
+              ],
+              "color": "d"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  6,
+                  6
+                ]
+              ],
+              "color": "d"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  7,
+                  6
+                ]
+              ],
+              "color": "e"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  8,
+                  6
+                ]
+              ],
+              "color": "d"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  9,
+                  6
+                ]
+              ],
+              "color": "d"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  10,
+                  6
+                ]
+              ],
+              "color": "c"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  11,
+                  6
+                ]
+              ],
+              "color": "c"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  12,
+                  6
+                ]
+              ],
+              "color": "b"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  2,
+                  7
+                ]
+              ],
+              "color": "b"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  3,
+                  7
+                ]
+              ],
+              "color": "e"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  4,
+                  7
+                ]
+              ],
+              "color": "d"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  5,
+                  7
+                ]
+              ],
+              "color": "e"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  6,
+                  7
+                ]
+              ],
+              "color": "d"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  7,
+                  7
+                ]
+              ],
+              "color": "d"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  8,
+                  7
+                ]
+              ],
+              "color": "d"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  9,
+                  7
+                ]
+              ],
+              "color": "e"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  10,
+                  7
+                ]
+              ],
+              "color": "d"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  11,
+                  7
+                ]
+              ],
+              "color": "d"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  12,
+                  7
+                ]
+              ],
+              "color": "c"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  13,
+                  7
+                ]
+              ],
+              "color": "b"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  3,
+                  8
+                ]
+              ],
+              "color": "c"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  4,
+                  8
+                ]
+              ],
+              "color": "d"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  5,
+                  8
+                ]
+              ],
+              "color": "d"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  6,
+                  8
+                ]
+              ],
+              "color": "e"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  7,
+                  8
+                ]
+              ],
+              "color": "d"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  8,
+                  8
+                ]
+              ],
+              "color": "d"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  9,
+                  8
+                ]
+              ],
+              "color": "c"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  10,
+                  8
+                ]
+              ],
+              "color": "d"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  11,
+                  8
+                ]
+              ],
+              "color": "d"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  12,
+                  8
+                ]
+              ],
+              "color": "c"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  13,
+                  8
+                ]
+              ],
+              "color": "b"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  4,
+                  9
+                ]
+              ],
+              "color": "c"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  5,
+                  9
+                ]
+              ],
+              "color": "d"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  6,
+                  9
+                ]
+              ],
+              "color": "d"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  7,
+                  9
+                ]
+              ],
+              "color": "d"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  8,
+                  9
+                ]
+              ],
+              "color": "d"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  9,
+                  9
+                ]
+              ],
+              "color": "d"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  10,
+                  9
+                ]
+              ],
+              "color": "c"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  11,
+                  9
+                ]
+              ],
+              "color": "c"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  12,
+                  9
+                ]
+              ],
+              "color": "c"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  13,
+                  9
+                ]
+              ],
+              "color": "a"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  4,
+                  10
+                ]
+              ],
+              "color": "c"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  5,
+                  10
+                ]
+              ],
+              "color": "c"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  6,
+                  10
+                ]
+              ],
+              "color": "d"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  7,
+                  10
+                ]
+              ],
+              "color": "d"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  8,
+                  10
+                ]
+              ],
+              "color": "c"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  9,
+                  10
+                ]
+              ],
+              "color": "c"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  10,
+                  10
+                ]
+              ],
+              "color": "c"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  11,
+                  10
+                ]
+              ],
+              "color": "b"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  12,
+                  10
+                ]
+              ],
+              "color": "a"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  5,
+                  11
+                ]
+              ],
+              "color": "a"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  6,
+                  11
+                ]
+              ],
+              "color": "c"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  7,
+                  11
+                ]
+              ],
+              "color": "c"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  8,
+                  11
+                ]
+              ],
+              "color": "c"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  9,
+                  11
+                ]
+              ],
+              "color": "b"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  10,
+                  11
+                ]
+              ],
+              "color": "b"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  11,
+                  11
+                ]
+              ],
+              "color": "a"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  6,
+                  12
+                ]
+              ],
+              "color": "a"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  7,
+                  12
+                ]
+              ],
+              "color": "a"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  8,
+                  12
+                ]
+              ],
+              "color": "b"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  9,
+                  12
+                ]
+              ],
+              "color": "b"
+            },
+            {
+              "op": "pixel",
+              "points": [
+                [
+                  10,
+                  12
+                ]
+              ],
+              "color": "a"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "source_pixel_sha256": "0bdf4ef91dafeffda0515eaf39769dfba8723a8d78b98501dda1d1d1a1533b70",
+  "output_pixel_sha256": "dbfa7b6631b6a9e1a42d87b39c4ddde65562095c4a2aa9abb18c8313a9e735b8",
+  "status": "artistic_edit_applied_requires_review"
+}

@@ -1,0 +1,49 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "dorios_atelier:craft_dusty_purple_concrete"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:white_concrete"
+      },
+      {
+        "item": "minecraft:white_concrete"
+      },
+      {
+        "item": "minecraft:white_concrete"
+      },
+      {
+        "item": "minecraft:white_concrete"
+      },
+      {
+        "item": "minecraft:white_concrete"
+      },
+      {
+        "item": "minecraft:white_concrete"
+      },
+      {
+        "item": "minecraft:white_concrete"
+      },
+      {
+        "item": "minecraft:white_concrete"
+      },
+      {
+        "item": "dorios_atelier:dusty_purple_dye"
+      }
+    ],
+    "result": {
+      "item": "dorios_atelier:dusty_purple_concrete",
+      "count": 8
+    },
+    "unlock": [
+      {
+        "item": "minecraft:white_concrete"
+      }
+    ]
+  }
+}

@@ -41,5 +41,30 @@
 			],
 			"textureList"
 		]
+	},
+	"author": "Dorios Studios",
+	"regolith": {
+		"formatVersion": "1.8.0",
+		"dataPath": "./data",
+		"filterDefinitions": {
+			"texture_list": {
+				"runWith": "shell",
+				"command": "node -e \"const fs=require('node:fs'),path=require('node:path');const dir='RP/textures';const textures=fs.readdirSync(dir,{recursive:true}).filter(file=>['.png','.tga'].includes(path.extname(file).toLowerCase())&&fs.statSync(path.join(dir,file)).isFile()).map(file=>'textures/'+file.split(path.sep).join('/').slice(0,-path.extname(file).length)).sort();fs.writeFileSync(path.join(dir,'textures_list.json'),JSON.stringify(textures,null,2));\""
+			}
+		},
+		"profiles": {
+			"default": {
+				"export": {
+					"build": "standard",
+					"readOnly": false,
+					"target": "development"
+				},
+				"filters": [
+					{
+						"filter": "texture_list"
+					}
+				]
+			}
+		}
 	}
 }

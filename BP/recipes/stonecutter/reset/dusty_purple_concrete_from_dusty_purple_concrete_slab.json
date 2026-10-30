@@ -1,0 +1,28 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "dorios_atelier:sc_dusty_purple_concrete_from_dusty_purple_concrete_slab"
+    },
+    "tags": [
+      "stonecutter"
+    ],
+    "ingredients": [
+      {
+        "item": "dorios_atelier:dusty_purple_concrete_slab"
+      },
+      {
+        "item": "dorios_atelier:dusty_purple_concrete_slab"
+      }
+    ],
+    "result": {
+      "item": "dorios_atelier:dusty_purple_concrete",
+      "count": 1
+    },
+    "unlock": [
+      {
+        "item": "dorios_atelier:dusty_purple_concrete_slab"
+      }
+    ]
+  }
+}

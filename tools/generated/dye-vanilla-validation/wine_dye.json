@@ -1,0 +1,382 @@
+{
+  "schema_version": 1,
+  "source": "C:\\Users\\Kauziin\\Documents\\Projects\\projects\\Dorios' Atelier\\RP\\textures\\items\\dyes\\wine_dye.png",
+  "pixel_sha256": "be5799c05684f4a562b6ede37ddf00e6a8b93a88a56e3acd75cf3c9f5500e55c",
+  "metadata": {
+    "format": "PNG",
+    "mode": "RGBA",
+    "size": [
+      16,
+      16
+    ]
+  },
+  "profile": {
+    "size": [
+      16,
+      16
+    ],
+    "alpha": "binary",
+    "require_transparent": true,
+    "palette": {
+      "max_colors": null,
+      "allowed": [],
+      "tolerance": 0.0
+    },
+    "structure": {
+      "enabled": true,
+      "singleton_limit": 12,
+      "max_components": 4
+    },
+    "tile": {
+      "enabled": false,
+      "tolerance": 0.08,
+      "ratio": 2.5
+    },
+    "animation": null,
+    "preview": {
+      "scale": 8,
+      "checker": true
+    }
+  },
+  "summary": {
+    "ERROR": 0,
+    "WARNING": 1,
+    "INFO": 1
+  },
+  "measurements": {
+    "alpha": {
+      "transparent": 115,
+      "partial": 0,
+      "opaque": 141
+    },
+    "palette": {
+      "unique_visible_rgb": 12,
+      "unique_rgba": 13,
+      "frequencies": [
+        {
+          "rgb": [
+            127,
+            36,
+            55
+          ],
+          "hex": "#7F2437",
+          "count": 26
+        },
+        {
+          "rgb": [
+            92,
+            29,
+            49
+          ],
+          "hex": "#5C1D31",
+          "count": 23
+        },
+        {
+          "rgb": [
+            56,
+            30,
+            27
+          ],
+          "hex": "#381E1B",
+          "count": 20
+        },
+        {
+          "rgb": [
+            110,
+            30,
+            50
+          ],
+          "hex": "#6E1E32",
+          "count": 19
+        },
+        {
+          "rgb": [
+            172,
+            58,
+            77
+          ],
+          "hex": "#AC3A4D",
+          "count": 17
+        },
+        {
+          "rgb": [
+            110,
+            74,
+            59
+          ],
+          "hex": "#6E4A3B",
+          "count": 9
+        },
+        {
+          "rgb": [
+            65,
+            21,
+            41
+          ],
+          "hex": "#411529",
+          "count": 7
+        },
+        {
+          "rgb": [
+            138,
+            110,
+            87
+          ],
+          "hex": "#8A6E57",
+          "count": 7
+        },
+        {
+          "rgb": [
+            176,
+            166,
+            123
+          ],
+          "hex": "#B0A67B",
+          "count": 5
+        },
+        {
+          "rgb": [
+            153,
+            135,
+            93
+          ],
+          "hex": "#99875D",
+          "count": 4
+        },
+        {
+          "rgb": [
+            87,
+            43,
+            35
+          ],
+          "hex": "#572B23",
+          "count": 3
+        },
+        {
+          "rgb": [
+            194,
+            80,
+            94
+          ],
+          "hex": "#C2505E",
+          "count": 1
+        }
+      ]
+    },
+    "silhouette": {
+      "visible_pixels": 141,
+      "bbox": [
+        0,
+        2,
+        16,
+        16
+      ],
+      "components_4_connected": 1,
+      "component_sizes": [
+        141
+      ]
+    },
+    "clusters": {
+      "color_components": 68,
+      "singletons": 34
+    }
+  },
+  "findings": [
+    {
+      "severity": "WARNING",
+      "code": "isolated_pixels",
+      "message": "Single-pixel color clusters may be highlights or noise; inspect.",
+      "count": 34,
+      "coordinates": [
+        [
+          5,
+          3
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          12,
+          5
+        ],
+        [
+          9,
+          6
+        ],
+        [
+          12,
+          6
+        ],
+        [
+          13,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          11,
+          9
+        ],
+        [
+          12,
+          9
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          3,
+          10
+        ],
+        [
+          11,
+          10
+        ],
+        [
+          12,
+          10
+        ],
+        [
+          14,
+          10
+        ],
+        [
+          1,
+          11
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          12,
+          11
+        ],
+        [
+          14,
+          11
+        ],
+        [
+          2,
+          12
+        ],
+        [
+          3,
+          12
+        ],
+        [
+          4,
+          12
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          6,
+          13
+        ]
+      ]
+    },
+    {
+      "severity": "INFO",
+      "code": "visual_pending",
+      "message": "Technical validation does not establish artistic quality."
+    }
+  ],
+  "visual_review": {
+    "status": "pending",
+    "human_approval": "required",
+    "criteria": [
+      {
+        "criterion": "Requested object identity is recognizable rather than merely a valid PNG",
+        "status": "not_evaluated",
+        "notes": ""
+      },
+      {
+        "criterion": "Silhouette and dominant shapes readable at native size",
+        "status": "not_evaluated",
+        "notes": ""
+      },
+      {
+        "criterion": "Material recognition and coherent composition",
+        "status": "not_evaluated",
+        "notes": ""
+      },
+      {
+        "criterion": "Shading direction and highlight placement consistent with chosen reference",
+        "status": "not_evaluated",
+        "notes": ""
+      },
+      {
+        "criterion": "Color harmony, contrast and reference-supported hue shifting",
+        "status": "not_evaluated",
+        "notes": ""
+      },
+      {
+        "criterion": "Deliberate pixel clusters, edge treatment and suitable texture density",
+        "status": "not_evaluated",
+        "notes": ""
+      },
+      {
+        "criterion": "Recognizable style compared beside approved project references",
+        "status": "not_evaluated",
+        "notes": ""
+      },
+      {
+        "criterion": "Animation motion, flicker and first-to-last loop perceived in playback",
+        "status": "not_evaluated",
+        "notes": ""
+      }
+    ]
+  },
+  "file_sha256": "9d04bf6fa3ef75dea9a8f64322cd6ecd0ac6e030b150c4f25ed8e43e600d9a71"
+}

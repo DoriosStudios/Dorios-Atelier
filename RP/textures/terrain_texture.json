@@ -848,6 +848,116 @@
       "textures": [
         "textures/blocks/grass_side_snowed"
       ]
+    },
+    "dorios_atelier_copper_concrete": {
+      "textures": [
+        "textures/blocks/concrete/copper_concrete"
+      ]
+    },
+    "dorios_atelier_amber_concrete": {
+      "textures": [
+        "textures/blocks/concrete/amber_concrete"
+      ]
+    },
+    "dorios_atelier_sand_concrete": {
+      "textures": [
+        "textures/blocks/concrete/sand_concrete"
+      ]
+    },
+    "dorios_atelier_burgundy_concrete": {
+      "textures": [
+        "textures/blocks/concrete/burgundy_concrete"
+      ]
+    },
+    "dorios_atelier_lavender_concrete": {
+      "textures": [
+        "textures/blocks/concrete/lavender_concrete"
+      ]
+    },
+    "dorios_atelier_dusty_purple_concrete": {
+      "textures": [
+        "textures/blocks/concrete/dusty_purple_concrete"
+      ]
+    },
+    "dorios_atelier_olive_concrete": {
+      "textures": [
+        "textures/blocks/concrete/olive_concrete"
+      ]
+    },
+    "dorios_atelier_forest_concrete": {
+      "textures": [
+        "textures/blocks/concrete/forest_concrete"
+      ]
+    },
+    "dorios_atelier_mint_concrete": {
+      "textures": [
+        "textures/blocks/concrete/mint_concrete"
+      ]
+    },
+    "dorios_atelier_indigo_concrete": {
+      "textures": [
+        "textures/blocks/concrete/indigo_concrete"
+      ]
+    },
+    "dorios_atelier_slate_concrete": {
+      "textures": [
+        "textures/blocks/concrete/slate_concrete"
+      ]
+    },
+    "dorios_atelier_navy_concrete": {
+      "textures": [
+        "textures/blocks/concrete/navy_concrete"
+      ]
+    },
+    "dorios_atelier_teal_concrete": {
+      "textures": [
+        "textures/blocks/concrete/teal_concrete"
+      ]
+    },
+    "dorios_atelier_aqua_concrete": {
+      "textures": [
+        "textures/blocks/concrete/aqua_concrete"
+      ]
+    },
+    "dorios_atelier_scarlet_concrete": {
+      "textures": [
+        "textures/blocks/concrete/scarlet_concrete"
+      ]
+    },
+    "dorios_atelier_coral_concrete": {
+      "textures": [
+        "textures/blocks/concrete/coral_concrete"
+      ]
+    },
+    "dorios_atelier_peach_concrete": {
+      "textures": [
+        "textures/blocks/concrete/peach_concrete"
+      ]
+    },
+    "dorios_atelier_ivory_concrete": {
+      "textures": [
+        "textures/blocks/concrete/ivory_concrete"
+      ]
+    },
+    "dorios_atelier_chartreuse_concrete": {
+      "textures": [
+        "textures/blocks/concrete/chartreuse_concrete"
+      ]
+    },
+    "dorios_atelier_emerald_concrete": {
+      "textures": [
+        "textures/blocks/concrete/emerald_concrete"
+      ]
+    },
+    "dorios_atelier_rose_concrete": {
+      "textures": [
+        "textures/blocks/concrete/rose_concrete"
+      ]
+    },
+    "dorios_atelier_wine_concrete": {
+      "textures": [
+        "textures/blocks/concrete/wine_concrete"
+      ]
     }
   }
 }

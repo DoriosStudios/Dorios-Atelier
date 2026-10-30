@@ -1,0 +1,81 @@
+{
+  "repository": "Mojang/bedrock-samples",
+  "commit": "46ba6ea985fb5a92d79a9419198f10dda14c199d",
+  "files": [
+    {
+      "path": "tools\\references\\mojang\\vanilla-dyes\\dye_powder_blue_new.png",
+      "sha256": "57344fb64169c8b975c4397ec98b89c827c853ba82832280f07e21d653b8b454",
+      "url": "https://raw.githubusercontent.com/Mojang/bedrock-samples/46ba6ea985fb5a92d79a9419198f10dda14c199d/resource_pack/textures/items/dye_powder_blue_new.png"
+    },
+    {
+      "path": "tools\\references\\mojang\\vanilla-dyes\\dye_powder_brown_new.png",
+      "sha256": "953ae86c3f97acfd00f7fbc16f044f4dbc109da768065ac7c85352c03b478847",
+      "url": "https://raw.githubusercontent.com/Mojang/bedrock-samples/46ba6ea985fb5a92d79a9419198f10dda14c199d/resource_pack/textures/items/dye_powder_brown_new.png"
+    },
+    {
+      "path": "tools\\references\\mojang\\vanilla-dyes\\dye_powder_cyan.png",
+      "sha256": "28f4c21ea1496a4e907eecdb713b578c09bb86214600966354b762da4e3c2e6c",
+      "url": "https://raw.githubusercontent.com/Mojang/bedrock-samples/46ba6ea985fb5a92d79a9419198f10dda14c199d/resource_pack/textures/items/dye_powder_cyan.png"
+    },
+    {
+      "path": "tools\\references\\mojang\\vanilla-dyes\\dye_powder_gray.png",
+      "sha256": "1d17fe0f921676ea1225f6c6a324473609efc11f3c5f552b4b58c5765b9e253b",
+      "url": "https://raw.githubusercontent.com/Mojang/bedrock-samples/46ba6ea985fb5a92d79a9419198f10dda14c199d/resource_pack/textures/items/dye_powder_gray.png"
+    },
+    {
+      "path": "tools\\references\\mojang\\vanilla-dyes\\dye_powder_green.png",
+      "sha256": "e47b6db44eb33ee321c64dd789152cf678d5a4eff6da8bf4df70643e7cdcc631",
+      "url": "https://raw.githubusercontent.com/Mojang/bedrock-samples/46ba6ea985fb5a92d79a9419198f10dda14c199d/resource_pack/textures/items/dye_powder_green.png"
+    },
+    {
+      "path": "tools\\references\\mojang\\vanilla-dyes\\dye_powder_light_blue.png",
+      "sha256": "42421dafa0c3f4119fd4ac5cad42b77a390f03eead6b6e4e699c5a392417512f",
+      "url": "https://raw.githubusercontent.com/Mojang/bedrock-samples/46ba6ea985fb5a92d79a9419198f10dda14c199d/resource_pack/textures/items/dye_powder_light_blue.png"
+    },
+    {
+      "path": "tools\\references\\mojang\\vanilla-dyes\\dye_powder_lime.png",
+      "sha256": "7c862b68d703e092b9d1ea3a2ded212ffd8d2940566eaa96dc5b8a4f201c6fe4",
+      "url": "https://raw.githubusercontent.com/Mojang/bedrock-samples/46ba6ea985fb5a92d79a9419198f10dda14c199d/resource_pack/textures/items/dye_powder_lime.png"
+    },
+    {
+      "path": "tools\\references\\mojang\\vanilla-dyes\\dye_powder_magenta.png",
+      "sha256": "c6181a9ac8b5451df29fc4c3aeb098a1a2da97f8855790e12d085a0236408037",
+      "url": "https://raw.githubusercontent.com/Mojang/bedrock-samples/46ba6ea985fb5a92d79a9419198f10dda14c199d/resource_pack/textures/items/dye_powder_magenta.png"
+    },
+    {
+      "path": "tools\\references\\mojang\\vanilla-dyes\\dye_powder_orange.png",
+      "sha256": "8cab16707059b30696a3f525b3d7aa54646339da271a8a4cb79fdb781c663d22",
+      "url": "https://raw.githubusercontent.com/Mojang/bedrock-samples/46ba6ea985fb5a92d79a9419198f10dda14c199d/resource_pack/textures/items/dye_powder_orange.png"
+    },
+    {
+      "path": "tools\\references\\mojang\\vanilla-dyes\\dye_powder_pink.png",
+      "sha256": "cd24755c4faecafb629b61bcd16cb0c16f79a7653ddd0acac88450bfbf9d17f1",
+      "url": "https://raw.githubusercontent.com/Mojang/bedrock-samples/46ba6ea985fb5a92d79a9419198f10dda14c199d/resource_pack/textures/items/dye_powder_pink.png"
+    },
+    {
+      "path": "tools\\references\\mojang\\vanilla-dyes\\dye_powder_purple.png",
+      "sha256": "117a004c30e2cee08980b0141e8042b925a92cf4bf535f4657e44eb65f3d6638",
+      "url": "https://raw.githubusercontent.com/Mojang/bedrock-samples/46ba6ea985fb5a92d79a9419198f10dda14c199d/resource_pack/textures/items/dye_powder_purple.png"
+    },
+    {
+      "path": "tools\\references\\mojang\\vanilla-dyes\\dye_powder_red.png",
+      "sha256": "d8702968887c9bfdab91f467d9c2348e9e96cd05e008c6c902b30f783a49aefc",
+      "url": "https://raw.githubusercontent.com/Mojang/bedrock-samples/46ba6ea985fb5a92d79a9419198f10dda14c199d/resource_pack/textures/items/dye_powder_red.png"
+    },
+    {
+      "path": "tools\\references\\mojang\\vanilla-dyes\\dye_powder_silver.png",
+      "sha256": "f3b4ad6ba0f93decfd008b0b68bcb4b6e2e4ae5da9b2b76adeb3f44f7590463b",
+      "url": "https://raw.githubusercontent.com/Mojang/bedrock-samples/46ba6ea985fb5a92d79a9419198f10dda14c199d/resource_pack/textures/items/dye_powder_silver.png"
+    },
+    {
+      "path": "tools\\references\\mojang\\vanilla-dyes\\dye_powder_white_new.png",
+      "sha256": "0b80de683ed4b3333e01452d7e38d925e634619987477e2510dd9401794bb8da",
+      "url": "https://raw.githubusercontent.com/Mojang/bedrock-samples/46ba6ea985fb5a92d79a9419198f10dda14c199d/resource_pack/textures/items/dye_powder_white_new.png"
+    },
+    {
+      "path": "tools\\references\\mojang\\vanilla-dyes\\dye_powder_yellow.png",
+      "sha256": "ac9922c79c1a25be793055083763f0776041e70225c594cb947e057046c31239",
+      "url": "https://raw.githubusercontent.com/Mojang/bedrock-samples/46ba6ea985fb5a92d79a9419198f10dda14c199d/resource_pack/textures/items/dye_powder_yellow.png"
+    }
+  ]
+}

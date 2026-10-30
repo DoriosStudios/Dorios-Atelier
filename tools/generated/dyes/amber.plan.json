@@ -1,0 +1,1582 @@
+{
+  "size": [
+    16,
+    16
+  ],
+  "intent": {
+    "identity": "Amber dye: angular resin shards",
+    "usage": "crafting pigment for the matching concrete family",
+    "material": "colored pigment; botanical, mineral or prepared-ink visual metaphor, with a neutral closure only where drawn",
+    "orientation": "authored inventory view; exact native pixel clusters",
+    "lighting": "upper-left lit ridges; darker recesses and lower-right edges",
+    "structure": [
+      "angular resin shards",
+      "unique authored silhouette",
+      "restrained plane highlights"
+    ],
+    "style": [
+      "Minecraft-scale icon",
+      "no antialiasing",
+      "no resizing",
+      "no shared recolored silhouette"
+    ]
+  },
+  "references": [
+    {
+      "path": "tools/references/mojang/dye_powder_white.png",
+      "sha256": "4e44ac3735fe264d695e448441896f754292958f8c3ce71ddb27a598a2946261",
+      "purpose": "vanilla native scale, transparent framing and compact pigment clusters; not a tracing template",
+      "approval": "Mojang source reference; new artwork has no recorded human approval"
+    }
+  ],
+  "composition": {
+    "min_margin": 1,
+    "edge_contact": "forbid",
+    "allow_clip": false
+  },
+  "palette": {
+    "a": [
+      54,
+      42,
+      18
+    ],
+    "b": [
+      86,
+      66,
+      28
+    ],
+    "c": [
+      139,
+      108,
+      46
+    ],
+    "d": [
+      199,
+      154,
+      66
+    ],
+    "e": [
+      213,
+      179,
+      113
+    ],
+    "f": [
+      226,
+      203,
+      159
+    ],
+    "g": [
+      48,
+      36,
+      31
+    ],
+    "h": [
+      125,
+      87,
+      53
+    ],
+    "i": [
+      197,
+      151,
+      91
+    ],
+    "j": [
+      184,
+      222,
+      234
+    ]
+  },
+  "base_color": "a",
+  "silhouette": [
+    {
+      "op": "pixel",
+      "points": [
+        [
+          7,
+          1
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          8,
+          1
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          6,
+          2
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          7,
+          2
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          8,
+          2
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          9,
+          2
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          5,
+          3
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          6,
+          3
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          7,
+          3
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          8,
+          3
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          9,
+          3
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          10,
+          3
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          4,
+          4
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          5,
+          4
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          6,
+          4
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          7,
+          4
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          9,
+          4
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          10,
+          4
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          11,
+          4
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          5,
+          5
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          6,
+          5
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          7,
+          5
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          8,
+          5
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          9,
+          5
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          10,
+          5
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          11,
+          5
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          3,
+          6
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          4,
+          6
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          5,
+          6
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          6,
+          6
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          7,
+          6
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          8,
+          6
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          9,
+          6
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          10,
+          6
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          11,
+          6
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          3,
+          7
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          4,
+          7
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          5,
+          7
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          6,
+          7
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          7,
+          7
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          8,
+          7
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          9,
+          7
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          10,
+          7
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          11,
+          7
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          4,
+          8
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          5,
+          8
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          6,
+          8
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          7,
+          8
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          8,
+          8
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          9,
+          8
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          10,
+          8
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          5,
+          9
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          6,
+          9
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          7,
+          9
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          8,
+          9
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          11,
+          9
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          12,
+          9
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          2,
+          10
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          3,
+          10
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          6,
+          10
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          7,
+          10
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          10,
+          10
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          11,
+          10
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          12,
+          10
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          13,
+          10
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          2,
+          11
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          3,
+          11
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          4,
+          11
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          10,
+          11
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          11,
+          11
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          12,
+          11
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          13,
+          11
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          3,
+          12
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          4,
+          12
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          11,
+          12
+        ]
+      ]
+    },
+    {
+      "op": "pixel",
+      "points": [
+        [
+          12,
+          12
+        ]
+      ]
+    }
+  ],
+  "layers": [
+    {
+      "name": "authored_clusters",
+      "purpose": "angular resin shards; exact material planes and folds",
+      "commands": [
+        {
+          "op": "pixel",
+          "points": [
+            [
+              7,
+              1
+            ]
+          ],
+          "color": "a"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              8,
+              1
+            ]
+          ],
+          "color": "a"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              6,
+              2
+            ]
+          ],
+          "color": "a"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              7,
+              2
+            ]
+          ],
+          "color": "e"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              8,
+              2
+            ]
+          ],
+          "color": "f"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              9,
+              2
+            ]
+          ],
+          "color": "a"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              5,
+              3
+            ]
+          ],
+          "color": "a"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              6,
+              3
+            ]
+          ],
+          "color": "e"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              7,
+              3
+            ]
+          ],
+          "color": "f"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              8,
+              3
+            ]
+          ],
+          "color": "d"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              9,
+              3
+            ]
+          ],
+          "color": "b"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              10,
+              3
+            ]
+          ],
+          "color": "a"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              4,
+              4
+            ]
+          ],
+          "color": "a"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              5,
+              4
+            ]
+          ],
+          "color": "e"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              6,
+              4
+            ]
+          ],
+          "color": "e"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              7,
+              4
+            ]
+          ],
+          "color": "d"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              8,
+              4
+            ]
+          ],
+          "color": "d"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              9,
+              4
+            ]
+          ],
+          "color": "b"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              10,
+              4
+            ]
+          ],
+          "color": "c"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              11,
+              4
+            ]
+          ],
+          "color": "a"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              4,
+              5
+            ]
+          ],
+          "color": "a"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              5,
+              5
+            ]
+          ],
+          "color": "e"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              6,
+              5
+            ]
+          ],
+          "color": "d"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              7,
+              5
+            ]
+          ],
+          "color": "d"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              8,
+              5
+            ]
+          ],
+          "color": "c"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              9,
+              5
+            ]
+          ],
+          "color": "c"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              10,
+              5
+            ]
+          ],
+          "color": "b"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              11,
+              5
+            ]
+          ],
+          "color": "a"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              3,
+              6
+            ]
+          ],
+          "color": "a"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              4,
+              6
+            ]
+          ],
+          "color": "e"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              5,
+              6
+            ]
+          ],
+          "color": "d"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              6,
+              6
+            ]
+          ],
+          "color": "d"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              7,
+              6
+            ]
+          ],
+          "color": "c"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              8,
+              6
+            ]
+          ],
+          "color": "c"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              9,
+              6
+            ]
+          ],
+          "color": "c"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              10,
+              6
+            ]
+          ],
+          "color": "b"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              11,
+              6
+            ]
+          ],
+          "color": "a"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              3,
+              7
+            ]
+          ],
+          "color": "a"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              4,
+              7
+            ]
+          ],
+          "color": "d"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              5,
+              7
+            ]
+          ],
+          "color": "d"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              6,
+              7
+            ]
+          ],
+          "color": "c"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              7,
+              7
+            ]
+          ],
+          "color": "c"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              8,
+              7
+            ]
+          ],
+          "color": "c"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              9,
+              7
+            ]
+          ],
+          "color": "b"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              10,
+              7
+            ]
+          ],
+          "color": "b"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              11,
+              7
+            ]
+          ],
+          "color": "a"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              4,
+              8
+            ]
+          ],
+          "color": "a"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              5,
+              8
+            ]
+          ],
+          "color": "c"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              6,
+              8
+            ]
+          ],
+          "color": "c"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              7,
+              8
+            ]
+          ],
+          "color": "c"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              8,
+              8
+            ]
+          ],
+          "color": "b"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              9,
+              8
+            ]
+          ],
+          "color": "b"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              10,
+              8
+            ]
+          ],
+          "color": "a"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              5,
+              9
+            ]
+          ],
+          "color": "a"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              6,
+              9
+            ]
+          ],
+          "color": "b"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              7,
+              9
+            ]
+          ],
+          "color": "b"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              8,
+              9
+            ]
+          ],
+          "color": "a"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              11,
+              9
+            ]
+          ],
+          "color": "a"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              12,
+              9
+            ]
+          ],
+          "color": "a"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              2,
+              10
+            ]
+          ],
+          "color": "a"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              3,
+              10
+            ]
+          ],
+          "color": "a"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              6,
+              10
+            ]
+          ],
+          "color": "a"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              7,
+              10
+            ]
+          ],
+          "color": "a"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              10,
+              10
+            ]
+          ],
+          "color": "a"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              11,
+              10
+            ]
+          ],
+          "color": "e"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              12,
+              10
+            ]
+          ],
+          "color": "d"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              13,
+              10
+            ]
+          ],
+          "color": "a"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              2,
+              11
+            ]
+          ],
+          "color": "a"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              3,
+              11
+            ]
+          ],
+          "color": "d"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              4,
+              11
+            ]
+          ],
+          "color": "a"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              10,
+              11
+            ]
+          ],
+          "color": "a"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              11,
+              11
+            ]
+          ],
+          "color": "c"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              12,
+              11
+            ]
+          ],
+          "color": "b"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              13,
+              11
+            ]
+          ],
+          "color": "a"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              3,
+              12
+            ]
+          ],
+          "color": "a"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              4,
+              12
+            ]
+          ],
+          "color": "a"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              11,
+              12
+            ]
+          ],
+          "color": "a"
+        },
+        {
+          "op": "pixel",
+          "points": [
+            [
+              12,
+              12
+            ]
+          ],
+          "color": "a"
+        }
+      ]
+    }
+  ]
+}

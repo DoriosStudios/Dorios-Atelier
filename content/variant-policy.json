@@ -931,6 +931,248 @@
                 "wall": "generate"
             },
             "notes": ""
+        },
+        {
+            "base": "copper_concrete",
+            "source": "dorios_atelier:copper_concrete",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": "Colored concrete; common stone material. Palette from Ascendant Technology UI panels."
+        },
+        {
+            "base": "amber_concrete",
+            "source": "dorios_atelier:amber_concrete",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": "Colored concrete; common stone material. Palette from Ascendant Technology UI panels."
+        },
+        {
+            "base": "sand_concrete",
+            "source": "dorios_atelier:sand_concrete",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": "Colored concrete; common stone material. Palette from Ascendant Technology UI panels."
+        },
+        {
+            "base": "burgundy_concrete",
+            "source": "dorios_atelier:burgundy_concrete",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": "Colored concrete; common stone material. Palette from Ascendant Technology UI panels."
+        },
+        {
+            "base": "lavender_concrete",
+            "source": "dorios_atelier:lavender_concrete",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": "Colored concrete; common stone material. Palette from Ascendant Technology UI panels."
+        },
+        {
+            "base": "dusty_purple_concrete",
+            "source": "dorios_atelier:dusty_purple_concrete",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": "Colored concrete; common stone material. Palette from Ascendant Technology UI panels."
+        },
+        {
+            "base": "olive_concrete",
+            "source": "dorios_atelier:olive_concrete",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": "Colored concrete; common stone material. Palette from Ascendant Technology UI panels."
+        },
+        {
+            "base": "forest_concrete",
+            "source": "dorios_atelier:forest_concrete",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": "Colored concrete; common stone material. Palette from Ascendant Technology UI panels."
+        },
+        {
+            "base": "mint_concrete",
+            "source": "dorios_atelier:mint_concrete",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": "Colored concrete; common stone material. Palette from Ascendant Technology UI panels."
+        },
+        {
+            "base": "indigo_concrete",
+            "source": "dorios_atelier:indigo_concrete",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": "Colored concrete; common stone material. Palette from Ascendant Technology UI panels."
+        },
+        {
+            "base": "slate_concrete",
+            "source": "dorios_atelier:slate_concrete",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": "Colored concrete; common stone material. Palette from Ascendant Technology UI panels."
+        },
+        {
+            "base": "navy_concrete",
+            "source": "dorios_atelier:navy_concrete",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": "Colored concrete; common stone material. Palette from Ascendant Technology UI panels."
+        },
+        {
+            "base": "teal_concrete",
+            "source": "dorios_atelier:teal_concrete",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": "Colored concrete; common stone material. Palette from Ascendant Technology UI panels."
+        },
+        {
+            "base": "aqua_concrete",
+            "source": "dorios_atelier:aqua_concrete",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": "Colored concrete; common stone material. Palette from Ascendant Technology UI panels."
+        },
+        {
+            "base": "scarlet_concrete",
+            "source": "dorios_atelier:scarlet_concrete",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": "Colored concrete; common stone material. Locally selected spectrum-expansion palette."
+        },
+        {
+            "base": "coral_concrete",
+            "source": "dorios_atelier:coral_concrete",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": "Colored concrete; common stone material. Locally selected spectrum-expansion palette."
+        },
+        {
+            "base": "peach_concrete",
+            "source": "dorios_atelier:peach_concrete",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": "Colored concrete; common stone material. Locally selected spectrum-expansion palette."
+        },
+        {
+            "base": "ivory_concrete",
+            "source": "dorios_atelier:ivory_concrete",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": "Colored concrete; common stone material. Locally selected spectrum-expansion palette."
+        },
+        {
+            "base": "chartreuse_concrete",
+            "source": "dorios_atelier:chartreuse_concrete",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": "Colored concrete; common stone material. Locally selected spectrum-expansion palette."
+        },
+        {
+            "base": "emerald_concrete",
+            "source": "dorios_atelier:emerald_concrete",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": "Colored concrete; common stone material. Locally selected spectrum-expansion palette."
+        },
+        {
+            "base": "rose_concrete",
+            "source": "dorios_atelier:rose_concrete",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": "Colored concrete; common stone material. Locally selected spectrum-expansion palette."
+        },
+        {
+            "base": "wine_concrete",
+            "source": "dorios_atelier:wine_concrete",
+            "variants": {
+                "slab": "generate",
+                "stairs": "generate",
+                "vertical_slab": "generate",
+                "wall": "generate"
+            },
+            "notes": "Colored concrete; common stone material. Locally selected spectrum-expansion palette."
         }
     ]
 }

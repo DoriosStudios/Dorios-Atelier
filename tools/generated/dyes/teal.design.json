@@ -1,0 +1,2297 @@
+{
+  "schema_version": 2,
+  "intent": {
+    "identity": "Teal dye: curved teal pigment heap",
+    "usage": "crafting pigment for the matching concrete family",
+    "material": "loose colored pigment with irregular mineral grains; the creator's wooden plate is composed separately underneath",
+    "orientation": "authored inventory view; exact native pixel clusters",
+    "lighting": "upper-left lit ridges; darker recesses and lower-right edges",
+    "structure": [
+      "curved teal pigment heap",
+      "unique authored silhouette",
+      "restrained plane highlights"
+    ],
+    "style": [
+      "Minecraft-scale icon",
+      "no antialiasing",
+      "no resizing",
+      "no shared recolored silhouette"
+    ]
+  },
+  "references": [
+    {
+      "path": "RP/textures/items/dyes/amber_dye.png",
+      "sha256": "560ef9f0f7abe56d0cfd93ad1e02925b4e3a671e23b7a1121d88c6267c4c438d",
+      "purpose": "Creator-selected vanilla-style granular pigment reference; keep original unchanged.",
+      "approval": "creator explicitly selected this style"
+    },
+    {
+      "path": "RP/textures/items/dyes/wooden_base.png",
+      "sha256": "71f54548123dd34c6c4bd88fc7801f849a9c4b19affd0e2a94691dc349de2c80",
+      "purpose": "creator-authored wooden plate, copied at native size as an unchanged lower layer",
+      "approval": "explicitly supplied by the creator for this composition"
+    },
+    {
+      "path": "tools\\references\\mojang\\vanilla-dyes\\dye_powder_blue_new.png",
+      "sha256": "57344fb64169c8b975c4397ec98b89c827c853ba82832280f07e21d653b8b454",
+      "purpose": "Inspected vanilla granular dye: colored contour, connected upper-left grains and shallow lower shadow; style reference, not a traced silhouette.",
+      "approval": "Official Mojang asset; new artwork remains pending creator review."
+    },
+    {
+      "path": "tools\\references\\mojang\\vanilla-dyes\\dye_powder_brown_new.png",
+      "sha256": "953ae86c3f97acfd00f7fbc16f044f4dbc109da768065ac7c85352c03b478847",
+      "purpose": "Inspected vanilla granular dye: colored contour, connected upper-left grains and shallow lower shadow; style reference, not a traced silhouette.",
+      "approval": "Official Mojang asset; new artwork remains pending creator review."
+    },
+    {
+      "path": "tools\\references\\mojang\\vanilla-dyes\\dye_powder_purple.png",
+      "sha256": "117a004c30e2cee08980b0141e8042b925a92cf4bf535f4657e44eb65f3d6638",
+      "purpose": "Inspected vanilla granular dye: colored contour, connected upper-left grains and shallow lower shadow; style reference, not a traced silhouette.",
+      "approval": "Official Mojang asset; new artwork remains pending creator review."
+    },
+    {
+      "path": "tools\\references\\mojang\\vanilla-dyes\\dye_powder_red.png",
+      "sha256": "d8702968887c9bfdab91f467d9c2348e9e96cd05e008c6c902b30f783a49aefc",
+      "purpose": "Inspected vanilla granular dye: colored contour, connected upper-left grains and shallow lower shadow; style reference, not a traced silhouette.",
+      "approval": "Official Mojang asset; new artwork remains pending creator review."
+    }
+  ],
+  "geometry": {
+    "planned_bounds": [
+      2,
+      2,
+      15,
+      13
+    ],
+    "primitives": [
+      {
+        "layer": "silhouette",
+        "command": 0,
+        "bounds": [
+          6,
+          2,
+          7,
+          3
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 1,
+        "bounds": [
+          7,
+          2,
+          8,
+          3
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 2,
+        "bounds": [
+          8,
+          2,
+          9,
+          3
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 3,
+        "bounds": [
+          5,
+          3,
+          6,
+          4
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 4,
+        "bounds": [
+          6,
+          3,
+          7,
+          4
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 5,
+        "bounds": [
+          7,
+          3,
+          8,
+          4
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 6,
+        "bounds": [
+          8,
+          3,
+          9,
+          4
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 7,
+        "bounds": [
+          9,
+          3,
+          10,
+          4
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 8,
+        "bounds": [
+          4,
+          4,
+          5,
+          5
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 9,
+        "bounds": [
+          5,
+          4,
+          6,
+          5
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 10,
+        "bounds": [
+          6,
+          4,
+          7,
+          5
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 11,
+        "bounds": [
+          7,
+          4,
+          8,
+          5
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 12,
+        "bounds": [
+          8,
+          4,
+          9,
+          5
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 13,
+        "bounds": [
+          9,
+          4,
+          10,
+          5
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 14,
+        "bounds": [
+          10,
+          4,
+          11,
+          5
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 15,
+        "bounds": [
+          3,
+          5,
+          4,
+          6
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 16,
+        "bounds": [
+          4,
+          5,
+          5,
+          6
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 17,
+        "bounds": [
+          5,
+          5,
+          6,
+          6
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 18,
+        "bounds": [
+          6,
+          5,
+          7,
+          6
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 19,
+        "bounds": [
+          7,
+          5,
+          8,
+          6
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 20,
+        "bounds": [
+          8,
+          5,
+          9,
+          6
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 21,
+        "bounds": [
+          9,
+          5,
+          10,
+          6
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 22,
+        "bounds": [
+          10,
+          5,
+          11,
+          6
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 23,
+        "bounds": [
+          3,
+          6,
+          4,
+          7
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 24,
+        "bounds": [
+          4,
+          6,
+          5,
+          7
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 25,
+        "bounds": [
+          5,
+          6,
+          6,
+          7
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 26,
+        "bounds": [
+          6,
+          6,
+          7,
+          7
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 27,
+        "bounds": [
+          7,
+          6,
+          8,
+          7
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 28,
+        "bounds": [
+          8,
+          6,
+          9,
+          7
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 29,
+        "bounds": [
+          9,
+          6,
+          10,
+          7
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 30,
+        "bounds": [
+          10,
+          6,
+          11,
+          7
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 31,
+        "bounds": [
+          11,
+          6,
+          12,
+          7
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 32,
+        "bounds": [
+          12,
+          6,
+          13,
+          7
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 33,
+        "bounds": [
+          13,
+          6,
+          14,
+          7
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 34,
+        "bounds": [
+          2,
+          7,
+          3,
+          8
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 35,
+        "bounds": [
+          3,
+          7,
+          4,
+          8
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 36,
+        "bounds": [
+          4,
+          7,
+          5,
+          8
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 37,
+        "bounds": [
+          5,
+          7,
+          6,
+          8
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 38,
+        "bounds": [
+          6,
+          7,
+          7,
+          8
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 39,
+        "bounds": [
+          7,
+          7,
+          8,
+          8
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 40,
+        "bounds": [
+          8,
+          7,
+          9,
+          8
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 41,
+        "bounds": [
+          9,
+          7,
+          10,
+          8
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 42,
+        "bounds": [
+          10,
+          7,
+          11,
+          8
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 43,
+        "bounds": [
+          11,
+          7,
+          12,
+          8
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 44,
+        "bounds": [
+          12,
+          7,
+          13,
+          8
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 45,
+        "bounds": [
+          13,
+          7,
+          14,
+          8
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 46,
+        "bounds": [
+          14,
+          7,
+          15,
+          8
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 47,
+        "bounds": [
+          3,
+          8,
+          4,
+          9
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 48,
+        "bounds": [
+          4,
+          8,
+          5,
+          9
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 49,
+        "bounds": [
+          5,
+          8,
+          6,
+          9
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 50,
+        "bounds": [
+          6,
+          8,
+          7,
+          9
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 51,
+        "bounds": [
+          7,
+          8,
+          8,
+          9
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 52,
+        "bounds": [
+          8,
+          8,
+          9,
+          9
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 53,
+        "bounds": [
+          9,
+          8,
+          10,
+          9
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 54,
+        "bounds": [
+          10,
+          8,
+          11,
+          9
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 55,
+        "bounds": [
+          11,
+          8,
+          12,
+          9
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 56,
+        "bounds": [
+          12,
+          8,
+          13,
+          9
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 57,
+        "bounds": [
+          13,
+          8,
+          14,
+          9
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 58,
+        "bounds": [
+          4,
+          9,
+          5,
+          10
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 59,
+        "bounds": [
+          5,
+          9,
+          6,
+          10
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 60,
+        "bounds": [
+          6,
+          9,
+          7,
+          10
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 61,
+        "bounds": [
+          7,
+          9,
+          8,
+          10
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 62,
+        "bounds": [
+          8,
+          9,
+          9,
+          10
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 63,
+        "bounds": [
+          9,
+          9,
+          10,
+          10
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 64,
+        "bounds": [
+          10,
+          9,
+          11,
+          10
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 65,
+        "bounds": [
+          11,
+          9,
+          12,
+          10
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 66,
+        "bounds": [
+          12,
+          9,
+          13,
+          10
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 67,
+        "bounds": [
+          13,
+          9,
+          14,
+          10
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 68,
+        "bounds": [
+          4,
+          10,
+          5,
+          11
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 69,
+        "bounds": [
+          5,
+          10,
+          6,
+          11
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 70,
+        "bounds": [
+          6,
+          10,
+          7,
+          11
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 71,
+        "bounds": [
+          7,
+          10,
+          8,
+          11
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 72,
+        "bounds": [
+          8,
+          10,
+          9,
+          11
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 73,
+        "bounds": [
+          9,
+          10,
+          10,
+          11
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 74,
+        "bounds": [
+          10,
+          10,
+          11,
+          11
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 75,
+        "bounds": [
+          11,
+          10,
+          12,
+          11
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 76,
+        "bounds": [
+          12,
+          10,
+          13,
+          11
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 77,
+        "bounds": [
+          5,
+          11,
+          6,
+          12
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 78,
+        "bounds": [
+          6,
+          11,
+          7,
+          12
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 79,
+        "bounds": [
+          7,
+          11,
+          8,
+          12
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 80,
+        "bounds": [
+          8,
+          11,
+          9,
+          12
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 81,
+        "bounds": [
+          9,
+          11,
+          10,
+          12
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 82,
+        "bounds": [
+          10,
+          11,
+          11,
+          12
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 83,
+        "bounds": [
+          11,
+          11,
+          12,
+          12
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 84,
+        "bounds": [
+          6,
+          12,
+          7,
+          13
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 85,
+        "bounds": [
+          7,
+          12,
+          8,
+          13
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 86,
+        "bounds": [
+          8,
+          12,
+          9,
+          13
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 87,
+        "bounds": [
+          9,
+          12,
+          10,
+          13
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "silhouette",
+        "command": 88,
+        "bounds": [
+          10,
+          12,
+          11,
+          13
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 0,
+        "bounds": [
+          6,
+          2,
+          7,
+          3
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 1,
+        "bounds": [
+          7,
+          2,
+          8,
+          3
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 2,
+        "bounds": [
+          8,
+          2,
+          9,
+          3
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 3,
+        "bounds": [
+          5,
+          3,
+          6,
+          4
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 4,
+        "bounds": [
+          6,
+          3,
+          7,
+          4
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 5,
+        "bounds": [
+          7,
+          3,
+          8,
+          4
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 6,
+        "bounds": [
+          8,
+          3,
+          9,
+          4
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 7,
+        "bounds": [
+          9,
+          3,
+          10,
+          4
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 8,
+        "bounds": [
+          4,
+          4,
+          5,
+          5
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 9,
+        "bounds": [
+          5,
+          4,
+          6,
+          5
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 10,
+        "bounds": [
+          6,
+          4,
+          7,
+          5
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 11,
+        "bounds": [
+          7,
+          4,
+          8,
+          5
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 12,
+        "bounds": [
+          8,
+          4,
+          9,
+          5
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 13,
+        "bounds": [
+          9,
+          4,
+          10,
+          5
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 14,
+        "bounds": [
+          10,
+          4,
+          11,
+          5
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 15,
+        "bounds": [
+          3,
+          5,
+          4,
+          6
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 16,
+        "bounds": [
+          4,
+          5,
+          5,
+          6
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 17,
+        "bounds": [
+          5,
+          5,
+          6,
+          6
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 18,
+        "bounds": [
+          6,
+          5,
+          7,
+          6
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 19,
+        "bounds": [
+          7,
+          5,
+          8,
+          6
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 20,
+        "bounds": [
+          8,
+          5,
+          9,
+          6
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 21,
+        "bounds": [
+          9,
+          5,
+          10,
+          6
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 22,
+        "bounds": [
+          10,
+          5,
+          11,
+          6
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 23,
+        "bounds": [
+          3,
+          6,
+          4,
+          7
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 24,
+        "bounds": [
+          4,
+          6,
+          5,
+          7
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 25,
+        "bounds": [
+          5,
+          6,
+          6,
+          7
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 26,
+        "bounds": [
+          6,
+          6,
+          7,
+          7
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 27,
+        "bounds": [
+          7,
+          6,
+          8,
+          7
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 28,
+        "bounds": [
+          8,
+          6,
+          9,
+          7
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 29,
+        "bounds": [
+          9,
+          6,
+          10,
+          7
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 30,
+        "bounds": [
+          10,
+          6,
+          11,
+          7
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 31,
+        "bounds": [
+          11,
+          6,
+          12,
+          7
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 32,
+        "bounds": [
+          12,
+          6,
+          13,
+          7
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 33,
+        "bounds": [
+          13,
+          6,
+          14,
+          7
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 34,
+        "bounds": [
+          2,
+          7,
+          3,
+          8
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 35,
+        "bounds": [
+          3,
+          7,
+          4,
+          8
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 36,
+        "bounds": [
+          4,
+          7,
+          5,
+          8
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 37,
+        "bounds": [
+          5,
+          7,
+          6,
+          8
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 38,
+        "bounds": [
+          6,
+          7,
+          7,
+          8
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 39,
+        "bounds": [
+          7,
+          7,
+          8,
+          8
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 40,
+        "bounds": [
+          8,
+          7,
+          9,
+          8
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 41,
+        "bounds": [
+          9,
+          7,
+          10,
+          8
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 42,
+        "bounds": [
+          10,
+          7,
+          11,
+          8
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 43,
+        "bounds": [
+          11,
+          7,
+          12,
+          8
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 44,
+        "bounds": [
+          12,
+          7,
+          13,
+          8
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 45,
+        "bounds": [
+          13,
+          7,
+          14,
+          8
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 46,
+        "bounds": [
+          14,
+          7,
+          15,
+          8
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 47,
+        "bounds": [
+          3,
+          8,
+          4,
+          9
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 48,
+        "bounds": [
+          4,
+          8,
+          5,
+          9
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 49,
+        "bounds": [
+          5,
+          8,
+          6,
+          9
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 50,
+        "bounds": [
+          6,
+          8,
+          7,
+          9
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 51,
+        "bounds": [
+          7,
+          8,
+          8,
+          9
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 52,
+        "bounds": [
+          8,
+          8,
+          9,
+          9
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 53,
+        "bounds": [
+          9,
+          8,
+          10,
+          9
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 54,
+        "bounds": [
+          10,
+          8,
+          11,
+          9
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 55,
+        "bounds": [
+          11,
+          8,
+          12,
+          9
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 56,
+        "bounds": [
+          12,
+          8,
+          13,
+          9
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 57,
+        "bounds": [
+          13,
+          8,
+          14,
+          9
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 58,
+        "bounds": [
+          4,
+          9,
+          5,
+          10
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 59,
+        "bounds": [
+          5,
+          9,
+          6,
+          10
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 60,
+        "bounds": [
+          6,
+          9,
+          7,
+          10
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 61,
+        "bounds": [
+          7,
+          9,
+          8,
+          10
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 62,
+        "bounds": [
+          8,
+          9,
+          9,
+          10
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 63,
+        "bounds": [
+          9,
+          9,
+          10,
+          10
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 64,
+        "bounds": [
+          10,
+          9,
+          11,
+          10
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 65,
+        "bounds": [
+          11,
+          9,
+          12,
+          10
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 66,
+        "bounds": [
+          12,
+          9,
+          13,
+          10
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 67,
+        "bounds": [
+          13,
+          9,
+          14,
+          10
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 68,
+        "bounds": [
+          4,
+          10,
+          5,
+          11
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 69,
+        "bounds": [
+          5,
+          10,
+          6,
+          11
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 70,
+        "bounds": [
+          6,
+          10,
+          7,
+          11
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 71,
+        "bounds": [
+          7,
+          10,
+          8,
+          11
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 72,
+        "bounds": [
+          8,
+          10,
+          9,
+          11
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 73,
+        "bounds": [
+          9,
+          10,
+          10,
+          11
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 74,
+        "bounds": [
+          10,
+          10,
+          11,
+          11
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 75,
+        "bounds": [
+          11,
+          10,
+          12,
+          11
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 76,
+        "bounds": [
+          12,
+          10,
+          13,
+          11
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 77,
+        "bounds": [
+          5,
+          11,
+          6,
+          12
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 78,
+        "bounds": [
+          6,
+          11,
+          7,
+          12
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 79,
+        "bounds": [
+          7,
+          11,
+          8,
+          12
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 80,
+        "bounds": [
+          8,
+          11,
+          9,
+          12
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 81,
+        "bounds": [
+          9,
+          11,
+          10,
+          12
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 82,
+        "bounds": [
+          10,
+          11,
+          11,
+          12
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 83,
+        "bounds": [
+          11,
+          11,
+          12,
+          12
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 84,
+        "bounds": [
+          6,
+          12,
+          7,
+          13
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 85,
+        "bounds": [
+          7,
+          12,
+          8,
+          13
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 86,
+        "bounds": [
+          8,
+          12,
+          9,
+          13
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 87,
+        "bounds": [
+          9,
+          12,
+          10,
+          13
+        ],
+        "outside_canvas": false
+      },
+      {
+        "layer": "authored_clusters",
+        "command": 88,
+        "bounds": [
+          10,
+          12,
+          11,
+          13
+        ],
+        "outside_canvas": false
+      }
+    ],
+    "outside_primitives": []
+  },
+  "composition": {
+    "raster_bounds": [
+      0,
+      2,
+      16,
+      16
+    ],
+    "minimum_margin": 0,
+    "edge_counts": {
+      "left": 2,
+      "right": 2,
+      "top": 0,
+      "bottom": 4
+    },
+    "findings": [
+      {
+        "severity": "INFO",
+        "code": "intentional_edge_contact",
+        "message": "Visible pixels touch the canvas; this alone does not prove clipping.",
+        "policy": "allow",
+        "coordinates": [
+          [
+            0,
+            11
+          ],
+          [
+            0,
+            12
+          ],
+          [
+            15,
+            11
+          ],
+          [
+            15,
+            12
+          ],
+          [
+            6,
+            15
+          ],
+          [
+            7,
+            15
+          ],
+          [
+            8,
+            15
+          ],
+          [
+            9,
+            15
+          ]
+        ]
+      }
+    ]
+  },
+  "region_bounds": {
+    "authored_clusters": [
+      2,
+      2,
+      15,
+      13
+    ]
+  },
+  "pixel_sha256": "9ee8c7c76764f2c65a956bd28eb5abb18606d3de8349c0ddd1bfc04e17a6625d",
+  "palette_analysis": {
+    "colors": [
+      {
+        "rgb": [
+          56,
+          30,
+          27
+        ],
+        "pixels": 21,
+        "oklab": [
+          0.2690738154916656,
+          0.03684506878000374,
+          0.018933090857956247
+        ]
+      },
+      {
+        "rgb": [
+          24,
+          62,
+          62
+        ],
+        "pixels": 7,
+        "oklab": [
+          0.3366111637494988,
+          -0.04143162642935341,
+          -0.01133874774083915
+        ]
+      },
+      {
+        "rgb": [
+          87,
+          43,
+          35
+        ],
+        "pixels": 3,
+        "oklab": [
+          0.34575351315069225,
+          0.05700113180140193,
+          0.034942135241829264
+        ]
+      },
+      {
+        "rgb": [
+          31,
+          85,
+          83
+        ],
+        "pixels": 20,
+        "oklab": [
+          0.41331368408349156,
+          -0.05529304462222773,
+          -0.011566749655744502
+        ]
+      },
+      {
+        "rgb": [
+          110,
+          74,
+          59
+        ],
+        "pixels": 9,
+        "oklab": [
+          0.44518314826863353,
+          0.03986755774906278,
+          0.03778705494442142
+        ]
+      },
+      {
+        "rgb": [
+          43,
+          107,
+          105
+        ],
+        "pixels": 17,
+        "oklab": [
+          0.4861647020925683,
+          -0.06342534347954776,
+          -0.013957269646498738
+        ]
+      },
+      {
+        "rgb": [
+          138,
+          110,
+          87
+        ],
+        "pixels": 7,
+        "oklab": [
+          0.5594762286229145,
+          0.023850494134495442,
+          0.04294841220529727
+        ]
+      },
+      {
+        "rgb": [
+          59,
+          131,
+          129
+        ],
+        "pixels": 23,
+        "oklab": [
+          0.563779102756807,
+          -0.0700464387617526,
+          -0.015982958999541053
+        ]
+      },
+      {
+        "rgb": [
+          153,
+          135,
+          93
+        ],
+        "pixels": 4,
+        "oklab": [
+          0.6292993300159727,
+          0.002873088418008596,
+          0.06208566573294133
+        ]
+      },
+      {
+        "rgb": [
+          86,
+          160,
+          150
+        ],
+        "pixels": 21,
+        "oklab": [
+          0.6548966299831175,
+          -0.07569854882824795,
+          -0.005656740479458522
+        ]
+      },
+      {
+        "rgb": [
+          176,
+          166,
+          123
+        ],
+        "pixels": 5,
+        "oklab": [
+          0.722804788066345,
+          -0.006841166175487856,
+          0.05935304528973828
+        ]
+      },
+      {
+        "rgb": [
+          117,
+          184,
+          168
+        ],
+        "pixels": 1,
+        "oklab": [
+          0.7330594548358293,
+          -0.0723675634678243,
+          0.0033404454157377472
+        ]
+      }
+    ],
+    "lightness_range": 0.46398563934416376,
+    "tonal_coverage": {
+      "shadow": 0.2246376811594203,
+      "mid": 0.5797101449275363,
+      "highlight": 0.1956521739130435
+    }
+  },
+  "visual_review": {
+    "status": "pending",
+    "human_approval": "required",
+    "reason": "Raster checks cannot establish semantic/artistic success."
+  },
+  "pigment_pixel_sha256": "8d3280062c31571a80da01b1f301376261a0e8dc2145f4c4be40bc9b20b51f09",
+  "base_layer": {
+    "path": "RP/textures/items/dyes/wooden_base.png",
+    "sha256": "71f54548123dd34c6c4bd88fc7801f849a9c4b19affd0e2a94691dc349de2c80",
+    "offset": [
+      0,
+      0
+    ],
+    "layerOrder": [
+      "wooden_base",
+      "pigment"
+    ],
+    "preservePixels": true
+  },
+  "pigment_composition": {
+    "raster_bounds": [
+      2,
+      2,
+      15,
+      13
+    ],
+    "minimum_margin": 1,
+    "edge_counts": {
+      "left": 0,
+      "right": 0,
+      "top": 0,
+      "bottom": 0
+    },
+    "findings": []
+  },
+  "alpha_sha256": "2db687999713bef4d8411bc0aa25984bf9c1ab9db8d58629fa154cb565049465",
+  "pigment_layer": "tools\\generated\\dye-layers\\teal_pigment.png"
+}

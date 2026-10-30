@@ -1,0 +1,31 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "dorios_atelier:craft_wine_dye"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:red_dye"
+      },
+      {
+        "item": "minecraft:brown_dye"
+      }
+    ],
+    "result": {
+      "item": "dorios_atelier:wine_dye",
+      "count": 2
+    },
+    "unlock": [
+      {
+        "item": "minecraft:red_dye"
+      },
+      {
+        "item": "minecraft:brown_dye"
+      }
+    ]
+  }
+}

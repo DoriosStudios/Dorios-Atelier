@@ -231,3 +231,6 @@ builds/_unpacked/
 builds/
 .builds
 builds/*
+
+# Regolith generated cache
+.regolith/

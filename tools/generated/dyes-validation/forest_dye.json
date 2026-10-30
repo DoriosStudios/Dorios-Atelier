@@ -1,0 +1,251 @@
+{
+  "schema_version": 1,
+  "source": "C:\\Users\\Kauziin\\Documents\\Projects\\projects\\Dorios' Atelier\\RP\\textures\\items\\dyes\\forest_dye.png",
+  "pixel_sha256": "819ebb6810d892f9c197b4d6e632e2905306c9d6ad6b4f6fab7eef585056e8f3",
+  "metadata": {
+    "format": "PNG",
+    "mode": "RGBA",
+    "size": [
+      16,
+      16
+    ]
+  },
+  "profile": {
+    "size": [
+      16,
+      16
+    ],
+    "alpha": "binary",
+    "require_transparent": true,
+    "palette": {
+      "max_colors": null,
+      "allowed": [],
+      "tolerance": 0.0
+    },
+    "structure": {
+      "enabled": true,
+      "singleton_limit": 12,
+      "max_components": 4
+    },
+    "tile": {
+      "enabled": false,
+      "tolerance": 0.08,
+      "ratio": 2.5
+    },
+    "animation": null,
+    "preview": {
+      "scale": 8,
+      "checker": true
+    }
+  },
+  "summary": {
+    "ERROR": 0,
+    "WARNING": 1,
+    "INFO": 1
+  },
+  "measurements": {
+    "alpha": {
+      "transparent": 181,
+      "partial": 0,
+      "opaque": 75
+    },
+    "palette": {
+      "unique_visible_rgb": 5,
+      "unique_rgba": 6,
+      "frequencies": [
+        {
+          "rgb": [
+            17,
+            29,
+            22
+          ],
+          "hex": "#111D16",
+          "count": 35
+        },
+        {
+          "rgb": [
+            62,
+            106,
+            80
+          ],
+          "hex": "#3E6A50",
+          "count": 12
+        },
+        {
+          "rgb": [
+            27,
+            46,
+            34
+          ],
+          "hex": "#1B2E22",
+          "count": 11
+        },
+        {
+          "rgb": [
+            43,
+            74,
+            56
+          ],
+          "hex": "#2B4A38",
+          "count": 10
+        },
+        {
+          "rgb": [
+            110,
+            143,
+            124
+          ],
+          "hex": "#6E8F7C",
+          "count": 7
+        }
+      ]
+    },
+    "silhouette": {
+      "visible_pixels": 75,
+      "bbox": [
+        3,
+        1,
+        13,
+        13
+      ],
+      "components_4_connected": 1,
+      "component_sizes": [
+        75
+      ]
+    },
+    "clusters": {
+      "color_components": 35,
+      "singletons": 17
+    }
+  },
+  "findings": [
+    {
+      "severity": "WARNING",
+      "code": "isolated_pixels",
+      "message": "Single-pixel color clusters may be highlights or noise; inspect.",
+      "count": 17,
+      "coordinates": [
+        [
+          10,
+          2
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          12,
+          5
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          9,
+          9
+        ],
+        [
+          10,
+          9
+        ],
+        [
+          5,
+          10
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          8,
+          10
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          6,
+          12
+        ]
+      ]
+    },
+    {
+      "severity": "INFO",
+      "code": "visual_pending",
+      "message": "Technical validation does not establish artistic quality."
+    }
+  ],
+  "visual_review": {
+    "status": "pending",
+    "human_approval": "required",
+    "criteria": [
+      {
+        "criterion": "Requested object identity is recognizable rather than merely a valid PNG",
+        "status": "not_evaluated",
+        "notes": ""
+      },
+      {
+        "criterion": "Silhouette and dominant shapes readable at native size",
+        "status": "not_evaluated",
+        "notes": ""
+      },
+      {
+        "criterion": "Material recognition and coherent composition",
+        "status": "not_evaluated",
+        "notes": ""
+      },
+      {
+        "criterion": "Shading direction and highlight placement consistent with chosen reference",
+        "status": "not_evaluated",
+        "notes": ""
+      },
+      {
+        "criterion": "Color harmony, contrast and reference-supported hue shifting",
+        "status": "not_evaluated",
+        "notes": ""
+      },
+      {
+        "criterion": "Deliberate pixel clusters, edge treatment and suitable texture density",
+        "status": "not_evaluated",
+        "notes": ""
+      },
+      {
+        "criterion": "Recognizable style compared beside approved project references",
+        "status": "not_evaluated",
+        "notes": ""
+      },
+      {
+        "criterion": "Animation motion, flicker and first-to-last loop perceived in playback",
+        "status": "not_evaluated",
+        "notes": ""
+      }
+    ]
+  },
+  "file_sha256": "f25d2c1e5af75fe3f1890504432a32b73e8b8ee2c70884f2ab5e90b4f40c18a9"
+}

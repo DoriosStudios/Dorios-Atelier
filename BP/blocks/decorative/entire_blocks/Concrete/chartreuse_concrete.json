@@ -1,0 +1,39 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:block": {
+    "description": {
+      "identifier": "dorios_atelier:chartreuse_concrete",
+      "menu_category": {
+        "category": "construction",
+        "group": "dorios_atelier:itemGroup.name.concreteExtra"
+      }
+    },
+    "components": {
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "dorios_atelier_chartreuse_concrete",
+          "render_method": "opaque",
+          "ambient_occlusion": true,
+          "face_dimming": true
+        }
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1.8
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 1.8
+      },
+      "minecraft:map_color": "#C7D85C",
+      "tag:minecraft:is_pickaxe_item_destructible": {},
+      "tag:minecraft:wood_tier_destructible": {},
+      "tag:stone": {},
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:light_dampening": 15,
+      "minecraft:flammable": false,
+      "minecraft:redstone_conductivity": {
+        "allows_wire_to_step_down": true,
+        "redstone_conductor": true
+      }
+    }
+  }
+}

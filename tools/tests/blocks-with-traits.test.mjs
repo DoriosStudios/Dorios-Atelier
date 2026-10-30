@@ -13,28 +13,28 @@ import { PROJECT_ROOT, readJson, scanProject } from "../lib/project-index.mjs";
 
 const EXPECTED = Object.freeze({
   slab: {
-    count: 57,
+    count: 79,
     permutations: 1,
     geometry: "geometry.slab",
     trait: "minecraft:placement_position",
     states: ["minecraft:vertical_half"],
   },
   stairs: {
-    count: 58,
+    count: 80,
     permutations: 44,
     geometry: "geometry.stairs_up",
     trait: "minecraft:placement_direction",
     states: ["minecraft:corner_and_cardinal_direction"],
   },
   vertical_slab: {
-    count: 84,
+    count: 106,
     permutations: 20,
     geometry: "geometry.vertical_slab",
     trait: "minecraft:placement_direction",
     states: ["minecraft:corner_and_cardinal_direction"],
   },
   wall: {
-    count: 42,
+    count: 64,
     permutations: 15,
     geometry: "geometry.wall",
     trait: "minecraft:connection",
@@ -94,7 +94,7 @@ test("opaque full cubes conduct redstone and partial shapes do not", async () =>
     }
     if (shapeFamily(entry.identifier)) assert.equal(conductivity?.redstone_conductor, false, entry.identifier);
   }
-  assert.equal(solidCount, 70);
+  assert.equal(solidCount, 92);
 });
 
 test("every rendered block has both geometry and material instances", async () => {

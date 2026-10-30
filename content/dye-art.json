@@ -1,0 +1,1329 @@
+{
+  "schemaVersion": 1,
+  "intent": "Vanilla-style granular dye heaps. Each pigment is authored separately, then composited above the unchanged creator wooden_base.png. Amber is creator-owned and excluded.",
+  "baseLayer": {
+    "path": "RP/textures/items/dyes/wooden_base.png",
+    "sha256": "71f54548123dd34c6c4bd88fc7801f849a9c4b19affd0e2a94691dc349de2c80",
+    "offset": [
+      0,
+      0
+    ],
+    "layerOrder": [
+      "wooden_base",
+      "pigment"
+    ],
+    "preservePixels": true
+  },
+  "protectedIcons": [
+    "amber"
+  ],
+  "styleReference": {
+    "path": "RP/textures/items/dyes/amber_dye.png",
+    "sha256": "560ef9f0f7abe56d0cfd93ad1e02925b4e3a671e23b7a1121d88c6267c4c438d",
+    "purpose": "Creator-selected vanilla-style granular pigment reference; keep original unchanged.",
+    "approval": "creator explicitly selected this style"
+  },
+  "vanillaReferences": [
+    {
+      "path": "tools\\references\\mojang\\vanilla-dyes\\dye_powder_blue_new.png",
+      "sha256": "57344fb64169c8b975c4397ec98b89c827c853ba82832280f07e21d653b8b454",
+      "url": "https://raw.githubusercontent.com/Mojang/bedrock-samples/46ba6ea985fb5a92d79a9419198f10dda14c199d/resource_pack/textures/items/dye_powder_blue_new.png",
+      "purpose": "Inspected vanilla granular dye: colored contour, connected upper-left grains and shallow lower shadow; style reference, not a traced silhouette.",
+      "approval": "Official Mojang asset; new artwork remains pending creator review."
+    },
+    {
+      "path": "tools\\references\\mojang\\vanilla-dyes\\dye_powder_brown_new.png",
+      "sha256": "953ae86c3f97acfd00f7fbc16f044f4dbc109da768065ac7c85352c03b478847",
+      "url": "https://raw.githubusercontent.com/Mojang/bedrock-samples/46ba6ea985fb5a92d79a9419198f10dda14c199d/resource_pack/textures/items/dye_powder_brown_new.png",
+      "purpose": "Inspected vanilla granular dye: colored contour, connected upper-left grains and shallow lower shadow; style reference, not a traced silhouette.",
+      "approval": "Official Mojang asset; new artwork remains pending creator review."
+    },
+    {
+      "path": "tools\\references\\mojang\\vanilla-dyes\\dye_powder_purple.png",
+      "sha256": "117a004c30e2cee08980b0141e8042b925a92cf4bf535f4657e44eb65f3d6638",
+      "url": "https://raw.githubusercontent.com/Mojang/bedrock-samples/46ba6ea985fb5a92d79a9419198f10dda14c199d/resource_pack/textures/items/dye_powder_purple.png",
+      "purpose": "Inspected vanilla granular dye: colored contour, connected upper-left grains and shallow lower shadow; style reference, not a traced silhouette.",
+      "approval": "Official Mojang asset; new artwork remains pending creator review."
+    },
+    {
+      "path": "tools\\references\\mojang\\vanilla-dyes\\dye_powder_red.png",
+      "sha256": "d8702968887c9bfdab91f467d9c2348e9e96cd05e008c6c902b30f783a49aefc",
+      "url": "https://raw.githubusercontent.com/Mojang/bedrock-samples/46ba6ea985fb5a92d79a9419198f10dda14c199d/resource_pack/textures/items/dye_powder_red.png",
+      "purpose": "Inspected vanilla granular dye: colored contour, connected upper-left grains and shallow lower shadow; style reference, not a traced silhouette.",
+      "approval": "Official Mojang asset; new artwork remains pending creator review."
+    }
+  ],
+  "paletteRoles": {
+    "a": "short pigment underside shadow",
+    "b": "colored contour / recess",
+    "c": "shaded pigment grains",
+    "d": "target dye color",
+    "e": "connected lit grains",
+    "f": "restrained top highlight"
+  },
+  "designs": {
+    "copper": {
+      "structure": "low double-ridge copper pigment",
+      "offset": [
+        1,
+        1
+      ],
+      "rows": [
+        "..............",
+        ".....bb.......",
+        "....beeb......",
+        "...befeeb.bb..",
+        "..beededcbedb.",
+        "..beeddcdddcb.",
+        ".beeddeddcddcb",
+        ".cddedddeddbc.",
+        "..cddcdddcba..",
+        "...cddcccca...",
+        "....accbba....",
+        ".....aaab....."
+      ],
+      "correction": {
+        "defect": "palette_hierarchy",
+        "rationale": "The inspected heap had near-black contour seams and separated highlights that read as cracked stone. Repaint only the pigment with connected lit grains, a colored contour and a short shaded underside, following the inspected vanilla dye references. Keep the creator plate as the exact lower layer.",
+        "expected_effect": "A loose vanilla-style powder heap with connected light/mid clusters and readable color at 16x16; creator Amber and wooden_base remain unchanged."
+      },
+      "palette": {
+        "a": [
+          90,
+          44,
+          29
+        ],
+        "b": [
+          123,
+          65,
+          40
+        ],
+        "c": [
+          148,
+          89,
+          59
+        ],
+        "d": [
+          173,
+          118,
+          85
+        ],
+        "e": [
+          201,
+          148,
+          101
+        ],
+        "f": [
+          222,
+          171,
+          122
+        ]
+      }
+    },
+    "amber": {
+      "structure": "angular resin shards",
+      "offset": [
+        1,
+        1
+      ],
+      "rows": [
+        "......aa......",
+        ".....aefa.....",
+        "....aefdba....",
+        "...aeeddbca...",
+        "...aeddccba...",
+        "..aeddcccba...",
+        "..addcccbba...",
+        "...acccbba....",
+        "....abba..aa..",
+        ".aa..aa..aeda.",
+        ".ada.....acba.",
+        "..aa......aa.."
+      ]
+    },
+    "sand": {
+      "structure": "broad fine sand pigment heap",
+      "offset": [
+        1,
+        1
+      ],
+      "rows": [
+        "..............",
+        "..............",
+        "........bb....",
+        ".......bedb...",
+        ".....bbdeeddc.",
+        "...bbeededdcc.",
+        "..befeddedddcb",
+        ".beddeeddcddc.",
+        "..cddddddccca.",
+        "...cccddccba..",
+        "....acccbba...",
+        ".....aabba...."
+      ],
+      "correction": {
+        "defect": "palette_hierarchy",
+        "rationale": "The inspected heap had near-black contour seams and separated highlights that read as cracked stone. Repaint only the pigment with connected lit grains, a colored contour and a short shaded underside, following the inspected vanilla dye references. Keep the creator plate as the exact lower layer.",
+        "expected_effect": "A loose vanilla-style powder heap with connected light/mid clusters and readable color at 16x16; creator Amber and wooden_base remain unchanged."
+      },
+      "palette": {
+        "a": [
+          107,
+          84,
+          61
+        ],
+        "b": [
+          137,
+          114,
+          86
+        ],
+        "c": [
+          171,
+          148,
+          116
+        ],
+        "d": [
+          203,
+          184,
+          154
+        ],
+        "e": [
+          221,
+          203,
+          169
+        ],
+        "f": [
+          235,
+          221,
+          190
+        ]
+      }
+    },
+    "burgundy": {
+      "structure": "coarse burgundy pigment clumps",
+      "offset": [
+        1,
+        1
+      ],
+      "rows": [
+        "..............",
+        "....bbb.......",
+        "...beedb..bb..",
+        "..befeedc.bdb.",
+        "..bdeeddceeedb.",
+        ".beddeeedddcb.",
+        ".cdeededdeddcb",
+        "..cddeddeddcb.",
+        "...cdddcccdbb.",
+        "...ccccdcbba..",
+        "....acccbaa...",
+        ".....aabba...."
+      ],
+      "correction": {
+        "defect": "detail_density",
+        "rationale": "After the first palette pass, the dark pigment still read as a smooth solid clump. Repaint the named pigment clusters into connected two-pixel lit grains interrupted by midtone paths; protect the lower wooden layer and all other colors.",
+        "expected_effect": "Clearer loose powder texture at native size, with lit grains across the face instead of a single continuous ridge."
+      },
+      "palette": {
+        "a": [
+          60,
+          32,
+          52
+        ],
+        "b": [
+          79,
+          39,
+          61
+        ],
+        "c": [
+          99,
+          47,
+          71
+        ],
+        "d": [
+          113,
+          58,
+          80
+        ],
+        "e": [
+          145,
+          78,
+          99
+        ],
+        "f": [
+          167,
+          98,
+          114
+        ]
+      }
+    },
+    "lavender": {
+      "structure": "loose lavender pigment granules",
+      "offset": [
+        1,
+        1
+      ],
+      "rows": [
+        "..............",
+        "........bb....",
+        ".......beeb...",
+        ".....bbeddcb..",
+        "....befeedddb.",
+        "...beeddeedcb.",
+        "..bedededdccb.",
+        ".bedddedcdddcb",
+        "..cdddddcdcca.",
+        "...cccddccba..",
+        "....acccbba...",
+        ".....aabba...."
+      ],
+      "correction": {
+        "defect": "palette_hierarchy",
+        "rationale": "The inspected heap had near-black contour seams and separated highlights that read as cracked stone. Repaint only the pigment with connected lit grains, a colored contour and a short shaded underside, following the inspected vanilla dye references. Keep the creator plate as the exact lower layer.",
+        "expected_effect": "A loose vanilla-style powder heap with connected light/mid clusters and readable color at 16x16; creator Amber and wooden_base remain unchanged."
+      },
+      "palette": {
+        "a": [
+          85,
+          66,
+          105
+        ],
+        "b": [
+          117,
+          92,
+          143
+        ],
+        "c": [
+          153,
+          128,
+          177
+        ],
+        "d": [
+          184,
+          167,
+          209
+        ],
+        "e": [
+          208,
+          191,
+          228
+        ],
+        "f": [
+          224,
+          211,
+          239
+        ]
+      }
+    },
+    "dusty_purple": {
+      "structure": "flattened dusty-purple powder heap",
+      "offset": [
+        1,
+        1
+      ],
+      "rows": [
+        "..............",
+        "..............",
+        "..............",
+        "......bbb.....",
+        ".....beedb....",
+        "...bbefdeddc..",
+        "..beddeedddcb.",
+        ".beeddeddcddcb",
+        "..cdddeddddcb.",
+        "...ccddcccba..",
+        "....acccbba...",
+        ".....aabba...."
+      ],
+      "correction": {
+        "defect": "palette_hierarchy",
+        "rationale": "The inspected heap had near-black contour seams and separated highlights that read as cracked stone. Repaint only the pigment with connected lit grains, a colored contour and a short shaded underside, following the inspected vanilla dye references. Keep the creator plate as the exact lower layer.",
+        "expected_effect": "A loose vanilla-style powder heap with connected light/mid clusters and readable color at 16x16; creator Amber and wooden_base remain unchanged."
+      },
+      "palette": {
+        "a": [
+          65,
+          45,
+          64
+        ],
+        "b": [
+          88,
+          63,
+          85
+        ],
+        "c": [
+          109,
+          81,
+          105
+        ],
+        "d": [
+          128,
+          96,
+          121
+        ],
+        "e": [
+          158,
+          122,
+          146
+        ],
+        "f": [
+          181,
+          146,
+          166
+        ]
+      }
+    },
+    "olive": {
+      "structure": "crumbly olive pigment mound",
+      "offset": [
+        1,
+        1
+      ],
+      "rows": [
+        "..............",
+        "......bbb.....",
+        ".....beedb....",
+        "....befeedc...",
+        "...bededdedb..",
+        "..bedededdccb.",
+        "..cddeddeddcb.",
+        ".bedddcddcddcb",
+        "..ccdddddccca.",
+        "...ccddccbba..",
+        "....acccbaa...",
+        ".....aabba...."
+      ],
+      "correction": {
+        "defect": "palette_hierarchy",
+        "rationale": "The inspected heap had near-black contour seams and separated highlights that read as cracked stone. Repaint only the pigment with connected lit grains, a colored contour and a short shaded underside, following the inspected vanilla dye references. Keep the creator plate as the exact lower layer.",
+        "expected_effect": "A loose vanilla-style powder heap with connected light/mid clusters and readable color at 16x16; creator Amber and wooden_base remain unchanged."
+      },
+      "palette": {
+        "a": [
+          59,
+          65,
+          26
+        ],
+        "b": [
+          78,
+          86,
+          37
+        ],
+        "c": [
+          102,
+          110,
+          60
+        ],
+        "d": [
+          122,
+          128,
+          82
+        ],
+        "e": [
+          154,
+          158,
+          98
+        ],
+        "f": [
+          178,
+          180,
+          119
+        ]
+      }
+    },
+    "forest": {
+      "structure": "jagged forest pigment heap",
+      "offset": [
+        1,
+        1
+      ],
+      "rows": [
+        "..............",
+        "....bb........",
+        "...beeb.......",
+        "...beedc.bb...",
+        "..befedcbeeb..",
+        "..bddeeddecb..",
+        ".bededeeedddcb",
+        "..cdeeddeddcb.",
+        "...cddcdcccca.",
+        "...cccddcbba..",
+        "....acccbba...",
+        ".....aabba...."
+      ],
+      "correction": {
+        "defect": "detail_density",
+        "rationale": "After the first palette pass, the dark pigment still read as a smooth solid clump. Repaint the named pigment clusters into connected two-pixel lit grains interrupted by midtone paths; protect the lower wooden layer and all other colors.",
+        "expected_effect": "Clearer loose powder texture at native size, with lit grains across the face instead of a single continuous ridge."
+      },
+      "palette": {
+        "a": [
+          26,
+          54,
+          37
+        ],
+        "b": [
+          34,
+          71,
+          46
+        ],
+        "c": [
+          46,
+          88,
+          61
+        ],
+        "d": [
+          62,
+          106,
+          80
+        ],
+        "e": [
+          91,
+          137,
+          96
+        ],
+        "f": [
+          115,
+          159,
+          112
+        ]
+      }
+    },
+    "mint": {
+      "structure": "soft folded mint pigment heap",
+      "offset": [
+        1,
+        1
+      ],
+      "rows": [
+        "..............",
+        ".......bb.....",
+        "......beeb....",
+        "....bbefedb...",
+        "...beeeeddcb..",
+        "..befeddeedcb.",
+        "..beddeedddcb.",
+        ".bedddeddcccb.",
+        "..cdddcdcccca.",
+        "...cccddcbba..",
+        "....accbbba...",
+        ".....aabba...."
+      ],
+      "correction": {
+        "defect": "palette_hierarchy",
+        "rationale": "The inspected heap had near-black contour seams and separated highlights that read as cracked stone. Repaint only the pigment with connected lit grains, a colored contour and a short shaded underside, following the inspected vanilla dye references. Keep the creator plate as the exact lower layer.",
+        "expected_effect": "A loose vanilla-style powder heap with connected light/mid clusters and readable color at 16x16; creator Amber and wooden_base remain unchanged."
+      },
+      "palette": {
+        "a": [
+          65,
+          105,
+          85
+        ],
+        "b": [
+          86,
+          135,
+          110
+        ],
+        "c": [
+          122,
+          171,
+          144
+        ],
+        "d": [
+          159,
+          211,
+          185
+        ],
+        "e": [
+          185,
+          230,
+          202
+        ],
+        "f": [
+          204,
+          241,
+          217
+        ]
+      }
+    },
+    "indigo": {
+      "structure": "irregular indigo pigment heap",
+      "offset": [
+        1,
+        1
+      ],
+      "rows": [
+        "..............",
+        ".........bb...",
+        "........beeb..",
+        ".......befedb.",
+        ".....bbeeedcb.",
+        "....beeddeeeb.",
+        "...beddedeedcb",
+        "..beededdedcb.",
+        "..cdddeedddcb.",
+        "...ccddcccbba.",
+        "....accccba...",
+        ".....aabba...."
+      ],
+      "references": [
+        {
+          "path": "RP/textures/items/dyes/amber_dye.png",
+          "sha256": "3b57aa33ed63501343ae65d38ed35867112e41e47c296816fe49fa6642f8d167",
+          "purpose": "Creator-edited Amber: granular pigment, irregular planes, earthy base and vanilla outline rhythm. Preserve this reference unchanged.",
+          "approval": "explicitly selected by the creator as the preferred style reference"
+        }
+      ],
+      "correction": {
+        "defect": "detail_density",
+        "rationale": "After the first palette pass, the dark pigment still read as a smooth solid clump. Repaint the named pigment clusters into connected two-pixel lit grains interrupted by midtone paths; protect the lower wooden layer and all other colors.",
+        "expected_effect": "Clearer loose powder texture at native size, with lit grains across the face instead of a single continuous ridge."
+      },
+      "palette": {
+        "a": [
+          37,
+          43,
+          82
+        ],
+        "b": [
+          51,
+          58,
+          102
+        ],
+        "c": [
+          67,
+          74,
+          122
+        ],
+        "d": [
+          76,
+          83,
+          137
+        ],
+        "e": [
+          111,
+          120,
+          173
+        ],
+        "f": [
+          137,
+          146,
+          196
+        ]
+      }
+    },
+    "slate": {
+      "structure": "slate mineral pigment granules",
+      "offset": [
+        1,
+        1
+      ],
+      "rows": [
+        "..............",
+        ".........bb...",
+        "........bedb..",
+        "......bbeddcb.",
+        ".....befeedcb.",
+        "....beddeedcb.",
+        "..bbededdddcb.",
+        ".beddeedddcccb",
+        "..cdddddcdcca.",
+        "...ccddcccba..",
+        "....acccbba...",
+        ".....aabba...."
+      ],
+      "correction": {
+        "defect": "palette_hierarchy",
+        "rationale": "The inspected heap had near-black contour seams and separated highlights that read as cracked stone. Repaint only the pigment with connected lit grains, a colored contour and a short shaded underside, following the inspected vanilla dye references. Keep the creator plate as the exact lower layer.",
+        "expected_effect": "A loose vanilla-style powder heap with connected light/mid clusters and readable color at 16x16; creator Amber and wooden_base remain unchanged."
+      },
+      "palette": {
+        "a": [
+          47,
+          64,
+          75
+        ],
+        "b": [
+          65,
+          83,
+          97
+        ],
+        "c": [
+          84,
+          103,
+          119
+        ],
+        "d": [
+          104,
+          122,
+          138
+        ],
+        "e": [
+          136,
+          153,
+          165
+        ],
+        "f": [
+          159,
+          176,
+          186
+        ]
+      }
+    },
+    "navy": {
+      "structure": "two-lobed navy pigment mound",
+      "offset": [
+        1,
+        1
+      ],
+      "rows": [
+        "..............",
+        "....bbb.......",
+        "...beedb......",
+        "..befeedc.bb..",
+        "..beedddc.beeb",
+        ".beddeedcbeecb",
+        ".cddeededddcb.",
+        "..cdddeddccca.",
+        "...ccddcccba..",
+        "....accccba...",
+        "....accbbba...",
+        ".....aabba...."
+      ],
+      "references": [
+        {
+          "path": "RP/textures/items/dyes/amber_dye.png",
+          "sha256": "3b57aa33ed63501343ae65d38ed35867112e41e47c296816fe49fa6642f8d167",
+          "purpose": "Creator-edited Amber: granular pigment, irregular planes, earthy base and vanilla outline rhythm. Preserve this reference unchanged.",
+          "approval": "explicitly selected by the creator as the preferred style reference"
+        }
+      ],
+      "correction": {
+        "defect": "detail_density",
+        "rationale": "After the first palette pass, the dark pigment still read as a smooth solid clump. Repaint the named pigment clusters into connected two-pixel lit grains interrupted by midtone paths; protect the lower wooden layer and all other colors.",
+        "expected_effect": "Clearer loose powder texture at native size, with lit grains across the face instead of a single continuous ridge."
+      },
+      "palette": {
+        "a": [
+          20,
+          36,
+          62
+        ],
+        "b": [
+          30,
+          50,
+          78
+        ],
+        "c": [
+          37,
+          60,
+          90
+        ],
+        "d": [
+          45,
+          66,
+          101
+        ],
+        "e": [
+          66,
+          94,
+          132
+        ],
+        "f": [
+          91,
+          121,
+          156
+        ]
+      }
+    },
+    "teal": {
+      "structure": "curved teal pigment heap",
+      "offset": [
+        1,
+        1
+      ],
+      "rows": [
+        "..............",
+        ".....bbb......",
+        "....beedb.....",
+        "...befeedc....",
+        "..bededdcb....",
+        "..bdeeeddeebb.",
+        ".beddeededeecb",
+        "..cdeeddeddcb.",
+        "...cddddcccca.",
+        "...cccddcbba..",
+        "....acccbba...",
+        ".....aabba...."
+      ],
+      "correction": {
+        "defect": "detail_density",
+        "rationale": "After the first palette pass, the dark pigment still read as a smooth solid clump. Repaint the named pigment clusters into connected two-pixel lit grains interrupted by midtone paths; protect the lower wooden layer and all other colors.",
+        "expected_effect": "Clearer loose powder texture at native size, with lit grains across the face instead of a single continuous ridge."
+      },
+      "palette": {
+        "a": [
+          24,
+          62,
+          62
+        ],
+        "b": [
+          31,
+          85,
+          83
+        ],
+        "c": [
+          43,
+          107,
+          105
+        ],
+        "d": [
+          59,
+          131,
+          129
+        ],
+        "e": [
+          86,
+          160,
+          150
+        ],
+        "f": [
+          117,
+          184,
+          168
+        ]
+      }
+    },
+    "aqua": {
+      "structure": "pale aqua pigment crystals",
+      "offset": [
+        1,
+        1
+      ],
+      "rows": [
+        "..............",
+        "......bb......",
+        ".....beeb.....",
+        "....befedbb...",
+        "...beededdcb..",
+        "...beddeedccb.",
+        "..bededddddcb.",
+        ".bedddeddcddcb",
+        "..cddddcdccca.",
+        "...cccddcbba..",
+        "....acccbaa...",
+        ".....aabba...."
+      ],
+      "correction": {
+        "defect": "palette_hierarchy",
+        "rationale": "The inspected heap had near-black contour seams and separated highlights that read as cracked stone. Repaint only the pigment with connected lit grains, a colored contour and a short shaded underside, following the inspected vanilla dye references. Keep the creator plate as the exact lower layer.",
+        "expected_effect": "A loose vanilla-style powder heap with connected light/mid clusters and readable color at 16x16; creator Amber and wooden_base remain unchanged."
+      },
+      "palette": {
+        "a": [
+          61,
+          102,
+          126
+        ],
+        "b": [
+          84,
+          136,
+          159
+        ],
+        "c": [
+          126,
+          181,
+          200
+        ],
+        "d": [
+          173,
+          222,
+          241
+        ],
+        "e": [
+          199,
+          238,
+          248
+        ],
+        "f": [
+          218,
+          246,
+          251
+        ]
+      }
+    },
+    "scarlet": {
+      "structure": "rough scarlet pigment shards",
+      "offset": [
+        1,
+        1
+      ],
+      "rows": [
+        "..............",
+        "........bb....",
+        ".......beeb...",
+        "......befedb..",
+        "....bbeeeddc..",
+        "...beddeeddcb.",
+        "..bededddddcb.",
+        ".bedddeddcddb.",
+        "..cdddcdcdcca.",
+        "...ccddcccba..",
+        "....acccbba...",
+        ".....aabba...."
+      ],
+      "correction": {
+        "defect": "palette_hierarchy",
+        "rationale": "The inspected heap had near-black contour seams and separated highlights that read as cracked stone. Repaint only the pigment with connected lit grains, a colored contour and a short shaded underside, following the inspected vanilla dye references. Keep the creator plate as the exact lower layer.",
+        "expected_effect": "A loose vanilla-style powder heap with connected light/mid clusters and readable color at 16x16; creator Amber and wooden_base remain unchanged."
+      },
+      "palette": {
+        "a": [
+          110,
+          33,
+          40
+        ],
+        "b": [
+          140,
+          42,
+          48
+        ],
+        "c": [
+          167,
+          49,
+          52
+        ],
+        "d": [
+          198,
+          68,
+          62
+        ],
+        "e": [
+          229,
+          97,
+          77
+        ],
+        "f": [
+          245,
+          121,
+          94
+        ]
+      }
+    },
+    "coral": {
+      "structure": "rounded coral pigment heap",
+      "offset": [
+        1,
+        1
+      ],
+      "rows": [
+        "..............",
+        "......bbb.....",
+        ".....beedb....",
+        "....befeedc...",
+        "...bdeeddddb..",
+        "..bedddeddccb.",
+        ".beddeddeddcb.",
+        "..cdddeddddcb.",
+        "...cddddcdbba.",
+        "...cccddcbba..",
+        "....acccbaa...",
+        ".....aabba...."
+      ],
+      "correction": {
+        "defect": "palette_hierarchy",
+        "rationale": "The inspected heap had near-black contour seams and separated highlights that read as cracked stone. Repaint only the pigment with connected lit grains, a colored contour and a short shaded underside, following the inspected vanilla dye references. Keep the creator plate as the exact lower layer.",
+        "expected_effect": "A loose vanilla-style powder heap with connected light/mid clusters and readable color at 16x16; creator Amber and wooden_base remain unchanged."
+      },
+      "palette": {
+        "a": [
+          119,
+          55,
+          49
+        ],
+        "b": [
+          155,
+          73,
+          62
+        ],
+        "c": [
+          186,
+          93,
+          78
+        ],
+        "d": [
+          218,
+          121,
+          108
+        ],
+        "e": [
+          239,
+          153,
+          126
+        ],
+        "f": [
+          249,
+          177,
+          147
+        ]
+      }
+    },
+    "peach": {
+      "structure": "small peach pigment clumps",
+      "offset": [
+        1,
+        1
+      ],
+      "rows": [
+        "..............",
+        "..............",
+        ".....bb.......",
+        "....beeb.bb...",
+        "...bedecbedb..",
+        "..befededddcb.",
+        "..beddeedddcb.",
+        ".bedddeddcddcb",
+        "..cddddddccca.",
+        "...cccddccba..",
+        "....acccbaa...",
+        ".....aabba...."
+      ],
+      "correction": {
+        "defect": "palette_hierarchy",
+        "rationale": "The inspected heap had near-black contour seams and separated highlights that read as cracked stone. Repaint only the pigment with connected lit grains, a colored contour and a short shaded underside, following the inspected vanilla dye references. Keep the creator plate as the exact lower layer.",
+        "expected_effect": "A loose vanilla-style powder heap with connected light/mid clusters and readable color at 16x16; creator Amber and wooden_base remain unchanged."
+      },
+      "palette": {
+        "a": [
+          140,
+          86,
+          64
+        ],
+        "b": [
+          170,
+          111,
+          78
+        ],
+        "c": [
+          203,
+          143,
+          106
+        ],
+        "d": [
+          230,
+          176,
+          145
+        ],
+        "e": [
+          245,
+          200,
+          163
+        ],
+        "f": [
+          252,
+          216,
+          184
+        ]
+      }
+    },
+    "ivory": {
+      "structure": "chalky ivory pigment powder",
+      "offset": [
+        1,
+        1
+      ],
+      "rows": [
+        "..............",
+        ".......bbb....",
+        "......beedb...",
+        ".....befeedc..",
+        "....beeeddcdb.",
+        "...beddeedddcb",
+        "..bededdedccb.",
+        ".beddcdddddcb.",
+        "..cdddddcccca.",
+        "...ccddcccba..",
+        "....acccbba...",
+        ".....aabba...."
+      ],
+      "correction": {
+        "defect": "palette_hierarchy",
+        "rationale": "The inspected heap had near-black contour seams and separated highlights that read as cracked stone. Repaint only the pigment with connected lit grains, a colored contour and a short shaded underside, following the inspected vanilla dye references. Keep the creator plate as the exact lower layer.",
+        "expected_effect": "A loose vanilla-style powder heap with connected light/mid clusters and readable color at 16x16; creator Amber and wooden_base remain unchanged."
+      },
+      "palette": {
+        "a": [
+          122,
+          108,
+          59
+        ],
+        "b": [
+          155,
+          140,
+          79
+        ],
+        "c": [
+          193,
+          177,
+          120
+        ],
+        "d": [
+          233,
+          220,
+          166
+        ],
+        "e": [
+          246,
+          235,
+          187
+        ],
+        "f": [
+          252,
+          244,
+          210
+        ]
+      }
+    },
+    "chartreuse": {
+      "structure": "crumbled chartreuse pigment",
+      "offset": [
+        1,
+        1
+      ],
+      "rows": [
+        "..............",
+        ".....bbb......",
+        "....beedb.....",
+        "....befedc....",
+        "...bdeeddbb...",
+        "..beddeddccb..",
+        ".bededddeddcb.",
+        "..cddeddcddcb.",
+        "...cdddddccca.",
+        "...ccddcccba..",
+        "....acccbba...",
+        ".....aabba...."
+      ],
+      "correction": {
+        "defect": "palette_hierarchy",
+        "rationale": "The inspected heap had near-black contour seams and separated highlights that read as cracked stone. Repaint only the pigment with connected lit grains, a colored contour and a short shaded underside, following the inspected vanilla dye references. Keep the creator plate as the exact lower layer.",
+        "expected_effect": "A loose vanilla-style powder heap with connected light/mid clusters and readable color at 16x16; creator Amber and wooden_base remain unchanged."
+      },
+      "palette": {
+        "a": [
+          93,
+          104,
+          30
+        ],
+        "b": [
+          119,
+          135,
+          41
+        ],
+        "c": [
+          157,
+          172,
+          59
+        ],
+        "d": [
+          199,
+          216,
+          92
+        ],
+        "e": [
+          223,
+          235,
+          119
+        ],
+        "f": [
+          236,
+          244,
+          149
+        ]
+      }
+    },
+    "emerald": {
+      "structure": "angular emerald pigment granules",
+      "offset": [
+        1,
+        1
+      ],
+      "rows": [
+        "..............",
+        ".........bb...",
+        "........beeb..",
+        "......bbededb.",
+        ".....befeddcb.",
+        "....beddeeddcb",
+        "...bededdddcb.",
+        "..beddeedddcb.",
+        ".bedddcdddccb.",
+        "...ccddcccba..",
+        "....acccbaa...",
+        ".....aabba...."
+      ],
+      "correction": {
+        "defect": "palette_hierarchy",
+        "rationale": "The inspected heap had near-black contour seams and separated highlights that read as cracked stone. Repaint only the pigment with connected lit grains, a colored contour and a short shaded underside, following the inspected vanilla dye references. Keep the creator plate as the exact lower layer.",
+        "expected_effect": "A loose vanilla-style powder heap with connected light/mid clusters and readable color at 16x16; creator Amber and wooden_base remain unchanged."
+      },
+      "palette": {
+        "a": [
+          22,
+          78,
+          54
+        ],
+        "b": [
+          26,
+          109,
+          71
+        ],
+        "c": [
+          35,
+          140,
+          89
+        ],
+        "d": [
+          47,
+          173,
+          114
+        ],
+        "e": [
+          75,
+          204,
+          134
+        ],
+        "f": [
+          106,
+          222,
+          156
+        ]
+      }
+    },
+    "wine": {
+      "structure": "crushed wine pigment granules",
+      "offset": [
+        1,
+        1
+      ],
+      "rows": [
+        "..............",
+        ".....bb.......",
+        "....beeb......",
+        "..bbefedbb....",
+        ".beddededdcb..",
+        ".beedeededdcb.",
+        ".cddeedddecb..",
+        "..cdddeddcbbb.",
+        ".bcdddccdcedb.",
+        "..bcccccdcba..",
+        "....acccbaa...",
+        ".....aabba...."
+      ],
+      "references": [
+        {
+          "path": "RP/textures/items/dyes/amber_dye.png",
+          "sha256": "3b57aa33ed63501343ae65d38ed35867112e41e47c296816fe49fa6642f8d167",
+          "purpose": "Creator-edited Amber: granular pigment, irregular planes, earthy base and vanilla outline rhythm. Preserve this reference unchanged.",
+          "approval": "explicitly selected by the creator as the preferred style reference"
+        }
+      ],
+      "correction": {
+        "defect": "detail_density",
+        "rationale": "After the first palette pass, the dark pigment still read as a smooth solid clump. Repaint the named pigment clusters into connected two-pixel lit grains interrupted by midtone paths; protect the lower wooden layer and all other colors.",
+        "expected_effect": "Clearer loose powder texture at native size, with lit grains across the face instead of a single continuous ridge."
+      },
+      "palette": {
+        "a": [
+          65,
+          21,
+          41
+        ],
+        "b": [
+          92,
+          29,
+          49
+        ],
+        "c": [
+          110,
+          30,
+          50
+        ],
+        "d": [
+          127,
+          36,
+          55
+        ],
+        "e": [
+          172,
+          58,
+          77
+        ],
+        "f": [
+          194,
+          80,
+          94
+        ]
+      }
+    },
+    "rose": {
+      "structure": "rosy pigment flakes and powder",
+      "offset": [
+        1,
+        1
+      ],
+      "rows": [
+        "..............",
+        "....bbb.......",
+        "...beedb......",
+        "...befedc.....",
+        "..bdeeddc.bb..",
+        "..bdddedcedb..",
+        ".bedededdddcb.",
+        "..cdddeddcdcb.",
+        "...cdddddccba.",
+        "...ccddcccba..",
+        "....acccbba...",
+        ".....aabba...."
+      ],
+      "correction": {
+        "defect": "palette_hierarchy",
+        "rationale": "The inspected heap had near-black contour seams and separated highlights that read as cracked stone. Repaint only the pigment with connected lit grains, a colored contour and a short shaded underside, following the inspected vanilla dye references. Keep the creator plate as the exact lower layer.",
+        "expected_effect": "A loose vanilla-style powder heap with connected light/mid clusters and readable color at 16x16; creator Amber and wooden_base remain unchanged."
+      },
+      "palette": {
+        "a": [
+          93,
+          36,
+          63
+        ],
+        "b": [
+          126,
+          46,
+          79
+        ],
+        "c": [
+          154,
+          57,
+          95
+        ],
+        "d": [
+          186,
+          77,
+          115
+        ],
+        "e": [
+          219,
+          107,
+          143
+        ],
+        "f": [
+          235,
+          137,
+          163
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "group": "dorios_atelier:itemGroup.name.dyes",
+  "order": [
+    "sand",
+    "peach",
+    "coral",
+    "scarlet",
+    "wine",
+    "rose",
+    "burgundy",
+    "dusty_purple",
+    "lavender",
+    "slate",
+    "indigo",
+    "navy",
+    "aqua",
+    "teal",
+    "mint",
+    "emerald",
+    "forest",
+    "chartreuse",
+    "olive",
+    "ivory",
+    "amber",
+    "copper"
+  ]
+}

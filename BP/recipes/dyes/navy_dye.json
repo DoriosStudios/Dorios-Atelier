@@ -1,0 +1,31 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "dorios_atelier:craft_navy_dye"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:blue_dye"
+      },
+      {
+        "item": "minecraft:black_dye"
+      }
+    ],
+    "result": {
+      "item": "dorios_atelier:navy_dye",
+      "count": 2
+    },
+    "unlock": [
+      {
+        "item": "minecraft:blue_dye"
+      },
+      {
+        "item": "minecraft:black_dye"
+      }
+    ]
+  }
+}

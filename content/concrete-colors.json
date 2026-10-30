@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "textureSource": {
+    "repository": "https://github.com/Mojang/bedrock-samples",
+    "commit": "46ba6ea985fb5a92d79a9419198f10dda14c199d",
+    "path": "resource_pack/textures/blocks/concrete_white.png",
+    "sha256": "6ad27d2fa69de165de0aca11f7906d4b3ff25aed635c16a81d4971ce3a93fe73"
+  },
+  "design": {
+    "identity": "Opaque, smooth concrete; common stone material, not metal or ore.",
+    "size": [16, 16],
+    "paletteSource": "Original fourteen: Ascendant Technology UI panel fills. Spectrum expansion: locally selected bridge colors, marked per entry.",
+    "expansionIntent": "Eight warm-focused additions: scarlet, coral, peach, ivory, chartreuse, emerald, wine and deep rose. Wine is warmer and redder than the original burgundy.",
+    "composition": "Full tile; inherit the native pixels and subtle granular pattern of Mojang white concrete.",
+    "lighting": "Preserve pixel RGB offsets from the source dominant color; map it exactly to the selected target color.",
+    "shapes": ["block", "slab", "stairs", "vertical_slab", "wall"]
+  },
+  "colors": [
+    { "id": "copper", "hex": "#AD7655", "en": "Copper", "pt": "Cobre", "es": "Cobre", "dyes": ["orange", "brown"] },
+    { "id": "amber", "hex": "#C79A42", "en": "Amber", "pt": "Âmbar", "es": "Ámbar", "dyes": ["yellow", "orange"] },
+    { "id": "sand", "hex": "#CBB89A", "en": "Sand", "pt": "Areia", "es": "Arena", "dyes": ["brown", "white"] },
+    { "id": "burgundy", "hex": "#713A50", "en": "Burgundy", "pt": "Bordô", "es": "Burdeos", "dyes": ["red", "purple"] },
+    { "id": "lavender", "hex": "#B8A7D1", "en": "Lavender", "pt": "Lavanda", "es": "Lavanda", "dyes": ["purple", "white"] },
+    { "id": "dusty_purple", "hex": "#806079", "en": "Dusty Purple", "pt": "Roxo Empoeirado", "es": "Morado Empolvado", "dyes": ["gray", "purple"] },
+    { "id": "olive", "hex": "#7A8052", "en": "Olive", "pt": "Oliva", "es": "Oliva", "dyes": ["green", "yellow"] },
+    { "id": "forest", "hex": "#3E6A50", "en": "Forest", "pt": "Floresta", "es": "Bosque", "dyes": ["green", "black"] },
+    { "id": "mint", "hex": "#9FD3B9", "en": "Mint", "pt": "Menta", "es": "Menta", "dyes": ["lime", "white"] },
+    { "id": "indigo", "hex": "#4C5389", "en": "Indigo", "pt": "Índigo", "es": "Índigo", "dyes": ["blue", "purple"] },
+    { "id": "slate", "hex": "#687A8A", "en": "Slate", "pt": "Slate", "es": "Pizarra", "dyes": ["gray", "cyan"] },
+    { "id": "navy", "hex": "#2D4265", "en": "Navy", "pt": "Navy", "es": "Azul Marino", "dyes": ["blue", "black"] },
+    { "id": "teal", "hex": "#3B8381", "en": "Teal", "pt": "Teal", "es": "Verde Azulado", "dyes": ["cyan", "green"] },
+    { "id": "aqua", "hex": "#ADDEF1", "en": "Aqua", "pt": "Aqua", "es": "Aqua", "dyes": ["light_blue", "white"] },
+    { "id": "scarlet", "hex": "#C6443E", "en": "Scarlet", "pt": "Escarlate", "es": "Escarlata", "dyes": ["red", "orange"], "paletteSource": "spectrum_expansion" },
+    { "id": "coral", "hex": "#DA796C", "en": "Coral", "pt": "Coral", "es": "Coral", "dyes": ["red", "pink"], "paletteSource": "spectrum_expansion" },
+    { "id": "peach", "hex": "#E6B091", "en": "Peach", "pt": "Pêssego", "es": "Melocotón", "dyes": ["orange", "white"], "paletteSource": "spectrum_expansion" },
+    { "id": "ivory", "hex": "#E9DCA6", "en": "Ivory", "pt": "Marfim", "es": "Marfil", "dyes": ["yellow", "white"], "paletteSource": "spectrum_expansion" },
+    { "id": "chartreuse", "hex": "#C7D85C", "en": "Chartreuse", "pt": "Chartreuse", "es": "Chartreuse", "dyes": ["lime", "yellow"], "paletteSource": "spectrum_expansion" },
+    { "id": "emerald", "hex": "#2FAD72", "en": "Emerald", "pt": "Esmeralda", "es": "Esmeralda", "dyes": ["green", "lime"], "paletteSource": "spectrum_expansion" },
+    { "id": "wine", "hex": "#7F2437", "en": "Wine", "pt": "Vinho", "es": "Vino", "dyes": ["red", "brown"], "paletteSource": "spectrum_expansion" },
+    { "id": "rose", "hex": "#BA4D73", "en": "Deep Rose", "pt": "Rosa Intenso", "es": "Rosa Intenso", "dyes": ["red", "magenta"], "paletteSource": "spectrum_expansion" }
+  ],
+  "retiredColors": [
+    { "id": "turquoise", "hex": "#3DB9AA", "en": "Turquoise", "pt": "Turquesa", "es": "Turquesa", "dyes": ["cyan", "light_blue"], "paletteSource": "spectrum_expansion" },
+    { "id": "cobalt", "hex": "#375CC0", "en": "Cobalt", "pt": "Cobalto", "es": "Cobalto", "dyes": ["blue", "light_blue"], "paletteSource": "spectrum_expansion" },
+    { "id": "periwinkle", "hex": "#8698D1", "en": "Periwinkle", "pt": "Pervinca", "es": "Bígaro", "dyes": ["light_blue", "purple"], "paletteSource": "spectrum_expansion" },
+    { "id": "violet", "hex": "#9163C6", "en": "Violet", "pt": "Violeta", "es": "Violeta", "dyes": ["purple", "magenta"], "paletteSource": "spectrum_expansion" },
+    { "id": "mauve", "hex": "#B080A6", "en": "Mauve", "pt": "Malva", "es": "Malva", "dyes": ["pink", "purple"], "paletteSource": "spectrum_expansion" }
+  ]
+}

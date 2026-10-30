@@ -88,6 +88,72 @@
     },
     "utilitycraft_netherite_furniture_hammer": {
       "textures": "textures/items/netherite_furniture_hammer"
+    },
+    "dorios_atelier_copper_dye": {
+      "textures": "textures/items/dyes/copper_dye"
+    },
+    "dorios_atelier_amber_dye": {
+      "textures": "textures/items/dyes/amber_dye"
+    },
+    "dorios_atelier_sand_dye": {
+      "textures": "textures/items/dyes/sand_dye"
+    },
+    "dorios_atelier_burgundy_dye": {
+      "textures": "textures/items/dyes/burgundy_dye"
+    },
+    "dorios_atelier_lavender_dye": {
+      "textures": "textures/items/dyes/lavender_dye"
+    },
+    "dorios_atelier_dusty_purple_dye": {
+      "textures": "textures/items/dyes/dusty_purple_dye"
+    },
+    "dorios_atelier_olive_dye": {
+      "textures": "textures/items/dyes/olive_dye"
+    },
+    "dorios_atelier_forest_dye": {
+      "textures": "textures/items/dyes/forest_dye"
+    },
+    "dorios_atelier_mint_dye": {
+      "textures": "textures/items/dyes/mint_dye"
+    },
+    "dorios_atelier_indigo_dye": {
+      "textures": "textures/items/dyes/indigo_dye"
+    },
+    "dorios_atelier_slate_dye": {
+      "textures": "textures/items/dyes/slate_dye"
+    },
+    "dorios_atelier_navy_dye": {
+      "textures": "textures/items/dyes/navy_dye"
+    },
+    "dorios_atelier_teal_dye": {
+      "textures": "textures/items/dyes/teal_dye"
+    },
+    "dorios_atelier_aqua_dye": {
+      "textures": "textures/items/dyes/aqua_dye"
+    },
+    "dorios_atelier_scarlet_dye": {
+      "textures": "textures/items/dyes/scarlet_dye"
+    },
+    "dorios_atelier_coral_dye": {
+      "textures": "textures/items/dyes/coral_dye"
+    },
+    "dorios_atelier_peach_dye": {
+      "textures": "textures/items/dyes/peach_dye"
+    },
+    "dorios_atelier_ivory_dye": {
+      "textures": "textures/items/dyes/ivory_dye"
+    },
+    "dorios_atelier_chartreuse_dye": {
+      "textures": "textures/items/dyes/chartreuse_dye"
+    },
+    "dorios_atelier_emerald_dye": {
+      "textures": "textures/items/dyes/emerald_dye"
+    },
+    "dorios_atelier_wine_dye": {
+      "textures": "textures/items/dyes/wine_dye"
+    },
+    "dorios_atelier_rose_dye": {
+      "textures": "textures/items/dyes/rose_dye"
     }
   }
 }

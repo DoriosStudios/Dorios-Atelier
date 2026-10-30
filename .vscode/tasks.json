@@ -2,9 +2,9 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Dash Watch",
-      "type": "shell",
-      "command": "dash_compiler watch",
+      "label": "Compiler Watch",
+      "type": "process",
+      "command": "powershell.exe",
       "isBackground": true,
       "runOptions": {
         "runOn": "folderOpen"
@@ -18,6 +18,15 @@
       "icon": {
         "color": "terminal.ansiGreen",
         "id": "arrow-up"
+      },
+      "args": [
+        "-NoProfile",
+        "-NonInteractive",
+        "-Command",
+        "$ErrorActionPreference = 'Stop'; if (Get-Command regolith -ErrorAction SilentlyContinue) { regolith watch } elseif (Get-Command dash_compiler -ErrorAction SilentlyContinue) { dash_compiler watch } else { [Console]::Error.WriteLine('Compiler not found: install Regolith or dash_compiler and add it to PATH.'); exit 127 }; exit $LASTEXITCODE"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
       }
     },
     {
