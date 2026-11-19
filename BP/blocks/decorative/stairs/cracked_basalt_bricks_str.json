@@ -34,7 +34,7 @@
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "utilitycraft_cracked_basalt_bricks",
+          "texture": "dorios_atelier_cracked_basalt_bricks",
           "render_method": "opaque"
         }
       },
@@ -48,7 +48,7 @@
         },
         "material_instances": {
           "*": {
-            "texture": "utilitycraft_cracked_basalt_bricks",
+            "texture": "dorios_atelier_cracked_basalt_bricks",
             "render_method": "opaque"
           }
         }

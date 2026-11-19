@@ -1,0 +1,25 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "dorios_atelier:sc_forest_wool_from_forest_wool_stairs"
+    },
+    "tags": [
+      "stonecutter"
+    ],
+    "ingredients": [
+      {
+        "item": "dorios_atelier:forest_wool_stairs"
+      }
+    ],
+    "result": {
+      "item": "dorios_atelier:forest_wool",
+      "count": 1
+    },
+    "unlock": [
+      {
+        "item": "dorios_atelier:forest_wool_stairs"
+      }
+    ]
+  }
+}

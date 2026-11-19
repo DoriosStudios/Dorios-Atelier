@@ -178,7 +178,8 @@
             "speed": 8
           }
         ]
-      }
+      },
+      "minecraft:interact_button": true
     }
   }
 }

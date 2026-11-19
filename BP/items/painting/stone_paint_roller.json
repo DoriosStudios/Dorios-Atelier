@@ -1,0 +1,28 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "dorios_atelier:stone_paint_roller",
+      "menu_category": {
+        "category": "equipment",
+        "group": "dorios_atelier:itemGroup.name.paintRollers"
+      }
+    },
+    "components": {
+      "minecraft:icon": {
+        "textures": {
+          "default": "dorios_atelier_stone_paint_roller",
+          "dyed": "dorios_atelier_stone_paint_roller_dyed"
+        }
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:interact_button": true,
+      "minecraft:durability": {
+        "max_durability": 131
+      },
+      "dorios_atelier:paint_tool": {},
+      "minecraft:dyeable": {}
+    }
+  }
+}

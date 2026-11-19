@@ -1,0 +1,25 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "dorios_atelier:sc_raw_end_stone_from_chiseled_end_stone_tiles"
+    },
+    "tags": [
+      "stonecutter"
+    ],
+    "ingredients": [
+      {
+        "item": "dorios_atelier:chiseled_end_stone_tiles"
+      }
+    ],
+    "result": {
+      "item": "minecraft:end_stone",
+      "count": 1
+    },
+    "unlock": [
+      {
+        "item": "dorios_atelier:chiseled_end_stone_tiles"
+      }
+    ]
+  }
+}

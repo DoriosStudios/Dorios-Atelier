@@ -1,0 +1,559 @@
+{
+  "schemaVersion": 2,
+  "aliases": {
+    "ornate_andesite_bricks": "andesite_bricks",
+    "ornate_andesite_pillar": "andesite_pillar",
+    "ornate_andesite_tiles": "andesite_tiles",
+    "ornate_andesite_tiles_pillar": "andesite_tiles_pillar",
+    "carved_ornate_andesite": "carved_andesite",
+    "carved_ornate_deepslate": "carved_deepslate",
+    "chiseled_ornate_andesite": "chiseled_andesite",
+    "chiseled_ornate_andesite_bricks": "chiseled_andesite_bricks",
+    "chiseled_ornate_andesite_pillar": "chiseled_andesite_pillar",
+    "chiseled_ornate_andesite_tiles": "chiseled_andesite_tiles",
+    "chiseled_ornate_deepslate": "chiseled_deepslate",
+    "chiseled_ornate_deepslate_pillar": "chiseled_deepslate_pillar",
+    "chiseled_ornate_deepslate_tiles": "chiseled_deepslate_tiles",
+    "cracked_ornate_andesite_bricks": "cracked_andesite_bricks",
+    "cracked_ornate_andesite_tiles": "cracked_andesite_tiles",
+    "ornate_deepslate_pillar": "deepslate_pillar",
+    "ornate_deepslate_tiles_pillar": "deepslate_tiles_pillar",
+    "polished_ornate_andesite_tiling": "polished_andesite_tiling",
+    "polished_ornate_deepslate_tiling": "polished_deepslate_tiling",
+    "smooth_ornate_deepslate": "smooth_deepslate"
+  },
+  "variants": [
+    {
+      "id": "andesite_bricks",
+      "family": "andesite",
+      "texture": "andesite_bricks",
+      "atlas": false,
+      "textureIdentity": "0761570f72a604a7f61f4e686f5eb7981e9d5b08f6fcf124e2ba627fd2df4272"
+    },
+    {
+      "id": "andesite_pillar",
+      "family": "andesite",
+      "texture": "andesite_pilar",
+      "atlas": true,
+      "textureIdentity": "3c9ae63a54e192a28073f7e75eed23002e293925b96768d4daaaa283901916d9"
+    },
+    {
+      "id": "andesite_tiles",
+      "family": "andesite",
+      "texture": "andesite_tiles",
+      "atlas": false,
+      "textureIdentity": "4d70fcbfa5930b7ec4c81458328cc4938475a79dbac24d845c39271578cdd1dd"
+    },
+    {
+      "id": "andesite_tiles_pillar",
+      "family": "andesite",
+      "texture": "andesite_tiles_pilar",
+      "atlas": true,
+      "textureIdentity": "d65c764e43cb6e315b5b0febb7f52542921d146558a8c46f6d600f1286a40dfa"
+    },
+    {
+      "id": "basalt_bricks",
+      "family": "basalt",
+      "texture": "stones/basalt_bricks",
+      "atlas": false,
+      "textureIdentity": "92cd5f18f9e15e4c8b049fa3fc7ff0a8ce603729426172c5e06a47cc5924be52"
+    },
+    {
+      "id": "basalt_pillar",
+      "family": "basalt",
+      "texture": "stone_families/basalt_pillar",
+      "atlas": true,
+      "textureIdentity": "78b9b8669d4ba21dc48f74b310c15a658d67e76cb3163d478a1fb6b3107a31c4"
+    },
+    {
+      "id": "basalt_tiles_pillar",
+      "family": "basalt",
+      "texture": "stone_families/basalt_tiles_pillar",
+      "atlas": true,
+      "textureIdentity": "e102748dd29bc59fa46df699b409bfe6a1fd265401648ae1b0ca3394c39daf53"
+    },
+    {
+      "id": "basalt_tiles",
+      "family": "basalt",
+      "texture": "stone_families/basalt_tiles",
+      "atlas": false,
+      "textureIdentity": "9ee65675a834c5626e87b29a0fccb990e9a5f5d3564066a1d8524027f94549c8"
+    },
+    {
+      "id": "carved_andesite",
+      "family": "andesite",
+      "texture": "carved_andsite",
+      "atlas": false,
+      "textureIdentity": "6cf7f600f971ca123c6202b48debdc19928e910dc5d8d3b95b26c8688919eeb5"
+    },
+    {
+      "id": "carved_basalt",
+      "family": "basalt",
+      "texture": "stone_families/carved_basalt",
+      "atlas": false,
+      "textureIdentity": "403fde263e404da64cbf5a5673719c71c3c5dee29d58e0b1d3a3972b5e995e69"
+    },
+    {
+      "id": "carved_basalt_pillar",
+      "family": "basalt",
+      "texture": "stone_families/carved_basalt_pillar",
+      "atlas": true,
+      "textureIdentity": "2dfa629ae32c326990e7be90ef844bb4578d2048a7b6a0186680838afe0e16e0"
+    },
+    {
+      "id": "carved_deepslate",
+      "family": "deepslate",
+      "texture": "carved_deepslate",
+      "atlas": false,
+      "textureIdentity": "79fc0bf05889c6c76a92e394ea2266c14cceaed8e389ffc3802e61a5a6f2723e"
+    },
+    {
+      "id": "carved_dripstone",
+      "family": "dripstone",
+      "texture": "stone_families/carved_dripstone",
+      "atlas": false,
+      "textureIdentity": "b31594ff7a2162df4219a68ed1d7da6cccbc5b575bf37a453decc455535922e4"
+    },
+    {
+      "id": "carved_dripstone_pillar",
+      "family": "dripstone",
+      "texture": "stone_families/carved_dripstone_pillar",
+      "atlas": true,
+      "textureIdentity": "8c8bc143cf30a364ccd7e9c5378b880ddc732e250cf8299b1f87bb947cbb6743"
+    },
+    {
+      "id": "carved_end_stone",
+      "family": "end_stone",
+      "texture": "carved_endstone",
+      "atlas": false,
+      "textureIdentity": "f6e694f1f44d067e301bd1c1df340bef905bf5c3e57afdfd455e8045115d4443"
+    },
+    {
+      "id": "carved_hardened_netherrack",
+      "family": "hardened_netherrack",
+      "texture": "carved_netherrack",
+      "atlas": false,
+      "textureIdentity": "42effa29576cf3999db5ed232730c369c2b008c78cbd8521771a6886b84c6ee6"
+    },
+    {
+      "id": "chiseled_andesite",
+      "family": "andesite",
+      "texture": "chiseled_andesite",
+      "atlas": true,
+      "textureIdentity": "bdbaf7ed818b1e6678f4dc9be5cbc582c13ba6c7be8cbc6a1651acddd7431e10"
+    },
+    {
+      "id": "chiseled_andesite_bricks",
+      "family": "andesite",
+      "texture": "chiseled_andesite_bricks",
+      "atlas": true,
+      "textureIdentity": "d337c37d7ad205f150b8c4ee430d48eb958d69acdabe809051bd91bb4b7bb8cf"
+    },
+    {
+      "id": "chiseled_andesite_pillar",
+      "family": "andesite",
+      "texture": "chiseled_andesite_pilar",
+      "atlas": true,
+      "textureIdentity": "5d15d618f053bd9623b798bd1e6c5c0107489a26ae7b6e4543567a6845dbab8f"
+    },
+    {
+      "id": "chiseled_andesite_tiles",
+      "family": "andesite",
+      "texture": "chiseled_andesite_tiles",
+      "atlas": true,
+      "textureIdentity": "21b3deb56671274fba26f65765b502c4cc3e3eb0f361214e52cb81d8e791e016"
+    },
+    {
+      "id": "chiseled_basalt",
+      "family": "basalt",
+      "texture": "stone_families/chiseled_basalt",
+      "atlas": true,
+      "textureIdentity": "5377c0ad3823a68a59a2557581e4fe5add05c90001f2659629fd71720344e3d8"
+    },
+    {
+      "id": "chiseled_basalt_bricks",
+      "family": "basalt",
+      "texture": "stone_families/chiseled_basalt_bricks",
+      "atlas": true,
+      "textureIdentity": "4b15f6fb70cc4cef602f7f33af56baf35a0ec1f5aeb91ae57b50901bd801f809"
+    },
+    {
+      "id": "chiseled_basalt_pillar",
+      "family": "basalt",
+      "texture": "stone_families/chiseled_basalt_pillar",
+      "atlas": true,
+      "textureIdentity": "8f56d159990f0769b9237309deb470ec78361edd670f447110b2f78eca023ae2"
+    },
+    {
+      "id": "chiseled_basalt_tiles",
+      "family": "basalt",
+      "texture": "stone_families/chiseled_basalt_tiles",
+      "atlas": true,
+      "textureIdentity": "5c89abcdce8e489f4f712f33c39e970c3aefda339ebfc557f8ea268ba31028d3"
+    },
+    {
+      "id": "chiseled_deepslate",
+      "family": "deepslate",
+      "texture": "chiseled_deepslate",
+      "atlas": false,
+      "textureIdentity": "26b88ec6511e26de70157666aa597917309cfec89980cd2f54b26c1aea7d18d9"
+    },
+    {
+      "id": "chiseled_deepslate_pillar",
+      "family": "deepslate",
+      "texture": "chiseled_deepslate_pilar",
+      "atlas": true,
+      "textureIdentity": "fe6695a90eab5a3cc6f9fb4dcd7096833e52f80618d27da933518cec17d0b995"
+    },
+    {
+      "id": "chiseled_deepslate_tiles",
+      "family": "deepslate",
+      "texture": "chiseled_deepslate_tiles",
+      "atlas": false,
+      "textureIdentity": "11f038aead8d44e564c411fd595d22b4d1d6272bf916a0992b3f37a5e64e4ae2"
+    },
+    {
+      "id": "chiseled_dripstone",
+      "family": "dripstone",
+      "texture": "stone_families/chiseled_dripstone",
+      "atlas": true,
+      "textureIdentity": "2f4edb6788a272362ec719f54439efd9742bd20de9075889cbea5b2b788f45ef"
+    },
+    {
+      "id": "chiseled_dripstone_bricks",
+      "family": "dripstone",
+      "texture": "stone_families/chiseled_dripstone_bricks",
+      "atlas": true,
+      "textureIdentity": "21fe00575de5d2717dd6d5b6c9de184ccccad48299a2e0e0639f1f71184b4021"
+    },
+    {
+      "id": "chiseled_dripstone_pillar",
+      "family": "dripstone",
+      "texture": "stone_families/chiseled_dripstone_pillar",
+      "atlas": true,
+      "textureIdentity": "23d8c45be7fb9ad8b37e3c8307b6a5b63cae07abb66aeaaaabafd7f7e4849595"
+    },
+    {
+      "id": "chiseled_dripstone_tiles",
+      "family": "dripstone",
+      "texture": "stone_families/chiseled_dripstone_tiles",
+      "atlas": true,
+      "textureIdentity": "f55be147599e363cc92902e5f588ac14bc86ce210e3893996e8b64939bea105f"
+    },
+    {
+      "id": "chiseled_end_stone",
+      "family": "end_stone",
+      "texture": "chiseled_endstone",
+      "atlas": false,
+      "textureIdentity": "9b16508555f93654e1fac410cba013a4dc760cf603054dcef32d5634be446f37"
+    },
+    {
+      "id": "chiseled_end_stone_bricks",
+      "family": "end_stone",
+      "texture": "chiseled_endstone_bricks",
+      "atlas": false,
+      "textureIdentity": "6807adb8f9413ffa9590050466d99eb5debfd97ddf8099eead764b0e4e2467b5"
+    },
+    {
+      "id": "chiseled_end_stone_pillar",
+      "family": "end_stone",
+      "texture": "chiseled_endstone_pilar",
+      "atlas": true,
+      "textureIdentity": "cff9599b4ffa1cb33df6681718f556c95d6b58737d932db64d94077d359cbe80"
+    },
+    {
+      "id": "chiseled_end_stone_tiles",
+      "family": "end_stone",
+      "texture": "chiseled_endstone_tiles",
+      "atlas": false,
+      "textureIdentity": "42973ecc7a0e0795844dd72aa9f1f943f33fd0b4890524be9d0186ab261527b6"
+    },
+    {
+      "id": "chiseled_hardened_netherrack",
+      "family": "hardened_netherrack",
+      "texture": "chiseled_netherrack",
+      "atlas": true,
+      "textureIdentity": "7322d54a472e81ba00f82cf55ae1b472f5b76d2775f1203de5bad911cfe20d52"
+    },
+    {
+      "id": "chiseled_hardened_netherrack_bricks",
+      "family": "hardened_netherrack",
+      "texture": "chiseled_netherrack_bricks",
+      "atlas": true,
+      "textureIdentity": "c87e0ec97aacd555df269870ff4d4304a283489e5998c2a9e8c3e17c19efe057"
+    },
+    {
+      "id": "chiseled_hardened_netherrack_pillar",
+      "family": "hardened_netherrack",
+      "texture": "chiseled_netherrack_pilar",
+      "atlas": true,
+      "textureIdentity": "388537cdf4ee7afebe8533c739e8fd84b33fea02fc9c389869b8e39154f67068"
+    },
+    {
+      "id": "chiseled_hardened_netherrack_tiles",
+      "family": "hardened_netherrack",
+      "texture": "chiseled_netherrack_tiles",
+      "atlas": true,
+      "textureIdentity": "917b6e1c411d1f63dd8eab8638521bd4a48db6136b6daa2be1a70ba25dfbda00"
+    },
+    {
+      "id": "cobbled_end_stone",
+      "family": "end_stone",
+      "texture": "cobbled_endstone",
+      "atlas": false,
+      "textureIdentity": "620969833e6109f7642b62a8e7867f3225620fc1e33f6da39b3d23acaab96f51"
+    },
+    {
+      "id": "hardened_netherrack",
+      "family": "hardened_netherrack",
+      "texture": "hardened_netherrack",
+      "atlas": false,
+      "textureIdentity": "33f1b6bc3d2ff66b5e63132c102bc05487322564e6721975ed0277d18402d64a"
+    },
+    {
+      "id": "cracked_andesite_bricks",
+      "family": "andesite",
+      "texture": "cracked_andesite_bricks",
+      "atlas": false,
+      "textureIdentity": "e30033a701d6d2324f147adfc5f8bbb6131acc693ae3c3812498bd0e0f79032c"
+    },
+    {
+      "id": "cracked_basalt_bricks",
+      "family": "basalt",
+      "texture": "stone_families/cracked_basalt_bricks",
+      "atlas": false,
+      "textureIdentity": "a13ff08f928983ce6ac37f25a940054c0003aad86684118990284cd80f6550a5"
+    },
+    {
+      "id": "cracked_dripstone_bricks",
+      "family": "dripstone",
+      "texture": "stone_families/cracked_dripstone_bricks",
+      "atlas": false,
+      "textureIdentity": "bde219aa456746e8916a42612095e5b934e419c615cfee0408ec7d9f07738427"
+    },
+    {
+      "id": "cracked_dripstone_tiles",
+      "family": "dripstone",
+      "texture": "stone_families/cracked_dripstone_tiles",
+      "atlas": false,
+      "textureIdentity": "1b289b6630bf2ec4c4219f1343f9bc8d780f706c661ffc630c18a6bfff11c092"
+    },
+    {
+      "id": "cracked_end_stone_bricks",
+      "family": "end_stone",
+      "texture": "cracked_endstone_bricks",
+      "atlas": false,
+      "textureIdentity": "a850ebafa43abea0a8360129b38601a030d5f0d3d55729d5d9de156577ffe133"
+    },
+    {
+      "id": "cracked_end_stone_tiles",
+      "family": "end_stone",
+      "texture": "cracked_endstone_tiles",
+      "atlas": false,
+      "textureIdentity": "cdf89aa0b78d14f818b3c8df91fa6bfdabec09a9e49d82955859cc303b599a67"
+    },
+    {
+      "id": "cracked_hardened_netherrack_bricks",
+      "family": "hardened_netherrack",
+      "texture": "cracked_netherrack_bricks",
+      "atlas": false,
+      "textureIdentity": "6c6f863b02410cbad148cc67097bacffd41a09db72e7bc574325770a6f773b52"
+    },
+    {
+      "id": "cracked_hardened_netherrack_tiles",
+      "family": "hardened_netherrack",
+      "texture": "cracked_netherrack_tiles",
+      "atlas": false,
+      "textureIdentity": "689642c9392d64b79fcf386cb891628cf1e763e9713b3008c4d9450daca1bb8f"
+    },
+    {
+      "id": "cracked_andesite_tiles",
+      "family": "andesite",
+      "texture": "cranked_andesite_tiles",
+      "atlas": false,
+      "textureIdentity": "11d7fe01a7e5c56a38c26d2c6ec93791dbd7d3f7baef60ec6e00cccc69da71a1"
+    },
+    {
+      "id": "cracked_basalt_tiles",
+      "family": "basalt",
+      "texture": "stone_families/cracked_basalt_tiles",
+      "atlas": false,
+      "textureIdentity": "d583cac308dc7cf3cd93926f5ed3389fb4d818d0a5bc07de927110df5c2ee3c2"
+    },
+    {
+      "id": "deepslate_pillar",
+      "family": "deepslate",
+      "texture": "deepslate_pilar",
+      "atlas": true,
+      "textureIdentity": "3b0903a124fb5e74c65ba2eb599a7f32fe7d8c8fa95d8c5db6180e5c0e3e1c6a"
+    },
+    {
+      "id": "deepslate_tiles_pillar",
+      "family": "deepslate",
+      "texture": "deepslate_tiles_pilar",
+      "atlas": true,
+      "textureIdentity": "d46b2d8e577b7b0887c79fef4450806de34d7b35d3a0af4dcdeac7f7ce71199b"
+    },
+    {
+      "id": "dripstone_bricks",
+      "family": "dripstone",
+      "texture": "stone_families/dripstone_bricks",
+      "atlas": false,
+      "textureIdentity": "fb93d92060bdae377f08dbb44c402353966d9ee863c58e7e107fc52256b3273f"
+    },
+    {
+      "id": "dripstone_pillar",
+      "family": "dripstone",
+      "texture": "stone_families/dripstone_pillar",
+      "atlas": true,
+      "textureIdentity": "f79ed7ee608feb57c82abfcf7f35eb6cd40191be35fb3d019a58b0b87f7db39c"
+    },
+    {
+      "id": "dripstone_tiles_pillar",
+      "family": "dripstone",
+      "texture": "stone_families/dripstone_tiles_pillar",
+      "atlas": true,
+      "textureIdentity": "121ea8a0ef93b518ae4d93e6594fda1c9e0a62f6df702664e9d08a1c97e1058a"
+    },
+    {
+      "id": "dripstone_tiles",
+      "family": "dripstone",
+      "texture": "stone_families/dripstone_tiles",
+      "atlas": false,
+      "textureIdentity": "903c5eaae2f6702e68fdcd59935cd5966ae783945a63178e9f78b3703af40d8e"
+    },
+    {
+      "id": "end_stone_pillar",
+      "family": "end_stone",
+      "texture": "endstone_pilar",
+      "atlas": true,
+      "textureIdentity": "f6e15040b4d61f68f6c0c024e06c611d3188bf2c6d5f2bb3d671f062c1ec61d6"
+    },
+    {
+      "id": "end_stone_tiles",
+      "family": "end_stone",
+      "texture": "endstone_tiles",
+      "atlas": false,
+      "textureIdentity": "64e3351f3ede28a11f6f0d000eeacf92d58bab05c8af66cd73109a583b73a8e5"
+    },
+    {
+      "id": "end_stone_tiles_pillar",
+      "family": "end_stone",
+      "texture": "endstone_tiles_pilar",
+      "atlas": true,
+      "textureIdentity": "4df5b9ee287aabc8ac1d0fd897d86b9f53e9d1cdc23360a014f0312e0358c276"
+    },
+    {
+      "id": "hardened_netherrack_bricks",
+      "family": "hardened_netherrack",
+      "texture": "netherrack_bricks",
+      "atlas": false,
+      "textureIdentity": "ab211da27c5f4ffab2c0060f757639c12f9d9bdb2400195319bad06249e6165b"
+    },
+    {
+      "id": "hardened_netherrack_pillar",
+      "family": "hardened_netherrack",
+      "texture": "netherrack_pilar",
+      "atlas": true,
+      "textureIdentity": "d17ea2a7becc288766e8244c25471a36fded43a42cc70627a36e45705c16543f"
+    },
+    {
+      "id": "hardened_netherrack_tiles",
+      "family": "hardened_netherrack",
+      "texture": "netherrack_tiles",
+      "atlas": false,
+      "textureIdentity": "8f3e0dd0e4abeefdcd85cb90a55e7a94f54571983f3783d418b7261940beb72d"
+    },
+    {
+      "id": "hardened_netherrack_tiles_pillar",
+      "family": "hardened_netherrack",
+      "texture": "netherrack_tiles_pilar",
+      "atlas": true,
+      "textureIdentity": "d3cf7ea92e94a116ce2e81540792fc93a9081f54da0024fd736a54761dd2252b"
+    },
+    {
+      "id": "polished_andesite_tiling",
+      "family": "andesite",
+      "texture": "polished_andesite_tiling",
+      "atlas": false,
+      "textureIdentity": "f8b6c36d6e62b9aacda248c674491944557d7a085b09c3700447853975c2def1"
+    },
+    {
+      "id": "polished_deepslate_tiling",
+      "family": "deepslate",
+      "texture": "polished_deepslate_tiling",
+      "atlas": false,
+      "textureIdentity": "ef8781522930378c132623898e9ecca3cb7bc4812398d89b60ebec1f2d584729"
+    },
+    {
+      "id": "polished_dripstone",
+      "family": "dripstone",
+      "texture": "stones/polished_dripstone",
+      "atlas": false,
+      "textureIdentity": "229e9db8f6f05c683568d292d7312862135445156cd2b7c002d745e8322a111f"
+    },
+    {
+      "id": "polished_end_stone",
+      "family": "end_stone",
+      "texture": "polished_endstone",
+      "atlas": false,
+      "textureIdentity": "18a1e9fee1e50f069da1c543c9cf70c21c119139fc8ae3600a53063051731b36"
+    },
+    {
+      "id": "polished_end_stone_tiling",
+      "family": "end_stone",
+      "texture": "polished_endstone_tiling",
+      "atlas": false,
+      "textureIdentity": "d04ae55ef6915c8f2bb8c8d97a8f5b822e484e59aff6fd683eae55ea576a1225"
+    },
+    {
+      "id": "polished_hardened_netherrack",
+      "family": "hardened_netherrack",
+      "texture": "polished_netherrack",
+      "atlas": false,
+      "textureIdentity": "a355a58fc98df7099605c21a0ef15674951f655f95078404682b1d6eeaa9be2f"
+    },
+    {
+      "id": "polished_hardened_netherrack_tiling",
+      "family": "hardened_netherrack",
+      "texture": "polished_netherrack_tiling",
+      "atlas": false,
+      "textureIdentity": "6f67c0e3e2502a10ca405da6686a6be7e893191bb01ed569d871aa4671ea769b"
+    },
+    {
+      "id": "smooth_deepslate",
+      "family": "deepslate",
+      "texture": "smooth_deepslate",
+      "atlas": false,
+      "textureIdentity": "2306751142555ab43d51215bf912c8daeca19dd1711775d6d9387a6214097313"
+    },
+    {
+      "id": "smooth_dripstone",
+      "family": "dripstone",
+      "texture": "stone_families/smooth_dripstone",
+      "atlas": false,
+      "textureIdentity": "53b844cd09f0101d91091f82649d46f48f2a84fda77975b25a7c3096428344bc"
+    },
+    {
+      "id": "smooth_end_stone",
+      "family": "end_stone",
+      "texture": "smooth_endstone",
+      "atlas": false,
+      "textureIdentity": "19b4801d5b2baac44601184e26bd9ec86edd2ed2b10a0ff36a119cd63686232a"
+    },
+    {
+      "id": "polished_basalt_tiling",
+      "family": "basalt",
+      "texture": "stone_families/polished_basalt_tiling",
+      "atlas": false,
+      "textureIdentity": "b1e9d07e96ae24002aa6eb657bc5b09ff283ab7122e410e0267ff09078231ee8"
+    },
+    {
+      "id": "polished_dripstone_tiling",
+      "family": "dripstone",
+      "texture": "stone_families/polished_dripstone_tiling",
+      "atlas": false,
+      "textureIdentity": "ca9715632289c67aecf6956310f7f18a7b7e9b97774956682cdb00dd2b93a10d"
+    }
+  ]
+}

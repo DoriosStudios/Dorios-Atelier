@@ -1,0 +1,25 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "dorios_atelier:sc_chartreuse_wool_from_chartreuse_wool_stairs"
+    },
+    "tags": [
+      "stonecutter"
+    ],
+    "ingredients": [
+      {
+        "item": "dorios_atelier:chartreuse_wool_stairs"
+      }
+    ],
+    "result": {
+      "item": "dorios_atelier:chartreuse_wool",
+      "count": 1
+    },
+    "unlock": [
+      {
+        "item": "dorios_atelier:chartreuse_wool_stairs"
+      }
+    ]
+  }
+}

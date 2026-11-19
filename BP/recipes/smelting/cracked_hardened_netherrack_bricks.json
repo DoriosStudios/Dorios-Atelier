@@ -1,0 +1,14 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "dorios_atelier:smelt_cracked_hardened_netherrack_bricks"
+    },
+    "tags": [
+      "furnace",
+      "blast_furnace"
+    ],
+    "input": "dorios_atelier:hardened_netherrack_bricks",
+    "output": "dorios_atelier:cracked_hardened_netherrack_bricks"
+  }
+}

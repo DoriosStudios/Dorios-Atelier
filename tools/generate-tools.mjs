@@ -52,6 +52,7 @@ function cutterItem(tier) {
       components: {
         "minecraft:max_stack_size": 1,
         "minecraft:hand_equipped": true,
+        "minecraft:interact_button": true,
         "minecraft:enchantable": { slot: "g_tool", value: tier.enchantability },
         "minecraft:durability": { max_durability: tier.durability },
         "minecraft:icon": `utilitycraft_${tier.name}_glass_cutter`,
@@ -100,7 +101,14 @@ for (const tier of TIERS) {
   const hammer = await readJson(hammerPath);
   const nextHammer = structuredClone(hammer);
   nextHammer["minecraft:item"].components["minecraft:icon"] = `utilitycraft_${tier.name}_furniture_hammer`;
+  nextHammer["minecraft:item"].components["minecraft:interact_button"] = true;
   queueJson(hammerPath, hammer, nextHammer);
+
+  const chiselPath = path.join(PROJECT_ROOT, "BP", "items", "chisel", `${tier.name}_chisel.json`);
+  const chisel = await readJson(chiselPath);
+  const nextChisel = structuredClone(chisel);
+  nextChisel["minecraft:item"].components["minecraft:interact_button"] = true;
+  queueJson(chiselPath, chisel, nextChisel);
 
   const cutterRecipePath = path.join(PROJECT_ROOT, "BP", "recipes", "crafting_table", "equipment", `${tier.name}_glass_cutter.json`);
   const cutterRecipe = shapedRecipe(

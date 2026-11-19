@@ -10,6 +10,7 @@
     "components": {
       "minecraft:max_stack_size": 1,
       "minecraft:hand_equipped": true,
+      "minecraft:interact_button": true,
       "minecraft:enchantable": {
         "slot": "g_tool",
         "value": 12

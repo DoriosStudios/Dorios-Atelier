@@ -34,7 +34,7 @@
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "utilitycraft_polished_dripstone",
+          "texture": "dorios_atelier_polished_dripstone",
           "render_method": "opaque"
         }
       },
@@ -44,7 +44,7 @@
         },
         "material_instances": {
           "*": {
-            "texture": "utilitycraft_polished_dripstone",
+            "texture": "dorios_atelier_polished_dripstone",
             "render_method": "opaque"
           }
         }

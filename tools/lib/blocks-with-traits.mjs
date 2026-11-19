@@ -37,6 +37,7 @@ const MATERIAL_COMPONENTS = new Set([
   "minecraft:light_emission",
   "minecraft:loot",
   "minecraft:map_color",
+  "minecraft:flammable",
 ]);
 
 export function shapeFamily(identifier) {
@@ -79,6 +80,12 @@ function mergeMaterialComponents(templateComponents, targetComponents) {
   for (const [key, value] of Object.entries(targetComponents)) {
     if (key.startsWith("tag:")) next[key] = structuredClone(value);
   }
+  if (targetComponents['tag:wool']) {
+    delete next['tag:minecraft:is_pickaxe_item_destructible'];
+    delete next['tag:minecraft:stone_tier_destructible'];
+    delete next['tag:minecraft:wood_tier_destructible'];
+    delete next['tag:stone'];
+  }
   return next;
 }
 
@@ -98,6 +105,20 @@ export function adaptShapeBlock(templateDocument, targetDocument) {
   nextBlock.description.identifier = targetBlock.description.identifier;
   nextBlock.description.menu_category = structuredClone(targetBlock.description.menu_category);
   nextBlock.components = mergeMaterialComponents(nextBlock.components, targetComponents);
+  // Face-specific atlas tiles must survive shape inheritance, including icons.
+  const faceMaterials = Object.fromEntries(Object.entries(targetComponents["minecraft:material_instances"] ?? {})
+    .filter(([face]) => face !== "*"));
+  if (Object.keys(faceMaterials).length) {
+    Object.assign(nextBlock.components["minecraft:material_instances"], structuredClone(faceMaterials));
+    if (nextBlock.components["minecraft:item_visual"]?.material_instances) {
+      Object.assign(nextBlock.components["minecraft:item_visual"].material_instances, structuredClone(faceMaterials));
+    }
+    // Keep the legacy models unchanged; face-textured blocks use their own models.
+    return replaceTemplateStrings(next, new Map(
+      ["slab", "stairs_up", "stairs_down", "vertical_slab", "wall", "wall_icon"]
+        .map(name => [`geometry.${name}`, `geometry.${name}_stone_faces`]),
+    ));
+  }
   return next;
 }
 

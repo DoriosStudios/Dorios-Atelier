@@ -69,7 +69,6 @@ Com Node >=22, Python e Pillow disponíveis:
 npm run content:concretes:apply
 npm run content:concretes:check
 npm run content:dyes:check
-npm test
 ```
 
 A geração é local e repetível; a referência está fixada por commit e SHA-256.

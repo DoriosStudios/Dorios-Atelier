@@ -50,7 +50,8 @@
             "speed": 11
           }
         ]
-      }
+      },
+      "minecraft:interact_button": true
     }
   }
 }

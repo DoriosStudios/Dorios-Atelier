@@ -1,0 +1,30 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "dorios_atelier:fill_rose_paint_bucket"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "dorios_atelier:empty_paint_bucket"
+      },
+      {
+        "item": "minecraft:water_bucket"
+      },
+      {
+        "item": "dorios_atelier:rose_dye"
+      }
+    ],
+    "result": {
+      "item": "dorios_atelier:rose_paint_bucket"
+    },
+    "unlock": [
+      {
+        "item": "dorios_atelier:rose_dye"
+      }
+    ]
+  }
+}

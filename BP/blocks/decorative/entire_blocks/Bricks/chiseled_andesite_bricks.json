@@ -4,7 +4,8 @@
     "description": {
       "identifier": "dorios_atelier:chiseled_andesite_bricks",
       "menu_category": {
-        "category": "construction"
+        "category": "construction",
+        "group": "dorios_atelier:itemGroup.name.stoneBricks"
       }
     },
     "components": {
@@ -21,22 +22,22 @@
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "utilitycraft_chiseled_andesite_bricks_side",
+          "texture": "dorios_atelier_chiseled_andesite_bricks_side",
+          "render_method": "opaque",
           "ambient_occlusion": true,
-          "face_dimming": true,
-          "render_method": "opaque"
+          "face_dimming": true
         },
         "up": {
-          "texture": "utilitycraft_chiseled_andesite_bricks_top",
+          "texture": "dorios_atelier_chiseled_andesite_bricks_top",
+          "render_method": "opaque",
           "ambient_occlusion": true,
-          "face_dimming": true,
-          "render_method": "opaque"
+          "face_dimming": true
         },
         "down": {
-          "texture": "utilitycraft_chiseled_andesite_bricks_top",
+          "texture": "dorios_atelier_chiseled_andesite_bricks_top",
+          "render_method": "opaque",
           "ambient_occlusion": true,
-          "face_dimming": true,
-          "render_method": "opaque"
+          "face_dimming": true
         }
       }
     }

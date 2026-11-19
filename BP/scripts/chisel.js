@@ -1,7 +1,7 @@
 // chisel.js
 import { system, world } from "@minecraft/server";
 import { MATERIAL_CYCLES, BLOCK_ALIAS } from "./variants.js";
-import { readToolLockFromItem, registerToolLockResolver } from "./toolMemory.js";
+import { handleToolUse, readToolLockFromItem, registerToolLockResolver } from "./toolMemory.js";
 import { playToolMaterialSound, soundConfig } from "./soundConfig.js";
 
 const TOOL_NAMESPACES = ["dorios_atelier", "utilitycraft"];
@@ -93,6 +93,9 @@ function resolveAlias(blockId) {
 
 /* find entry heurístico para blockId */
 function findEntryForBlockId(blockId) {
+  // Raw netherrack and its shapes must not bypass the 4-to-2 hardening recipe
+  // through the material-token fallback used for decorative families.
+  if (/^netherrack(?:_(?:slab|stairs|vertical_slab|wall))?$/.test(stripNamespace(blockId))) return undefined;
   const aliased = resolveAlias(blockId);
   if (BLOCK_LOOKUP.has(aliased)) return BLOCK_LOOKUP.get(aliased);
 
@@ -345,6 +348,7 @@ registerToolLockResolver(CHISEL_LOCK_KIND, viewedBlock => {
 
 system.beforeEvents.startup.subscribe((initEvent) => {
   const handlers = {
+    onUse: handleToolUse,
     onUseOn(event) {
       try {
         const { block, source, itemStack } = event;

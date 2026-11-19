@@ -1,0 +1,25 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "dorios_atelier:sc_carved_deepslate_from_deepslate"
+    },
+    "tags": [
+      "stonecutter"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:deepslate"
+      }
+    ],
+    "result": {
+      "item": "dorios_atelier:carved_deepslate",
+      "count": 1
+    },
+    "unlock": [
+      {
+        "item": "minecraft:deepslate"
+      }
+    ]
+  }
+}

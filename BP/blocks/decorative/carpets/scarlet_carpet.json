@@ -1,0 +1,71 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:block": {
+    "description": {
+      "identifier": "dorios_atelier:scarlet_carpet",
+      "menu_category": {
+        "category": "construction",
+        "group": "dorios_atelier:itemGroup.name.woolExtra"
+      }
+    },
+    "components": {
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "dorios_atelier_scarlet_wool",
+          "render_method": "opaque",
+          "ambient_occlusion": true,
+          "face_dimming": true
+        }
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.1
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 0.8
+      },
+      "minecraft:map_color": "#C6443E",
+      "minecraft:flammable": {
+        "flame_odds": 30,
+        "burn_odds": 60
+      },
+      "tag:wool": {},
+      "tag:minecraft:wool": {},
+      "tag:minecraft:is_shears_item_destructible": {},
+      "minecraft:geometry": "geometry.dorios_atelier.wool_carpet",
+      "minecraft:collision_box": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          1,
+          16
+        ]
+      },
+      "minecraft:selection_box": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          1,
+          16
+        ]
+      },
+      "minecraft:light_dampening": 0,
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "allowed_faces": [
+              "up"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

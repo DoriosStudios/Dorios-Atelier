@@ -1,0 +1,22 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "dorios_atelier:white_paint_bucket",
+      "menu_category": {
+        "category": "equipment",
+        "group": "dorios_atelier:itemGroup.name.paintBuckets"
+      }
+    },
+    "components": {
+      "minecraft:icon": "dorios_atelier_white_paint_bucket",
+      "minecraft:max_stack_size": 1,
+      "minecraft:allow_off_hand": true,
+      "minecraft:interact_button": true,
+      "dorios_atelier:paint_bucket": {},
+      "minecraft:durability": {
+        "max_durability": 256
+      }
+    }
+  }
+}

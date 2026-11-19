@@ -2,7 +2,7 @@
 name: Discord Release Notifier
 on:
   release:
-    types: [prereleased]
+    types: [published]
 
 concurrency:
   group: discord-release-${{ github.event.release.id }}

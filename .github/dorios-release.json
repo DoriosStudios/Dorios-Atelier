@@ -1,0 +1,37 @@
+{
+    "$schema": "https://raw.githubusercontent.com/DoriosStudios/Dorios-Workflows/v1.0.2/releases/schemas/project.schema.json",
+    "schemaVersion": 1,
+    "project": {
+        "name": "Dorios' Atelier",
+        "slug": "dorios-atelier"
+    },
+    "release": {
+        "changelogPath": ".github/release-notes.md",
+        "defaultChannel": "beta",
+        "bedrockManifestPaths": [
+            "BP/manifest.json",
+            "RP/manifest.json"
+        ]
+    },
+    "build": {
+        "enabled": true,
+        "type": "regolith",
+        "developmentProfile": "buildDev",
+        "releaseProfile": "buildMinify",
+        "outputDirectory": "build",
+        "packDirectories": [
+            "Dorios' Atelier BP",
+            "Dorios' Atelier RP"
+        ]
+    },
+    "distribution": {
+        "github": true,
+        "curseforge": {
+            "enabled": false
+        }
+    },
+    "links": {},
+    "announcement": {
+        "enabled": false
+    }
+}

@@ -14,7 +14,8 @@
       "dorios_atelier:chisel": {},
       "minecraft:durability": {
         "max_durability": 32
-      }
+      },
+      "minecraft:interact_button": true
     }
   }
 }

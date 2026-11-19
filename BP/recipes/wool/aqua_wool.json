@@ -1,0 +1,49 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "dorios_atelier:craft_aqua_wool"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:white_wool"
+      },
+      {
+        "item": "minecraft:white_wool"
+      },
+      {
+        "item": "minecraft:white_wool"
+      },
+      {
+        "item": "minecraft:white_wool"
+      },
+      {
+        "item": "minecraft:white_wool"
+      },
+      {
+        "item": "minecraft:white_wool"
+      },
+      {
+        "item": "minecraft:white_wool"
+      },
+      {
+        "item": "minecraft:white_wool"
+      },
+      {
+        "item": "dorios_atelier:aqua_dye"
+      }
+    ],
+    "result": {
+      "item": "dorios_atelier:aqua_wool",
+      "count": 8
+    },
+    "unlock": [
+      {
+        "item": "dorios_atelier:aqua_dye"
+      }
+    ]
+  }
+}

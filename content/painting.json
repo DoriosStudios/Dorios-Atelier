@@ -1,0 +1,79 @@
+{
+  "bucketDurability": 256,
+  "tiers": [
+    {
+      "name": "wooden",
+      "material": {
+        "tag": "minecraft:planks"
+      },
+      "unlock": "minecraft:stick",
+      "durability": 59
+    },
+    {
+      "name": "stone",
+      "material": {
+        "item": "minecraft:cobblestone"
+      },
+      "unlock": "minecraft:cobblestone",
+      "durability": 131
+    },
+    {
+      "name": "copper",
+      "material": {
+        "item": "minecraft:copper_ingot"
+      },
+      "unlock": "minecraft:copper_ingot",
+      "durability": 191
+    },
+    {
+      "name": "iron",
+      "material": {
+        "item": "minecraft:iron_ingot"
+      },
+      "unlock": "minecraft:iron_ingot",
+      "durability": 250
+    },
+    {
+      "name": "golden",
+      "material": {
+        "item": "minecraft:gold_ingot"
+      },
+      "unlock": "minecraft:gold_ingot",
+      "durability": 32
+    },
+    {
+      "name": "diamond",
+      "material": {
+        "item": "minecraft:diamond"
+      },
+      "unlock": "minecraft:diamond",
+      "durability": 1561
+    },
+    {
+      "name": "netherite",
+      "material": {
+        "item": "minecraft:netherite_ingot"
+      },
+      "unlock": "minecraft:netherite_ingot",
+      "durability": 2031
+    }
+  ],
+  "vanillaColors": {
+    "white": "#F9FFFE",
+    "light_gray": "#9D9D97",
+    "gray": "#474F52",
+    "black": "#1D1D21",
+    "brown": "#835432",
+    "red": "#B02E26",
+    "orange": "#F9801D",
+    "yellow": "#FED83D",
+    "lime": "#80C71F",
+    "green": "#5E7C16",
+    "cyan": "#169C9C",
+    "light_blue": "#3AB3DA",
+    "blue": "#3C44AA",
+    "purple": "#8932B8",
+    "magenta": "#C74EBD",
+    "pink": "#F38BAA"
+  }
+}

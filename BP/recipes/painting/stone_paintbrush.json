@@ -1,0 +1,35 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "dorios_atelier:craft_stone_paintbrush"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " W ",
+      " M ",
+      " S "
+    ],
+    "key": {
+      "W": {
+        "item": "minecraft:white_wool"
+      },
+      "M": {
+        "item": "minecraft:cobblestone"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "dorios_atelier:stone_paintbrush"
+    },
+    "unlock": [
+      {
+        "item": "minecraft:cobblestone"
+      }
+    ]
+  }
+}

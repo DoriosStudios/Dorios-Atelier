@@ -1,0 +1,28 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "dorios_atelier:stone_paintbrush",
+      "menu_category": {
+        "category": "equipment",
+        "group": "dorios_atelier:itemGroup.name.paintbrushes"
+      }
+    },
+    "components": {
+      "minecraft:icon": {
+        "textures": {
+          "default": "dorios_atelier_stone_paintbrush",
+          "dyed": "dorios_atelier_stone_paintbrush_dyed"
+        }
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:interact_button": true,
+      "minecraft:durability": {
+        "max_durability": 131
+      },
+      "dorios_atelier:paint_tool": {},
+      "minecraft:dyeable": {}
+    }
+  }
+}

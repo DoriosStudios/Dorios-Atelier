@@ -26,7 +26,7 @@
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "utilitycraft_basalt_bricks",
+          "texture": "dorios_atelier_basalt_bricks",
           "render_method": "opaque"
         }
       },

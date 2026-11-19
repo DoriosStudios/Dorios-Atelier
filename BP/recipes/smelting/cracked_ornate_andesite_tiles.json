@@ -1,0 +1,14 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "dorios_atelier:smelt_cracked_ornate_andesite_tiles"
+    },
+    "tags": [
+      "furnace",
+      "blast_furnace"
+    ],
+    "input": "dorios_atelier:andesite_tiles",
+    "output": "dorios_atelier:cracked_andesite_tiles"
+  }
+}

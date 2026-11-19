@@ -1,0 +1,99 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:block": {
+    "description": {
+      "identifier": "dorios_atelier:basalt_tiles_pillar",
+      "menu_category": {
+        "category": "construction",
+        "group": "dorios_atelier:itemGroup.name.stoneBricks"
+      },
+      "traits": {
+        "minecraft:placement_position": {
+          "enabled_states": [
+            "minecraft:block_face"
+          ]
+        }
+      }
+    },
+    "components": {
+      "tag:minecraft:is_pickaxe_item_destructible": {},
+      "minecraft:geometry": {
+        "identifier": "minecraft:geometry.full_block"
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "dorios_atelier_basalt_tiles_pillar_side",
+          "render_method": "opaque",
+          "ambient_occlusion": true,
+          "face_dimming": true
+        },
+        "up": {
+          "texture": "dorios_atelier_basalt_tiles_pillar_top",
+          "render_method": "opaque",
+          "ambient_occlusion": true,
+          "face_dimming": true
+        },
+        "down": {
+          "texture": "dorios_atelier_basalt_tiles_pillar_top",
+          "render_method": "opaque",
+          "ambient_occlusion": true,
+          "face_dimming": true
+        }
+      },
+      "minecraft:collision_box": true,
+      "minecraft:selection_box": true,
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1.25
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 6
+      },
+      "minecraft:connection_rule": {
+        "accepts_connections_from": "only_fences",
+        "enabled_directions": [
+          "north",
+          "south",
+          "east",
+          "west"
+        ]
+      },
+      "minecraft:light_dampening": 15,
+      "minecraft:flammable": false,
+      "minecraft:precipitation_interactions": {
+        "precipitation_behavior": "obstruct_rain_accumulate_snow"
+      },
+      "minecraft:redstone_conductivity": {
+        "allows_wire_to_step_down": true,
+        "redstone_conductor": true
+      },
+      "tag:minecraft:stone_tier_destructible": {},
+      "tag:stone": {}
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'north' || query.block_state('minecraft:block_face') == 'south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              90,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:block_face') == 'east' || query.block_state('minecraft:block_face') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              -90
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

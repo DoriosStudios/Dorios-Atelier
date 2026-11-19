@@ -1,0 +1,42 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:block": {
+    "description": {
+      "identifier": "dorios_atelier:indigo_wool",
+      "menu_category": {
+        "category": "construction",
+        "group": "dorios_atelier:itemGroup.name.woolExtra"
+      }
+    },
+    "components": {
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "dorios_atelier_indigo_wool",
+          "render_method": "opaque",
+          "ambient_occlusion": true,
+          "face_dimming": true
+        }
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.8
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 0.8
+      },
+      "minecraft:map_color": "#4C5389",
+      "minecraft:flammable": {
+        "flame_odds": 30,
+        "burn_odds": 60
+      },
+      "tag:wool": {},
+      "tag:minecraft:wool": {},
+      "tag:minecraft:is_shears_item_destructible": {},
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:light_dampening": 15,
+      "minecraft:redstone_conductivity": {
+        "allows_wire_to_step_down": true,
+        "redstone_conductor": true
+      }
+    }
+  }
+}

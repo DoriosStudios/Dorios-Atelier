@@ -38,3 +38,7 @@ A entrada da progressão fica fixada como uma receita 2×2: quatro `minecraft:ne
 - Componentes especiais de enxofre e cinábrio. Sons, mineração, emissão de luz e riscos não devem ser presumidos antes de inspecionar os blocos-base finais da versão-alvo.
 
 O plano contém 50 blocos decorativos completos candidatos. Com seus formatos e os formatos ausentes de fontes vanilla, o teto atual é de 289 definições futuras; esse número é deliberadamente uma estimativa de escopo, não autorização para geração.
+
+## Texturas implementadas na 1.1
+
+As texturas entregues de Andesito, Basalto, Ardosiabissal, Espeleotema, Pedra do End e Netherrack Endurecida são implementadas por `content/stone-families.json` e `npm run content:stones:apply`. Os demais candidatos deste documento continuam adiados. A receita de entrada usa quatro Netherracks para dois blocos endurecidos; o cinzel não transforma Netherrack crua diretamente no patamar endurecido.

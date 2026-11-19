@@ -4,7 +4,8 @@
     "description": {
       "identifier": "dorios_atelier:cracked_andesite_tiles_vertical_slab",
       "menu_category": {
-        "category": "construction"
+        "category": "construction",
+        "group": "dorios_atelier:itemGroup.name.verticalSlabs"
       },
       "traits": {
         "minecraft:placement_direction": {
@@ -22,7 +23,7 @@
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "utilitycraft_cracked_andesite_tiles",
+          "texture": "dorios_atelier_cracked_andesite_tiles",
           "render_method": "opaque"
         }
       },

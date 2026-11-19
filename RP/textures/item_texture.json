@@ -2,6 +2,9 @@
   "resource_pack_name": "Dorios' Atelier",
   "texture_name": "atlas.items",
   "texture_data": {
+    "dorios_atelier_settings": {
+      "textures": "textures/items/atelier_book"
+    },
     "utilitycraft_netherite_chisel": {
       "textures": "textures/items/netherite_chisel"
     },
@@ -154,6 +157,207 @@
     },
     "dorios_atelier_rose_dye": {
       "textures": "textures/items/dyes/rose_dye"
+    },
+    "dorios_atelier_empty_paint_bucket": {
+      "textures": "textures/items/painting/empty_paint_bucket"
+    },
+    "dorios_atelier_white_paint_bucket": {
+      "textures": "textures/items/painting/white_paint_bucket"
+    },
+    "dorios_atelier_light_gray_paint_bucket": {
+      "textures": "textures/items/painting/light_gray_paint_bucket"
+    },
+    "dorios_atelier_gray_paint_bucket": {
+      "textures": "textures/items/painting/gray_paint_bucket"
+    },
+    "dorios_atelier_black_paint_bucket": {
+      "textures": "textures/items/painting/black_paint_bucket"
+    },
+    "dorios_atelier_brown_paint_bucket": {
+      "textures": "textures/items/painting/brown_paint_bucket"
+    },
+    "dorios_atelier_red_paint_bucket": {
+      "textures": "textures/items/painting/red_paint_bucket"
+    },
+    "dorios_atelier_orange_paint_bucket": {
+      "textures": "textures/items/painting/orange_paint_bucket"
+    },
+    "dorios_atelier_yellow_paint_bucket": {
+      "textures": "textures/items/painting/yellow_paint_bucket"
+    },
+    "dorios_atelier_lime_paint_bucket": {
+      "textures": "textures/items/painting/lime_paint_bucket"
+    },
+    "dorios_atelier_green_paint_bucket": {
+      "textures": "textures/items/painting/green_paint_bucket"
+    },
+    "dorios_atelier_cyan_paint_bucket": {
+      "textures": "textures/items/painting/cyan_paint_bucket"
+    },
+    "dorios_atelier_light_blue_paint_bucket": {
+      "textures": "textures/items/painting/light_blue_paint_bucket"
+    },
+    "dorios_atelier_blue_paint_bucket": {
+      "textures": "textures/items/painting/blue_paint_bucket"
+    },
+    "dorios_atelier_purple_paint_bucket": {
+      "textures": "textures/items/painting/purple_paint_bucket"
+    },
+    "dorios_atelier_magenta_paint_bucket": {
+      "textures": "textures/items/painting/magenta_paint_bucket"
+    },
+    "dorios_atelier_pink_paint_bucket": {
+      "textures": "textures/items/painting/pink_paint_bucket"
+    },
+    "dorios_atelier_copper_paint_bucket": {
+      "textures": "textures/items/painting/copper_paint_bucket"
+    },
+    "dorios_atelier_amber_paint_bucket": {
+      "textures": "textures/items/painting/amber_paint_bucket"
+    },
+    "dorios_atelier_sand_paint_bucket": {
+      "textures": "textures/items/painting/sand_paint_bucket"
+    },
+    "dorios_atelier_burgundy_paint_bucket": {
+      "textures": "textures/items/painting/burgundy_paint_bucket"
+    },
+    "dorios_atelier_lavender_paint_bucket": {
+      "textures": "textures/items/painting/lavender_paint_bucket"
+    },
+    "dorios_atelier_dusty_purple_paint_bucket": {
+      "textures": "textures/items/painting/dusty_purple_paint_bucket"
+    },
+    "dorios_atelier_olive_paint_bucket": {
+      "textures": "textures/items/painting/olive_paint_bucket"
+    },
+    "dorios_atelier_forest_paint_bucket": {
+      "textures": "textures/items/painting/forest_paint_bucket"
+    },
+    "dorios_atelier_mint_paint_bucket": {
+      "textures": "textures/items/painting/mint_paint_bucket"
+    },
+    "dorios_atelier_indigo_paint_bucket": {
+      "textures": "textures/items/painting/indigo_paint_bucket"
+    },
+    "dorios_atelier_slate_paint_bucket": {
+      "textures": "textures/items/painting/slate_paint_bucket"
+    },
+    "dorios_atelier_navy_paint_bucket": {
+      "textures": "textures/items/painting/navy_paint_bucket"
+    },
+    "dorios_atelier_teal_paint_bucket": {
+      "textures": "textures/items/painting/teal_paint_bucket"
+    },
+    "dorios_atelier_aqua_paint_bucket": {
+      "textures": "textures/items/painting/aqua_paint_bucket"
+    },
+    "dorios_atelier_scarlet_paint_bucket": {
+      "textures": "textures/items/painting/scarlet_paint_bucket"
+    },
+    "dorios_atelier_coral_paint_bucket": {
+      "textures": "textures/items/painting/coral_paint_bucket"
+    },
+    "dorios_atelier_peach_paint_bucket": {
+      "textures": "textures/items/painting/peach_paint_bucket"
+    },
+    "dorios_atelier_ivory_paint_bucket": {
+      "textures": "textures/items/painting/ivory_paint_bucket"
+    },
+    "dorios_atelier_chartreuse_paint_bucket": {
+      "textures": "textures/items/painting/chartreuse_paint_bucket"
+    },
+    "dorios_atelier_emerald_paint_bucket": {
+      "textures": "textures/items/painting/emerald_paint_bucket"
+    },
+    "dorios_atelier_wine_paint_bucket": {
+      "textures": "textures/items/painting/wine_paint_bucket"
+    },
+    "dorios_atelier_rose_paint_bucket": {
+      "textures": "textures/items/painting/rose_paint_bucket"
+    },
+    "dorios_atelier_wooden_paintbrush": {
+      "textures": "textures/items/painting/wooden_paintbrush"
+    },
+    "dorios_atelier_wooden_paint_roller": {
+      "textures": "textures/items/painting/wooden_paint_roller"
+    },
+    "dorios_atelier_stone_paintbrush": {
+      "textures": "textures/items/painting/stone_paintbrush"
+    },
+    "dorios_atelier_stone_paint_roller": {
+      "textures": "textures/items/painting/stone_paint_roller"
+    },
+    "dorios_atelier_copper_paintbrush": {
+      "textures": "textures/items/painting/copper_paintbrush"
+    },
+    "dorios_atelier_copper_paint_roller": {
+      "textures": "textures/items/painting/copper_paint_roller"
+    },
+    "dorios_atelier_iron_paintbrush": {
+      "textures": "textures/items/painting/iron_paintbrush"
+    },
+    "dorios_atelier_iron_paint_roller": {
+      "textures": "textures/items/painting/iron_paint_roller"
+    },
+    "dorios_atelier_golden_paintbrush": {
+      "textures": "textures/items/painting/golden_paintbrush"
+    },
+    "dorios_atelier_golden_paint_roller": {
+      "textures": "textures/items/painting/golden_paint_roller"
+    },
+    "dorios_atelier_diamond_paintbrush": {
+      "textures": "textures/items/painting/diamond_paintbrush"
+    },
+    "dorios_atelier_diamond_paint_roller": {
+      "textures": "textures/items/painting/diamond_paint_roller"
+    },
+    "dorios_atelier_netherite_paintbrush": {
+      "textures": "textures/items/painting/netherite_paintbrush"
+    },
+    "dorios_atelier_netherite_paint_roller": {
+      "textures": "textures/items/painting/netherite_paint_roller"
+    },
+    "dorios_atelier_wooden_paintbrush_dyed": {
+      "textures": "textures/items/painting/layers/wooden_paintbrush_dyed"
+    },
+    "dorios_atelier_wooden_paint_roller_dyed": {
+      "textures": "textures/items/painting/layers/wooden_paint_roller_dyed"
+    },
+    "dorios_atelier_stone_paintbrush_dyed": {
+      "textures": "textures/items/painting/layers/stone_paintbrush_dyed"
+    },
+    "dorios_atelier_stone_paint_roller_dyed": {
+      "textures": "textures/items/painting/layers/stone_paint_roller_dyed"
+    },
+    "dorios_atelier_copper_paintbrush_dyed": {
+      "textures": "textures/items/painting/layers/copper_paintbrush_dyed"
+    },
+    "dorios_atelier_copper_paint_roller_dyed": {
+      "textures": "textures/items/painting/layers/copper_paint_roller_dyed"
+    },
+    "dorios_atelier_iron_paintbrush_dyed": {
+      "textures": "textures/items/painting/layers/iron_paintbrush_dyed"
+    },
+    "dorios_atelier_iron_paint_roller_dyed": {
+      "textures": "textures/items/painting/layers/iron_paint_roller_dyed"
+    },
+    "dorios_atelier_golden_paintbrush_dyed": {
+      "textures": "textures/items/painting/layers/golden_paintbrush_dyed"
+    },
+    "dorios_atelier_golden_paint_roller_dyed": {
+      "textures": "textures/items/painting/layers/golden_paint_roller_dyed"
+    },
+    "dorios_atelier_diamond_paintbrush_dyed": {
+      "textures": "textures/items/painting/layers/diamond_paintbrush_dyed"
+    },
+    "dorios_atelier_diamond_paint_roller_dyed": {
+      "textures": "textures/items/painting/layers/diamond_paint_roller_dyed"
+    },
+    "dorios_atelier_netherite_paintbrush_dyed": {
+      "textures": "textures/items/painting/layers/netherite_paintbrush_dyed"
+    },
+    "dorios_atelier_netherite_paint_roller_dyed": {
+      "textures": "textures/items/painting/layers/netherite_paint_roller_dyed"
     }
   }
 }

@@ -958,6 +958,678 @@
       "textures": [
         "textures/blocks/concrete/wine_concrete"
       ]
+    },
+    "dorios_atelier_carved_end_stone": {
+      "textures": [
+        "textures/blocks/carved_endstone"
+      ]
+    },
+    "dorios_atelier_carved_hardened_netherrack": {
+      "textures": [
+        "textures/blocks/carved_netherrack"
+      ]
+    },
+    "dorios_atelier_chiseled_end_stone": {
+      "textures": [
+        "textures/blocks/chiseled_endstone"
+      ]
+    },
+    "dorios_atelier_chiseled_end_stone_bricks": {
+      "textures": [
+        "textures/blocks/chiseled_endstone_bricks"
+      ]
+    },
+    "dorios_atelier_chiseled_end_stone_pillar_side": {
+      "textures": [
+        "textures/blocks/stone_faces/chiseled_end_stone_pillar_side"
+      ]
+    },
+    "dorios_atelier_chiseled_end_stone_pillar_top": {
+      "textures": [
+        "textures/blocks/stone_faces/chiseled_end_stone_pillar_top"
+      ]
+    },
+    "dorios_atelier_chiseled_end_stone_tiles": {
+      "textures": [
+        "textures/blocks/chiseled_endstone_tiles"
+      ]
+    },
+    "dorios_atelier_chiseled_hardened_netherrack_side": {
+      "textures": [
+        "textures/blocks/stone_faces/chiseled_hardened_netherrack_side"
+      ]
+    },
+    "dorios_atelier_chiseled_hardened_netherrack_top": {
+      "textures": [
+        "textures/blocks/stone_faces/chiseled_hardened_netherrack_top"
+      ]
+    },
+    "dorios_atelier_chiseled_hardened_netherrack_bricks_side": {
+      "textures": [
+        "textures/blocks/stone_faces/chiseled_hardened_netherrack_bricks_side"
+      ]
+    },
+    "dorios_atelier_chiseled_hardened_netherrack_bricks_top": {
+      "textures": [
+        "textures/blocks/stone_faces/chiseled_hardened_netherrack_bricks_top"
+      ]
+    },
+    "dorios_atelier_chiseled_hardened_netherrack_pillar_side": {
+      "textures": [
+        "textures/blocks/stone_faces/chiseled_hardened_netherrack_pillar_side"
+      ]
+    },
+    "dorios_atelier_chiseled_hardened_netherrack_pillar_top": {
+      "textures": [
+        "textures/blocks/stone_faces/chiseled_hardened_netherrack_pillar_top"
+      ]
+    },
+    "dorios_atelier_chiseled_hardened_netherrack_tiles_side": {
+      "textures": [
+        "textures/blocks/stone_faces/chiseled_hardened_netherrack_tiles_side"
+      ]
+    },
+    "dorios_atelier_chiseled_hardened_netherrack_tiles_top": {
+      "textures": [
+        "textures/blocks/stone_faces/chiseled_hardened_netherrack_tiles_top"
+      ]
+    },
+    "dorios_atelier_cobbled_end_stone": {
+      "textures": [
+        "textures/blocks/cobbled_endstone"
+      ]
+    },
+    "dorios_atelier_hardened_netherrack": {
+      "textures": [
+        "textures/blocks/hardened_netherrack"
+      ]
+    },
+    "dorios_atelier_cracked_end_stone_bricks": {
+      "textures": [
+        "textures/blocks/cracked_endstone_bricks"
+      ]
+    },
+    "dorios_atelier_cracked_end_stone_tiles": {
+      "textures": [
+        "textures/blocks/cracked_endstone_tiles"
+      ]
+    },
+    "dorios_atelier_cracked_hardened_netherrack_bricks": {
+      "textures": [
+        "textures/blocks/cracked_netherrack_bricks"
+      ]
+    },
+    "dorios_atelier_cracked_hardened_netherrack_tiles": {
+      "textures": [
+        "textures/blocks/cracked_netherrack_tiles"
+      ]
+    },
+    "dorios_atelier_end_stone_pillar_side": {
+      "textures": [
+        "textures/blocks/stone_faces/end_stone_pillar_side"
+      ]
+    },
+    "dorios_atelier_end_stone_pillar_top": {
+      "textures": [
+        "textures/blocks/stone_faces/end_stone_pillar_top"
+      ]
+    },
+    "dorios_atelier_end_stone_tiles": {
+      "textures": [
+        "textures/blocks/endstone_tiles"
+      ]
+    },
+    "dorios_atelier_end_stone_tiles_pillar_side": {
+      "textures": [
+        "textures/blocks/stone_faces/end_stone_tiles_pillar_side"
+      ]
+    },
+    "dorios_atelier_end_stone_tiles_pillar_top": {
+      "textures": [
+        "textures/blocks/stone_faces/end_stone_tiles_pillar_top"
+      ]
+    },
+    "dorios_atelier_hardened_netherrack_bricks": {
+      "textures": [
+        "textures/blocks/netherrack_bricks"
+      ]
+    },
+    "dorios_atelier_hardened_netherrack_pillar_side": {
+      "textures": [
+        "textures/blocks/stone_faces/hardened_netherrack_pillar_side"
+      ]
+    },
+    "dorios_atelier_hardened_netherrack_pillar_top": {
+      "textures": [
+        "textures/blocks/stone_faces/hardened_netherrack_pillar_top"
+      ]
+    },
+    "dorios_atelier_hardened_netherrack_tiles": {
+      "textures": [
+        "textures/blocks/netherrack_tiles"
+      ]
+    },
+    "dorios_atelier_hardened_netherrack_tiles_pillar_side": {
+      "textures": [
+        "textures/blocks/stone_faces/hardened_netherrack_tiles_pillar_side"
+      ]
+    },
+    "dorios_atelier_hardened_netherrack_tiles_pillar_top": {
+      "textures": [
+        "textures/blocks/stone_faces/hardened_netherrack_tiles_pillar_top"
+      ]
+    },
+    "dorios_atelier_polished_end_stone": {
+      "textures": [
+        "textures/blocks/polished_endstone"
+      ]
+    },
+    "dorios_atelier_polished_end_stone_tiling": {
+      "textures": [
+        "textures/blocks/polished_endstone_tiling"
+      ]
+    },
+    "dorios_atelier_polished_hardened_netherrack": {
+      "textures": [
+        "textures/blocks/polished_netherrack"
+      ]
+    },
+    "dorios_atelier_polished_hardened_netherrack_tiling": {
+      "textures": [
+        "textures/blocks/polished_netherrack_tiling"
+      ]
+    },
+    "dorios_atelier_smooth_end_stone": {
+      "textures": [
+        "textures/blocks/smooth_endstone"
+      ]
+    },
+    "dorios_atelier_andesite_bricks": {
+      "textures": [
+        "textures/blocks/andesite_bricks"
+      ]
+    },
+    "dorios_atelier_andesite_pillar_side": {
+      "textures": [
+        "textures/blocks/stone_faces/andesite_pillar_side"
+      ]
+    },
+    "dorios_atelier_andesite_pillar_top": {
+      "textures": [
+        "textures/blocks/stone_faces/andesite_pillar_top"
+      ]
+    },
+    "dorios_atelier_andesite_tiles": {
+      "textures": [
+        "textures/blocks/andesite_tiles"
+      ]
+    },
+    "dorios_atelier_andesite_tiles_pillar_side": {
+      "textures": [
+        "textures/blocks/stone_faces/andesite_tiles_pillar_side"
+      ]
+    },
+    "dorios_atelier_andesite_tiles_pillar_top": {
+      "textures": [
+        "textures/blocks/stone_faces/andesite_tiles_pillar_top"
+      ]
+    },
+    "dorios_atelier_basalt_bricks": {
+      "textures": [
+        "textures/blocks/stones/basalt_bricks"
+      ]
+    },
+    "dorios_atelier_basalt_pillar_side": {
+      "textures": [
+        "textures/blocks/stone_faces/basalt_pillar_side"
+      ]
+    },
+    "dorios_atelier_basalt_pillar_top": {
+      "textures": [
+        "textures/blocks/stone_faces/basalt_pillar_top"
+      ]
+    },
+    "dorios_atelier_basalt_tiles_pillar_side": {
+      "textures": [
+        "textures/blocks/stone_faces/basalt_tiles_pillar_side"
+      ]
+    },
+    "dorios_atelier_basalt_tiles_pillar_top": {
+      "textures": [
+        "textures/blocks/stone_faces/basalt_tiles_pillar_top"
+      ]
+    },
+    "dorios_atelier_basalt_tiles": {
+      "textures": [
+        "textures/blocks/stone_families/basalt_tiles"
+      ]
+    },
+    "dorios_atelier_carved_andesite": {
+      "textures": [
+        "textures/blocks/carved_andsite"
+      ]
+    },
+    "dorios_atelier_carved_basalt": {
+      "textures": [
+        "textures/blocks/stone_families/carved_basalt"
+      ]
+    },
+    "dorios_atelier_carved_basalt_pillar_side": {
+      "textures": [
+        "textures/blocks/stone_faces/carved_basalt_pillar_side"
+      ]
+    },
+    "dorios_atelier_carved_basalt_pillar_top": {
+      "textures": [
+        "textures/blocks/stone_faces/carved_basalt_pillar_top"
+      ]
+    },
+    "dorios_atelier_carved_deepslate": {
+      "textures": [
+        "textures/blocks/carved_deepslate"
+      ]
+    },
+    "dorios_atelier_carved_dripstone": {
+      "textures": [
+        "textures/blocks/stone_families/carved_dripstone"
+      ]
+    },
+    "dorios_atelier_carved_dripstone_pillar_side": {
+      "textures": [
+        "textures/blocks/stone_faces/carved_dripstone_pillar_side"
+      ]
+    },
+    "dorios_atelier_carved_dripstone_pillar_top": {
+      "textures": [
+        "textures/blocks/stone_faces/carved_dripstone_pillar_top"
+      ]
+    },
+    "dorios_atelier_chiseled_andesite_side": {
+      "textures": [
+        "textures/blocks/stone_faces/chiseled_andesite_side"
+      ]
+    },
+    "dorios_atelier_chiseled_andesite_top": {
+      "textures": [
+        "textures/blocks/stone_faces/chiseled_andesite_top"
+      ]
+    },
+    "dorios_atelier_chiseled_andesite_bricks_side": {
+      "textures": [
+        "textures/blocks/stone_faces/chiseled_andesite_bricks_side"
+      ]
+    },
+    "dorios_atelier_chiseled_andesite_bricks_top": {
+      "textures": [
+        "textures/blocks/stone_faces/chiseled_andesite_bricks_top"
+      ]
+    },
+    "dorios_atelier_chiseled_andesite_pillar_side": {
+      "textures": [
+        "textures/blocks/stone_faces/chiseled_andesite_pillar_side"
+      ]
+    },
+    "dorios_atelier_chiseled_andesite_pillar_top": {
+      "textures": [
+        "textures/blocks/stone_faces/chiseled_andesite_pillar_top"
+      ]
+    },
+    "dorios_atelier_chiseled_andesite_tiles_side": {
+      "textures": [
+        "textures/blocks/stone_faces/chiseled_andesite_tiles_side"
+      ]
+    },
+    "dorios_atelier_chiseled_andesite_tiles_top": {
+      "textures": [
+        "textures/blocks/stone_faces/chiseled_andesite_tiles_top"
+      ]
+    },
+    "dorios_atelier_chiseled_basalt_side": {
+      "textures": [
+        "textures/blocks/stone_faces/chiseled_basalt_side"
+      ]
+    },
+    "dorios_atelier_chiseled_basalt_top": {
+      "textures": [
+        "textures/blocks/stone_faces/chiseled_basalt_top"
+      ]
+    },
+    "dorios_atelier_chiseled_basalt_bricks_side": {
+      "textures": [
+        "textures/blocks/stone_faces/chiseled_basalt_bricks_side"
+      ]
+    },
+    "dorios_atelier_chiseled_basalt_bricks_top": {
+      "textures": [
+        "textures/blocks/stone_faces/chiseled_basalt_bricks_top"
+      ]
+    },
+    "dorios_atelier_chiseled_basalt_pillar_side": {
+      "textures": [
+        "textures/blocks/stone_faces/chiseled_basalt_pillar_side"
+      ]
+    },
+    "dorios_atelier_chiseled_basalt_pillar_top": {
+      "textures": [
+        "textures/blocks/stone_faces/chiseled_basalt_pillar_top"
+      ]
+    },
+    "dorios_atelier_chiseled_basalt_tiles_side": {
+      "textures": [
+        "textures/blocks/stone_faces/chiseled_basalt_tiles_side"
+      ]
+    },
+    "dorios_atelier_chiseled_basalt_tiles_top": {
+      "textures": [
+        "textures/blocks/stone_faces/chiseled_basalt_tiles_top"
+      ]
+    },
+    "dorios_atelier_chiseled_deepslate": {
+      "textures": [
+        "textures/blocks/chiseled_deepslate"
+      ]
+    },
+    "dorios_atelier_chiseled_deepslate_pillar_side": {
+      "textures": [
+        "textures/blocks/stone_faces/chiseled_deepslate_pillar_side"
+      ]
+    },
+    "dorios_atelier_chiseled_deepslate_pillar_top": {
+      "textures": [
+        "textures/blocks/stone_faces/chiseled_deepslate_pillar_top"
+      ]
+    },
+    "dorios_atelier_chiseled_deepslate_tiles": {
+      "textures": [
+        "textures/blocks/chiseled_deepslate_tiles"
+      ]
+    },
+    "dorios_atelier_chiseled_dripstone_side": {
+      "textures": [
+        "textures/blocks/stone_faces/chiseled_dripstone_side"
+      ]
+    },
+    "dorios_atelier_chiseled_dripstone_top": {
+      "textures": [
+        "textures/blocks/stone_faces/chiseled_dripstone_top"
+      ]
+    },
+    "dorios_atelier_chiseled_dripstone_bricks_side": {
+      "textures": [
+        "textures/blocks/stone_faces/chiseled_dripstone_bricks_side"
+      ]
+    },
+    "dorios_atelier_chiseled_dripstone_bricks_top": {
+      "textures": [
+        "textures/blocks/stone_faces/chiseled_dripstone_bricks_top"
+      ]
+    },
+    "dorios_atelier_chiseled_dripstone_pillar_side": {
+      "textures": [
+        "textures/blocks/stone_faces/chiseled_dripstone_pillar_side"
+      ]
+    },
+    "dorios_atelier_chiseled_dripstone_pillar_top": {
+      "textures": [
+        "textures/blocks/stone_faces/chiseled_dripstone_pillar_top"
+      ]
+    },
+    "dorios_atelier_chiseled_dripstone_tiles_side": {
+      "textures": [
+        "textures/blocks/stone_faces/chiseled_dripstone_tiles_side"
+      ]
+    },
+    "dorios_atelier_chiseled_dripstone_tiles_top": {
+      "textures": [
+        "textures/blocks/stone_faces/chiseled_dripstone_tiles_top"
+      ]
+    },
+    "dorios_atelier_cracked_andesite_bricks": {
+      "textures": [
+        "textures/blocks/cracked_andesite_bricks"
+      ]
+    },
+    "dorios_atelier_cracked_basalt_bricks": {
+      "textures": [
+        "textures/blocks/stone_families/cracked_basalt_bricks"
+      ]
+    },
+    "dorios_atelier_cracked_dripstone_bricks": {
+      "textures": [
+        "textures/blocks/stone_families/cracked_dripstone_bricks"
+      ]
+    },
+    "dorios_atelier_cracked_dripstone_tiles": {
+      "textures": [
+        "textures/blocks/stone_families/cracked_dripstone_tiles"
+      ]
+    },
+    "dorios_atelier_cracked_andesite_tiles": {
+      "textures": [
+        "textures/blocks/cranked_andesite_tiles"
+      ]
+    },
+    "dorios_atelier_cracked_basalt_tiles": {
+      "textures": [
+        "textures/blocks/stone_families/cracked_basalt_tiles"
+      ]
+    },
+    "dorios_atelier_deepslate_pillar_side": {
+      "textures": [
+        "textures/blocks/stone_faces/deepslate_pillar_side"
+      ]
+    },
+    "dorios_atelier_deepslate_pillar_top": {
+      "textures": [
+        "textures/blocks/stone_faces/deepslate_pillar_top"
+      ]
+    },
+    "dorios_atelier_deepslate_tiles_pillar_side": {
+      "textures": [
+        "textures/blocks/stone_faces/deepslate_tiles_pillar_side"
+      ]
+    },
+    "dorios_atelier_deepslate_tiles_pillar_top": {
+      "textures": [
+        "textures/blocks/stone_faces/deepslate_tiles_pillar_top"
+      ]
+    },
+    "dorios_atelier_dripstone_bricks": {
+      "textures": [
+        "textures/blocks/stone_families/dripstone_bricks"
+      ]
+    },
+    "dorios_atelier_dripstone_pillar_side": {
+      "textures": [
+        "textures/blocks/stone_faces/dripstone_pillar_side"
+      ]
+    },
+    "dorios_atelier_dripstone_pillar_top": {
+      "textures": [
+        "textures/blocks/stone_faces/dripstone_pillar_top"
+      ]
+    },
+    "dorios_atelier_dripstone_tiles_pillar_side": {
+      "textures": [
+        "textures/blocks/stone_faces/dripstone_tiles_pillar_side"
+      ]
+    },
+    "dorios_atelier_dripstone_tiles_pillar_top": {
+      "textures": [
+        "textures/blocks/stone_faces/dripstone_tiles_pillar_top"
+      ]
+    },
+    "dorios_atelier_dripstone_tiles": {
+      "textures": [
+        "textures/blocks/stone_families/dripstone_tiles"
+      ]
+    },
+    "dorios_atelier_polished_andesite_tiling": {
+      "textures": [
+        "textures/blocks/polished_andesite_tiling"
+      ]
+    },
+    "dorios_atelier_polished_deepslate_tiling": {
+      "textures": [
+        "textures/blocks/polished_deepslate_tiling"
+      ]
+    },
+    "dorios_atelier_polished_dripstone": {
+      "textures": [
+        "textures/blocks/stones/polished_dripstone"
+      ]
+    },
+    "dorios_atelier_smooth_deepslate": {
+      "textures": [
+        "textures/blocks/smooth_deepslate"
+      ]
+    },
+    "dorios_atelier_smooth_dripstone": {
+      "textures": [
+        "textures/blocks/stone_families/smooth_dripstone"
+      ]
+    },
+    "dorios_atelier_polished_basalt_tiling": {
+      "textures": [
+        "textures/blocks/stone_families/polished_basalt_tiling"
+      ]
+    },
+    "dorios_atelier_polished_dripstone_tiling": {
+      "textures": [
+        "textures/blocks/stone_families/polished_dripstone_tiling"
+      ]
+    },
+    "dorios_atelier_copper_wool": {
+      "textures": {
+        "path": "textures/blocks/wool/white_weave",
+        "tint_color": "#AD7655"
+      }
+    },
+    "dorios_atelier_amber_wool": {
+      "textures": {
+        "path": "textures/blocks/wool/white_weave",
+        "tint_color": "#C79A42"
+      }
+    },
+    "dorios_atelier_sand_wool": {
+      "textures": {
+        "path": "textures/blocks/wool/white_weave",
+        "tint_color": "#CBB89A"
+      }
+    },
+    "dorios_atelier_burgundy_wool": {
+      "textures": {
+        "path": "textures/blocks/wool/white_weave",
+        "tint_color": "#713A50"
+      }
+    },
+    "dorios_atelier_lavender_wool": {
+      "textures": {
+        "path": "textures/blocks/wool/white_weave",
+        "tint_color": "#B8A7D1"
+      }
+    },
+    "dorios_atelier_dusty_purple_wool": {
+      "textures": {
+        "path": "textures/blocks/wool/white_weave",
+        "tint_color": "#806079"
+      }
+    },
+    "dorios_atelier_olive_wool": {
+      "textures": {
+        "path": "textures/blocks/wool/white_weave",
+        "tint_color": "#7A8052"
+      }
+    },
+    "dorios_atelier_forest_wool": {
+      "textures": {
+        "path": "textures/blocks/wool/white_weave",
+        "tint_color": "#3E6A50"
+      }
+    },
+    "dorios_atelier_mint_wool": {
+      "textures": {
+        "path": "textures/blocks/wool/white_weave",
+        "tint_color": "#9FD3B9"
+      }
+    },
+    "dorios_atelier_indigo_wool": {
+      "textures": {
+        "path": "textures/blocks/wool/white_weave",
+        "tint_color": "#4C5389"
+      }
+    },
+    "dorios_atelier_slate_wool": {
+      "textures": {
+        "path": "textures/blocks/wool/white_weave",
+        "tint_color": "#687A8A"
+      }
+    },
+    "dorios_atelier_navy_wool": {
+      "textures": {
+        "path": "textures/blocks/wool/white_weave",
+        "tint_color": "#2D4265"
+      }
+    },
+    "dorios_atelier_teal_wool": {
+      "textures": {
+        "path": "textures/blocks/wool/white_weave",
+        "tint_color": "#3B8381"
+      }
+    },
+    "dorios_atelier_aqua_wool": {
+      "textures": {
+        "path": "textures/blocks/wool/white_weave",
+        "tint_color": "#ADDEF1"
+      }
+    },
+    "dorios_atelier_scarlet_wool": {
+      "textures": {
+        "path": "textures/blocks/wool/white_weave",
+        "tint_color": "#C6443E"
+      }
+    },
+    "dorios_atelier_coral_wool": {
+      "textures": {
+        "path": "textures/blocks/wool/white_weave",
+        "tint_color": "#DA796C"
+      }
+    },
+    "dorios_atelier_peach_wool": {
+      "textures": {
+        "path": "textures/blocks/wool/white_weave",
+        "tint_color": "#E6B091"
+      }
+    },
+    "dorios_atelier_ivory_wool": {
+      "textures": {
+        "path": "textures/blocks/wool/white_weave",
+        "tint_color": "#E9DCA6"
+      }
+    },
+    "dorios_atelier_chartreuse_wool": {
+      "textures": {
+        "path": "textures/blocks/wool/white_weave",
+        "tint_color": "#C7D85C"
+      }
+    },
+    "dorios_atelier_emerald_wool": {
+      "textures": {
+        "path": "textures/blocks/wool/white_weave",
+        "tint_color": "#2FAD72"
+      }
+    },
+    "dorios_atelier_wine_wool": {
+      "textures": {
+        "path": "textures/blocks/wool/white_weave",
+        "tint_color": "#7F2437"
+      }
+    },
+    "dorios_atelier_rose_wool": {
+      "textures": {
+        "path": "textures/blocks/wool/white_weave",
+        "tint_color": "#BA4D73"
+      }
     }
   }
 }

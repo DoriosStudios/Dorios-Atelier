@@ -4,7 +4,8 @@
     "description": {
       "identifier": "dorios_atelier:andesite_bricks_vertical_slab",
       "menu_category": {
-        "category": "construction"
+        "category": "construction",
+        "group": "dorios_atelier:itemGroup.name.verticalSlabs"
       },
       "traits": {
         "minecraft:placement_direction": {
@@ -22,7 +23,7 @@
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "utilitycraft_andesite_bricks",
+          "texture": "dorios_atelier_andesite_bricks",
           "render_method": "opaque"
         }
       },

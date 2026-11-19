@@ -1,0 +1,25 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "dorios_atelier:sc_chiseled_basalt_pillar_vertical_slab_from_chiseled_basalt_pillar"
+    },
+    "tags": [
+      "stonecutter"
+    ],
+    "ingredients": [
+      {
+        "item": "dorios_atelier:chiseled_basalt_pillar"
+      }
+    ],
+    "result": {
+      "item": "dorios_atelier:chiseled_basalt_pillar_vertical_slab",
+      "count": 2
+    },
+    "unlock": [
+      {
+        "item": "dorios_atelier:chiseled_basalt_pillar"
+      }
+    ]
+  }
+}

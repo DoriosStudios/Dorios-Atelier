@@ -34,7 +34,7 @@
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "utilitycraft_basalt_tiles",
+          "texture": "dorios_atelier_basalt_tiles",
           "render_method": "opaque"
         }
       },
@@ -48,7 +48,7 @@
         },
         "material_instances": {
           "*": {
-            "texture": "utilitycraft_basalt_tiles",
+            "texture": "dorios_atelier_basalt_tiles",
             "render_method": "opaque"
           }
         }
@@ -92,6 +92,7 @@
       "minecraft:support": {
         "shape": "stair"
       },
+      "minecraft:light_emission": 0,
       "tag:minecraft:stone_tier_destructible": {},
       "tag:stone": {}
     },

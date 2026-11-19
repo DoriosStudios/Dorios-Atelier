@@ -2,12 +2,12 @@
 	"format_version": 2,
 	"header": {
 		"name": "Dorios' Atelier",
-		"description": "1.1.0 §6Dorios Studios§8",
-		"uuid": "d2d3f818-45f2-4c50-8e0b-c3d87588687e",
+		"description": "1.1.0 Beta 4 | Pack 1.1.14 §6Dorios Studios§8",
+		"uuid": "5861c2f0-780a-4d45-a021-0b79204867eb",
 		"version": [
 			1,
 			1,
-			1
+			14
 		],
 		"min_engine_version": [
 			1,
@@ -22,11 +22,11 @@
 		{
 			"type": "data",
 			"description": "Main module of the behavior pack.",
-			"uuid": "a1d5c0a1-8312-42ed-9c3a-79314f0b00c7",
+			"uuid": "8c0d8875-162d-4245-8b4d-b6d9e2f86e5a",
 			"version": [
 				1,
 				1,
-				0
+				14
 			]
 		},
 		{
@@ -34,11 +34,11 @@
 			"language": "javascript",
 			"entry": "scripts/main.js",
 			"description": "Dorios' Atelier main script file.",
-			"uuid": "8b52c6bf-4b25-4a3f-8a8b-3af4e3f3428c",
+			"uuid": "a747b6a6-d1de-4270-a21f-c6dc76f0302d",
 			"version": [
 				1,
-				0,
-				0
+				1,
+				14
 			]
 		}
 	],
@@ -47,11 +47,11 @@
 	],
 	"dependencies": [
 		{
-			"uuid": "b5d1f818-45f2-4c50-8e0b-c3d87588687f",
+			"uuid": "4222f45d-f6d7-4051-8510-e82a31fab795",
 			"version": [
 				1,
 				1,
-				1
+				14
 			]
 		},
 		{

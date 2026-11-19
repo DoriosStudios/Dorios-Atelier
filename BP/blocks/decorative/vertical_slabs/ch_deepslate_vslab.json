@@ -4,7 +4,8 @@
     "description": {
       "identifier": "dorios_atelier:chiseled_deepslate_vertical_slab",
       "menu_category": {
-        "category": "construction"
+        "category": "construction",
+        "group": "dorios_atelier:itemGroup.name.verticalSlabs"
       },
       "traits": {
         "minecraft:placement_direction": {
@@ -22,17 +23,17 @@
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "chiseled_deepslate",
+          "texture": "dorios_atelier_chiseled_deepslate",
           "render_method": "opaque"
         }
       },
       "minecraft:collision_box": true,
       "minecraft:selection_box": true,
       "minecraft:destructible_by_mining": {
-        "seconds_to_destroy": 1.5
+        "seconds_to_destroy": 3
       },
       "minecraft:destructible_by_explosion": {
-        "explosion_resistance": 20
+        "explosion_resistance": 6
       },
       "minecraft:connection_rule": {
         "accepts_connections_from": "none"
@@ -59,7 +60,6 @@
       "minecraft:support": {
         "shape": "stair"
       },
-      "minecraft:light_emission": 0,
       "tag:minecraft:stone_tier_destructible": {},
       "tag:stone": {}
     },

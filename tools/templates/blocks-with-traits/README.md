@@ -4,4 +4,4 @@ These files are a byte-for-byte snapshot of the reference block, geometry, and c
 
 Structural traits, permutation conditions, geometry bones, cube UVs, collision/selection behavior, support rules, liquid handling, item visuals, and partial-block redstone behavior remain inherited from this snapshot.
 
-Run `npm run content:traits:apply` after deliberately updating this snapshot, then run `npm run content:generated:check` and `npm test`.
+Run `npm run content:traits:apply` after deliberately updating this snapshot, then run `npm run content:generated:check`.

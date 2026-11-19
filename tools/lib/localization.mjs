@@ -1,4 +1,5 @@
 import concreteColors from "../../content/concrete-colors.json" with { type: "json" };
+import {paintItemName, PAINT_MESSAGES} from './painting-localization.mjs';
 
 export const LOCALES = Object.freeze([
   "en_US",
@@ -170,6 +171,15 @@ const ITEM_COLORS = Object.freeze({
 });
 
 export function itemName(identifier, locale) {
+  const paintName = paintItemName(identifier, locale, TOOL_TRANSLATIONS[locale].materials);
+  if (paintName) return paintName;
+  if (identifier === "settings") return {
+    en_US: "Dorios' Atelier Settings",
+    pt_BR: "Configurações do Dorios' Atelier",
+    pt_PT: "Definições do Dorios' Atelier",
+    es_ES: "Ajustes de Dorios' Atelier",
+    es_MX: "Configuración de Dorios' Atelier",
+  }[locale];
   if (identifier.endsWith("_dye")) {
     const colorId = identifier.slice(0, -"_dye".length);
     const color = concreteColors.colors.find((entry) => entry.id === colorId);
@@ -206,7 +216,7 @@ export const WALL_TRANSLATIONS = Object.freeze({
 const BLOCK_LANGUAGES = Object.freeze({
   en_US: {
     materials: {
-      andesite: "Andesite", basalt: "Basalt", blackstone: "Blackstone", calcite: "Calcite",
+      end_stone: "End Stone", andesite: "Andesite", basalt: "Basalt", blackstone: "Blackstone", calcite: "Calcite",
       deepslate: "Deepslate", diorite: "Diorite", dripstone: "Dripstone", granite: "Granite",
       mud: "Mud", nether: "Nether", netherrack: "Netherrack", obsidian: "Obsidian",
       prismarine: "Prismarine", quartz: "Quartz", stone: "Stone", tuff: "Tuff",
@@ -217,7 +227,7 @@ const BLOCK_LANGUAGES = Object.freeze({
       purpur_block: "Purpur Block", snowy_grass_block: "Snowy Grass Block",
     },
     modifiers: {
-      carved: "Carved", chiseled: "Chiseled", cracked: "Cracked", gilded: "Gilded",
+      ornate: "Ornate", hardened: "Hardened", cobbled: "Cobbled", carved: "Carved", chiseled: "Chiseled", cracked: "Cracked", gilded: "Gilded",
       glowing: "Glowing", mossy: "Mossy", polished: "Polished", smooth: "Smooth",
     },
     modified: (modifier, base) => ({ text: `${modifier} ${base.text}`, gender: base.gender, plural: base.plural }),
@@ -237,18 +247,21 @@ const BLOCK_LANGUAGES = Object.freeze({
   },
   pt_BR: {
     materials: {
-      andesite: "Andesito", basalt: "Basalto", blackstone: "Pedra-Negra", calcite: "Calcita",
+      end_stone: "Pedra do End", andesite: "Andesito", basalt: "Basalto", blackstone: "Pedra-Negra", calcite: "Calcita",
       deepslate: "Ardosiabissal", diorite: "Diorito", dripstone: "Espeleotema", granite: "Granito",
       mud: "Lama", nether: "Nether", netherrack: "Netherrack", obsidian: "Obsidiana",
       prismarine: "Prismarinho", quartz: "Quartzo", stone: "Pedra", tuff: "Tufo",
     },
-    genders: { blackstone: "f", calcite: "f", deepslate: "f", mud: "f", obsidian: "f", stone: "f" },
+    genders: { netherrack: "f", end_stone: "f", blackstone: "f", calcite: "f", deepslate: "f", mud: "f", obsidian: "f", stone: "f" },
     specials: {
       cobblestone: "Pedregulho", cobbled_deepslate: "Pedregulho de Ardosiabissal",
       dark_prismarine: "Prismarinho Escuro", packed_mud: "Lama Endurecida",
       purpur_block: "Bloco Púrpura", snowy_grass_block: "Bloco de Grama com Neve",
     },
     modifiers: {
+      ornate: ["Ornamentado", "Ornamentada", "Ornamentados", "Ornamentadas"],
+      hardened: ["Endurecido", "Endurecida", "Endurecidos", "Endurecidas"],
+      cobbled: ["Apedregulhado", "Apedregulhada", "Apedregulhados", "Apedregulhadas"],
       carved: ["Talhado", "Talhada", "Talhados", "Talhadas"],
       chiseled: ["Cinzelado", "Cinzelada", "Cinzelados", "Cinzeladas"],
       cracked: ["Rachado", "Rachada", "Rachados", "Rachadas"],
@@ -275,18 +288,21 @@ const BLOCK_LANGUAGES = Object.freeze({
   },
   pt_PT: {
     materials: {
-      andesite: "Andesito", basalt: "Basalto", blackstone: "Pedra Negra", calcite: "Calcite",
+      end_stone: "Pedra do End", andesite: "Andesito", basalt: "Basalto", blackstone: "Pedra Negra", calcite: "Calcite",
       deepslate: "Ardósia", diorite: "Diorito", dripstone: "Espeleotema", granite: "Granito",
       mud: "Lama", nether: "Nether", netherrack: "Rocha do Nether", obsidian: "Obsidiana",
       prismarine: "Prismarine", quartz: "Quartzo", stone: "Pedra", tuff: "Tufo",
     },
-    genders: { blackstone: "f", calcite: "f", deepslate: "f", mud: "f", obsidian: "f", stone: "f" },
+    genders: { netherrack: "f", end_stone: "f", blackstone: "f", calcite: "f", deepslate: "f", mud: "f", obsidian: "f", stone: "f" },
     specials: {
       cobblestone: "Pedra Arredondada", cobbled_deepslate: "Ardósia Apedregulhada",
       dark_prismarine: "Prismarine Escuro", packed_mud: "Lama Embalada",
       purpur_block: "Bloco Púrpura", snowy_grass_block: "Bloco de Erva com Neve",
     },
     modifiers: {
+      ornate: ["Ornamentado", "Ornamentada", "Ornamentados", "Ornamentadas"],
+      hardened: ["Endurecido", "Endurecida", "Endurecidos", "Endurecidas"],
+      cobbled: ["Apedregulhado", "Apedregulhada", "Apedregulhados", "Apedregulhadas"],
       carved: ["Talhado", "Talhada", "Talhados", "Talhadas"],
       chiseled: ["Cinzelado", "Cinzelada", "Cinzelados", "Cinzeladas"],
       cracked: ["Rachado", "Rachada", "Rachados", "Rachadas"],
@@ -328,18 +344,21 @@ function agree(forms, base) {
 function spanishBlockLanguage(regional) {
   return {
     materials: {
-      andesite: "Andesita", basalt: "Basalto", blackstone: regional.blackstone, calcite: "Calcita",
+      end_stone: "Piedra del End", andesite: "Andesita", basalt: "Basalto", blackstone: regional.blackstone, calcite: "Calcita",
       deepslate: regional.deepslate, diorite: "Diorita", dripstone: "Espeleotema", granite: "Granito",
       mud: "Lodo", nether: regional.nether, netherrack: "Infiedra", obsidian: "Obsidiana",
       prismarine: "Prismarina", quartz: "Cuarzo", stone: "Piedra", tuff: "Toba Volcánica",
     },
-    genders: { andesite: "f", blackstone: "f", calcite: "f", deepslate: "f", diorite: "f", mud: "f", obsidian: "f", prismarine: "f", stone: "f", tuff: "f" },
+    genders: { netherrack: "f", end_stone: "f", andesite: "f", blackstone: "f", calcite: "f", deepslate: "f", diorite: "f", mud: "f", obsidian: "f", prismarine: "f", stone: "f", tuff: "f" },
     specials: {
       cobblestone: "Adoquín", cobbled_deepslate: `${regional.deepslate} Empedrada`,
       dark_prismarine: "Prismarina Oscura", packed_mud: regional.mud,
       purpur_block: "Bloque de Púrpura", snowy_grass_block: `Bloque de ${regional.grass} Nevado`,
     },
     modifiers: {
+      ornate: ["Ornamentado", "Ornamentada", "Ornamentados", "Ornamentadas"],
+      hardened: ["Endurecido", "Endurecida", "Endurecidos", "Endurecidas"],
+      cobbled: ["Empedrado", "Empedrada", "Empedrados", "Empedradas"],
       carved: ["Tallado", "Tallada", "Tallados", "Talladas"],
       chiseled: ["Cincelado", "Cincelada", "Cincelados", "Cinceladas"],
       cracked: ["Agrietado", "Agrietada", "Agrietados", "Agrietadas"],
@@ -368,6 +387,16 @@ function spanishBlockLanguage(regional) {
 
 function semanticBlock(identifier, locale) {
   const language = BLOCK_LANGUAGES[locale];
+  const wool = identifier.match(/^(.+)_(wool|carpet)$/);
+  if (wool) {
+    const color = concreteColors.colors.find(entry => entry.id === wool[1]);
+    if (!color) throw new Error(`Unknown wool color: ${wool[1]}`);
+    const label = color[locale === 'en_US' ? 'en' : locale.startsWith('pt_') ? 'pt' : 'es'];
+    const type = wool[2] === 'wool'
+      ? {en_US: 'Wool', pt_BR: 'Lã', pt_PT: 'Lã', es_ES: 'Lana', es_MX: 'Lana'}[locale]
+      : {en_US: 'Carpet', pt_BR: 'Carpete', pt_PT: 'Tapete', es_ES: 'Alfombra', es_MX: 'Alfombra'}[locale];
+    return {text: locale === 'en_US' ? `${label} ${type}` : `${type} ${label}`, gender: wool[2] === 'wool' || locale.startsWith('es_') ? 'f' : 'm', plural: false};
+  }
   if (identifier.endsWith("_concrete")) {
     const colorId = identifier.slice(0, -"_concrete".length);
     const color = concreteColors.colors.find((entry) => entry.id === colorId);
@@ -383,13 +412,13 @@ function semanticBlock(identifier, locale) {
   const wood = identifier.match(/^sanded_(acacia|bamboo|birch|cherry|crimson|dark_oak|jungle|mangrove|oak|pale_oak|spruce|warped)_wood$/);
   if (wood) return { text: language.woods[wood[1]], gender: "f", plural: false };
 
-  for (const modifierId of ["chiseled", "cracked", "polished", "smooth", "gilded", "glowing", "carved", "mossy"]) {
+  for (const modifierId of ["chiseled", "cracked", "polished", "smooth", "gilded", "glowing", "carved", "mossy", "hardened", "cobbled", "ornate"]) {
     if (identifier.startsWith(`${modifierId}_`)) {
       return language.modified(language.modifiers[modifierId], semanticBlock(identifier.slice(modifierId.length + 1), locale));
     }
   }
 
-  for (const [suffix, formatter] of [["_bricks", "bricks"], ["_tiles", "tiles"], ["_pillar", "pillar"]]) {
+  for (const [suffix, formatter] of [["_bricks", "bricks"], ["_tiles", "tiles"], ["_pillar", "pillar"], ["_tiling", "tiles"]]) {
     if (identifier.endsWith(suffix)) {
       const stem = identifier.slice(0, -suffix.length);
       return language[formatter](semanticBlock(stem, locale), stem);
@@ -411,9 +440,9 @@ export function blockName(identifier, locale) {
 }
 
 export const GROUP_TRANSLATIONS = Object.freeze({
-  en_US: { dyes: "Dyes", concreteExtra: "Concrete (Extra)", chisels: "Chisels", customGlass: "Custom Glass", customVariants: "Custom Variants", furnitureHammers: "Furniture Hammers", glassCutters: "Glass Cutters", gloves: "Gloves", sandedWood: "Sanded Wood", stoneBricks: "Stonework", verticalSlabs: "Vertical Slabs", walls: "Walls" },
-  pt_BR: { dyes: "Corantes", concreteExtra: "Concreto (Extra)", chisels: "Cinzeis", customGlass: "Vidros Personalizados", customVariants: "Variantes Personalizadas", furnitureHammers: "Martelos de Móveis", glassCutters: "Cortadores de Vidro", gloves: "Luvas de Construção", sandedWood: "Madeiras Lixadas", stoneBricks: "Trabalhos em Pedra", verticalSlabs: "Lajes Verticais", walls: "Muros" },
-  pt_PT: { dyes: "Corantes", concreteExtra: "Betão (Extra)", chisels: "Cinzéis", customGlass: "Vidros Personalizados", customVariants: "Variantes Personalizadas", furnitureHammers: "Martelos de Mobiliário", glassCutters: "Corta-vidros", gloves: "Luvas de Construção", sandedWood: "Madeiras Lixadas", stoneBricks: "Cantaria", verticalSlabs: "Lajes Verticais", walls: "Muros" },
-  es_ES: { dyes: "Tintes", concreteExtra: "Hormigón (Extra)", chisels: "Cinceles", customGlass: "Cristales Personalizados", customVariants: "Variantes Personalizadas", furnitureHammers: "Martillos de Mobiliario", glassCutters: "Cortadores de Cristal", gloves: "Guantes de Construcción", sandedWood: "Maderas Lijadas", stoneBricks: "Cantería", verticalSlabs: "Losas Verticales", walls: "Muros" },
-  es_MX: { dyes: "Tintes", concreteExtra: "Concreto (Extra)", chisels: "Cinceles", customGlass: "Vidrios Personalizados", customVariants: "Variantes Personalizadas", furnitureHammers: "Martillos para Muebles", glassCutters: "Cortadores de Vidrio", gloves: "Guantes de Construcción", sandedWood: "Maderas Lijadas", stoneBricks: "Trabajo en Piedra", verticalSlabs: "Losas Verticales", walls: "Muros" },
+  en_US: { woolExtra: "Wool (Extra)", painting: PAINT_MESSAGES.en_US.group, dyes: "Dyes", concreteExtra: "Concrete (Extra)", chisels: "Chisels", customGlass: "Custom Glass", customVariants: "Custom Variants", furnitureHammers: "Furniture Hammers", glassCutters: "Glass Cutters", gloves: "Gloves", sandedWood: "Sanded Wood", stoneBricks: "Stonework", verticalSlabs: "Vertical Slabs", walls: "Walls" },
+  pt_BR: { woolExtra: "Lã (Extra)", painting: PAINT_MESSAGES.pt_BR.group, dyes: "Corantes", concreteExtra: "Concreto (Extra)", chisels: "Cinzeis", customGlass: "Vidros Personalizados", customVariants: "Variantes Personalizadas", furnitureHammers: "Martelos de Móveis", glassCutters: "Cortadores de Vidro", gloves: "Luvas de Construção", sandedWood: "Madeiras Lixadas", stoneBricks: "Trabalhos em Pedra", verticalSlabs: "Lajes Verticais", walls: "Muros" },
+  pt_PT: { woolExtra: "Lã (Extra)", painting: PAINT_MESSAGES.pt_PT.group, dyes: "Corantes", concreteExtra: "Betão (Extra)", chisels: "Cinzéis", customGlass: "Vidros Personalizados", customVariants: "Variantes Personalizadas", furnitureHammers: "Martelos de Mobiliário", glassCutters: "Corta-vidros", gloves: "Luvas de Construção", sandedWood: "Madeiras Lixadas", stoneBricks: "Cantaria", verticalSlabs: "Lajes Verticais", walls: "Muros" },
+  es_ES: { woolExtra: "Lana (Extra)", painting: PAINT_MESSAGES.es_ES.group, dyes: "Tintes", concreteExtra: "Hormigón (Extra)", chisels: "Cinceles", customGlass: "Cristales Personalizados", customVariants: "Variantes Personalizadas", furnitureHammers: "Martillos de Mobiliario", glassCutters: "Cortadores de Cristal", gloves: "Guantes de Construcción", sandedWood: "Maderas Lijadas", stoneBricks: "Cantería", verticalSlabs: "Losas Verticales", walls: "Muros" },
+  es_MX: { woolExtra: "Lana (Extra)", painting: PAINT_MESSAGES.es_MX.group, dyes: "Tintes", concreteExtra: "Concreto (Extra)", chisels: "Cinceles", customGlass: "Vidrios Personalizados", customVariants: "Variantes Personalizadas", furnitureHammers: "Martillos para Muebles", glassCutters: "Cortadores de Vidrio", gloves: "Guantes de Construcción", sandedWood: "Maderas Lijadas", stoneBricks: "Trabajo en Piedra", verticalSlabs: "Losas Verticales", walls: "Muros" },
 });

@@ -1,5 +1,5 @@
 import { system, world } from '@minecraft/server'
-import { getCompatibleNamespaces, readToolLockFromItem, registerToolLockResolver } from './toolMemory.js'
+import { getCompatibleNamespaces, handleToolUse, readToolLockFromItem, registerToolLockResolver } from './toolMemory.js'
 import { playToolMaterialSound, soundConfig } from './soundConfig.js'
 
 // Supported namespaces for custom components and durability filtering.
@@ -136,6 +136,7 @@ registerToolLockResolver(HAMMER_LOCK_KIND, viewedBlock => {
 
 system.beforeEvents.startup.subscribe(initEvent => {
     const handlers = {
+        onUse: handleToolUse,
         onUseOn(event) {
             const { block, source, itemStack } = event ?? {}
             if (!block) return

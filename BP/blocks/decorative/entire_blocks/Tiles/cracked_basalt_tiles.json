@@ -4,7 +4,8 @@
     "description": {
       "identifier": "dorios_atelier:cracked_basalt_tiles",
       "menu_category": {
-        "category": "construction"
+        "category": "construction",
+        "group": "dorios_atelier:itemGroup.name.stoneBricks"
       }
     },
     "components": {
@@ -13,7 +14,7 @@
       "minecraft:light_emission": 0,
       "minecraft:material_instances": {
         "*": {
-          "texture": "utilitycraft_cracked_basalt_tiles",
+          "texture": "dorios_atelier_cracked_basalt_tiles",
           "render_method": "opaque",
           "ambient_occlusion": true,
           "face_dimming": true

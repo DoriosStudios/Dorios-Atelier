@@ -1,5 +1,5 @@
 import { system, world } from '@minecraft/server'
-import { readToolLockFromItem, registerToolLockResolver } from './toolMemory.js'
+import { handleToolUse, readToolLockFromItem, registerToolLockResolver } from './toolMemory.js'
 import { playConfiguredSound, soundConfig } from './soundConfig.js'
 
 const TOOL_NAMESPACES = ['dorios_atelier', 'utilitycraft']
@@ -183,6 +183,7 @@ registerToolLockResolver(CUTTER_LOCK_KIND, viewedBlock => {
 
 system.beforeEvents.startup.subscribe(initEvent => {
 	const handlers = {
+		onUse: handleToolUse,
 		onUseOn(event) {
 			const { block, source, itemStack } = event ?? {}
 			if (!block) return

@@ -219,6 +219,7 @@ bridge/
 
 # Local tooling
 node_modules/
+/tools/tests/
 !tools/lib/
 !tools/lib/*.mjs
 .vscode/
@@ -234,3 +235,6 @@ builds/*
 
 # Regolith generated cache
 .regolith/
+
+# Shared release workflow output
+.dorios-release/

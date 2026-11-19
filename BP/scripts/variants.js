@@ -2,6 +2,8 @@
  * Variants - variants.js
  * Contains the material cycle definitions for the chisel and stairs, as well as the block alias map for Insight.
  */
+import { STONE_FAMILY_VARIANTS, STONE_BLOCK_ALIASES } from './stoneFamilyVariants.js';
+
 const BASE_CYCLES = [
   [
     // Andesite
@@ -172,7 +174,23 @@ const WOOD_VARIANTS = [
 
 const WOOD_CYCLES = WOOD_VARIANTS.map(({ log, wood, sanded }) => [log, wood, sanded]);
 
-export const MATERIAL_CYCLES = [...BASE_CYCLES, OBSIDIAN_CYCLE, ...WOOD_CYCLES];
+const newStoneCycles = STONE_FAMILY_VARIANTS.map(entry => {
+  const source = {
+    andesite: ['minecraft:andesite'],
+    basalt: ['minecraft:basalt', 'minecraft:polished_basalt'],
+    deepslate: ['minecraft:deepslate', 'minecraft:polished_deepslate', 'minecraft:deepslate_bricks', 'minecraft:deepslate_tiles', 'minecraft:chiseled_deepslate'],
+    dripstone: ['minecraft:dripstone_block'],
+    end_stone: ['minecraft:end_stone', 'minecraft:end_bricks'],
+  }[entry.family] ?? [];
+  return [...source, ...entry.variants];
+});
+
+// One complete cycle per material, including legacy finishes absent from an import.
+const generatedCycles = newStoneCycles.map(cycle => [...new Set([
+  ...cycle,
+  ...BASE_CYCLES.filter(previous => previous.some(identifier => cycle.includes(identifier))).flat(),
+])]);
+export const MATERIAL_CYCLES = [...BASE_CYCLES.filter(previous => !generatedCycles.some(cycle => previous.some(identifier => cycle.includes(identifier)))), ...generatedCycles, OBSIDIAN_CYCLE, ...WOOD_CYCLES];
 
 export const BLOCK_ALIAS = new Map([
   ["minecraft:calcite", "dorios_atelier:polished_calcite"],
@@ -183,6 +201,8 @@ export const BLOCK_ALIAS = new Map([
   ["minecraft:chiseled_tuff", "dorios_atelier:chiseled_tuff"],
   ["minecraft:chiseled_polished_blackstone", "dorios_atelier:chiseled_blackstone"]
 ]);
+
+for (const [previous, canonical] of Object.entries(STONE_BLOCK_ALIASES)) BLOCK_ALIAS.set(previous, canonical);
 
 globalThis.InsightAtelierVariants = Object.freeze({
   MATERIAL_CYCLES,

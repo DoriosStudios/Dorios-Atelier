@@ -26,7 +26,7 @@
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "utilitycraft_cracked_andesite_bricks",
+          "texture": "dorios_atelier_cracked_andesite_bricks",
           "render_method": "opaque"
         }
       },

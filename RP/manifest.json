@@ -2,17 +2,17 @@
 	"format_version": 2,
 	"header": {
 		"name": "Dorios' Atelier",
-		"description": "1.1.0 §6Dorios Studios§8",
-		"uuid": "b5d1f818-45f2-4c50-8e0b-c3d87588687f",
+		"description": "1.1.0 Beta 4 | Pack 1.1.14 §6Dorios Studios§8",
+		"uuid": "4222f45d-f6d7-4051-8510-e82a31fab795",
 		"version": [
 			1,
 			1,
-			1
+			14
 		],
 		"min_engine_version": [
 			1,
 			26,
-			10
+			40
 		]
 	},
 	"metadata": {
@@ -22,21 +22,21 @@
 		{
 			"type": "resources",
 			"description": "Módulo principal do resource pack.",
-			"uuid": "c2d5c0a1-8312-42ed-9c3a-79314f0b00c8",
+			"uuid": "35af8d56-fe3d-4c76-8b10-9f634830f9ac",
 			"version": [
 				1,
 				1,
-				0
+				14
 			]
 		}
 	],
 	"dependencies": [
 		{
-			"uuid": "d2d3f818-45f2-4c50-8e0b-c3d87588687e",
+			"uuid": "5861c2f0-780a-4d45-a021-0b79204867eb",
 			"version": [
 				1,
 				1,
-				1
+				14
 			]
 		}
 	]

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "textureSource": {
+    "repository": "https://github.com/Mojang/bedrock-samples",
+    "commit": "46ba6ea985fb5a92d79a9419198f10dda14c199d",
+    "path": "resource_pack/textures/blocks/wool_colored_white.png",
+    "sha256": "c240f74136d8859fb3a2d37bd2786b33c8fcedc27f57db1d2cf228da0e921ea1"
+  },
+  "palette": "concrete-colors.json",
+  "group": "dorios_atelier:itemGroup.name.woolExtra",
+  "formats": ["block", "carpet", "slab", "stairs", "vertical_slab"]
+}

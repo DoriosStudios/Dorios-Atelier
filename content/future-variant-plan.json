@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "planned_textures_missing",
+  "status": "partially_implemented",
   "implementationGate": {
     "generateGameplayFiles": false,
     "requirements": [
@@ -30,7 +30,7 @@
     {
       "id": "hardened_netherrack",
       "label": "Netherrack Endurecida",
-      "status": "planned_textures_missing",
+      "status": "implemented",
       "source": "minecraft:netherrack",
       "resetTarget": "minecraft:netherrack",
       "entryRecipe": {
@@ -52,13 +52,20 @@
         "dorios_atelier:hardened_netherrack_tiles -> dorios_atelier:cracked_hardened_netherrack_tiles"
       ],
       "newFullBlocks": [
-        "dorios_atelier:hardened_netherrack",
-        "dorios_atelier:polished_hardened_netherrack",
-        "dorios_atelier:hardened_netherrack_bricks",
-        "dorios_atelier:hardened_netherrack_tiles",
+        "dorios_atelier:carved_hardened_netherrack",
         "dorios_atelier:chiseled_hardened_netherrack",
+        "dorios_atelier:chiseled_hardened_netherrack_bricks",
+        "dorios_atelier:chiseled_hardened_netherrack_pillar",
+        "dorios_atelier:chiseled_hardened_netherrack_tiles",
+        "dorios_atelier:hardened_netherrack",
         "dorios_atelier:cracked_hardened_netherrack_bricks",
-        "dorios_atelier:cracked_hardened_netherrack_tiles"
+        "dorios_atelier:cracked_hardened_netherrack_tiles",
+        "dorios_atelier:hardened_netherrack_bricks",
+        "dorios_atelier:hardened_netherrack_pillar",
+        "dorios_atelier:hardened_netherrack_tiles",
+        "dorios_atelier:hardened_netherrack_tiles_pillar",
+        "dorios_atelier:polished_hardened_netherrack",
+        "dorios_atelier:polished_hardened_netherrack_tiling"
       ],
       "shapeCompletion": [
         {
@@ -74,8 +81,9 @@
         }
       ],
       "notes": [
-        "The hardened entry recipe is deliberately lossy: four netherrack produce two hardened blocks.",
-        "A hardened block can reset to two netherrack; all decorative forms reset through the hardened base without net duplication."
+        "Four raw Netherrack craft two Hardened Netherrack. Each hardened full block resets to two raw Netherrack.",
+        "Decorative full-block transformations stay in the hardened tier; raw Netherrack is excluded from its chisel cycle.",
+        "Raw Netherrack wall completion remains deferred; the delivered textures implement the hardened decorative blocks and their four shapes."
       ]
     },
     {
@@ -446,7 +454,7 @@
     },
     {
       "id": "purpur",
-      "label": "Bloco de Púrpura",
+      "label": "Bloco de PÃºrpura",
       "status": "planned_textures_missing",
       "source": "minecraft:purpur_block",
       "resetTarget": "minecraft:purpur_block",
@@ -526,7 +534,7 @@
     },
     {
       "id": "cinnabar",
-      "label": "Bloco de Cinábrio",
+      "label": "Bloco de CinÃ¡brio",
       "status": "planned_textures_missing",
       "source": "minecraft:cinnabar",
       "resetTarget": "minecraft:cinnabar",

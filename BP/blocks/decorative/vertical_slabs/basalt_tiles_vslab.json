@@ -4,7 +4,8 @@
     "description": {
       "identifier": "dorios_atelier:basalt_tiles_vertical_slab",
       "menu_category": {
-        "category": "construction"
+        "category": "construction",
+        "group": "dorios_atelier:itemGroup.name.verticalSlabs"
       },
       "traits": {
         "minecraft:placement_direction": {
@@ -22,7 +23,7 @@
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "utilitycraft_basalt_tiles",
+          "texture": "dorios_atelier_basalt_tiles",
           "render_method": "opaque"
         }
       },
@@ -59,6 +60,7 @@
       "minecraft:support": {
         "shape": "stair"
       },
+      "minecraft:light_emission": 0,
       "tag:minecraft:stone_tier_destructible": {},
       "tag:stone": {}
     },
