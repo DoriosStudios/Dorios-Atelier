@@ -34,7 +34,8 @@
     "content:painting:check": "python tools/prepare-paint-textures.py --check && node tools/generate-painting.mjs --check",
     "content:wool": "node tools/generate-wool.mjs",
     "content:wool:apply": "node tools/generate-wool.mjs --write && node tools/generate-variant-recipes.mjs --write && node tools/generate-painting.mjs --write",
-    "content:wool:check": "node tools/generate-wool.mjs --check"
+    "content:wool:check": "node tools/generate-wool.mjs --check",
+    "builder:prepare": "node tools/build-custom-package.mjs"
   },
   "dependencies": {
     "@minecraft/server": "^2.9.0",
@@ -44,7 +45,9 @@
   "devDependencies": {
     "@minecraft/bedrock-schemas": "1.26.20-beta.21",
     "@minecraft/vanilla-data": "1.26.1",
-    "esbuild": "0.28.1"
+    "esbuild": "0.28.1",
+    "fflate": "^0.8.3",
+    "jsonc-parser": "^3.3.1"
   },
   "engines": {
     "node": ">=22"
